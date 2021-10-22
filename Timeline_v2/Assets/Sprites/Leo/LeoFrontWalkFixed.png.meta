@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 9f1d22abe4da67241874534ccf9db9c5
+guid: a76ffba91b731a743a31e10922af23a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8696513761956875717
-    second: LeoFrontWalk_0
+      213: 875391868944746507
+    second: LeoFrontWalkFixed_0
   - first:
-      213: -7272668272275358672
-    second: LeoFrontWalk_1
+      213: 2936539531012198173
+    second: LeoFrontWalkFixed_1
   - first:
-      213: 8637142314462743418
-    second: LeoFrontWalk_2
+      213: -5817234164483598747
+    second: LeoFrontWalkFixed_2
   - first:
-      213: 1445953228167081774
-    second: LeoFrontWalk_3
+      213: -8772410179763590839
+    second: LeoFrontWalkFixed_3
   - first:
-      213: -5184791089712547087
-    second: LeoFrontWalk_4
+      213: -1165867060124663130
+    second: LeoFrontWalkFixed_4
   - first:
-      213: 4260263256880294968
-    second: LeoFrontWalk_5
+      213: -3296984181141826167
+    second: LeoFrontWalkFixed_5
   - first:
-      213: -8758781057927563966
-    second: LeoFrontWalk_6
+      213: 5338314817360571025
+    second: LeoFrontWalkFixed_6
   - first:
-      213: 363145937616039955
-    second: LeoFrontWalk_7
+      213: -4579699548774793385
+    second: LeoFrontWalkFixed_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LeoFrontWalk_0
+      name: LeoFrontWalkFixed_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 209
-        width: 36
-        height: 90
+        x: 1020
+        y: 6682
+        width: 1162
+        height: 2892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cd4cbdb03930b870800000000000000
-      internalID: 8696513761956875717
+      spriteID: b0887bb4444062c00800000000000000
+      internalID: 875391868944746507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoFrontWalk_1
+      name: LeoFrontWalkFixed_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 209
-        width: 37
-        height: 90
+        x: 4217
+        y: 6682
+        width: 1195
+        height: 2892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03cf5c51dba421b90800000000000000
-      internalID: -7272668272275358672
+      spriteID: d1fcfde152fa0c820800000000000000
+      internalID: 2936539531012198173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoFrontWalk_2
+      name: LeoFrontWalkFixed_2
       rect:
         serializedVersion: 2
-        x: 232
-        y: 209
-        width: 36
-        height: 90
+        x: 7418
+        y: 6682
+        width: 1162
+        height: 2892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b0c086c2b4dd770800000000000000
-      internalID: 8637142314462743418
+      spriteID: 56650b23958054fa0800000000000000
+      internalID: -5817234164483598747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoFrontWalk_3
+      name: LeoFrontWalkFixed_3
       rect:
         serializedVersion: 2
-        x: 31
-        y: 109
-        width: 36
-        height: 90
+        x: 987
+        y: 3481
+        width: 1162
+        height: 2892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2f6abeccce011410800000000000000
-      internalID: 1445953228167081774
+      spriteID: 949ab237b63224680800000000000000
+      internalID: -8772410179763590839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoFrontWalk_4
+      name: LeoFrontWalkFixed_4
       rect:
         serializedVersion: 2
-        x: 132
-        y: 109
-        width: 36
-        height: 90
+        x: 4217
+        y: 3481
+        width: 1166
+        height: 2892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fab21f59fbeb08b0800000000000000
-      internalID: -5184791089712547087
+      spriteID: 6a2c0f9f51202dfe0800000000000000
+      internalID: -1165867060124663130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoFrontWalk_5
+      name: LeoFrontWalkFixed_5
       rect:
         serializedVersion: 2
-        x: 232
-        y: 109
-        width: 36
-        height: 90
+        x: 7418
+        y: 3481
+        width: 1162
+        height: 2892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83caffb3cde7f1b30800000000000000
-      internalID: 4260263256880294968
+      spriteID: 98595fcfa52ce32d0800000000000000
+      internalID: -3296984181141826167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoFrontWalk_6
+      name: LeoFrontWalkFixed_6
       rect:
         serializedVersion: 2
-        x: 33
-        y: 9
-        width: 35
-        height: 90
+        x: 1048
+        y: 284
+        width: 1134
+        height: 2892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 245bec8a80f827680800000000000000
-      internalID: -8758781057927563966
+      spriteID: 19a2bf3fa01851a40800000000000000
+      internalID: 5338314817360571025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoFrontWalk_7
+      name: LeoFrontWalkFixed_7
       rect:
         serializedVersion: 2
-        x: 132
-        y: 10
-        width: 36
-        height: 89
+        x: 4217
+        y: 312
+        width: 1166
+        height: 2864
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 310fa356e472a0500800000000000000
-      internalID: 363145937616039955
+      spriteID: 75ff2415683a170c0800000000000000
+      internalID: -4579699548774793385
       vertices: []
       indices: 
       edges: []
