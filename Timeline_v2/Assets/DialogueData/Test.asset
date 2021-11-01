@@ -16,7 +16,7 @@ MonoBehaviour:
   - 'Here is some text
 
     Hee hoo'
-  - did it break??? :(
+  - did it work??? :(
   responses:
   - responseText: Yes.
     dialogueObject: {fileID: 11400000, guid: c3246c8817b6650479049b76def0c9b0, type: 2}
