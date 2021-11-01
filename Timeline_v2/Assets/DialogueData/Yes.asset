@@ -10,15 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Test
+  m_Name: Yes
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Here is some text
-
-    Hee hoo'
-  - did it break??? :(
-  responses:
-  - responseText: Yes.
-    dialogueObject: {fileID: 11400000, guid: c3246c8817b6650479049b76def0c9b0, type: 2}
-  - responseText: No.
-    dialogueObject: {fileID: 11400000, guid: 2873998a0a34ffd4da483357bb1dc798, type: 2}
+  - Yes :D
