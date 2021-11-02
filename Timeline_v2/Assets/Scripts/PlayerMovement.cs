@@ -4,7 +4,18 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    //NEW
+    [SerializeField] private DialogueUI dialogueUI;
+
+
+
     public float moveSpeed = 5f;
+
+    //NEW
+    public DialogueUI DialogueUI => dialogueUI;
+    //NEW
+    public IInteractable Interactable { get; set; }
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -27,5 +38,14 @@ public class PlayerMovement : MonoBehaviour
     {
         // Movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        //NEW
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            if(Interactable != null)
+            {
+                Interactable.Interact(PlayerMovement:this);
+            }
+        }
     }
 }

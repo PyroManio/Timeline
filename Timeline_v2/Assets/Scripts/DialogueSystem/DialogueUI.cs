@@ -5,7 +5,10 @@ public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
-    [SerializeField] private DialogueObject testDialogue;
+    //[SerializeField] private DialogueObject testDialogue;
+
+    //NEW
+    public bool IsOpen { get; private set; }
     
     private ResponseHandler responseHandler;
     private TypewriterEffect typewritterEffect;
@@ -14,10 +17,13 @@ public class DialogueUI : MonoBehaviour
         typewritterEffect=GetComponent<TypewriterEffect>();
         responseHandler=GetComponent<ResponseHandler>();
         CloseDialogueBox();
-        ShowDialogue(testDialogue);
+        //ShowDialogue(testDialogue);
     }
     public void ShowDialogue(DialogueObject dialogueObject)
     {
+        //NEW
+        IsOpen = true; 
+
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
@@ -49,6 +55,9 @@ public class DialogueUI : MonoBehaviour
         
     }
     private void CloseDialogueBox(){
+        //NEW
+        IsOpen = false;
+
         dialogueBox.SetActive(false);
         textLabel.text=string.Empty;
     }
