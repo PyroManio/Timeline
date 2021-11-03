@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: InteractionYes
   m_EditorClassIdentifier: 
   dialogue:
-  - Yes! Yay!
+  - '%0%I sure did!'
+  - Horray!
+  - '%8%I can also change expressions!'
   responses: []
+  expression: 1
