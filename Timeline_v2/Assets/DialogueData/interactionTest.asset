@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Hi, I'm a friendly red circle
-  - You clicked E to trigger this diagloue!
+  - 'You clicked E to trigger this diagloue!
+
+    Nice.'
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 0f78554ed8177784695cfe40c538c3dc, type: 2}

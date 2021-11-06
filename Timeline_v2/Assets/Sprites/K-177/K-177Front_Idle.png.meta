@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: b75b9cdaf0ce441429184dee868074a8
+guid: d325c0ab2c206f14292223da4c816a23
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6224370196174892611
-    second: K-177Front_Idle_0
+      213: 5602909054226505160
+    second: K-177Front_Idle 1_0
   - first:
-      213: -4904189078051582001
-    second: K-177Front_Idle_1
+      213: -7610560662220489779
+    second: K-177Front_Idle 1_1
   - first:
-      213: 1583115496885428376
-    second: K-177Front_Idle_2
+      213: -3531727544303911740
+    second: K-177Front_Idle 1_2
   - first:
-      213: 8321732434843463908
-    second: K-177Front_Idle_3
+      213: 34401600446461736
+    second: K-177Front_Idle 1_3
   - first:
-      213: 4971041109745681415
-    second: K-177Front_Idle_4
+      213: 2878046321070130752
+    second: K-177Front_Idle 1_4
   - first:
-      213: -7764405702368365841
-    second: K-177Front_Idle_5
+      213: -4257766467698281397
+    second: K-177Front_Idle 1_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,7 +85,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -97,19 +97,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -121,127 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: K-177Front_Idle_0
+      name: K-177Front_Idle 1_0
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 7291
-        width: 1069
-        height: 1451
+        x: 33
+        y: 228
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e688d17b7616650800000000000000
-      internalID: 6224370196174892611
+      spriteID: 8cd9dfd691881cd40800000000000000
+      internalID: 5602909054226505160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: K-177Front_Idle_1
+      name: K-177Front_Idle 1_1
       rect:
         serializedVersion: 2
-        x: 4250
-        y: 7385
-        width: 1069
-        height: 1610
+        x: 133
+        y: 231
+        width: 33
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf826b5402d0fbb0800000000000000
-      internalID: -4904189078051582001
+      spriteID: dcb39c2766bd16690800000000000000
+      internalID: -7610560662220489779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: K-177Front_Idle_2
+      name: K-177Front_Idle 1_2
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 4249
-        width: 1069
-        height: 1453
+        x: 33
+        y: 133
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890a54e182b58f510800000000000000
-      internalID: 1583115496885428376
+      spriteID: 4cc7d46a288ccfec0800000000000000
+      internalID: -3531727544303911740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: K-177Front_Idle_3
+      name: K-177Front_Idle 1_3
       rect:
         serializedVersion: 2
-        x: 4250
-        y: 4348
-        width: 1069
-        height: 1655
+        x: 133
+        y: 136
+        width: 33
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e0f0be1f8bbc7370800000000000000
-      internalID: 8321732434843463908
+      spriteID: 827f056c2183a7000800000000000000
+      internalID: 34401600446461736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: K-177Front_Idle_4
+      name: K-177Front_Idle 1_4
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 1048
-        width: 1069
-        height: 1453
+        x: 33
+        y: 33
+        width: 33
+        height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70441463d8facf440800000000000000
-      internalID: 4971041109745681415
+      spriteID: 046418661efd0f720800000000000000
+      internalID: 2878046321070130752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: K-177Front_Idle_5
+      name: K-177Front_Idle 1_5
       rect:
         serializedVersion: 2
-        x: 4250
-        y: 971
-        width: 1069
-        height: 1683
+        x: 133
+        y: 31
+        width: 33
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2f05ab62a4f3490800000000000000
-      internalID: -7764405702368365841
+      spriteID: b44364cc4ff59e4c0800000000000000
+      internalID: -4257766467698281397
       vertices: []
       indices: 
       edges: []

@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 358439080e5c7394c8e14f9a18f92ce3
+guid: 9a077c9689f215c4f9ec589cf3996e5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7025565818613247981
-    second: LeoBackFixed_0
+      213: 7031852327759312509
+    second: LeoBackFixed 1_0
   - first:
-      213: 2747558715375330454
-    second: LeoBackFixed_1
+      213: 7927433111234519486
+    second: LeoBackFixed 1_1
   - first:
-      213: -7153439118046064270
-    second: LeoBackFixed_2
+      213: 4821970556544558193
+    second: LeoBackFixed 1_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,7 +76,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -88,19 +88,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -112,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LeoBackFixed_0
+      name: LeoBackFixed 1_0
       rect:
         serializedVersion: 2
-        x: 989
-        y: 3452
-        width: 1159
-        height: 2918
+        x: 31
+        y: 108
+        width: 37
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,20 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: defa19493e2df7160800000000000000
-      internalID: 7025565818613247981
+      spriteID: d76f81d8f68269160800000000000000
+      internalID: 7031852327759312509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoBackFixed_1
+      name: LeoBackFixed 1_1
       rect:
         serializedVersion: 2
-        x: 4252
-        y: 3452
-        width: 1128
-        height: 2918
+        x: 132
+        y: 108
+        width: 37
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 694a97d281a412620800000000000000
-      internalID: 2747558715375330454
+      spriteID: eb1adcfc966e30e60800000000000000
+      internalID: 7927433111234519486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoBackFixed_2
+      name: LeoBackFixed 1_2
       rect:
         serializedVersion: 2
-        x: 1052
-        y: 252
-        width: 1159
-        height: 2918
+        x: 32
+        y: 8
+        width: 37
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2711b7ec501e9bc90800000000000000
-      internalID: -7153439118046064270
+      spriteID: 1742b3c5ca41be240800000000000000
+      internalID: 4821970556544558193
       vertices: []
       indices: 
       edges: []

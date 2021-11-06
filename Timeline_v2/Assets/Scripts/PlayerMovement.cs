@@ -8,8 +8,6 @@ public class PlayerMovement : MonoBehaviour
     //NEW
     [SerializeField] private DialogueUI dialogueUI;
 
-
-
     public float moveSpeed = 5f;
 
     //NEW
@@ -26,8 +24,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Input
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = (int)(Input.GetAxisRaw("Horizontal")/0.0625)*0.0625f;
+        movement.y = (int)(Input.GetAxisRaw("Vertical")/0.0625)*0.0625f;
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
@@ -37,8 +35,12 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate() 
     {
         // Movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-
+        Vector2 temp;
+        temp=rb.position + movement * moveSpeed * Time.fixedDeltaTime;
+        temp.x= Mathf.RoundToInt( temp.x / 0.0625f) * 0.0625f;
+        temp.y= Mathf.RoundToInt( temp.y / 0.0625f) * 0.0625f;
+        
+        rb.MovePosition( temp);
         //NEW
         if(Input.GetKeyDown(KeyCode.E))
         {
