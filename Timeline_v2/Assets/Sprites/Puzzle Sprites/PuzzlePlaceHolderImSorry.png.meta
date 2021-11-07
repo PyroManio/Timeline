@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 9a077c9689f215c4f9ec589cf3996e5d
+guid: a9131dee033c115459a2aef495e675b8
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7031852327759312509
-    second: LeoBackFixed 1_0
-  - first:
-      213: 7927433111234519486
-    second: LeoBackFixed 1_1
-  - first:
-      213: 4821970556544558193
-    second: LeoBackFixed 1_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,70 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: LeoBackFixed 1_0
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 107
-        width: 37
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d76f81d8f68269160800000000000000
-      internalID: 7031852327759312509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LeoBackFixed 1_1
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 107
-        width: 37
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb1adcfc966e30e60800000000000000
-      internalID: 7927433111234519486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LeoBackFixed 1_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 7
-        width: 37
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1742b3c5ca41be240800000000000000
-      internalID: 4821970556544558193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

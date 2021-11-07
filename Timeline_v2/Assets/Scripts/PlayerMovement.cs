@@ -23,6 +23,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialogueUI.IsOpen) 
+        {
+            movement.x=0;
+            movement.y=0;
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+            return;
+        }
         // Input
         movement.x = (int)(Input.GetAxisRaw("Horizontal")/0.0625)*0.0625f;
         movement.y = (int)(Input.GetAxisRaw("Vertical")/0.0625)*0.0625f;

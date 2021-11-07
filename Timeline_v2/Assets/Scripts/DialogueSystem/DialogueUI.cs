@@ -28,12 +28,6 @@ public class DialogueUI : MonoBehaviour
         IsOpen = true; 
         dialogueBox.SetActive(true);
         textLabel.text=string.Empty;
-       // if (dialogueObject.expression != 0)  
-        //{
-        //    characterDialogueBox.SetActive(true);
-       //     textLabel = characterDialogueBox.GetComponentInChildren<TMP_Text>();
-       // }
-        //else textLabel=defaultText;
         textLabel=defaultText;
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
@@ -58,13 +52,14 @@ public class DialogueUI : MonoBehaviour
         return dialogue;
         
     }
+    public void AddResponseEvents(ResponseEvent[] responseEvents)
+    {
+        responseHandler.AddResponseEvents(responseEvents);
+    }
+
+
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
-       // foreach (string dialogue in dialogueObject.Dialogue)
-        //{
-        //    yield return typewritterEffect.Run(dialogue,textLabel);
-        //    yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
-        //}
         for (int i =0; i<dialogueObject.Dialogue.Length;i++)
         {
             //assume all dialogue is default dialogue until proven otherwise
@@ -74,10 +69,11 @@ public class DialogueUI : MonoBehaviour
             string dialogue= dialogueObject.Dialogue[i];
             // if there is a % at the beginning of the dialogue
             if (System.String.Equals(dialogueObject.Dialogue[i][0],'%'))  dialogue = expressionDialogue(dialogueObject.Dialogue[i]);
-            yield return typewritterEffect.Run(dialogue,textLabel); 
-
+            //yield return typewritterEffect.Run(dialogue,textLabel); 
+            yield return RunTypingEffect(dialogue);
+            textLabel.text=dialogue;
             if (i == dialogueObject.Dialogue.Length-1 && dialogueObject.HasResponses) break;
-
+            yield return null;
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         }
         if (dialogueObject.HasResponses)
@@ -90,7 +86,18 @@ public class DialogueUI : MonoBehaviour
         }
         
     }
-    private void CloseDialogueBox(){
+    private IEnumerator RunTypingEffect(string dialogue)
+    {
+        typewritterEffect.Run(dialogue, textLabel);
+        while (typewritterEffect.IsRunning){
+            yield return null;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                typewritterEffect.Stop();
+            }
+        }
+    }
+    public void CloseDialogueBox(){
         //NEW
         IsOpen = false;
         characterDialogueBox.SetActive(false);
