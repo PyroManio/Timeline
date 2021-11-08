@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 9a077c9689f215c4f9ec589cf3996e5d
+guid: c858b72f6601e2d44b50d49e8ff0618e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7031852327759312509
-    second: LeoBackFixed 1_0
+      213: -2097586243065906446
+    second: LeoLeftIdle_0
   - first:
-      213: 7927433111234519486
-    second: LeoBackFixed 1_1
+      213: -3951426375877330564
+    second: LeoLeftIdle_1
   - first:
-      213: 4821970556544558193
-    second: LeoBackFixed 1_2
+      213: -769318425916685493
+    second: LeoLeftIdle_2
+  - first:
+      213: 2588637357112347631
+    second: LeoLeftIdle_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,64 +103,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LeoBackFixed 1_0
+      name: LeoLeftIdle_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 107
-        width: 37
-        height: 92
+        x: 30
+        y: 104
+        width: 45
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d76f81d8f68269160800000000000000
-      internalID: 7031852327759312509
+      spriteID: 2fa7f48ec60e3e2e0800000000000000
+      internalID: -2097586243065906446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoBackFixed 1_1
+      name: LeoLeftIdle_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 107
-        width: 37
-        height: 92
+        x: 130
+        y: 104
+        width: 45
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1adcfc966e30e60800000000000000
-      internalID: 7927433111234519486
+      spriteID: c79f8bd85a6b929c0800000000000000
+      internalID: -3951426375877330564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoBackFixed 1_2
+      name: LeoLeftIdle_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 7
-        width: 37
-        height: 92
+        x: 30
+        y: 4
+        width: 45
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1742b3c5ca41be240800000000000000
-      internalID: 4821970556544558193
+      spriteID: b43c218b7f4d255f0800000000000000
+      internalID: -769318425916685493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeoLeftIdle_3
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 4
+        width: 45
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febccfa06fface320800000000000000
+      internalID: 2588637357112347631
       vertices: []
       indices: 
       edges: []
