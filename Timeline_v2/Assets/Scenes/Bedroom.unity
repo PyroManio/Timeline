@@ -2260,13 +2260,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 49ad95a599f53f543be6bdd7817cd051, type: 3}
-
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f85e5159887fcde43aefd577941e9513, type: 3}
-
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3036,9 +3031,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'New Text
-
     New Text
-
     New Text'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3186,18 +3179,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-
   - component: {fileID: 876269602}
   - component: {fileID: 876269601}
   - component: {fileID: 876269600}
   - component: {fileID: 876269599}
   - component: {fileID: 876269603}
-
-  - component: {fileID: 1178735149}
-  - component: {fileID: 1178735150}
-  - component: {fileID: 1178735151}
-  - component: {fileID: 1178735152}
-
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -3274,13 +3260,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0.8490566, g: 0.08543959, b: 0.08543959, a: 1}
-
-  m_Sprite: {fileID: 21300000, guid: 02bdbb1aa97611b478c28b82ebe0150e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3316,7 +3297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2a3c9cb6e2e9644a39466f39685b80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
   dialogueObject: {fileID: 11400000, guid: 5030b1c2e0f58fc4ca021b0ee88ef270, type: 2}
   events:
   - name: Yes
@@ -3352,38 +3332,6 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &878357972
-
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 0
---- !u!61 &1178735152
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178735148}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.125, y: 2.6875}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.125, y: 2.6875}
-  m_EdgeRadius: 0
---- !u!1 &1200696976
-
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3695,7 +3643,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Option 1
-
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5014,9 +4961,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'New Text
-
     New Text
-
     New Text'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
