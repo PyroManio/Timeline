@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: interactionNo
   m_EditorClassIdentifier: 
   dialogue:
-  - No? But you did click E o^O
+  - Fine, guess I'll take your key instead.
   responses: []

@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: InteractionYes
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%I sure did!'
-  - Horray!
-  - '%8%I can also change expressions!'
+  - '%0%Sure.'
+  - Here you go!
   responses: []
-  expression: 1
