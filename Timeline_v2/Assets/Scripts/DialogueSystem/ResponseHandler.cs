@@ -21,13 +21,14 @@ public class ResponseHandler : MonoBehaviour
 
     public void ShowResponses(Response[] responses)
     {
+        int longestResponseLength=0;
         float responseBoxHeight=0;
         //foreach (Response response in responses)
         for (int i = 0; i< responses.Length; i++)
         {
             Response response=responses[i];
             int responseIndex=i;
-
+            if (response.ResponseText.Length > longestResponseLength) longestResponseLength = response.ResponseText.Length;
             GameObject responseButton = Instantiate(responseButtonTemplate.gameObject, responseContainer);
             responseButton.gameObject.SetActive(true);
             responseButton.GetComponent<TMP_Text>().text=response.ResponseText; 
@@ -37,7 +38,8 @@ public class ResponseHandler : MonoBehaviour
 
             responseBoxHeight += responseButtonTemplate.sizeDelta.y;
         }
-        responseBox.sizeDelta=new Vector2(responseBox.sizeDelta.x,responseBoxHeight);
+        //responseBox.sizeDelta=new Vector2(responseBox.sizeDelta.x+(longestResponseLength*20-100),responseBoxHeight);
+        responseBox.sizeDelta=new Vector2(Mathf.Sqrt(longestResponseLength*4000),responseBoxHeight);
         responseBox.gameObject.SetActive(true);
     } 
     private void OnPickedResponse(Response response, int responseIndex)
