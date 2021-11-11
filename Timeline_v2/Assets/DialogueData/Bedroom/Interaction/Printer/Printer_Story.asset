@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Printer_Story
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '%0%I got this when I went away to university. I was 18 at the time.'
+  - "%0%\u2026It didn\u2019t really get a whole lot of use, "
+  - "%0%but now that I\u2019m home, both my parents use it for their work.\r"
+  - "%0%I have no idea where my parents are right now. Maybe they\u2019re staying
+    with Mimi?"
+  - '%0%Mimi is what I call my grandma, by the way.'
+  responses: []

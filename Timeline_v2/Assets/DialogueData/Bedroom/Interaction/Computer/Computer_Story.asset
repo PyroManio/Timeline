@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Computer_Story
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "%0%I used to write a lot when I was a kid. And I mean a LOT.\r"
+  - "%0%So far, I\u2019ve written over 500 pages of short stories, novels, and various
+    works of fiction."
+  - '%0%Single-spaced, 12-point font Times New Roman. None of that double-spacing
+    bs.'
+  - '%0%Whenever I had free time in high school, you could usually find me working
+    on some story.'
+  - '%0%I always stored them on my laptop. And I kept a few of them backed up on
+    flash drives.'
+  - "%0%\u2026God I hope that they\u2019re all still on there and that they weren\u2019t
+    erased."
+  - "%0%I couldn\u2019t imagine what I\u2019d do if all of my work just up and disappeared.
+    I\u2019d be crushed."
+  responses: []

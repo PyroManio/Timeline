@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Talk_Why
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "%0%Well, I kind of volunteered for something called the \u201CChromatic Project\u201D."
+  - '%0%The advertisement said it could help with all sorts of things.
+
+'
+  - "%0%\u201CThe Chromatic Project pushes you to your physical, mental, \n"
+  - "%0%and emotional limits!\u201D"
+  - "%0%\u201CJoin today to help yourself achieve enlightenment!\u201D\n"
+  - '%0%They were looking for test subjects, so I volunteered.'
+  - "%0%Only\u2026 I don\u2019t remember going to Pandora Laboratories today.\r"
+  - '%0%The last thing I remember was getting in a fight with my mom over the test.'
+  - '%0%The next thing I know I woke up in my room with everything locked down!'
+  - "%0%Weird, right? In fact, I don\u2019t think it was even 10 minutes after I
+    sent the e-mail "
+  - "%0%that all this weird stuff started happening!\r"
+  - "%0%How\u2019d they even make me fall asleep, anyways?"
+  - "%0%Maybe I was out for a few hours while they set this up? That\u2019d make
+    sense\u2026\r"
+  - '%0%Sorry, kind of went on a tangent, there.'
+  - '%0%Is there anything else you want to know?
+
+
+'
+  responses:
+  - responseText: Well...
+    dialogueObject: {fileID: 11400000, guid: 0d6715d0c3534a54c8360650e3596312, type: 2}

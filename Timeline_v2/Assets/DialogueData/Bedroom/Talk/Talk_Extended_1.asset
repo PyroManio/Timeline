@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Talk_Extended_1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - First I heard of it. I just know it as the Chromatic Project.
+  - Although they did say that it WAS a group test.
+  - "Maybe it\u2019s \u201Cextended\u201D because you\u2019re not here?"
+  - Makes sense to me, at least.
+  - But the way they phrased it, it sounded like there would be a lot of us, not
+    just two.
+  responses:
+  - responseText: Phrased it?
+    dialogueObject: {fileID: 0}
