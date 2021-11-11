@@ -648,7 +648,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 142594636}
+<<<<<<< Updated upstream
   pauseMenu: {fileID: 142594643}
+=======
+  pauseMenu: {fileID: 0}
+>>>>>>> Stashed changes
   moveSpeed: 5
   direction: Down
   rb: {fileID: 57339887}
