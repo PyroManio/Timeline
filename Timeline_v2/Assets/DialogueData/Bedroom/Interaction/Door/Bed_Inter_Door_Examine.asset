@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Door_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - "Uh, hello? It\u2019s locked. It\u2019s not just gonna magically unlock itself."
+  - "Though, the lock itself used to be broken. And now it\u2019s been fixed?"
+  - I just want to get out of here already!
   responses: []

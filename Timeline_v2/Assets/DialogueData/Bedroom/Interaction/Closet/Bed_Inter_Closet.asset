@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Closet
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - Yeah, this is my closet. It stores my dress clothes and outdoor clothes in it.
   responses: []

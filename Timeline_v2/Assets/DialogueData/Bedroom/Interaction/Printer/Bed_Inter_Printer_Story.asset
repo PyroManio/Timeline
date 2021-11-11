@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Printer_Story
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - I got this when I went away to university. I was 18 at the time.
+  - "\u2026It didn\u2019t really get a whole lot of use, but now that I\u2019m home,
+    both my parents use it for their work.\r"
+  - "I have no idea where my parents are right now. Maybe they\u2019re staying with
+    Mimi?"
+  - Mimi is what I call my grandma, by the way.
   responses: []

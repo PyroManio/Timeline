@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Trash
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - "It\u2019s my trash can. I usually use it for stuff I leave in my pockets. It\u2019s
+    empty now but\u2026"
   responses: []

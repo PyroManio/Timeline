@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Bed
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
-  responses: []
+  - "Ah, this is my bed. It\u2019s also where I woke up when I started this whole
+    thing."
+  responses:
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: 566eb44746be08e4889b35e13f56e1c0, type: 2}
+  - responseText: Examine
+    dialogueObject: {fileID: 11400000, guid: be7b839658757334db8ab1b1ada16cbb, type: 2}

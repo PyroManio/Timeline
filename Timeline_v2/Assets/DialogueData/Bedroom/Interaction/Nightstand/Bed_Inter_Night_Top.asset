@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Night_Top
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - "Yeah, it\u2019s locked. Looks like there are a couple of screws here."
+  - I could probably get them off if I had the right tool. Probably a Phillips head
+    screwdriver.
   responses: []

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Bed_Inter_Computer_Examine
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "This laptop definitely isn\u2019t mine. Plus it looks like I can\u2019t really
+    use it like a normal laptop."
+  - 'It needs a password to get in. '
+  - "I already tried the obvious stuff but it\u2019s not letting me log in."
+  - "But I didn\u2019t see anything in the room that came even CLOSE to a password."
+  - "But if it\u2019s not in the room, how the hell am I supposed to figure it out?"
+  responses: []

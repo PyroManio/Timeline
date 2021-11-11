@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Computer_Examine_Unlock
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - "The computer\u2019s unlocked now. The only things on there are two text files."
+  - At least I can store other things on it from now on.
+  - "\u2026Kinda wish I had MY laptop though. "
   responses: []

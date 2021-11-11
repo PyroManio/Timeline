@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Door_Story
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - "Don\u2019t get too excited, it\u2019s literally just the door to my room.\r"
+  - "Normally, it\u2019s not supposed to lock although there were definitely times
+    when I wish it did."
+  - "Let\u2019s not talk about that, though. Moving on."
   responses: []

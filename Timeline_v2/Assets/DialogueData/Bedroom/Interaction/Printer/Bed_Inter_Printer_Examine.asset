@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Bedroom_Talk_Necklace_0
+  m_Name: Bed_Inter_Printer_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - "Doesn\u2019t look like there\u2019s anything here. Duh. I need to print something
+    for anything to be here!\r"
   responses: []

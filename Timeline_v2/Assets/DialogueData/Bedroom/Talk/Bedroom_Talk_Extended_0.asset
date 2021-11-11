@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Bedroom_Talk_Extended_0
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - Huh? Extended?
+  - Are you talking about the Chromatic Project?
+  responses:
+  - responseText: The Chromatic Project Extended Testing Program
+    dialogueObject: {fileID: 0}

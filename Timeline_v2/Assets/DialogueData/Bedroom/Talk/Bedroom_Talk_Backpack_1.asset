@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Bedroom_Talk_Backpack_1
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - "\u2026 Never mind. Let\u2019s start looking for clues."
   responses: []
