@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
 
     //NEW
     [SerializeField] private DialogueUI dialogueUI;
-
+    [SerializeField] private PauseMenu pauseMenu;
+    public PauseMenu PauseMenu => pauseMenu;
     public float moveSpeed = 5f;
     
     // this variable might end up never being used, but it might be helpful
@@ -25,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialogueUI.IsOpen) 
+        if (dialogueUI.IsOpen || pauseMenu.IsOpen) 
         {
             movement.x=0;
             movement.y=0;
@@ -72,12 +73,19 @@ public class PlayerMovement : MonoBehaviour
         temp.y= Mathf.RoundToInt( temp.y / 0.0625f) * 0.0625f;
         
         rb.MovePosition( temp);
-        //NEW
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            if(Interactable != null)
+        // REMEMBER, MAKE SURE THIS CAN'T BE CHECKED DURING A CUTSCENE 
+        if (!dialogueUI.IsOpen){
+            if(Input.GetKeyDown(KeyCode.E))
             {
-                Interactable.Interact(PlayerMovement:this);
+                if(Interactable != null)
+                {
+                    Interactable.Interact(PlayerMovement:this);
+                }
+            }
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (pauseMenu.IsOpen) pauseMenu.closePauseMenu();
+                else pauseMenu.openPauseMenu();
             }
         }
     }
