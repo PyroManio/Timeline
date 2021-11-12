@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Help_5
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "%0%The nightstand said to \u201CSEEK HELP\u201D for the password."
+  - "%0%But I don\u2019t see anything in this room that would \u201CHELP\u201D find
+    the password."
+  - "%0%But if it\u2019s not in this room, then where the hell is the password?"
+  - "%0%Unless\u2026 it\u2019s something only YOU can see? Or access? Where the hell
+    would that be?"
+  responses: []

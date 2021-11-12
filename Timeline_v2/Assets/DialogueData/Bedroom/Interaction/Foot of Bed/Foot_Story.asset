@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Foot_Story
+  m_EditorClassIdentifier: 
+  dialogue:
+  - I always carried all my books around in my backpack when I was young.
+  - Everyone else always told me my backpack weighed a ton. Maybe I just got used
+    to it?
+  - The weight also made for a good anti-theft strategy too, I guess.
+  - "The reason was that I would always forget my books in class if I didn\u2019t
+    have them on me."
+  - "So, I just got used to carrying them around with me. That way I\u2019d never
+    forget them."
+  - I also carried around my laptop in there along with its charger.
+  - That way I could do anything from homework to writing anywhere I wanted.
+  - I was often at a lot of after-school activities when I was a kid, so I needed
+    to be mobile.
+  - I can still remember sitting backstage working on finishing an essay while I
+    was running tech crew.
+  - "Let\u2019s keep looking for clues."
+  responses: []

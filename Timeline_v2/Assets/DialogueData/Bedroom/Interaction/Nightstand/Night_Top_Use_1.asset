@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Night_Top_Use_1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "%0%Let\u2019s see\u2026 there\u2019s a lot of random junk in here. It\u2019s
+    my nightstand after all."
+  - "%0%But looks like there\u2019s a piece of paper in here."
+  - "%0%It says, \u201CSEEK HELP FOR THE PASSWORD.\u201D"
+  - '%0%What the hell does that mean? Are we supposed to call someone?'
+  - '%0%How the hell are we supposed to do that without access to an electronic device,
+    genius?'
+  - "%0%Well, at least we unlocked something, but it doesn\u2019t look like it did
+    much.\r\n"
+  - "%0%I\u2019ll hold on to the paper for now."
+  - '[Strange Note added to inventory]'
+  responses: []

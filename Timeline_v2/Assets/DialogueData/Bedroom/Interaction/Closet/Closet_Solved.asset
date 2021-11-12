@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Closet_Solved
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "%0%Aha! It\u2019s finally open!"
+  - '%0%Jeez it really feels like they hid these codes extremely carefully.'
+  - '%0%I mean, why hide it on a window of all places?'
+  - '%0%Then again, I suppose the point of an escape room is to make you look in
+    unexpected places.'
+  - "%0%Anyways, they wouldn\u2019t have locked this up for no reason."
+  - "%0%Let\u2019s look inside."
+  responses: []

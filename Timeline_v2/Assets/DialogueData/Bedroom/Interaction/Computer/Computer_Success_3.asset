@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Computer_Success_3
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '%0%Oh. Well, I guess that makes sense.'
+  - "%0%Well, as long as it\u2019s part of the test, I guess. Still, could they make
+    it a little less creepy?"
+  - "%0%But\u2026 it\u2019s got me thinking. Do you know about Schrodinger\u2019s
+    Cat?"
+  responses:
+  - responseText: Yes
+    dialogueObject: {fileID: 0}
+  - responseText: No
+    dialogueObject: {fileID: 0}

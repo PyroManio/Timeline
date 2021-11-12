@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
+  m_Name: Box_Solved_4
+  m_EditorClassIdentifier: 
+  dialogue:
+  - '%0%So this is your idea of a joke, right? Some twisted, demented joke?'
+  - "%0%I AM NOT A MONSTER YOU FREAKS! I WON\u2019T LET YOU\u2026\r"
+  - "Worthless\u2026"
+  - "%0%I won\u2019t let you hold this against me\u2026"
+  - "You truly are pathetic\u2026"
+  - "%0%Who said that? I\u2019m not pathetic!\r"
+  - '%0%SHUT THE HELL UP!!!'
+  - '%0%WHAT THE HELL DO YOU KNOW ANYWAYS?'
+  responses:
+  - responseText: Who are you talking to?
+    dialogueObject: {fileID: 11400000, guid: 836e5803062d43a4bbd096389cd0981f, type: 2}
