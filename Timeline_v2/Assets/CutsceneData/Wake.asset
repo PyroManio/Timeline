@@ -15,3 +15,6 @@ MonoBehaviour:
   cutsceneFlow:
   - {fileID: 11400000, guid: 6991a1303cf89464e85a5f120be8a711, type: 2}
   - {fileID: 11400000, guid: dc20a7102cfc47c40b2394cea0e54718, type: 2}
+  - {fileID: 11400000, guid: 7e3ee0c022746cf4bb45428fa607d096, type: 2}
+  - {fileID: 11400000, guid: b0bb6bbb5b9d1104da6fa59311cf139d, type: 2}
+  - {fileID: 11400000, guid: 59fb8707ab1c7e74caf8bdeb2fcf3981, type: 2}

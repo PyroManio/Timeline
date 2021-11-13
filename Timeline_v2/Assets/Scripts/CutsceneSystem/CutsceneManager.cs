@@ -43,9 +43,13 @@ public class CutsceneManager : MonoBehaviour
     }
     private IEnumerator PlayTimeline(TimelineAsset givenTimeline, bool isLoop)
     {
+        //Debug.Log(timelineManager.isPlaying);
         yield return null;
-        timelineManager.ChangeTimeline(givenTimeline, isLoop);
-        timelineManager.Play();
+        timelineManager.stopTimeline();
+        //timelineManager.ChangeTimeline(givenTimeline, isLoop);
+        //timelineManager.Play();
+        Debug.Log("F");
+        timelineManager.PlayTimeline(givenTimeline, isLoop);
         //give this to the timeliine manager to play it???
         while (timelineManager.isPlaying())
         {
