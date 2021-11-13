@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PauseMenu pauseMenu;
     public PauseMenu PauseMenu => pauseMenu;
     public float moveSpeed = 5f;
+    public bool inCutscene = true;
     
     // this variable might end up never being used, but it might be helpful
     public string direction = "Down";
@@ -26,6 +27,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(inCutscene);
+        if (inCutscene)
+        {
+            movement.x=0;
+            movement.y=0;
+            
+            return;
+        }
         if (dialogueUI.IsOpen || pauseMenu.IsOpen) 
         {
             movement.x=0;
@@ -66,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
+        if (inCutscene) return;
         // Movement
         Vector2 temp;
         temp=rb.position + movement * moveSpeed * Time.fixedDeltaTime;

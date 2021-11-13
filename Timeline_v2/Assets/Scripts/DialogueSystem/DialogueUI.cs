@@ -57,7 +57,12 @@ public class DialogueUI : MonoBehaviour
         responseHandler.AddResponseEvents(responseEvents);
     }
 
-
+    public IEnumerator InTheLoop(DialogueObject dialogueObject)
+    {
+        ShowDialogue(dialogueObject);
+        StepThroughDialogue(dialogueObject);
+        yield return null;
+    }
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
         for (int i =0; i<dialogueObject.Dialogue.Length;i++)
@@ -87,7 +92,7 @@ public class DialogueUI : MonoBehaviour
         
     }
     private IEnumerator RunTypingEffect(string dialogue)
-    {
+    {   
         typewritterEffect.Run(dialogue, textLabel);
         while (typewritterEffect.IsRunning){
             yield return null;
