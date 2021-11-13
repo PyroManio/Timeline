@@ -11,7 +11,7 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField] GameObject screenManager;
 
     private bool cutscenePlaying=false;
-    private string currentTypePlaying="";
+
     private CutsceneObject currentCutscene;
     public void PlayCutscene(CutsceneObject cutsceneStuff){
         //timelineManager.Play();
@@ -27,12 +27,10 @@ public class CutsceneManager : MonoBehaviour
         {
             if (currentCutscene.CutsceneFlow[i].HasTimeline)
             {
-                currentTypePlaying="timeline";
                 yield return (PlayTimeline(currentCutscene.CutsceneFlow[i].TimelineObject, currentCutscene.CutsceneFlow[i].IsLoop));
             }
             else if (currentCutscene.CutsceneFlow[i].HasDialogue)
             {
-                currentTypePlaying="dialogue";
                 yield return (PlayDialogue(currentCutscene.CutsceneFlow[i].dialogue));
             }
             
