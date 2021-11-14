@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b338783c11218046913d2f9455423cc, type: 3}
   m_Name: ScrewDriver
   m_EditorClassIdentifier: 
-  itemName: 
-  itemType: 
+  itemName: Screw-Driver
+  itemType: screwDriver
