@@ -9,15 +9,12 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         itemList = new List<Item>();
-        for (int i=0; i<10;i++){AddItem(new Item("screwDriver", "Screw-Driver"));}
-        
-        AddItem(new Item("screwDriver", "Screw-Driver"));
-        AddItem(new Item("teeth", "Teeth"));
     }
     // Add an Item to the inventory. Given the item to add.
     public void AddItem(Item item){
         itemList.Add(item);
     }
+    // Due to the new structure of items, this stuff below may be no longer used
     public void AddItem(string name, string itemType)
     {
         itemList.Add(new Item(name, itemType));
@@ -33,9 +30,9 @@ public class Inventory : MonoBehaviour
     }
     // Using the string, it finds an Item in the itemList that shares the itemType
     // If none exists, it returns null
-    public Item getItem(string item){
+    public Item getItem(string itemType){
         foreach (Item checkItem in itemList){               // Checks through all the items in itemList
-            if ( checkItem.GetItemType().Equals( item ) ){  // If the item shares the same itemType as the given string
+            if ( checkItem.ItemType.Equals( itemType ) ){  // If the item shares the same itemType as the given string
                 return checkItem;                           // Returns the item
             }
         }

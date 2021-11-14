@@ -76,7 +76,7 @@ public class InventoryUI : MonoBehaviour
         {
             GameObject itemSlot = Instantiate(itemButtonTemplate.gameObject,itemContainer.transform);
             itemSlot.gameObject.SetActive(true);
-            itemSlot.GetComponentInChildren<TMP_Text>().text = inventoryData.ItemList[i + (page * 8)].GetName();
+            itemSlot.GetComponentInChildren<TMP_Text>().text = inventoryData.ItemList[i + (page * 8)].ItemName;
             itemBoxList.Add(itemSlot);
         }
     }
