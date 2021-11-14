@@ -5,12 +5,13 @@ using UnityEngine.Playables;
 using UnityEngine.Timeline;
 public class TimelineManager : MonoBehaviour
 {
-    public PlayableDirector playableDirector;
+    public PlayableDirector[] playableDirector;
     public bool timelineEnd=false;
     public bool isLoop;
+    private TimelineAsset[] backgroundTimeline;
     private TimelineAsset currentTimeline;
     public void Play(){
-        playableDirector.Play();
+        //playableDirector.Play();
     }
     public void ChangeTimeline(TimelineAsset givenTimeline, bool loop)
     {
@@ -22,12 +23,12 @@ public class TimelineManager : MonoBehaviour
         isLoop=loop;
 
     }
-    public void PlayTimeline(TimelineAsset givenTimeline, bool loop)
+    public void PlayTimeline(TimelineAsset givenTimeline, bool loop, int index)
     {
         timelineEnd=false;
         isLoop=loop;
         currentTimeline=givenTimeline;
-        playableDirector.Play(currentTimeline);
+        playableDirector[0].Play(currentTimeline);
     }
     public bool isPlaying(){
         if (timelineEnd) 
@@ -40,10 +41,14 @@ public class TimelineManager : MonoBehaviour
     public void timelineEnded()
     {
         timelineEnd=true;
-        if (isLoop) playableDirector.Play(currentTimeline);
+    }
+    public void timelineLoopEnd()
+    {
+        timelineEnd=true;
+        if (isLoop) playableDirector[0].Play(currentTimeline);
     }
     public void stopTimeline()
     {
-        playableDirector.Stop();
+        playableDirector[0].Stop();
     }
 }
