@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
+    //[SerializeField] private bool clickable;
 
     public void UpdateDialogueObject(DialogueObject dialogueObject)
     {

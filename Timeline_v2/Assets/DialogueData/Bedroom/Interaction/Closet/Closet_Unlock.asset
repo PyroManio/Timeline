@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Closet
+  m_Name: Closet_Unlock
   m_EditorClassIdentifier: 
   dialogue:
   - '%0%Yeah, this is my closet. It stores my dress clothes and outdoor clothes in
     it.'
   responses:
   - responseText: Examine
-    dialogueObject: {fileID: 11400000, guid: 3165e5ce87c6732498facacdea7c2687, type: 2}
+    dialogueObject: {fileID: 11400000, guid: 52a596061f963b4459720118147db686, type: 2}
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: b0ff5f9fe2bf50d4ea04806d6cc52007, type: 2}
   - responseText: Exit
     dialogueObject: {fileID: 0}
