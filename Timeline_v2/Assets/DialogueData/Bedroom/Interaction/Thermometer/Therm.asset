@@ -21,4 +21,8 @@ MonoBehaviour:
     something."
   - "%0%Looks like it\u2019s between 76 and 80 degrees right now. That\u2019s pretty
     normal, though."
-  responses: []
+  responses:
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: 1108d3999b5ea0d499eb53145995c6b3, type: 2}
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
