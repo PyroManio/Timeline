@@ -38,16 +38,19 @@ public class LockerCode : MonoBehaviour
     public void openLocker()
     {
         if (isSolved) return;
+        GetComponent<ClickableObjectHandler>().imOutOfVariableNames = false;
         isOpen=true;
         lockerObject.SetActive(true);
     }
     public void closeLocker()
     {
+        GetComponent<ClickableObjectHandler>().imOutOfVariableNames = true;
         isOpen=false;
         lockerObject.SetActive(false);
     }
     private void OnPickedResponse(int index, string buttonType)
     {
+        if (GetComponent<ClickableObjectHandler>().dialogueOpen) return;
         switch (buttonType)
         {
             // Add 1

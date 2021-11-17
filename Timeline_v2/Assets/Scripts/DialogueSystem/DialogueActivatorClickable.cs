@@ -6,7 +6,7 @@ public class DialogueActivatorClickable : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
     //[SerializeField] private DialogueUI dialogueUI;
-    private bool clickable = true;
+    //private bool clickable = true;
     
     void Start(){
         GetComponent<Image>().color=new Color(1f,1f,1f,0f);
