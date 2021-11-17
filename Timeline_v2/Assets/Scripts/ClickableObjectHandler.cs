@@ -8,6 +8,7 @@ public class ClickableObjectHandler : MonoBehaviour
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private GameObject[] clickableObjects;
     [SerializeField] private UnityEvent[] objectEvents;
+    public bool imOutOfVariableNames = true;
     // Start is called before the first frame update
     private void Start()
     {
@@ -20,7 +21,7 @@ public class ClickableObjectHandler : MonoBehaviour
 
     private void OnPickedResponse(int index){
         if (dialogueUI.IsOpen) return;
-        if (index>= objectEvents.Length) return;
+        if (index >= objectEvents.Length) return;
         //Debug.Log();
         //if (!dialogueUI.IsOpen && index < objectEvents.Length) objectEvents[index].Invoke();
         objectEvents[index].Invoke();

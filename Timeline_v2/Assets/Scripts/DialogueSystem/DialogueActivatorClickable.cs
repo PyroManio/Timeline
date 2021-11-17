@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class DialogueActivatorClickable : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
-    [SerializeField] private DialogueUI dialogueUI;
+    //[SerializeField] private DialogueUI dialogueUI;
     private bool clickable = true;
     
     void Start(){
@@ -18,7 +18,7 @@ public class DialogueActivatorClickable : MonoBehaviour, IInteractable
     }
     private void OnPickedResponse(){
         Debug.Log("bbb");
-        Interact(dialogueUI);
+        //Interact(dialogueUI);
     }
     public void Interact(PlayerMovement PlayerMovement)
     {
