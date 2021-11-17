@@ -9,11 +9,12 @@ public class ClickableObjectHandler : MonoBehaviour
     [SerializeField] private GameObject[] clickableObjects;
     [SerializeField] private UnityEvent[] objectEvents;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         for (int i=0; i < clickableObjects.Length; i++){
             //WHY IN THE WORLD IS THE LAST I ENDING UP AS A 1???? HOW THE HELL
-            clickableObjects[i].GetComponentInChildren<Button>().onClick.AddListener( () => OnPickedResponse(i-1));
+            int num = i;
+            clickableObjects[i].GetComponentInChildren<Button>().onClick.AddListener( () => OnPickedResponse(num));
         }
     }
 
