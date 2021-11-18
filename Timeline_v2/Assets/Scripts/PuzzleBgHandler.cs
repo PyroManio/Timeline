@@ -7,9 +7,9 @@ public class PuzzleBgHandler : MonoBehaviour
     [SerializeField] private Sprite[] bgSprites;
     public void changeBG(int index)
     {
-        Debug.Log("f");
+        //Debug.Log("f");
         if (index >= bgSprites.Length && index < 0) return;
-        Debug.Log(index);
+        //Debug.Log(index);
         GetComponent<Image>().sprite = bgSprites[index];
     }
 }

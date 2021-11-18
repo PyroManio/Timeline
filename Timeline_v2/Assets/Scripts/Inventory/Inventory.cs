@@ -28,6 +28,9 @@ public class Inventory : MonoBehaviour
     public bool HasItem(string item){
         return (getItem(item) != null);     // If its given an item, it returns true. Else, it returns false.
     }
+    public bool HasItem(Item item){
+        return (getItem(item.ItemType) != null);     // If its given an item, it returns true. Else, it returns false.
+    }
     // Using the string, it finds an Item in the itemList that shares the itemType
     // If none exists, it returns null
     public Item getItem(string itemType){
@@ -38,6 +41,7 @@ public class Inventory : MonoBehaviour
         }
         return null;    // If no item exists in the inventory, returns null
     }
+    
     // Removes the item from the itemList
     // Given the itemType string, uses getItem function to find the Item to delete it
     public void RemoveItem(string item){

@@ -16,17 +16,13 @@ public class DialogueActivatorClickable : MonoBehaviour, IInteractable
     {
         this.dialogueObject = dialogueObject;
     }
-    private void OnPickedResponse(){
-        Debug.Log("bbb");
-        //Interact(dialogueUI);
-    }
+
     public void Interact(PlayerMovement PlayerMovement)
     {
         //messy af code i am so sorry
     }
     public void Interact(DialogueUI dialogueUI)
     {
-        Debug.Log("fff");
         if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject==dialogueObject)
         {
             dialogueUI.AddResponseEvents(responseEvents.Events);

@@ -7,8 +7,7 @@ public class ScreenHandler : MonoBehaviour
     [SerializeField] GameObject[] screens;
     void Start()
     {
-        screens[0].SetActive(true);
-        screens[1].SetActive(false);
+        changeScreen(0);
     }
     void LateUpdate()
     {
@@ -24,5 +23,9 @@ public class ScreenHandler : MonoBehaviour
             screens[0].SetActive(true);
             screens[1].SetActive(false);
         }
+    }
+    public void changeScreen(int index){
+        for (int i=0; i<screens.Length; i++) screens[i].SetActive(false);
+        screens[index].SetActive(true);
     }
 }
