@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     //private GameObject[] optionBoxList;
     [SerializeField] private GameObject optionBoxContainer;
     [SerializeField] private InventoryUI inventoryUI;
+    [SerializeField] private DialogueActivator talkDialogue;  
     public bool hasMap = false;
     public bool hasBag = false;
     public bool IsOpen { get; private set; }
@@ -19,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         //resume, map, inventory, save, quit
-        string [] boxNames={"Resume","Map","Inventory","Save","Quit"};
+        string [] boxNames={"Resume","Map","Inventory","Talk","Quit"};
         for (int i=0; i<boxNames.Length; i++)
         {
             GameObject optionSlot=Instantiate(optionBoxTemplate.gameObject,optionBoxContainer.transform);
@@ -59,8 +60,11 @@ public class PauseMenu : MonoBehaviour
                     }
                     break;
 
-                case "Save":
+                case "Talk":
                 // Save the game
+                    // I lied, there is no saving
+                    talkDialogue.Interact(GetComponentInChildren<DialogueUI>());
+                    closePauseMenu();
                     break;
                 case "Quit":
                 // Open "Do you want to quit" box

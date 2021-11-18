@@ -21,5 +21,7 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: 154c97868cad0c94996b7340be1aa192, type: 2}
   - responseText: What is this place?
     dialogueObject: {fileID: 11400000, guid: 89028191312c515469f421ccacc698d6, type: 2}
+  - responseText: Help
+    dialogueObject: {fileID: 11400000, guid: 213caf83a058d20429812a8559d5706e, type: 2}
   - responseText: End Conversation
     dialogueObject: {fileID: 11400000, guid: ebf58db285592e14db80dea070592d39, type: 2}

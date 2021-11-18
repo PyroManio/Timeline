@@ -38,4 +38,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         }
         PlayerMovement.DialogueUI.ShowDialogue(dialogueObject);
     }
+    public void Interact(DialogueUI dialogueUI)
+    {
+        dialogueUI.ShowDialogue(dialogueObject);
+    }
 }
