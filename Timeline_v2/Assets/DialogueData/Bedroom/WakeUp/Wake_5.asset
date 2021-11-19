@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Wake_5
   m_EditorClassIdentifier: 
   dialogue:
-  - "Well, it looks like someone\u2019s there\u2026"
-  - Who are you anyways?
+  - "%2%Well, it looks like someone\u2019s there\u2026"
+  - '%7%Who are you anyways?'
   - '[I am %PlayerName%]'
-  - "%PlayerName%? Is that what I\u2019m supposed to call you?"
+  - "%7%%PlayerName%? Is that what I\u2019m supposed to call you?"
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 0}

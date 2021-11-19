@@ -13,32 +13,32 @@ MonoBehaviour:
   m_Name: Box_Solved_10
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%I\u2026"
-  - "%0%I\u2019m sorry, regardless."
-  - "%0%But\u2026 thanks. For not\u2026 completely shutting me out."
-  - '%0%But now you know.'
-  - '%0%That computer, it said I had to confess my sins to get out of here.'
-  - '%0%There were seven words on there.
+  - "%2%I\u2026"
+  - "%3%I\u2019m sorry, regardless."
+  - "%2%But\u2026 thanks. For not\u2026 completely shutting me out."
+  - '%2%But now you know.'
+  - '%2%That computer, it said I had to confess my sins to get out of here.'
+  - '%2%There were seven words on there.
 
     Alone'
-  - '%0%Beast
+  - '%2%Beast
 
     Car
 
     Dance'
-  - '%0%Exam
+  - '%2%Exam
 
     Freeze
 
     Girlfriend'
-  - '%0%This one was Freeze. I froze in that moment.'
-  - '%0%But there were six more. Six more words that correspond to my darkest memories.'
-  - '%0%And honestly, the other six are far worse than this one. '
-  - '%0%If it comes down to it, if it REALLY comes down to it, I could probably talk
+  - '%2%This one was Freeze. I froze in that moment.'
+  - '%2%But there were six more. Six more words that correspond to my darkest memories.'
+  - '%3%And honestly, the other six are far worse than this one. '
+  - '%3%If it comes down to it, if it REALLY comes down to it, I could probably talk
     about 5 of them.'
-  - "%0%But there\u2019s one that I\u2019ll NEVER talk about, no matter what. "
-  - "%0%So\u2026 let\u2019s hope that we get out of here before we hit that point."
-  - "%0%Well\u2026 at least things will be interesting. "
+  - "%10%But there\u2019s one that I\u2019ll NEVER talk about, no matter what. "
+  - "%3%So\u2026 let\u2019s hope that we get out of here before we hit that point."
+  - "Well\u2026 at least things will be interesting. "
   responses:
   - responseText: Where did that voice come from?
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 812381a640ded824ebad59c696ba64e6, type: 2}

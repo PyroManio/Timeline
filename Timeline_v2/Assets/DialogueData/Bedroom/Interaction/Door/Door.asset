@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Door
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Yeah, the door\u2019s locked, genius. It was literally the first thing I
+  - "%5%Yeah, the door\u2019s locked, genius. It was literally the first thing I
     tried."
   responses: []

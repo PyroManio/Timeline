@@ -15,10 +15,10 @@ MonoBehaviour:
   dialogue:
   - "%0%I have had a lot of trash cans here. The first one I had got moved to my
     bathroom.\r"
-  - '%0%The second one was a flimsy plastic one that cracked when it hit the marble
+  - '%2%The second one was a flimsy plastic one that cracked when it hit the marble
     downstairs.'
-  - '%0%And then there was a wicker one, but that thing was so old and gross it was
+  - '%2%And then there was a wicker one, but that thing was so old and gross it was
     fraying everywhere.'
-  - "%0%This one\u2019s on its way out too. The joints holding one end together are
+  - "%2%This one\u2019s on its way out too. The joints holding one end together are
     starting to come apart."
   responses: []

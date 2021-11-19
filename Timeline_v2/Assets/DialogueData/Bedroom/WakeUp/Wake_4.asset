@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wake_4
   m_EditorClassIdentifier: 
   dialogue:
-  - AH! It talked!
+  - '%4%AH! It talked!'
   responses: []

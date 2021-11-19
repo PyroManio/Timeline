@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Help_8
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Why are you still asking me for help?'
-  - "%0%WE HAVE A KEY! LET\u2019S TRY USING IT ON THE DOOR!"
+  - '%5%Why are you still asking me for help?'
+  - "%6%WE HAVE A KEY! LET\u2019S TRY USING IT ON THE DOOR!"
   - '%0%Maybe it will finally let us out of here!'
   responses: []

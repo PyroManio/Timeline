@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wake_6
   m_EditorClassIdentifier: 
   dialogue:
-  - What are you even doing here anyways?
+  - '%7%What are you even doing here anyways?'
   responses:
   - responseText: I am here to assist you.
     dialogueObject: {fileID: 11400000, guid: d74c6fe7794642143bcb0d1783818348, type: 2}

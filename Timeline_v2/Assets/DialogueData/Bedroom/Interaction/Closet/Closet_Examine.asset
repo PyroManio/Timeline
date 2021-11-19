@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Closet_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Just like everything else here, the closet is locked. And with a combination
+  - '%5%Just like everything else here, the closet is locked. And with a combination
     lock, I guess?'
-  - '%0%Looks like I need a 4-digit combination to unlock it.'
+  - '%2%Looks like I need a 4-digit combination to unlock it.'
   responses: []

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Foot_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - 'We found my backpack here. '
-  - "Now we\u2019re just looking at the corner of my bed."
+  - '%2%We found my backpack here. '
+  - "%2%Now we\u2019re just looking at the corner of my bed."
   responses: []

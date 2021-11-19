@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Box_Solved_9_Dot
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%\u2026 You\u2026 aren\u2019t going to say it?"
+  - "%2%\u2026 You\u2026 aren\u2019t going to say it?"
   responses: []

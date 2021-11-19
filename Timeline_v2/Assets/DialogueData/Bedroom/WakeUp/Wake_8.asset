@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wake_8
   m_EditorClassIdentifier: 
   dialogue:
-  - "Well that\u2019s encouraging\u2026 I\u2019m just gonna leave now."
+  - "%5%Well that\u2019s encouraging\u2026 I\u2019m just gonna leave now."
   responses: []

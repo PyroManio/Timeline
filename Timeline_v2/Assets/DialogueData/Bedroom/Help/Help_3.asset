@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Help_3
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Well we did just find a screwdriver.'
-  - "%0%Maybe we can use it to unlock something in the room? Or\u2026 unscrew? I
+  - '%7%Well we did just find a screwdriver.'
+  - "%7%Maybe we can use it to unlock something in the room? Or\u2026 unscrew? I
     guess?"
   responses: []

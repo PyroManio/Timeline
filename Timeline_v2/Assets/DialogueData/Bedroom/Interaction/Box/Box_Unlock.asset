@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Box_Unlock
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%I don\u2019t think we need this anymore. There\u2019s nothing else in this
+  - "%3%I don\u2019t think we need this anymore. There\u2019s nothing else in this
     box."
   responses: []

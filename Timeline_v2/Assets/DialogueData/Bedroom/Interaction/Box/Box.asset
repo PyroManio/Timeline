@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Box
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%I don\u2019t recognize this box. Looks like we need another code to unlock
+  - "%2%I don\u2019t recognize this box. Looks like we need another code to unlock
     it."
   responses: []

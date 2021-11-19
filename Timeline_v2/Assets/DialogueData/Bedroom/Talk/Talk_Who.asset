@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Talk_Who
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Oh me? Right, it might help if you knew a little bit about me.\r"
-  - '%0%You can call me Leo.'
+  - "%7%Oh me? Right, it might help if you knew a little bit about me.\r"
+  - '%1%You can call me Leo.'
   - "%0%I\u2019ve always been pretty smart, but I\u2019d rather learn how to sing."
-  - "%0%I\u2019m going\u2026 to university to learn how to sing professionally."
-  - "%0%Maybe I\u2019ll sing something for you when we get out of here."
+  - "%3%I\u2019m going\u2026 to university to learn how to sing professionally."
+  - "%1%Maybe I\u2019ll sing something for you when we get out of here."
   responses:
   - responseText: Well...
     dialogueObject: {fileID: 11400000, guid: 0d6715d0c3534a54c8360650e3596312, type: 2}

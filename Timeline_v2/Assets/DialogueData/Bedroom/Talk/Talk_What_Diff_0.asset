@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Talk_What_Diff_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Well, duh it\u2019s different! I\u2019m locked in!"
-  - "%0%My door isn\u2019t supposed to be locked!"
-  - '%0%Not to mention all this stuff set up in here with me!
+  - "%6%Well, duh it\u2019s different! I\u2019m locked in!"
+  - "%6%My door isn\u2019t supposed to be locked!"
+  - '%6%Not to mention all this stuff set up in here with me!
 
 '
-  - "%0%It definitely wasn\u2019t like this when I left this morning! They must work
+  - "%7%It definitely wasn\u2019t like this when I left this morning! They must work
     pretty fast\u2026"
   - "%0%Still I guess escaping from one room isn\u2019t SO bad, right?\r"
-  - '%0%It gives me a chance to exercise some critical thinking skills.'
+  - '%1%It gives me a chance to exercise some critical thinking skills.'
   - "%0%Plus, most people have to PAY for this kind of setup.\r"
-  - '%0%That being said, where are my parents?'
-  - "%0%Or really\u2026 where is anyone?"
+  - '%7%That being said, where are my parents?'
+  - "%7%Or really\u2026 where is anyone?"
   - '%0%I mean, besides you of course.'
   responses:
   - responseText: "I don\u2019t know."

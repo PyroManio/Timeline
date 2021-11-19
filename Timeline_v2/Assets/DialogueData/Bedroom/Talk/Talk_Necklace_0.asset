@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Talk_Necklace_0
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? What are you-
+  - '%2%Huh? What are you-'
+  - '!'
+  - "%2%Huh, that\u2019s weird. I don\u2019t recognize this. Looks like the Yin part
+    of the Yin Yang symbol."
+  - "%7%Or, is it the Yang part? The white part, whatever it\u2019s called. I get
+    them mixed up sometimes."
+  - '%7%Maybe it has something to do with the test? Like a clue or something? I dunno.'
   responses: []

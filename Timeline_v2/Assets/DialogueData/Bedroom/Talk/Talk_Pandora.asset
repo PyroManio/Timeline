@@ -13,39 +13,40 @@ MonoBehaviour:
   m_Name: Talk_Pandora
   m_EditorClassIdentifier: 
   dialogue:
-  - "Seriously, you don\u2019t know? I mean, you kind of have to know who they are
-    to sign up for this thing, right?\r\n"
-  - "But whatever. I\u2019ll tell you what I know."
-  - "Pandora Laboratories is a company that\u2019s dedicated to achieving the best
-    out of everybody."
-  - They run all sorts of tests, from creating super athletes to drug testing, and
-    even wacky things like alternative medicine!
-  - "But what caught my eye was the Chromatic Project. \u201CAchieve enlightenment
+  - "%5%Seriously, you don\u2019t know? I mean, you kind of have to know who they
+    are to sign up for this thing, right?\r\n"
+  - "%2%But whatever. I\u2019ll tell you what I know."
+  - "%0%Pandora Laboratories is a company that\u2019s dedicated to achieving the
+    best out of everybody."
+  - '%1%They run all sorts of tests, from creating super athletes to drug testing,
+    and even wacky things like alternative medicine!'
+  - "%8%But what caught my eye was the Chromatic Project. \u201CAchieve enlightenment
     in less than a month!\u201D\r\n"
-  - 'They went on to say they could supercharge your brain through the latest breakthroughs
-    in science.
+  - '%8%They went on to say they could supercharge your brain through the latest
+    breakthroughs in science.
 
 '
-  - "Honestly, I did it to help myself out with my grades. I know it\u2019s stupid,
+  - "%3%Honestly, I did it to help myself out with my grades. I know it\u2019s stupid,
     but I\u2019m kind of desperate.\r\n"
-  - "See, I have a hard time focusing on anything for a long period of time. And
+  - "%3%See, I have a hard time focusing on anything for a long period of time. And
     trust me, it\u2019s a lot worse than it sounds."
-  - But I met with these guys yesterday and they said they could fix all of that
-    through the Chromatic Project!
-  - Of course, I got in a fight with my parents this morning about it.
-  - Anyways, back on track.
-  - "Apparently, they\u2019re centered somewhere in Germany, but they have labs practically
-    all over the world!"
-  - I saw a flyer for the Chromatic Project in the mall a few days ago.
-  - They had a lab about 15 minutes from where I live, so I decided to check it out.
-  - Of course, I only went there once for the initial interview.
-  - The guys there seemed pretty professional, if a little bit stiff.
-  - "Still, it\u2019s kind of amazing they set this all up in such a short amount
+  - '%1%But I met with these guys yesterday and they said they could fix all of that
+    through the Chromatic Project!'
+  - '%3%Of course, I got in a fight with my parents this morning about it.'
+  - '%0%Anyways, back on track.'
+  - "%0%Apparently, they\u2019re centered somewhere in Germany, but they have labs
+    practically all over the world!"
+  - '%0%I saw a flyer for the Chromatic Project in the mall a few days ago.'
+  - '%0%They had a lab about 15 minutes from where I live, so I decided to check
+    it out.'
+  - '%2%Of course, I only went there once for the initial interview.'
+  - '%0%The guys there seemed pretty professional, if a little bit stiff.'
+  - "%1%Still, it\u2019s kind of amazing they set this all up in such a short amount
     of time."
-  - "I don\u2019t remember them telling me about all THIS.\r\n"
-  - Last thing I remember is getting the letter that I was accepted for the Chromatic
-    Project
-  - and then I went to bed for the night.
-  - I guess the escape room thing is supposed to boost my mental acuity?
-  - I wonder what other tests they have in store for me.
+  - "%5%I don\u2019t remember them telling me about all THIS.\r\n"
+  - '%7%Last thing I remember is getting the letter that I was accepted for the Chromatic
+    Project'
+  - '%7%and then I went to bed for the night.'
+  - '%7%I guess the escape room thing is supposed to boost my mental acuity?'
+  - '%2%I wonder what other tests they have in store for me.'
   responses: []

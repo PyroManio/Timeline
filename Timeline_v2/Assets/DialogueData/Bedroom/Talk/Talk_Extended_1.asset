@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Talk_Extended_1
   m_EditorClassIdentifier: 
   dialogue:
-  - First I heard of it. I just know it as the Chromatic Project.
-  - Although they did say that it WAS a group test.
-  - "Maybe it\u2019s \u201Cextended\u201D because you\u2019re not here?"
-  - Makes sense to me, at least.
-  - But the way they phrased it, it sounded like there would be a lot of us, not
-    just two.
+  - '%2%First I heard of it. I just know it as the Chromatic Project.'
+  - '%7%Although they did say that it WAS a group test.'
+  - "%7%Maybe it\u2019s \u201Cextended\u201D because you\u2019re not here?"
+  - '%2%Makes sense to me, at least.'
+  - '%7%But the way they phrased it, it sounded like there would be a lot of us,
+    not just two.'
   responses:
   - responseText: Phrased it?
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 476086e8a14ad17499ef7a2f6e182510, type: 2}

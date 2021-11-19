@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wake_3
   m_EditorClassIdentifier: 
   dialogue:
-  - Uh, hello? Is someone there?
+  - '%2%Uh, hello? Is someone there?'
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: c03b56be909d13646a7ead165b4880ae, type: 2}

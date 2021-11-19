@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Window
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%All the windows in my room are bolted shut with some kind of metal.'
-  responses: []
+  - '%2%All the windows in my room are bolted shut with some kind of metal.'
+  responses:
+  - responseText: Examine
+    dialogueObject: {fileID: 11400000, guid: a8c1dd51d9d9e694e9fd227a0a683e62, type: 2}
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: f735b9e43c1dc7f44a3e30c26e709c40, type: 2}
+  - responseText: Exit
+    dialogueObject: {fileID: 0}

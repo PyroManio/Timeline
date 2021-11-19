@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Trash_Examine_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%The trash can is empty, but\u2026 it looks like there\u2019s something behind
+  - "%2%The trash can is empty, but\u2026 it looks like there\u2019s something behind
     it."
   - (Leo grabs something behind the trash can)
-  - '%0%T-this!'
-  - "%0%Is\u2026 is that\u2026 blood?"
-  - '%0%This paper is soaked in blood!'
-  - "%0%\u2026"
-  - "%0%Calm down. It\u2019s probably not blood. Why would there be blood in my room?"
-  - "%0%Okay, on closer inspection, it looks like it\u2019s just red paint. \n"
-  - "%0%And it\u2019s still wet. Kinda gross, but\u2026\r"
-  - '%0%I guess I should open it up, huh?'
+  - '%4%T-this!'
+  - "%4%Is\u2026 is that\u2026 blood?"
+  - '%4%This paper is soaked in blood!'
+  - "%4%\u2026"
+  - "%3%Calm down. It\u2019s probably not blood. Why would there be blood in my room?"
+  - "%2%Okay, on closer inspection, it looks like it\u2019s just red paint. \n"
+  - "%2%And it\u2019s still wet. Kinda gross, but\u2026\r"
+  - '%2%I guess I should open it up, huh?'
   responses: []

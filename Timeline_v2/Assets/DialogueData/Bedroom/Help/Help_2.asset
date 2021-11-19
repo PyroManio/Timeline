@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "%0%It seems like there\u2019s something shiny over on the dresser."
-  - "Our inventory\u2019s looking a bit bare. Maybe we can find something we could
+  - "%7%Our inventory\u2019s looking a bit bare. Maybe we can find something we could
     use?"
   responses: []

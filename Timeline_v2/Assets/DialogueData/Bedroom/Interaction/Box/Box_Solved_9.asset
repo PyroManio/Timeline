@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Box_Solved_9
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%So now you know. I was a coward. And I took the credit for finding her.\r"
-  - "%0%I don\u2019t think my mom remembers the events clearly. She was in shock."
-  - "%0%So everyone thinks I found her. But I didn\u2019t."
-  - "%0%I\u2019m a liar. A fraud. My inaction cost someone their life."
-  - "%0%I\u2019m nothing but a monster. Go ahead, say it."
+  - "%10%So now you know. I was a coward. And I took the credit for finding her.\r"
+  - "%10%I don\u2019t think my mom remembers the events clearly. She was in shock."
+  - "%10%So everyone thinks I found her. But I didn\u2019t."
+  - "%10%I\u2019m a liar. A fraud. My inaction cost someone their life."
+  - "%10%I\u2019m nothing but a monster. Go ahead, say it."
   responses:
   - responseText: ...
     dialogueObject: {fileID: 11400000, guid: f1fe23650f4b98b4591b8971a697c47a, type: 2}

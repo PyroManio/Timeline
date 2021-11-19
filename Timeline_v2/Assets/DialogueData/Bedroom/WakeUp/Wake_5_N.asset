@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wake_5_N
   m_EditorClassIdentifier: 
   dialogue:
-  - 'Then what are you called? '
+  - '%7%Then what are you called? '
   responses: []

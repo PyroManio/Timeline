@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Door_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Uh, hello? It\u2019s locked. It\u2019s not just gonna magically unlock itself."
-  - "%0%Though, the lock itself used to be broken. And now it\u2019s been fixed?"
-  - '%0%I just want to get out of here already!'
+  - "%6%Uh, hello? It\u2019s locked. It\u2019s not just gonna magically unlock itself."
+  - "%7%Though, the lock itself used to be broken. And now it\u2019s been fixed?"
+  - '%6%I just want to get out of here already!'
   responses: []

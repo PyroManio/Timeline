@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Night
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Yeah, it\u2019s my nightstand. I usually charge my phone here. "
-  - "%0%There\u2019s some stuff in the drawers too."
-  - '%0%Looks like they took my phone. Gah! I could have called for help if I had
+  - "%2%Yeah, it\u2019s my nightstand. I usually charge my phone here. "
+  - "%2%There\u2019s some stuff in the drawers too."
+  - '%6%Looks like they took my phone. Gah! I could have called for help if I had
     it.'
   responses:
   - responseText: Story

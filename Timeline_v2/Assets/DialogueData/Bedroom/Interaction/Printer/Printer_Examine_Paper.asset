@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Printer_Examine_Paper
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Looks like the computer printed out something. Looks like a code. LIES'
+  - '%2%Looks like the computer printed out something. Looks like a code. LIES'
   responses: []

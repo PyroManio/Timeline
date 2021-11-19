@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: Box_Solved_8
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Listen, I\u2026"
-  - "%0%\u2026"
-  - "%0%\u2026I haven\u2019t been completely honest with you."
-  - "%0%See, there are\u2026 things\u2026 that you don\u2019t know about me."
-  - "%0%Just\u2026 Okay. "
-  - '%0%The question is: When did you find the body?'
-  - '%0%The answer is SECOND.'
-  - "%0%Please\u2026 don\u2019t make me explain the answer."
-  - '[You found a body?]'
-  - "%0%I\u2026 yeah. Not a dead one though."
-  - "%0%(Sigh) I\u2019m gonna have to explain it. Just\u2026 please, don\u2019t think
-    too badly of me."
-  responses: []
+  - "%2%Listen, I\u2026"
+  - "%3%\u2026"
+  - "%3%\u2026I haven\u2019t been completely honest with you."
+  - "%3%See, there are\u2026 things\u2026 that you don\u2019t know about me."
+  - "%3%Just\u2026 Okay. "
+  - '%3%The question is: When did you find the body?'
+  - '%10%The answer is SECOND.'
+  - "%10%Please\u2026 don\u2019t make me explain the answer."
+  responses:
+  - responseText: You found a body?
+    dialogueObject: {fileID: 11400000, guid: 5f4ee35c65002a044841a05c1e0bf4d3, type: 2}

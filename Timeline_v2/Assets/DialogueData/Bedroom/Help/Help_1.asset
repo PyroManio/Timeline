@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Help_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%I think I saw something useful over by the trash can.'
-  - "%0%Maybe we should investigate it and see if there\u2019s anything useful there?"
+  - '%7%I think I saw something useful over by the trash can.'
+  - "%7%Maybe we should investigate it and see if there\u2019s anything useful there?"
   responses: []

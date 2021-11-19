@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Talk_What_4
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%OH! Right! I forgot. Sorry, I forget things like this sometimes.'
-  - "%0%Well, uh, this is my bedroom. But it\u2019s\u2026 different.\r"
+  - '%1%OH! Right! I forgot. Sorry, I forget things like this sometimes.'
+  - "%3%Well, uh, this is my bedroom. But it\u2019s\u2026 different.\r"
   responses:
   - responseText: This is your bedroom?
     dialogueObject: {fileID: 11400000, guid: b76cb39dc1a994349b8041055297dce7, type: 2}

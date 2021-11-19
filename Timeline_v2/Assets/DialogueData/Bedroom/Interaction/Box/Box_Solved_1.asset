@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Box_Solved_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%STAY BACK!'
+  - '%6%STAY BACK!'
   responses: []

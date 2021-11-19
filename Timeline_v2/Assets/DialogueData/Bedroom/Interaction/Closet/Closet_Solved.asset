@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Closet_Solved
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Aha! It\u2019s finally open!"
-  - '%0%Jeez it really feels like they hid these codes extremely carefully.'
-  - '%0%I mean, why hide it on a window of all places?'
-  - '%0%Then again, I suppose the point of an escape room is to make you look in
+  - "%1%Aha! It\u2019s finally open!"
+  - '%2%Jeez it really feels like they hid these codes extremely carefully.'
+  - '%7%I mean, why hide it on a window of all places?'
+  - '%7%Then again, I suppose the point of an escape room is to make you look in
     unexpected places.'
   - "%0%Anyways, they wouldn\u2019t have locked this up for no reason."
   - "%0%Let\u2019s look inside."

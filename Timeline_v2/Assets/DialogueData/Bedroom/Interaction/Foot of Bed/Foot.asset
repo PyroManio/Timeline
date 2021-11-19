@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Foot
   m_EditorClassIdentifier: 
   dialogue:
-  - We found my backpack here.
-  responses: []
+  - '%0%We found my backpack here.'
+  responses:
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: e1489711024688e448aea36529ad07c2, type: 2}
+  - responseText: Examine
+    dialogueObject: {fileID: 11400000, guid: ec5ef88dafb5515489851addf908dc23, type: 2}
+  - responseText: Exit
+    dialogueObject: {fileID: 0}

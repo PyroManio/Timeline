@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Clock
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%The clock reads that it\u2019s 4:27 AM. But that can\u2019t be right, can
+  - "%7%The clock reads that it\u2019s 4:27 AM. But that can\u2019t be right, can
     it?\r"
   - "%0%Well, all the windows in this room are barred shut, so there\u2019s no way
     to tell what time of day it is. "
-  - '%0%Still, thank god the ceiling lights are in here. Otherwise this room would
+  - '%1%Still, thank god the ceiling lights are in here. Otherwise this room would
     be pitch black,'
-  - "%0%no matter what time of day it is!\r"
+  - "%1%no matter what time of day it is!\r"
   responses: []

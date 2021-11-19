@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "%0%This is my bed lamp. It doesn\u2019t seem to be working, though."
-  - '%0%Upon closer inspection, it looks like the bulb is missing. '
-  - '%0%Maybe we need to find the bulb?'
+  - '%7%Upon closer inspection, it looks like the bulb is missing. '
+  - '%7%Maybe we need to find the bulb?'
   responses: []

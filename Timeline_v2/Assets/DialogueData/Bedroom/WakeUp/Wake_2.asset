@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Wake_2
   m_EditorClassIdentifier: 
   dialogue:
-  - "Is this\u2026 a camera?"
-  - Am I being watched?
+  - "%7%Is this\u2026 a camera?"
+  - '%7%Am I being watched?'
   responses: []

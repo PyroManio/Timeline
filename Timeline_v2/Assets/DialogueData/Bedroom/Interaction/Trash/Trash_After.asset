@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Trash_After
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%It\u2019s my trash can. I usually use it for stuff I leave in my pockets.
+  - "%3%It\u2019s my trash can. I usually use it for stuff I leave in my pockets.
     It\u2019s empty now but\u2026"
   responses:
   - responseText: Examine

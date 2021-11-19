@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Box_Solved_9_Not
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%\u2026 You\u2026 really believe that?"
+  - "%2%\u2026 You\u2026 really believe that?"
   responses: []

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Help_4
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%The nightstand said to \u201CSEEK HELP\u201D for the password."
+  - "%7%The nightstand said to \u201CSEEK HELP\u201D for the password."
   - "%0%But I don\u2019t see anything in this room that would \u201CHELP\u201D find
     the password."
-  - "%0%But if it\u2019s not in this room, then where the hell is the password?"
-  - "%0%Unless\u2026 it\u2019s something only YOU can see? Or access? Where the hell
+  - "%7%But if it\u2019s not in this room, then where the hell is the password?"
+  - "%9%Unless\u2026 it\u2019s something only YOU can see? Or access? Where the hell
     would that be?"
   responses: []

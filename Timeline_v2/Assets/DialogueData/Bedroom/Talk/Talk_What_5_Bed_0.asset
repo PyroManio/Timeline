@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Talk_What_5_Bed_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Yeah, it is! I spent my childhood here, but uh\u2026\r"
-  - "%0%Maybe it\u2019s best if we get out of here pretty fast.\r"
+  - "%3%Yeah, it is! I spent my childhood here, but uh\u2026\r"
+  - "%10%Maybe it\u2019s best if we get out of here pretty fast.\r"
   responses:
   - responseText: Why is that?
     dialogueObject: {fileID: 11400000, guid: 83fa85a6c4130654ea971086d564bdb2, type: 2}

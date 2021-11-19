@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Talk_What_2
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Well then what are you even doing here?
+  - '%7%Well then what are you even doing here?
 
 '
   responses:

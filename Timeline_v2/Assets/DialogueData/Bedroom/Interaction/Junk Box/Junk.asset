@@ -15,9 +15,9 @@ MonoBehaviour:
   dialogue:
   - '%0%The junk box is just where I throw random stuff in my pockets.'
   - '%0%Some of it eventually makes its way into the trash can in the corner.'
-  - "%0%Well, if I was gonna hide something useful in this room, it\u2019d probably
+  - "%7%Well, if I was gonna hide something useful in this room, it\u2019d probably
     be in here."
-  - "%0%Hey, looks like you were right! There\u2019s a screwdriver in here! Phillips
+  - "%8%Hey, looks like you were right! There\u2019s a screwdriver in here! Phillips
     head, by the way."
   - '[Screwdriver added to inventory]'
   - '%0%The rest of the stuff here is junk. Nothing of interest.'

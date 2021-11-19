@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Window_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%As much as I\u2019d like to rip these things off my wall, they look pretty
+  - "%5%As much as I\u2019d like to rip these things off my wall, they look pretty
     sturdy."
-  - "%0%I don\u2019t think I\u2019m going to be able to remove them."
-  - "%0%Plus, I don\u2019t think I\u2019d even want to. I\u2019m on the second story!
+  - "%3%I don\u2019t think I\u2019m going to be able to remove them."
+  - "%4%Plus, I don\u2019t think I\u2019d even want to. I\u2019m on the second story!
     I\u2019m not jumping from here."
-  - '%0%Well, maybe I could if the ones facing the street could come off. '
-  - "%0%There\u2019s part of the roof there.\r\n"
-  - '%0%I could then use the palm tree just outside to slide down and reach the ground.'
-  - "%0%But A: I\u2019m not an action hero and B: those metal plates aren\u2019t
+  - '%7%Well, maybe I could if the ones facing the street could come off. '
+  - "%7%There\u2019s part of the roof there.\r\n"
+  - '%8%I could then use the palm tree just outside to slide down and reach the ground.'
+  - "%4%But A: I\u2019m not an action hero and B: those metal plates aren\u2019t
     going anywhere.\n"
-  - "%0%But wait. There\u2019s a series of numbers written on one of the plates here!"
-  - '%0%5293'
-  - "%0%Hopefully that\u2019s some sort of code that we need.\r"
+  - "%8%But wait. There\u2019s a series of numbers written on one of the plates here!"
+  - '%8%5293'
+  - "%8%Hopefully that\u2019s some sort of code that we need.\r"
   responses: []

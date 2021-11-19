@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wake_7
   m_EditorClassIdentifier: 
   dialogue:
-  - Assist me? Why would you need to assist me?
+  - '%7%Assist me? Why would you need to assist me?'
   responses:
   - responseText: "I don\u2019t know."
     dialogueObject: {fileID: 11400000, guid: d8a202c9721fa9343bb115fa5dde604c, type: 2}

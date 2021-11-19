@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Box_Solved_6
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%\u2026 It\u2019s the only way out, isn\u2019t it?"
+  - "%10%\u2026 It\u2019s the only way out, isn\u2019t it?"
   responses: []

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Talk_What_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Huh? You don\u2019t know? "
-  - '%0%I thought they would have told you something as basic as that!'
-  - "%0%I mean, you ARE one of Pandora\u2019s employees, right?\r\n"
+  - "%5%Huh? You don\u2019t know? "
+  - '%5%I thought they would have told you something as basic as that!'
+  - "%6%I mean, you ARE one of Pandora\u2019s employees, right?\r\n"
   responses:
   - responseText: No
     dialogueObject: {fileID: 11400000, guid: ce0bf9f2272f6be49ba4e036392847ed, type: 2}

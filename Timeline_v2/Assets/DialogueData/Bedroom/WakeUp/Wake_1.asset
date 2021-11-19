@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wake_1
   m_EditorClassIdentifier: 
   dialogue:
-  - Wha? Where am I? Wait, this is-
+  - '%4%Wha? Where am I? Wait, this is-'
   responses: []

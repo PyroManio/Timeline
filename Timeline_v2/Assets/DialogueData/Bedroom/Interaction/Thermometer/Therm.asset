@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Therm
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%The thermometer is only really useful if we need to know the approximate
+  - '%2%The thermometer is only really useful if we need to know the approximate
     temperature of the room.'
   - '%0%It only works in blocks of 4. Below 60, 60-64, 64-68, 68-72, 72-76, 76-80,
     and above 80.'
-  - "%0%It\u2019s Fahrenheit, by the way, in case you\u2019re not from the US or
+  - "%2%It\u2019s Fahrenheit, by the way, in case you\u2019re not from the US or
     something."
   - "%0%Looks like it\u2019s between 76 and 80 degrees right now. That\u2019s pretty
     normal, though."

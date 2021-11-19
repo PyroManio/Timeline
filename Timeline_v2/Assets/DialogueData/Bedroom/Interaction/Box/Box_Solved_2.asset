@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Box_Solved_2
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Please, I\u2019m BEGGING YOU! DON\u2019T MAKE ME SAY IT!"
+  - "%4%Please, I\u2019m BEGGING YOU! DON\u2019T MAKE ME SAY IT!"
   responses: []

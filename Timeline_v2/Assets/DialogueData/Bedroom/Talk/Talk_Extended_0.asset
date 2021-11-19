@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Talk_Extended_0
   m_EditorClassIdentifier: 
   dialogue:
-  - Huh? Extended?
-  - Are you talking about the Chromatic Project?
+  - '%7%Huh? Extended?'
+  - '%7%Are you talking about the Chromatic Project?'
   responses:
   - responseText: The Chromatic Project Extended Testing Program
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 72e3a40db79d1ff41bd0640dab23d8ae, type: 2}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wake_5_Y
   m_EditorClassIdentifier: 
   dialogue:
-  - "Okay, I\u2019ll call you [Player Name] then."
+  - "%0%Okay, I\u2019ll call you [Player Name] then."
   responses: []

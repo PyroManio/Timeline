@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Help_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Seriously? It\u2019s the first step of the entire escape room and you\u2019re
+  - "%5%Seriously? It\u2019s the first step of the entire escape room and you\u2019re
     already asking for help?"
-  - '%0%Well, whatever.'
-  - '%0%Usually in an escape room the first thing to do is explore the room and collect
+  - '%2%Well, whatever.'
+  - '%7%Usually in an escape room the first thing to do is explore the room and collect
     items.'
   responses: []

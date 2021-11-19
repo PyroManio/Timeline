@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Door_Story
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Don\u2019t get too excited, it\u2019s literally just the door to my room.\r"
-  - "%0%Normally, it\u2019s not supposed to lock although there were definitely times
+  - "%2%Don\u2019t get too excited, it\u2019s literally just the door to my room.\r"
+  - "%3%Normally, it\u2019s not supposed to lock although there were definitely times
     when I wish it did."
-  - "%0%Let\u2019s not talk about that, though. Moving on."
+  - "%10%Let\u2019s not talk about that, though. Moving on."
   responses: []

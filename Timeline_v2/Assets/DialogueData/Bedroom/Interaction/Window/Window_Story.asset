@@ -15,11 +15,11 @@ MonoBehaviour:
   dialogue:
   - "%0%I usually like to keep these windows closed. It\u2019s way too easy for someone
     to see inside my bedroom."
-  - "%0%I dunno. Call me paranoid, but I\u2019m not letting anyone outside my room
+  - "%12%I dunno. Call me paranoid, but I\u2019m not letting anyone outside my room
     catch an eyeful!"
-  - "%0%That being said, I don\u2019t think I\u2019d ever go so far as to totally
+  - "%6%That being said, I don\u2019t think I\u2019d ever go so far as to totally
     barricade them over like this!"
-  - '%0%I wonder what time of day it even is right now?'
-  - '%0%I guess it would be daytime, right? I did just wake up.'
-  - "%0%\u2026Right?\r"
+  - '%7%I wonder what time of day it even is right now?'
+  - '%2%I guess it would be daytime, right? I did just wake up.'
+  - "%10%\u2026Right?\r"
   responses: []

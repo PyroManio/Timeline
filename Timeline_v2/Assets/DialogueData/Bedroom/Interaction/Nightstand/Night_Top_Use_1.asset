@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Night_Top_Use_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Let\u2019s see\u2026 there\u2019s a lot of random junk in here. It\u2019s
+  - "%2%Let\u2019s see\u2026 there\u2019s a lot of random junk in here. It\u2019s
     my nightstand after all."
   - "%0%But looks like there\u2019s a piece of paper in here."
   - "%0%It says, \u201CSEEK HELP FOR THE PASSWORD.\u201D"
-  - '%0%What the hell does that mean? Are we supposed to call someone?'
-  - '%0%How the hell are we supposed to do that without access to an electronic device,
+  - '%5%What the hell does that mean? Are we supposed to call someone?'
+  - '%6%How the hell are we supposed to do that without access to an electronic device,
     genius?'
-  - "%0%Well, at least we unlocked something, but it doesn\u2019t look like it did
+  - "%5%Well, at least we unlocked something, but it doesn\u2019t look like it did
     much.\r\n"
   - "%0%I\u2019ll hold on to the paper for now."
   - '[Strange Note added to inventory]'

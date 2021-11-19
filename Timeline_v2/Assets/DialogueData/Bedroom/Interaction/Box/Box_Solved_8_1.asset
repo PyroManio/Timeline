@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Talk_Necklace_1
+  m_Name: Box_Solved_8_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "Huh, that\u2019s weird. I don\u2019t recognize this. Looks like the Yin part
-    of the Yin Yang symbol."
-  - "Or, is it the Yang part? The white part, whatever it\u2019s called. I get them
-    mixed up sometimes."
-  - Maybe it has something to do with the test? Like a clue or something? I dunno.
+  - "%10%I\u2026 yeah. Not a dead one though."
+  - "%3%(Sigh) I\u2019m gonna have to explain it. Just\u2026 please, don\u2019t think
+    too badly of me."
   responses: []

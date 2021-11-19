@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Post_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%There doesn\u2019t seem to be anything of use on, in, or behind any of these
+  - "%2%There doesn\u2019t seem to be anything of use on, in, or behind any of these
     posters. "
   - "%0%Pretty sure they\u2019re just here for decoration. I should know. I\u2019m
     the one that hung them here.\r\n"

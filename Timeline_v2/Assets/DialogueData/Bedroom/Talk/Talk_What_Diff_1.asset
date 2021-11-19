@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Talk_What_Diff_1
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%That was kind of a rhetorical question, but whatever.'
+  - '%2%That was kind of a rhetorical question, but whatever.'
   - '%0%Is there something else you want to ask me?'
   responses:
   - responseText: Well...
