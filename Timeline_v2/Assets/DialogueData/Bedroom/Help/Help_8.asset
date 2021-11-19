@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Help_8
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Well we unlocked the closet. At least I\u2019ll be able to change my clothes
-    now."
-  - '%0%But we still need to find a way to unlock the door.'
-  - '%0%That box inside the closet is really bugging me.'
-  - "%0%There\u2019s got to be a code that unlocks it!"
+  - '%0%Why are you still asking me for help?'
+  - "%0%WE HAVE A KEY! LET\u2019S TRY USING IT ON THE DOOR!"
+  - '%0%Maybe it will finally let us out of here!'
   responses: []

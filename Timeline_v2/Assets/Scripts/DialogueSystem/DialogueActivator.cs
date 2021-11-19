@@ -40,6 +40,10 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     }
     public void Interact(DialogueUI dialogueUI)
     {
+        if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject==dialogueObject)
+        {
+            dialogueUI.AddResponseEvents(responseEvents.Events);
+        }
         dialogueUI.ShowDialogue(dialogueObject);
     }
 }

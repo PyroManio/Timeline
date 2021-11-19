@@ -1987,7 +1987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7965d04dd990a4949ad8a0f6e6eec2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpActivator: {fileID: 0}
+  helpActivator: {fileID: 493605949}
   helpDialogueList:
   - {fileID: 11400000, guid: 213caf83a058d20429812a8559d5706e, type: 2}
   - {fileID: 11400000, guid: b6483c2c391204a4dadfdba36a15d349, type: 2}
@@ -1998,6 +1998,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ada23e218de1c5047ac258ac5292eda5, type: 2}
   - {fileID: 11400000, guid: 4fbbf5e96d5fbce48842e64d52ef5786, type: 2}
   - {fileID: 11400000, guid: 838ade17d7ca50640a3c66fcc19665c5, type: 2}
+  helpDialogueActive: 
   helpProgressFlag: 0
 --- !u!1 &240258316
 GameObject:
@@ -2205,7 +2206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &310080629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3704,6 +3705,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489443611}
   m_CullTransparentMesh: 1
+--- !u!1 &493605948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493605950}
+  - component: {fileID: 493605949}
+  m_Layer: 5
+  m_Name: HelpDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &493605949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493605948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef8a53782e51bd47b7c7478d0badec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 11400000, guid: 213caf83a058d20429812a8559d5706e, type: 2}
+--- !u!224 &493605950
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493605948}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1285941573}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &500436559
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,6 +4570,7 @@ GameObject:
   - component: {fileID: 647315744}
   - component: {fileID: 647315743}
   - component: {fileID: 647315742}
+  - component: {fileID: 647315746}
   m_Layer: 0
   m_Name: TrashDialogue
   m_TagString: Untagged
@@ -4641,6 +4692,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647315740}
   m_CullTransparentMesh: 1
+--- !u!114 &647315746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647315740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2a3c9cb6e2e9644a39466f39685b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 11400000, guid: 93215d7433db0004a9d6857da7637240, type: 2}
+  events:
+  - name: Examine
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 142594645}
+          m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+          m_MethodName: deactivateProgressPoint
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Story
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Exit
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &654073026
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,7 +5944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &863335651
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6154,6 +6243,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 142594645}
+        m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+        m_MethodName: deactivateProgressPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   isOpen: 0
   isSolved: 0
 --- !u!114 &863335658
@@ -6207,6 +6308,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 142594645}
+        m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+        m_MethodName: deactivateProgressPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7075,8 +7188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 105, y: -25}
-  m_SizeDelta: {x: 190, y: 50}
+  m_AnchoredPosition: {x: 105, y: -20}
+  m_SizeDelta: {x: 190, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1083604136
 MonoBehaviour:
@@ -8503,7 +8616,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1285941572
 GameObject:
@@ -8536,6 +8649,7 @@ RectTransform:
   - {fileID: 1396298470}
   - {fileID: 1734768058}
   - {fileID: 1919554719}
+  - {fileID: 493605950}
   m_Father: {fileID: 142594640}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9311,6 +9425,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 142594645}
+          m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+          m_MethodName: deactivateProgressPoint
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - name: No
     onPickedResponse:
       m_PersistentCalls:
@@ -9886,6 +10012,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 142594645}
+          m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+          m_MethodName: deactivateProgressPoint
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -10828,6 +10966,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 142594645}
+        m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+        m_MethodName: deactivateProgressPoint
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1534648225}
@@ -10978,6 +11128,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 142594645}
+          m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+          m_MethodName: deactivateProgressPoint
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -11912,6 +12074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919554719}
   - component: {fileID: 1919554720}
+  - component: {fileID: 1919554721}
   m_Layer: 5
   m_Name: TalkDialogue
   m_TagString: Untagged
@@ -11951,6 +12114,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: 0d6715d0c3534a54c8360650e3596312, type: 2}
+--- !u!114 &1919554721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919554718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2a3c9cb6e2e9644a39466f39685b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 11400000, guid: 0d6715d0c3534a54c8360650e3596312, type: 2}
+  events:
+  - name: Who are you?
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Why are you here?
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: What is this place?
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Help
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 142594645}
+          m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+          m_MethodName: playHelp
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 142594636}
+            m_ObjectArgumentAssemblyTypeName: DialogueUI, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: End Conversation
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1926938840
 GameObject:
   m_ObjectHideFlags: 0
@@ -12899,6 +13108,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 142594645}
+          m_TargetAssemblyTypeName: HelpProgress, Assembly-CSharp
+          m_MethodName: deactivateProgressPoint
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1

@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: Help_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Seriously? It\u2019s the first step of the entire escape room and you\u2019re
-    already asking for help?"
-  - '%0%Well, whatever.'
-  - '%0%Usually in an escape room the first thing to do is explore the room and collect
-    items.'
+  - '%0%I think I saw something useful over by the trash can.'
+  - "%0%Maybe we should investigate it and see if there\u2019s anything useful there?"
   responses: []

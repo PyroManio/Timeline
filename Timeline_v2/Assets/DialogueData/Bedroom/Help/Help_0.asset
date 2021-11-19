@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Help_9
+  m_Name: Help_0
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Why are you still asking me for help?'
-  - "%0%WE HAVE A KEY! LET\u2019S TRY USING IT ON THE DOOR!"
-  - '%0%Maybe it will finally let us out of here!'
+  - "%0%Seriously? It\u2019s the first step of the entire escape room and you\u2019re
+    already asking for help?"
+  - '%0%Well, whatever.'
+  - '%0%Usually in an escape room the first thing to do is explore the room and collect
+    items.'
   responses: []

@@ -8,10 +8,34 @@ public class HelpProgress : MonoBehaviour
     [SerializeField] private DialogueActivator helpActivator;
     [SerializeField] private DialogueObject[] helpDialogueList;
     //[SerializeField] private DialogueUI dialogueUI;
-    public int helpProgressFlag;
+    public bool[] helpDialogueActive;
+    public int helpProgressFlag = 0;
+    private void Start(){
+        helpDialogueActive=new bool[helpDialogueList.Length];
+        for (int i=0; i < helpDialogueActive.Length; i++)  helpDialogueActive[i] = true;
+    }
     public void playHelp(DialogueUI dialogueUI)
     {
+        dialogueUI.CloseDialogueBox();
+        for (int i = 0; i < helpDialogueActive.Length; i++)
+        {
+            if (helpDialogueActive[i]) 
+            {
+                helpActivator.UpdateDialogueObject( helpDialogueList[i] );
+                break;
+            }
+        }
+        StartCoroutine(waitStep(dialogueUI));
+    }
+    private IEnumerator waitStep(DialogueUI dialogueUI){
+        yield return null;
         helpActivator.Interact(dialogueUI);
+    }
+    //public void addLinearProgress(int progressNum){if (progressNum > helpProgressFlag) helpProgressFlag = progressNum;}
+    public void deactivateProgressPoint (int index)
+    {
+        if (index >= helpDialogueActive.Length) return;
+        helpDialogueActive[index] = false;
     }
 }
  

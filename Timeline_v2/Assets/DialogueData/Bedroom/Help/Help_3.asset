@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Help_3
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%It seems like there\u2019s something shiny over on the dresser."
-  - "Our inventory\u2019s looking a bit bare. Maybe we can find something we could
-    use?"
+  - '%0%Well we did just find a screwdriver.'
+  - "%0%Maybe we can use it to unlock something in the room? Or\u2026 unscrew? I
+    guess?"
   responses: []

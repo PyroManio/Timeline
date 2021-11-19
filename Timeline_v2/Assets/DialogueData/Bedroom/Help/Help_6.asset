@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Help_6
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%That combination lock on the closet is really starting to bug me too.'
-  - "%0%There\u2019s has to be something to unlock it. Are we sure we checked EVERYTHING?"
+  - "%0%We unlocked the laptop now, so we\u2019ve got to be able to do something
+    with it."
   responses: []

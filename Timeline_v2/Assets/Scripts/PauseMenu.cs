@@ -11,7 +11,8 @@ public class PauseMenu : MonoBehaviour
     //private GameObject[] optionBoxList;
     [SerializeField] private GameObject optionBoxContainer;
     [SerializeField] private InventoryUI inventoryUI;
-    [SerializeField] private DialogueActivator talkDialogue;  
+    [SerializeField] private DialogueActivator talkDialogue;
+    [SerializeField] private OptionScreen optionScreen;  
     public bool hasMap = false;
     public bool hasBag = false;
     public bool IsOpen { get; private set; }
@@ -20,7 +21,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         //resume, map, inventory, save, quit
-        string [] boxNames={"Resume","Map","Inventory","Talk","Quit"};
+        string [] boxNames={"Resume","Map","Inventory","Talk","Options"};
         for (int i=0; i<boxNames.Length; i++)
         {
             GameObject optionSlot=Instantiate(optionBoxTemplate.gameObject,optionBoxContainer.transform);
@@ -66,8 +67,12 @@ public class PauseMenu : MonoBehaviour
                     talkDialogue.Interact(GetComponentInChildren<DialogueUI>());
                     closePauseMenu();
                     break;
-                case "Quit":
+                case "Options":
                 // Open "Do you want to quit" box
+                //Jk, no
+                    currentMenu = "options";
+                    optionScreen.openScreen();
+                    hidePauseMenu();
                     break;
                 default:
                     Debug.Log("WARNING: Invalid Option Selected");
@@ -95,5 +100,6 @@ public class PauseMenu : MonoBehaviour
         {
             openPauseMenu();
         }
+        if (currentMenu.Equals("options") && !optionScreen.IsOpen) openPauseMenu();
     }
 }
