@@ -13,11 +13,21 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private InventoryUI inventoryUI;
     [SerializeField] private DialogueActivator talkDialogue;
     [SerializeField] private OptionScreen optionScreen;  
+    [SerializeField] private MapScreen mapScreen;
     public bool hasMap = false;
     public bool hasBag = false;
     public bool IsOpen { get; private set; }
     private string currentMenu = "default";
+    [HideInInspector] private List<GameObject> menuOptionList = new List<GameObject>();
     // Start is called before the first frame update
+    public void BagGotten() { 
+        hasBag = true; 
+        menuOptionList[2].GetComponentInChildren<TMP_Text>().faceColor = new Color32(0,0,0,255);
+        }
+    public void MapGotten() { 
+        hasMap = true; 
+        menuOptionList[1].GetComponentInChildren<TMP_Text>().faceColor = new Color32(0,0,0,255);
+        }
     void Start()
     {
         //resume, map, inventory, save, quit
@@ -32,8 +42,10 @@ public class PauseMenu : MonoBehaviour
             if ((boxNames[i].Equals("Inventory") && !hasBag) || (boxNames[i].Equals("Map") && !hasMap)){
                 optionSlot.GetComponentInChildren<TMP_Text>().faceColor = new Color32(150,150,150,255);
             }
-            closePauseMenu();
+            menuOptionList.Add(optionSlot);
+            
         }
+        closePauseMenu();
     }
     private void OnPickedResponse(string option)
         {
@@ -47,6 +59,9 @@ public class PauseMenu : MonoBehaviour
                 case "Map":
                     if (hasMap)
                     {
+                        currentMenu="map";
+                        hidePauseMenu();
+                        mapScreen.OpenScreen();
                         // Open Map 
                     }
                     break;
@@ -101,5 +116,6 @@ public class PauseMenu : MonoBehaviour
             openPauseMenu();
         }
         if (currentMenu.Equals("options") && !optionScreen.IsOpen) openPauseMenu();
+        if (currentMenu.Equals("map") && !mapScreen.IsOpen) openPauseMenu();
     }
 }
