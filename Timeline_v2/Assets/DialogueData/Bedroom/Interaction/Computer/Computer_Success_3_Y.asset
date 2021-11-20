@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Computer_Success_3_Y
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Oh, you do? So, you\u2019re probably familiar with superposition then, too."
+  - "%8%Oh, you do? So, you\u2019re probably familiar with superposition then, too."
   responses: []

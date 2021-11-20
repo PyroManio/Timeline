@@ -15,19 +15,19 @@ MonoBehaviour:
   dialogue:
   - "%0%Anyway, let\u2019s see what\u2019s on this computer."
   - "%0%\u2026!"
-  - "%0%There\u2019s two text files on here."
-  - "%0%One says, \u201CTo survive you must confess your sins. Reveal thy secrets,
+  - "%2%There\u2019s two text files on here."
+  - "%4%One says, \u201CTo survive you must confess your sins. Reveal thy secrets,
     prisoner.\u201D"
-  - "%0%I can\u2019t open the other one. But it looks like I can connect to the printer
+  - "%7%I can\u2019t open the other one. But it looks like I can connect to the printer
     and print it out."
-  - "%0%I printed it and it reads\u2026 LIES?"
-  - '%0%And what the hell does the first file mean?'
-  - "%0%It\u2026 doesn\u2019t mean that literally\u2026 does it?"
-  - "%0%Look, I get that you\u2019re trying to test me, but I\u2019m not sharing
+  - "%7%I printed it and it reads\u2026 LIES?"
+  - '%7%And what the hell does the first file mean?'
+  - "%10%It\u2026 doesn\u2019t mean that literally\u2026 does it?"
+  - "%10%Look, I get that you\u2019re trying to test me, but I\u2019m not sharing
     the darkest corners of my mind.\r\n"
-  - "%0%I\u2019ve made promises to people to keep their secrets. And I plan to take
+  - "%6%I\u2019ve made promises to people to keep their secrets. And I plan to take
     those secrets to my grave."
-  - "%0%I\u2019ll play along, but only to the extent that\u2019s necessary."
-  - "%0%Besides\u2026 there are some things people are better off not knowing."
-  - "%0%Sorry, that got kind of dark there, huh? Let\u2019s just move on from this."
+  - "%5%I\u2019ll play along, but only to the extent that\u2019s necessary."
+  - "%10%Besides\u2026 there are some things people are better off not knowing."
+  - "%3%Sorry, that got kind of dark there, huh? Let\u2019s just move on from this."
   responses: []

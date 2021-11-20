@@ -13,5 +13,13 @@ MonoBehaviour:
   m_Name: Computer
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Hey! The computer screen changed! But it\u2019s locked with a passcode."
-  responses: []
+  - "%2%Hey! The computer screen changed! But it\u2019s locked with a passcode."
+  responses:
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: 055ccece13655244aa2792c086e51e01, type: 2}
+  - responseText: Examine
+    dialogueObject: {fileID: 11400000, guid: f64c07676a779d943832327357a999dd, type: 2}
+  - responseText: Solve
+    dialogueObject: {fileID: 11400000, guid: 1d34fe93e1b490d42b7539b73899327a, type: 2}
+  - responseText: Exit
+    dialogueObject: {fileID: 0}

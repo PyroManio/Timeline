@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Computer_Success_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "\u2026Uh\u2026 that\u2019s an\u2026 interesting guess. Heh, heh. You sure you\u2019re
-    not just guessing randomly?"
-  - "And Schrodinger\u2019s Cat? Why make that your password?"
-  - "Well, whatever. I\u2019ll try it."
+  - "%2%\u2026Uh\u2026 that\u2019s an\u2026 interesting guess. Heh, heh. You sure
+    you\u2019re not just guessing randomly?"
+  - "%7%And Schrodinger\u2019s Cat? Why make that your password?"
+  - "%2%Well, whatever. I\u2019ll try it."
   responses: []

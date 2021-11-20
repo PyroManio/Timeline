@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Computer_Success_2
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Your\u2026 help screen? So, wait\u2026 are you\u2026 looking at this through
+  - "%7%Your\u2026 help screen? So, wait\u2026 are you\u2026 looking at this through
     a computer screen or something?"
   responses:
   - responseText: Yes

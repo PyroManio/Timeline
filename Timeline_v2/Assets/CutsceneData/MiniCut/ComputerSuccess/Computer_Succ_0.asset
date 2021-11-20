@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Computer_Solving
+  m_Script: {fileID: 11500000, guid: 86f9e4e0d21f8304cbb4ae6fd34b9c5e, type: 3}
+  m_Name: Computer_Succ_0
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%7%Looks like we need a password. Got any ideas?'
-  responses: []
+  dialogueObject: {fileID: 11400000, guid: 10db590fbccad1749be5baf3d6723b58, type: 2}
+  timelineObject: {fileID: 0}
+  isLoop: 0
+  eventTriggers:
+    m_PersistentCalls:
+      m_Calls: []

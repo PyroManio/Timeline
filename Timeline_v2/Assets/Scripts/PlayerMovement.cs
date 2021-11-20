@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     //NEW
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private PauseMenu pauseMenu;
+    [SerializeField] private PasswordScreen passScreen;
     public PauseMenu PauseMenu => pauseMenu;
     public float moveSpeed = 5f;
     public bool inCutscene = true;
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             
             return;
         }
-        if (dialogueUI.IsOpen || pauseMenu.IsOpen) 
+        if (dialogueUI.IsOpen || pauseMenu.IsOpen || passScreen.IsOpen) 
         {
             movement.x=0;
             movement.y=0;
@@ -76,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate() 
     {
         
-        if (inCutscene) return;
+        if (inCutscene || passScreen.IsOpen) return;
         // Movement
         Vector2 temp;
         temp=rb.position + movement * moveSpeed * Time.fixedDeltaTime;
