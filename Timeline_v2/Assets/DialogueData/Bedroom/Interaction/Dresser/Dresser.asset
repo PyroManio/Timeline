@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dresser
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%It\u2019s my dresser. I keep the rest of my clothes in here."
+  - "%0%It's my dresser. I keep the rest of my clothes in here."
   responses:
   - responseText: Drawers
     dialogueObject: {fileID: 11400000, guid: ea87d891b9fa94846905c8b9bc1166d8, type: 2}

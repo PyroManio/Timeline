@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Computer_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%This laptop definitely isn\u2019t mine. Plus it looks like I can\u2019t really
+  - "%2%This laptop definitely isn't mine. Plus it looks like I can't really
     use it like a normal laptop."
   - '%2%It needs a password to get in. '
-  - "%5%I already tried the obvious stuff but it\u2019s not letting me log in."
-  - "%7%Is the password something I don\u2019t know?"
-  - "%5%But I didn\u2019t see anything in the room that came even CLOSE to a password."
-  - "%9%But if it\u2019s not in the room, how the hell am I supposed to figure it
+  - "%5%I already tried the obvious stuff but it's not letting me log in."
+  - "%7%Is the password something I don't know?"
+  - "%5%But I didn't see anything in the room that came even CLOSE to a password."
+  - "%9%But if it's not in the room, how the hell am I supposed to figure it
     out?"
   responses: []

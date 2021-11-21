@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Computer_Examine_Unlock
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%The computer\u2019s unlocked now. The only things on there are two text files."
+  - "%0%The computer's unlocked now. The only things on there are two text files."
   - '%0%At least I can store other things on it from now on.'
-  - "%3%\u2026Kinda wish I had MY laptop though. "
+  - "%3%...Kinda wish I had MY laptop though. "
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: 4e35cc5e3b76eba4fa3c08380d6273f5, type: 2}

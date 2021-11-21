@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Talk_Backpack_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%12%\u2026 Never mind. Let\u2019s start looking for clues."
+  - "%12%... Never mind. Let's start looking for clues."
   responses: []

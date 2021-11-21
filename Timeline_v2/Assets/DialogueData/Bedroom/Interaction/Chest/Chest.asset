@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chest
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%This chest is usually where I keep my heavy winter stuff. It\u2019s locked
+  - "%0%This chest is usually where I keep my heavy winter stuff. It's locked
     right now."
   responses:
   - responseText: Examine

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%So you can hear it too?'
-  - "%3%Let\u2019s\u2026 not think about it too much."
-  - "%2%Inside the container is a key. Let\u2019s hope it lets us get out of here
+  - "%3%Let's... not think about it too much."
+  - "%2%Inside the container is a key. Let's hope it lets us get out of here
     finally. "
   - '[Freeze Key added to Inventory]'
   responses: []

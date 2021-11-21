@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%7%I think I saw something useful over by the trash can.'
-  - "%7%Maybe we should investigate it and see if there\u2019s anything useful there?"
+  - "%7%Maybe we should investigate it and see if there's anything useful there?"
   responses: []

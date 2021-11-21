@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Chest_Story
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%I really don\u2019t use this chest much. It just holds my stuff for winter
+  - "%0%I really don't use this chest much. It just holds my stuff for winter
     weather."
-  - "%0%Even in wintertime, it\u2019s usually warm enough that we only need light
+  - "%0%Even in wintertime, it's usually warm enough that we only need light
     jackets."
   - "%1%I like winter the best, actually. \n"
   - '%0%Better than having 90-degree weather for 6 months of the year.'
@@ -23,6 +23,6 @@ MonoBehaviour:
   - '%0%And I usually have to wear them for Christmas.'
   - '%0%I also put my laundry baskets on top of it before I get around to folding
     my clothes.'
-  - "%2%Which usually happens about\u2026 80 percent of the time.\n"
-  - "%5%Okay maybe it\u2019s more like 50. But who enjoys folding laundry?\n"
+  - "%2%Which usually happens about... 80 percent of the time.\n"
+  - "%5%Okay maybe it's more like 50. But who enjoys folding laundry?\n"
   responses: []

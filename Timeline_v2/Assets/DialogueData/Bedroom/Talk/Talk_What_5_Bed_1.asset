@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Talk_What_5_Bed_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%3%Well\u2026 I know this is gonna sound crazy,"
-  - "%3%But\u2026 there\u2019s something that lives in that corner over there."
-  - "%3%Ever since I was a kid, I felt this sort of\u2026 presence in the corner
+  - "%3%Well... I know this is gonna sound crazy,"
+  - "%3%But... there's something that lives in that corner over there."
+  - "%3%Ever since I was a kid, I felt this sort of... presence in the corner
     of my room.\r\n"
   - '%9%My mom never believed me. Nobody did. '
   - '%9%But I kept having nightmares about it taking over my body.'
   - '%3%I think it almost did, once. But I fought it off.'
-  - "%0%It only seems to be able to do stuff when it\u2019s dark, though. "
+  - "%0%It only seems to be able to do stuff when it's dark, though. "
   - "%0%So, we should be fine as long as the lights are on. \r"
   - '%0%Anyways, is there something else you want to ask me?'
   responses:

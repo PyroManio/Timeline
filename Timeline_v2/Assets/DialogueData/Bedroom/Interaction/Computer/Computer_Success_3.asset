@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%Oh. Well, I guess that makes sense.'
-  - "%2%Well, as long as it\u2019s part of the test, I guess. Still, could they make
+  - "%2%Well, as long as it's part of the test, I guess. Still, could they make
     it a little less creepy?"
-  - "%7%But\u2026 it\u2019s got me thinking. Do you know about Schrodinger\u2019s
+  - "%7%But... it's got me thinking. Do you know about Schrodinger's
     Cat?"
   responses:
   - responseText: Yes

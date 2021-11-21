@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Trash
   m_EditorClassIdentifier: 
   dialogue:
-  - "%3%It\u2019s my trash can. I usually use it for stuff I leave in my pockets.
-    It\u2019s empty now but\u2026"
+  - "%3%It's my trash can. I usually use it for stuff I leave in my pockets.
+    It's empty now but..."
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: 66048ef694389b941906668870ee867f, type: 2}

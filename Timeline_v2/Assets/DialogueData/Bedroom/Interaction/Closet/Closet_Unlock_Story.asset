@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Closet_Unlock_Story
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%There\u2019s not much here. Dress clothes are on the left, and street clothes
+  - "%2%There's not much here. Dress clothes are on the left, and street clothes
     are on the right."
-  - "%0%The mirror is there to help me get dressed. I love that it\u2019s a full-body
+  - "%0%The mirror is there to help me get dressed. I love that it's a full-body
     mirror."
-  - "%0%I use the dress clothes a lot for concerts and other events, but it\u2019s
+  - "%0%I use the dress clothes a lot for concerts and other events, but it's
     mostly stuff I never wear.\r\n"
-  - "%7%I should really throw out some of the stuff that doesn\u2019t fit anymore.\n"
-  - "%0%There\u2019s also a laundry hamper in here that I almost never use."
+  - "%7%I should really throw out some of the stuff that doesn't fit anymore.\n"
+  - "%0%There's also a laundry hamper in here that I almost never use."
   - '%7%Normally I just start piling my dirty clothes in a corner. I should really
     stop doing that.'
   - "%0%My shoe rack is also full to bursting. \n"
@@ -28,8 +28,8 @@ MonoBehaviour:
   - '%7%Again, I should probably throw some of this stuff out.'
   - '%0%Aside from that, junk is usually piled in the corners from old bedding and
     stuff. '
-  - "%0%Looks like it\u2019s gone."
-  - "%0%There\u2019s also old kid toys and stuff on the top of the shelf, "
+  - "%0%Looks like it's gone."
+  - "%0%There's also old kid toys and stuff on the top of the shelf, "
   - "%0%along with some hats and performance equipment.\r"
   - '%7%Yeah, now that I think about it, this closet has a whole lot more in here
     than I thought.'

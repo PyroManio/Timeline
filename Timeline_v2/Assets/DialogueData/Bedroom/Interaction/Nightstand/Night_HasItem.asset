@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Night_HasItem
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Yeah, it\u2019s my nightstand. I usually charge my phone here. "
-  - "%0%There\u2019s some stuff in the drawers too."
+  - "%0%Yeah, it's my nightstand. I usually charge my phone here. "
+  - "%0%There's some stuff in the drawers too."
   - '%0%Looks like they took my phone. Gah! I could have called for help if I had
     it.'
   responses:

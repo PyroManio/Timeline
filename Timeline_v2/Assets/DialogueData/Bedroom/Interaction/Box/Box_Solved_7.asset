@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Box_Solved_7
   m_EditorClassIdentifier: 
   dialogue:
-  - "%10%\u2026"
-  - "%2%There\u2019s a container in here locked by a question. And it\u2019s one
+  - "%10%..."
+  - "%2%There's a container in here locked by a question. And it's one
     that only I can answer."
   responses:
   - responseText: Why?

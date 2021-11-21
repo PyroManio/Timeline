@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Trash_Examine_After
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%It\u2019s my trash can. There\u2019s nothing else here of interest.\r"
+  - "%0%It's my trash can. There's nothing else here of interest.\r"
   responses: []

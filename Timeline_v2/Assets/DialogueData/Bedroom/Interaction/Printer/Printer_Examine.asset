@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Printer_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Doesn\u2019t look like there\u2019s anything here. Duh. I need to print something
+  - "%0%Doesn't look like there's anything here. Duh. I need to print something
     for anything to be here!\r"
   responses: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Door_BedKey
   m_EditorClassIdentifier: 
   dialogue:
-  - "%5%Yeah, the door\u2019s locked, genius. It was literally the first thing I
+  - "%5%Yeah, the door's locked, genius. It was literally the first thing I
     tried."
   responses:
   - responseText: Examine

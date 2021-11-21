@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Night_Top
   m_EditorClassIdentifier: 
   dialogue:
-  - "%5%Yeah, it\u2019s locked. Looks like there are a couple of screws here."
+  - "%5%Yeah, it's locked. Looks like there are a couple of screws here."
   - '%7%I could probably get them off if I had the right tool. Probably a Phillips
     head screwdriver.'
   responses: []

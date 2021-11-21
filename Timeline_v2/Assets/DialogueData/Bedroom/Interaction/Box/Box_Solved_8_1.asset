@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Box_Solved_8_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%10%I\u2026 yeah. Not a dead one though."
-  - "%3%(Sigh) I\u2019m gonna have to explain it. Just\u2026 please, don\u2019t think
+  - "%10%I... yeah. Not a dead one though."
+  - "%3%(Sigh) I'm gonna have to explain it. Just... please, don't think
     too badly of me."
   responses: []

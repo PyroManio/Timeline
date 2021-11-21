@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%4%That WORKED? HOW?'
-  - "%4%That info definitely wasn\u2019t anywhere in this room! How did you know
+  - "%4%That info definitely wasn't anywhere in this room! How did you know
     that?"
   responses:
   - responseText: I saw it on my help screen

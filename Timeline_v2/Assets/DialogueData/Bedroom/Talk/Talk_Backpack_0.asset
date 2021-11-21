@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: Talk_Backpack_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Hey it\u2019s my backpack."
+  - "%0%Hey it's my backpack."
   - '%0%The backpack looks empty but it can hold a lot of stuff.'
   - "%7%Though last time I checked I still had my books in there from my last semester.\r"
   - '%7%Why clean it out? Do they not want me to have access to some music history
     books?'
   - '%2%Talk about weird.'
   - '%0%Well, I can use it to carry around anything useful. '
-  - "%0%That\u2019s probably better than just carrying everything around in my pockets."
+  - "%0%That's probably better than just carrying everything around in my pockets."
   - '%3%Kind of makes me wish I had some magical way to make things disappear into
     an inventory. '
   - '%1%You know, like in classic video games? Seriously, where do they put that
     sword? inventory. '
-  - "%12%On second thought, maybe I don\u2019t want to know. "
+  - "%12%On second thought, maybe I don't want to know. "
   - '[New feature added! Inventory]'
-  - "%2%\u2026Speaking of weird video game tropes, how did you do that?"
+  - "%2%...Speaking of weird video game tropes, how did you do that?"
   responses:
   - responseText: Do what?
     dialogueObject: {fileID: 11400000, guid: 1f7027fde1860564584815c2682e5368, type: 2}

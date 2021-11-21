@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "%0%I used to write a lot when I was a kid. And I mean a LOT.\r"
-  - "%1%So far, I\u2019ve written over 500 pages of short stories, novels, and various
+  - "%1%So far, I've written over 500 pages of short stories, novels, and various
     works of fiction."
   - '%1%Single-spaced, 12-point font Times New Roman. None of that double-spacing
     bs.'
@@ -22,8 +22,8 @@ MonoBehaviour:
     on some story.'
   - '%1%I always stored them on my laptop. And I kept a few of them backed up on
     flash drives.'
-  - "%4%\u2026God I hope that they\u2019re all still on there and that they weren\u2019t
+  - "%4%...God I hope that they're all still on there and that they weren't
     erased."
-  - "%4%I couldn\u2019t imagine what I\u2019d do if all of my work just up and disappeared.
-    I\u2019d be crushed."
+  - "%4%I couldn't imagine what I'd do if all of my work just up and disappeared.
+    I'd be crushed."
   responses: []

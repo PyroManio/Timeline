@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Bed_Story
   m_EditorClassIdentifier: 
   dialogue:
-  - "%7%Ah, this is my bed. It\u2019s also where I woke up when I started this whole
+  - "%7%Ah, this is my bed. It's also where I woke up when I started this whole
     thing."
-  - "%2%Huh? My bed? I mean, yeah. It\u2019s my bed. What else do you want?"
+  - "%2%Huh? My bed? I mean, yeah. It's my bed. What else do you want?"
   - '%0%Well, I guess there is some stuff about it. '
-  - "%0%When I was little, I never really slept in my own bed. I slept in my parent\u2019s
+  - "%0%When I was little, I never really slept in my own bed. I slept in my parent's
     bed.\r\n"
   - '%0%But eventually I had to grow out of it. They started making me sleep in my
     own bed.
@@ -27,11 +27,11 @@ MonoBehaviour:
 
 '
   - '%2%But after middle school, I got this bed.'
-  - "%3%That\u2019s when\u2026 I started feeling like something was in the corner
+  - "%3%That's when... I started feeling like something was in the corner
     of my room."
-  - "%4%Ever since then, there have been nights where I can\u2019t sleep well on
+  - "%4%Ever since then, there have been nights where I can't sleep well on
     that thing."
-  - "%3%It just\u2026 wasn\u2019t comfortable. But I just told myself it was all
+  - "%3%It just... wasn't comfortable. But I just told myself it was all
     in my head."
-  - "%2%\u2026Right?"
+  - "%2%...Right?"
   responses: []

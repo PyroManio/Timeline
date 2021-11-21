@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%6%So this is your idea of a joke, right? Some twisted, demented joke?'
-  - "%9%I AM NOT A MONSTER YOU FREAKS! I WON\u2019T LET YOU\u2026\r"
-  - "Worthless\u2026"
-  - "%10%I won\u2019t let you hold this against me\u2026"
-  - "You truly are pathetic\u2026"
-  - "%12%Who said that? I\u2019m not pathetic!\r"
+  - "%9%I AM NOT A MONSTER YOU FREAKS! I WON'T LET YOU...\r"
+  - "Worthless..."
+  - "%10%I won't let you hold this against me..."
+  - "You truly are pathetic..."
+  - "%12%Who said that? I'm not pathetic!\r"
   - '%6%SHUT THE HELL UP!!!'
   - '%6%WHAT THE HELL DO YOU KNOW ANYWAYS?'
   responses:

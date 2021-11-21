@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%5%Why are you still asking me for help?'
-  - "%6%WE HAVE A KEY! LET\u2019S TRY USING IT ON THE DOOR!"
+  - "%6%WE HAVE A KEY! LET'S TRY USING IT ON THE DOOR!"
   - '%0%Maybe it will finally let us out of here!'
   responses: []

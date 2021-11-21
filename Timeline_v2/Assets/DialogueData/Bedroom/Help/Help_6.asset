@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Help_6
   m_EditorClassIdentifier: 
   dialogue:
-  - "%7%We unlocked the laptop now, so we\u2019ve got to be able to do something
+  - "%7%We unlocked the laptop now, so we've got to be able to do something
     with it."
   responses: []

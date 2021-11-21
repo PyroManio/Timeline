@@ -17,9 +17,9 @@ MonoBehaviour:
     temperature of the room.'
   - '%0%It only works in blocks of 4. Below 60, 60-64, 64-68, 68-72, 72-76, 76-80,
     and above 80.'
-  - "%2%It\u2019s Fahrenheit, by the way, in case you\u2019re not from the US or
+  - "%2%It's Fahrenheit, by the way, in case you're not from the US or
     something."
-  - "%0%Looks like it\u2019s between 76 and 80 degrees right now. That\u2019s pretty
+  - "%0%Looks like it's between 76 and 80 degrees right now. That's pretty
     normal, though."
   responses:
   - responseText: Story

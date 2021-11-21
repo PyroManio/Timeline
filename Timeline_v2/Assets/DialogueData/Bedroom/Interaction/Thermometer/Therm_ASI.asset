@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%0%Oh, it stands for Academic Science Intelligence test.'
-  - "%7%I think that\u2019s what the award was for."
-  - "%3%I always did well in school, getting A\u2019s and stuff, but\u2026"
+  - "%7%I think that's what the award was for."
+  - "%3%I always did well in school, getting A's and stuff, but..."
   - '%3%I was always the kid that daydreamed in class. '
   - '%3%I almost never took notes or paid attention.
 
 '
-  - "%0%But as long as I brought home A\u2019s my parents really didn\u2019t worry
+  - "%0%But as long as I brought home A's my parents really didn't worry
     about it.\r\n"
   responses: []

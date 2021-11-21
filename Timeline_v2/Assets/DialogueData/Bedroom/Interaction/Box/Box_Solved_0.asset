@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Box_Solved_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%1%HOORAY! I\u2019m so over these puzzles. Let\u2019s see what-"
-  - "%12%\u2026"
+  - "%1%HOORAY! I'm so over these puzzles. Let's see what-"
+  - "%12%..."
   - '%12%No.'
   - "%12%Nonononono\r"
-  - "%4%How in the HELL do you know about this? This isn\u2019t-"
-  - "%10%\u2026\r"
+  - "%4%How in the HELL do you know about this? This isn't-"
+  - "%10%...\r"
   responses: []

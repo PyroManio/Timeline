@@ -17,9 +17,9 @@ MonoBehaviour:
   - '%0%Everyone else always told me my backpack weighed a ton. Maybe I just got
     used to it?'
   - '%2%The weight also made for a good anti-theft strategy too, I guess.'
-  - "%0%The reason was that I would always forget my books in class if I didn\u2019t
+  - "%0%The reason was that I would always forget my books in class if I didn't
     have them on me."
-  - "%0%So, I just got used to carrying them around with me. That way I\u2019d never
+  - "%0%So, I just got used to carrying them around with me. That way I'd never
     forget them."
   - '%0%I also carried around my laptop in there along with its charger.'
   - '%0%That way I could do anything from homework to writing anywhere I wanted.'
@@ -27,5 +27,5 @@ MonoBehaviour:
     to be mobile.'
   - '%0%I can still remember sitting backstage working on finishing an essay while
     I was running tech crew.'
-  - "%2%Let\u2019s keep looking for clues."
+  - "%2%Let's keep looking for clues."
   responses: []

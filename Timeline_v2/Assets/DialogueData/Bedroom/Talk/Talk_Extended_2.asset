@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "%0%Yeah, they said, \u201CAll of you will undergo a series of tests together
-    to reprogram your brain. You\u2019ll really see the difference!\u201D"
-  - "%7%Doesn\u2019t that sound like there would be a lot of people? Or maybe they
+    to reprogram your brain. You'll really see the difference!\u201D"
+  - "%7%Doesn't that sound like there would be a lot of people? Or maybe they
     just put a lot of people in similar situations?"
-  - "%7%Or at least wouldn\u2019t they put two people in the room together? I mean,
-    not that the robot is creeping me out or anything\u2026\r\n"
-  - "%7%Couldn\u2019t they have just\u2026 made things clearer? \n"
+  - "%7%Or at least wouldn't they put two people in the room together? I mean,
+    not that the robot is creeping me out or anything...\r\n"
+  - "%7%Couldn't they have just... made things clearer? \n"
   responses: []

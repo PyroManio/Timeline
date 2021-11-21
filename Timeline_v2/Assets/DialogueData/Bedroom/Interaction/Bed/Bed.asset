@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bed
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Ah, this is my bed. It\u2019s also where I woke up when I started this whole
+  - "%0%Ah, this is my bed. It's also where I woke up when I started this whole
     thing."
   responses:
   - responseText: Story

@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogue:
   - "%2%Well, whatever, I guess. \r"
   - '%0%At the very least, it should be helpful for recognizing symbols.'
-  - "%0%I think I already saw some of them around here. There\u2019s definitely one
+  - "%0%I think I already saw some of them around here. There's definitely one
     on the drawer."
-  - "%1%Well, I guess that\u2019s progress. So good on us. One step closer to getting
+  - "%1%Well, I guess that's progress. So good on us. One step closer to getting
     out of here!"
   responses: []

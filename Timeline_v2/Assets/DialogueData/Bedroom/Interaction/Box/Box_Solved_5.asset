@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "hehehehe\r"
-  - "If this is tripping you up, you\u2019re in for a hell of a time, kid."
+  - "If this is tripping you up, you're in for a hell of a time, kid."
   - '%6%SHUT UP!!!'
-  - "%9%JUST\u2026"
+  - "%9%JUST..."
   responses: []

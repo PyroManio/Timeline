@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Night_Bottom
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%Yup. It\u2019s locked. I can see a padlock with a number 5 on it."
+  - "%2%Yup. It's locked. I can see a padlock with a number 5 on it."
   responses: []

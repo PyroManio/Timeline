@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%0%Right, we can use the screwdriver from earlier to remove these screws.'
-  - "%5%Though they could have avoided vandalizing my nightstand. Now I\u2019ll have
+  - "%5%Though they could have avoided vandalizing my nightstand. Now I'll have
     holes in it forever."
   responses: []

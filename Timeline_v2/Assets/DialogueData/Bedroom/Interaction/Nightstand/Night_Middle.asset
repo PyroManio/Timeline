@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Night_Middle
   m_EditorClassIdentifier: 
   dialogue:
-  - "%7%It\u2019s locked too. Looks like it needs some sort of code."
-  - "%7%Also looks like there\u2019s some sort of symbol here. Looks like an apple. "
+  - "%7%It's locked too. Looks like it needs some sort of code."
+  - "%7%Also looks like there's some sort of symbol here. Looks like an apple. "
   - '%7%Dunno if we can use this yet. '
   responses: []

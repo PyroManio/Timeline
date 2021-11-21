@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Computer
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%Hey! The computer screen changed! But it\u2019s locked with a passcode."
+  - "%2%Hey! The computer screen changed! But it's locked with a passcode."
   responses:
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: 055ccece13655244aa2792c086e51e01, type: 2}

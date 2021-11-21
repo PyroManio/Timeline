@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Talk_Necklace_1_UNUSED
   m_EditorClassIdentifier: 
   dialogue:
-  - "Huh, that\u2019s weird. I don\u2019t recognize this. Looks like the Yin part
+  - "Huh, that's weird. I don't recognize this. Looks like the Yin part
     of the Yin Yang symbol."
-  - "Or, is it the Yang part? The white part, whatever it\u2019s called. I get them
+  - "Or, is it the Yang part? The white part, whatever it's called. I get them
     mixed up sometimes."
   - Maybe it has something to do with the test? Like a clue or something? I dunno.
   responses: []

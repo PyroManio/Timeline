@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: InteractionYes
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Sure.'
+  - "%0%Sure. \u2019 \u2026  ' ..."
   - Here you go!
   responses: []

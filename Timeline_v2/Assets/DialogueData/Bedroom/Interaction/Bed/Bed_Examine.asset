@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Bed_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%Huh? There\u2019s something underneath one of the pillows."
-  - "%8%Hey! It\u2019s a key! Maybe it unlocks something around here.\n"
+  - "%2%Huh? There's something underneath one of the pillows."
+  - "%8%Hey! It's a key! Maybe it unlocks something around here.\n"
   - "%8%I highly doubt it will work on the door.\r"
-  - "%7%If Pandora Labs went through all this trouble, they wouldn\u2019t make it
+  - "%7%If Pandora Labs went through all this trouble, they wouldn't make it
     THAT easy."
   - '%0%Still, we should hold onto it. It might be useful later.
 
