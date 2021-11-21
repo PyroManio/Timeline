@@ -19,6 +19,6 @@ MonoBehaviour:
   - "%7%%PlayerName%? Is that what I\u2019m supposed to call you?"
   responses:
   - responseText: Yes
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 5a0d4f772d38f97438aac0b779ebf856, type: 2}
   - responseText: No
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 51577e747af81434b9d53176f112ad91, type: 2}

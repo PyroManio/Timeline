@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 [CreateAssetMenu(menuName ="Cutscene/CutsceneObject")]
 public class CutsceneObject : ScriptableObject
 {

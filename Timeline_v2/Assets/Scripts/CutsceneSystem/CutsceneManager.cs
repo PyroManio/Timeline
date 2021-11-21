@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Timeline;
-
+using UnityEngine.Events;
 public class CutsceneManager : MonoBehaviour
 {
     [SerializeField] DialogueUI dialogueUI;
@@ -11,36 +11,47 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField] GameObject screenManager;
 
     private bool cutscenePlaying=false;
-
+    private CutsceneGameObject currentCutsceneObject;
     private CutsceneObject currentCutscene;
+    private UnityEvent[] cutsceneEventList;
     public void PlayCutscene(CutsceneObject cutsceneStuff){
         //timelineManager.Play();
         cutscenePlaying=true;
         currentCutscene=cutsceneStuff;
         player.GetComponent<PlayerMovement>().inCutscene=true;
-        
         StartCoroutine(StepThroughCutscene());
+    }
+    public void PlayCutscene(CutsceneGameObject cutsceneStuff){
+        //timelineManager.Play();
+        currentCutsceneObject = cutsceneStuff;
+        cutsceneEventList = cutsceneStuff.CutsceneEvents;
+        PlayCutscene(cutsceneStuff.CutsceneObject);
     }
     private IEnumerator StepThroughCutscene()
     {
         for (int i = 0; i < currentCutscene.CutsceneFlow.Length; i++)
         {
-            if (currentCutscene.CutsceneFlow[i].HasTimeline)
+            MiniCutObject currentMini = currentCutscene.CutsceneFlow[i];
+            if (currentMini.HasTimeline)
             {
-                yield return (PlayTimeline(currentCutscene.CutsceneFlow[i].TimelineObject, currentCutscene.CutsceneFlow[i].IsLoop));
+                yield return (PlayTimeline(currentMini.TimelineObject, currentMini.IsLoop));
             }
-            else if (currentCutscene.CutsceneFlow[i].HasDialogue)
+            else if (currentMini.HasDialogue)
             {
-                yield return (PlayDialogue(currentCutscene.CutsceneFlow[i].dialogue));
+                yield return (PlayDialogue(currentMini.dialogue));
+            }
+            else if (currentMini.hasEvent && currentMini.eventIndex < cutsceneEventList.Length) 
+            {
+                cutsceneEventList[currentMini.eventIndex].Invoke();
             }
             
         }
-        
         player.GetComponent<PlayerMovement>().inCutscene=false;
         cutscenePlaying=false;
         timelineManager.stopTimeline();
         Debug.Log("Cutscene Ended");
     }
+    //private IEnumerator PlayEvent
     private IEnumerator PlayTimeline(TimelineAsset givenTimeline, bool isLoop)
     {
         //Debug.Log(timelineManager.isPlaying);
