@@ -13,21 +13,10 @@ MonoBehaviour:
   m_Name: Computer_Success_4
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Anyway, let's see what's on this computer."
-  - "%0%...!"
-  - "%2%There's two text files on here."
-  - "%4%One says, \u201CTo survive you must confess your sins. Reveal thy secrets,
-    prisoner.\u201D"
-  - "%7%I can't open the other one. But it looks like I can connect to the printer
-    and print it out."
-  - "%7%I printed it and it reads... LIES?"
-  - '%7%And what the hell does the first file mean?'
-  - "%10%It... doesn't mean that literally... does it?"
-  - "%10%Look, I get that you're trying to test me, but I'm not sharing
-    the darkest corners of my mind.\r\n"
-  - "%6%I've made promises to people to keep their secrets. And I plan to take
-    those secrets to my grave."
-  - "%5%I'll play along, but only to the extent that's necessary."
-  - "%10%Besides... there are some things people are better off not knowing."
-  - "%3%Sorry, that got kind of dark there, huh? Let's just move on from this."
+  - '%0%Anyway, let''s see what''s on this computer.'
+  - '%0%...!'
+  - '%2%There''s two text files on here.'
+  - '%4%One says, "To survive you must confess your sins. Reveal thy secrets, prisoner."'
+  - '%7%I can''t open the other one. But it looks like I can connect to the printer
+    and print it out.'
   responses: []

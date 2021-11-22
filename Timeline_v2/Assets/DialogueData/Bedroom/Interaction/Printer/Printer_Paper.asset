@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Printer
+  m_Name: Printer_Paper
   m_EditorClassIdentifier: 
   dialogue:
   - '%0%This is my printer. I usually use it to print out sheet music and school
     projects.'
   responses:
   - responseText: Examine
-    dialogueObject: {fileID: 11400000, guid: 2ba207780e84de94d831dd2413411393, type: 2}
+    dialogueObject: {fileID: 11400000, guid: 91aef79eb8e0f06498e7343df5b486c9, type: 2}
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: d52cd27fbd472054682692dacb48a483, type: 2}
   - responseText: Exit
