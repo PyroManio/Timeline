@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//using UnityEngine.Playables;
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -24,7 +24,12 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     
-
+    //void Start(){
+        // OK im pretty sure this will help stop the control 2's postion error.
+        // Won't work when trying to get the timeline manager so thats cool
+        // NOPE, god i hate this
+        //GetComponentInChildren<PlayableDirector>().playableAsset=null;
+    //}
     // Update is called once per frame
     void Update()
     {
@@ -76,14 +81,19 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
-        
+        if(inCutscene) {
+            Vector2 temp1;
+            temp1=rb.position;
+            temp1.x= Mathf.RoundToInt( temp1.x / 0.0625f) * 0.0625f;
+            temp1.y= Mathf.RoundToInt( temp1.y / 0.0625f) * 0.0625f;
+            rb.MovePosition(temp1);
+        }
         if (inCutscene || passScreen.IsOpen) return;
         // Movement
         Vector2 temp;
         temp=rb.position + movement * moveSpeed * Time.fixedDeltaTime;
         temp.x= Mathf.RoundToInt( temp.x / 0.0625f) * 0.0625f;
         temp.y= Mathf.RoundToInt( temp.y / 0.0625f) * 0.0625f;
-        
         rb.MovePosition( temp);
         // REMEMBER, MAKE SURE THIS CAN'T BE CHECKED DURING A CUTSCENE 
         if (!dialogueUI.IsOpen){

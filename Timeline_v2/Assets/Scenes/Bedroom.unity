@@ -1078,7 +1078,7 @@ PlayableDirector:
   m_GameObject: {fileID: 57339882}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 4fa81e9892062da439ac3e2eb1d165c8, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 033904a67af5042478f7e40479f42c20, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -1093,8 +1093,6 @@ PlayableDirector:
   - key: {fileID: 3620127134839291193, guid: 98c6d9fc46b68c14daeda825f86d3b85, type: 2}
     value: {fileID: 57339889}
   - key: {fileID: 9142166034182504742, guid: 8edf0f41a9a07014da7fc1e57f160042, type: 2}
-    value: {fileID: 57339889}
-  - key: {fileID: 1586438735083508247, guid: 8edf0f41a9a07014da7fc1e57f160042, type: 2}
     value: {fileID: 57339889}
   - key: {fileID: 393897725831903205, guid: fd3c28459863dd1488b88cc1a5ceb58a, type: 2}
     value: {fileID: 57339889}
@@ -1171,6 +1169,96 @@ PlayableDirector:
   - key: {fileID: 5134336905342686233, guid: 4fa81e9892062da439ac3e2eb1d165c8, type: 2}
     value: {fileID: 57339889}
   - key: {fileID: -4336356104512479338, guid: 4fa81e9892062da439ac3e2eb1d165c8, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -3163196973384030368, guid: 8904c6e18339b5a4690ede916527d51c, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 2856665854573984894, guid: 8904c6e18339b5a4690ede916527d51c, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -8042722594579111162, guid: 8904c6e18339b5a4690ede916527d51c, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -1736814303423650476, guid: 8904c6e18339b5a4690ede916527d51c, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: 1537454066328144927, guid: 8edf0f41a9a07014da7fc1e57f160042, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 4459192515984099220, guid: 347b0a10ff0ce8949bf04d06b3c21f24, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -1186124058510966956, guid: 347b0a10ff0ce8949bf04d06b3c21f24, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -9148849180396266422, guid: 347b0a10ff0ce8949bf04d06b3c21f24, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: 8500026580440024999, guid: 347b0a10ff0ce8949bf04d06b3c21f24, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -5830815791293679105, guid: 4d9198f31ef42e244b2565e15fc2a5cc, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: 6347663617791745361, guid: 4d9198f31ef42e244b2565e15fc2a5cc, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: 2405405288609991144, guid: 4d9198f31ef42e244b2565e15fc2a5cc, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -3934493575925309098, guid: 4d9198f31ef42e244b2565e15fc2a5cc, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 2496600965312543086, guid: ddc4cd61a61fe3b42ae17d2f8acfc2c1, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: 4068731437090224351, guid: ddc4cd61a61fe3b42ae17d2f8acfc2c1, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 9024880694721599321, guid: ddc4cd61a61fe3b42ae17d2f8acfc2c1, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -914561178704770366, guid: ddc4cd61a61fe3b42ae17d2f8acfc2c1, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -7450222360215640195, guid: 033904a67af5042478f7e40479f42c20, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -3104994473146345800, guid: 033904a67af5042478f7e40479f42c20, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -6729066224561848324, guid: 033904a67af5042478f7e40479f42c20, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -6982266267257623890, guid: 033904a67af5042478f7e40479f42c20, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -10397912680377294, guid: cc050b3480eaf394b8230ca0ac2ea2b9, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 417297388624607751, guid: cc050b3480eaf394b8230ca0ac2ea2b9, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 2224106180403293332, guid: cc050b3480eaf394b8230ca0ac2ea2b9, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -8059884364562713177, guid: cc050b3480eaf394b8230ca0ac2ea2b9, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: -385502791074256185, guid: 52c44a255011c1f409548f81162493c4, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -2405890607312031131, guid: 52c44a255011c1f409548f81162493c4, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: 3702092739488128460, guid: 52c44a255011c1f409548f81162493c4, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -6924421598581337669, guid: 52c44a255011c1f409548f81162493c4, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 2600375587382467564, guid: 9b89088aeae82cb43a5ab1b6463b2240, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -1234027259660885626, guid: 9b89088aeae82cb43a5ab1b6463b2240, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -6773180980781209928, guid: 9b89088aeae82cb43a5ab1b6463b2240, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 7833463819983435945, guid: 9b89088aeae82cb43a5ab1b6463b2240, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 388708874754157329, guid: 286622f0b6a14ea4ba3a464d97d2eae1, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -3897834650486280464, guid: 286622f0b6a14ea4ba3a464d97d2eae1, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 2891112050968053980, guid: 286622f0b6a14ea4ba3a464d97d2eae1, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: 8696379828590693399, guid: 286622f0b6a14ea4ba3a464d97d2eae1, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -2055254001910927871, guid: 0b86efdfbc075a340a7902d6de825072, type: 2}
+    value: {fileID: 93283992}
+  - key: {fileID: -3583737987142728002, guid: 0b86efdfbc075a340a7902d6de825072, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -8049399626822740830, guid: 0b86efdfbc075a340a7902d6de825072, type: 2}
+    value: {fileID: 57339889}
+  - key: {fileID: -443632962328336422, guid: 0b86efdfbc075a340a7902d6de825072, type: 2}
     value: {fileID: 93283992}
   m_ExposedReferences:
     m_References: []
@@ -1543,7 +1631,7 @@ BoxCollider2D:
   m_Offset: {x: 0.009475827, y: -0.090020746}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.4848485, y: 0.4871795}
     oldSize: {x: 2.0625, y: 2.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -2550,7 +2638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &310080629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4890,6 +4978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500bfda0bec84d7459149f03d12d4dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraTolerance: 3
 --- !u!114 &622040605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4945,7 +5034,7 @@ PlayableDirector:
     value: {fileID: 57339889}
   - key: {fileID: 9142166034182504742, guid: 8edf0f41a9a07014da7fc1e57f160042, type: 2}
     value: {fileID: 57339889}
-  - key: {fileID: 1586438735083508247, guid: 8edf0f41a9a07014da7fc1e57f160042, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 57339889}
   - key: {fileID: 393897725831903205, guid: fd3c28459863dd1488b88cc1a5ceb58a, type: 2}
     value: {fileID: 57339889}
@@ -6248,7 +6337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739301567}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.875, y: -8.3125, z: 0}
+  m_LocalPosition: {x: -1.875, y: -8.3125, z: 5.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1477530498}
@@ -6336,7 +6425,7 @@ BoxCollider2D:
   m_Offset: {x: 4.13, y: -4.64}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.49779737}
     oldSize: {x: 35.875, y: 14.1875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -6362,7 +6451,7 @@ BoxCollider2D:
   m_Offset: {x: -13.39, y: -6.876692}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.49779737}
     oldSize: {x: 35.875, y: 14.1875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -7789,7 +7878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &971104901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8252,7 +8341,7 @@ BoxCollider2D:
   m_Offset: {x: 0.08742213, y: -0.80999523}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.4923077, y: 0.49586776}
     oldSize: {x: 4.0625, y: 7.5625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -8558,7 +8647,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Option 1 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6ef1ac450846ebf45879f705bdb80e6d, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8566,7 +8655,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8583,8 +8672,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8622,7 +8711,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1083604137
@@ -9634,7 +9723,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 054ac5b076449694ca6a06b903424cc6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a3a993d6263c5c46ae8b5903900a1e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9677,7 +9766,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.1875, y: 8.125}
+    oldSize: {x: 3.125, y: 8.125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -13624,7 +13713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772218027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.125, y: -1.3754375, z: 7.249855}
+  m_LocalPosition: {x: -17.125, y: -1.375, z: 7.249855}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1075207307}
@@ -13697,7 +13786,7 @@ BoxCollider2D:
   m_Offset: {x: -0.052493095, y: 0.006066084}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.4909091, y: 0.4969325}
     oldSize: {x: 3.4375, y: 10.1875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -15068,7 +15157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995759692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.25, y: 4.15625, z: 7.249855}
+  m_LocalPosition: {x: -17.25, y: 4.125, z: 7.249855}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1075207307}
@@ -15090,8 +15179,8 @@ BoxCollider2D:
   m_Offset: {x: 0.15474701, y: 0.23506081}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.625, y: 3}
+    pivot: {x: 0.5, y: 0.4909091}
+    oldSize: {x: 3.875, y: 3.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -15140,7 +15229,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: db341baa51fbb6642866a4bfdbc17bd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91d18540035ddfd43a7ae16c1b98e608, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15205,7 +15294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2019253913
 Transform:
   m_ObjectHideFlags: 0

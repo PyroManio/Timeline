@@ -10,6 +10,7 @@ public class TimelineManager : MonoBehaviour
     public bool isLoop;
     private TimelineAsset[] backgroundTimeline;
     private TimelineAsset currentTimeline;
+
     public void Play(){
         //playableDirector.Play();
     }
