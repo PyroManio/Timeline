@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: Box_Solved_10
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%I..."
-  - "%3%I'm sorry, regardless."
-  - "%2%But... thanks. For not... completely shutting me out."
+  - '%2%I...'
+  - '%3%I''m sorry, regardless.'
+  - '%2%But... thanks. For not... completely shutting me out.'
   - '%2%But now you know.'
-  - '%2%That computer, it said I had to confess my sins to get out of here.'
-  - '%2%There were seven words on there.
+  - '%2%That computer, it said I had to confess my sins to get out of here.There
+    were seven words on there.'
+  - '%2%Alone
 
-    Alone'
-  - '%2%Beast
+    Beast
 
-    Car
+    Car'
+  - '%2%Dance
 
-    Dance'
-  - '%2%Exam
+    Exam
 
     Freeze
 
@@ -36,9 +36,9 @@ MonoBehaviour:
   - '%3%And honestly, the other six are far worse than this one. '
   - '%3%If it comes down to it, if it REALLY comes down to it, I could probably talk
     about 5 of them.'
-  - "%10%But there's one that I'll NEVER talk about, no matter what. "
-  - "%3%So... let's hope that we get out of here before we hit that point."
-  - "Well... at least things will be interesting. "
+  - '%10%But there''s one that I''ll NEVER talk about, no matter what. '
+  - '%3%So... let''s hope that we get out of here before we hit that point.'
+  - 'Well... at least things will be interesting. '
   responses:
   - responseText: Where did that voice come from?
     dialogueObject: {fileID: 11400000, guid: 812381a640ded824ebad59c696ba64e6, type: 2}
