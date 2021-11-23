@@ -11,9 +11,10 @@ public class DialogueUI : MonoBehaviour
     private TMP_Text textLabel;
     //NEW
     public bool IsOpen { get; private set; }
-    
+    [SerializeField] private GameObject specialDialogueBox;
     private ResponseHandler responseHandler;
     private TypewriterEffect typewritterEffect;
+    public bool specialBox=false;
     private void Start()
     {
         textLabel=defaultText;
@@ -22,13 +23,31 @@ public class DialogueUI : MonoBehaviour
         CloseDialogueBox();
         //ShowDialogue(testDialogue);
     }
+    public void nextSpecial(){
+        specialBox = true;
+    }
     public void ShowDialogue(DialogueObject dialogueObject)
+    {
+        //NEW
+        if (specialBox) {
+            ShowSpecialDialogue(dialogueObject);
+            return;
+        }
+        IsOpen = true; 
+        dialogueBox.SetActive(true);
+        textLabel.text=string.Empty;
+        textLabel=defaultText;
+        StartCoroutine(StepThroughDialogue(dialogueObject));
+    }
+    public void ShowSpecialDialogue(DialogueObject dialogueObject)
     {
         //NEW
         IsOpen = true; 
         dialogueBox.SetActive(true);
         textLabel.text=string.Empty;
-        textLabel=defaultText;
+        specialDialogueBox.SetActive(true);
+        textLabel=specialDialogueBox.GetComponentInChildren<TMP_Text>();
+        specialBox=true;
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
 
@@ -69,7 +88,7 @@ public class DialogueUI : MonoBehaviour
         {
             //assume all dialogue is default dialogue until proven otherwise
             textLabel.text=string.Empty;
-            textLabel = defaultText;
+            if (!specialBox) textLabel = defaultText;
             characterDialogueBox.SetActive(false);
             string dialogue= dialogueObject.Dialogue[i];
             // if there is a % at the beginning of the dialogue
@@ -89,7 +108,8 @@ public class DialogueUI : MonoBehaviour
         {
             CloseDialogueBox();
         }
-        
+        if (specialBox) specialDialogueBox.SetActive(false);
+        specialBox = false;
     }
     private IEnumerator RunTypingEffect(string dialogue)
     {   
