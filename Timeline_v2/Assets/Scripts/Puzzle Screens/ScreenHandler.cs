@@ -7,7 +7,7 @@ public class ScreenHandler : MonoBehaviour
     [SerializeField] GameObject[] screens;
     void Start()
     {
-        changeScreen(0);
+        //changeScreen(0);
     }
     public void changeScreen(int index){
         for (int i=0; i<screens.Length; i++) screens[i].SetActive(false);

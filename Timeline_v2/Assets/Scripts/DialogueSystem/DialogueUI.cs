@@ -15,6 +15,17 @@ public class DialogueUI : MonoBehaviour
     private ResponseHandler responseHandler;
     private TypewriterEffect typewritterEffect;
     public bool specialBox=false;
+    private bool forceContinue = false;
+    private bool forceStay = false;
+    [SerializeField] InfoRemember infoGet;
+    public void ForceContiue()
+    {
+        forceContinue = true;
+    }
+    public void ForceStay()
+    {
+        forceStay = true;
+    }
     private void Start()
     {
         textLabel=defaultText;
@@ -56,7 +67,6 @@ public class DialogueUI : MonoBehaviour
         //first we have to check if this is an actual expression trigger or someone decided to put the first text as a % for some reason
         for (int i = 1; i < dialogue.Length; i++)
         {
-           
             if ( System.String.Equals(dialogue[i],'%'))
             {
                 //checks to see if it isn't a %% thing or %heh% thing, although I have to question why are you putting this into the dialogue
@@ -69,7 +79,34 @@ public class DialogueUI : MonoBehaviour
             }
         }
         return dialogue;
+    }
+    private string checkForInfo(string dialogue){
+        if (System.String.Equals(dialogue[0],'%'))  dialogue = expressionDialogue(dialogue);
+        //bool firstFound=false;
+        int firstIndex=-1;
+        int secondIndex=-1;
+        for (int i = 0; i < dialogue.Length; i++)
+        {
+            if (System.String.Equals(dialogue[i],'%'))
+            {
+                if (firstIndex!=-1) {
+                    secondIndex=i;
+                    break;
+                }
+                else
+                {
+                    //firstFound=true;
+                    firstIndex=i;
+                }
+            }
+        }
+        if (secondIndex==-1) return dialogue;
         
+        if (dialogue.Substring(firstIndex + 1,secondIndex-firstIndex-1 ).Equals("PlayerName"))
+        {
+            dialogue=dialogue.Substring(0,firstIndex) + infoGet.playerName + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
+        }
+        return dialogue;
     }
     public void AddResponseEvents(ResponseEvent[] responseEvents)
     {
@@ -89,16 +126,27 @@ public class DialogueUI : MonoBehaviour
             //assume all dialogue is default dialogue until proven otherwise
             textLabel.text=string.Empty;
             if (!specialBox) textLabel = defaultText;
-            characterDialogueBox.SetActive(false);
-            string dialogue= dialogueObject.Dialogue[i];
+            if (characterDialogueBox!=null)
+                characterDialogueBox.SetActive(false);
+            string dialogue = dialogueObject.Dialogue[i];
             // if there is a % at the beginning of the dialogue
-            if (System.String.Equals(dialogueObject.Dialogue[i][0],'%'))  dialogue = expressionDialogue(dialogueObject.Dialogue[i]);
+                //if (System.String.Equals(dialogueObject.Dialogue[i][0],'%'))  dialogue = expressionDialogue(dialogueObject.Dialogue[i]);
+            dialogue = checkForInfo(dialogueObject.Dialogue[i]);
             //yield return typewritterEffect.Run(dialogue,textLabel); 
             yield return RunTypingEffect(dialogue);
             textLabel.text=dialogue;
             if (i == dialogueObject.Dialogue.Length-1 && dialogueObject.HasResponses) break;
             yield return null;
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+            if (!forceContinue)
+            {
+                if (forceStay)
+                {
+                    yield return new WaitUntil(() => forceContinue);
+                    forceStay = false;
+                }
+                else yield return new WaitUntil(() => forceContinue||Input.GetKeyDown(KeyCode.Space));
+            }
+            forceContinue = false;
         }
         if (dialogueObject.HasResponses)
         {
@@ -110,6 +158,8 @@ public class DialogueUI : MonoBehaviour
         }
         if (specialBox) specialDialogueBox.SetActive(false);
         specialBox = false;
+        
+        
     }
     private IEnumerator RunTypingEffect(string dialogue)
     {   
@@ -125,10 +175,12 @@ public class DialogueUI : MonoBehaviour
     public void CloseDialogueBox(){
         //NEW
         IsOpen = false;
-        characterDialogueBox.SetActive(false);
+        if (characterDialogueBox!=null)
+            characterDialogueBox.SetActive(false);
         dialogueBox.SetActive(false);
         defaultText.text=string.Empty;
         textLabel.text=string.Empty;
-        characterDialogueBox.GetComponentInChildren<TMP_Text>().text=string.Empty;
+        if (characterDialogueBox!=null)
+            characterDialogueBox.GetComponentInChildren<TMP_Text>().text=string.Empty;
     }
 }

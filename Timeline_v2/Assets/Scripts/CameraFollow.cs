@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    private Transform playerTransform;
+    //private Transform playerTransform;
     [SerializeField] private int cameraTolerance;
+    [SerializeField] private Transform playerTransform;
+
     void Start() {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;  
+        //playerTransform = GameObject.FindGameObjectWithTag("Player").transform;  
     }
 
     void LateUpdate() {

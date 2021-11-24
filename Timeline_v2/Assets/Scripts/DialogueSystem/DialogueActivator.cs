@@ -32,17 +32,20 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     }
     public void Interact(PlayerMovement PlayerMovement)
     {
-        if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject==dialogueObject)
-        {
-            PlayerMovement.DialogueUI.AddResponseEvents(responseEvents.Events);
-        }
-        PlayerMovement.DialogueUI.ShowDialogue(dialogueObject);
+        //if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject==dialogueObject)
+        //{PlayerMovement.DialogueUI.AddResponseEvents(responseEvents.Events); }
+       // PlayerMovement.DialogueUI.ShowDialogue(dialogueObject);
+       Interact(PlayerMovement.DialogueUI);
     }
     public void Interact(DialogueUI dialogueUI)
     {
-        if (TryGetComponent(out DialogueResponseEvents responseEvents) && responseEvents.DialogueObject==dialogueObject)
+        foreach (DialogueResponseEvents responseEvents in GetComponents<DialogueResponseEvents>())
         {
-            dialogueUI.AddResponseEvents(responseEvents.Events);
+            if (responseEvents.DialogueObject == dialogueObject)
+            {
+                dialogueUI.AddResponseEvents(responseEvents.Events);
+                break;
+            }
         }
         dialogueUI.ShowDialogue(dialogueObject);
     }
