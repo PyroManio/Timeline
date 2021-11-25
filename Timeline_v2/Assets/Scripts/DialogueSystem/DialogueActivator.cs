@@ -16,6 +16,7 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     {
         if(other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement PlayerMovement))
         {
+            Debug.Log("enter");
             PlayerMovement.Interactable = this;
         }
     }
@@ -26,7 +27,8 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         {
             if(PlayerMovement.Interactable is DialogueActivator dialogueActivator && (bool)dialogueActivator ==this)
             {
-                PlayerMovement.Interactable = null;
+                if (PlayerMovement.Interactable.Equals(this))
+                    PlayerMovement.Interactable = null;
             }
         }
     }

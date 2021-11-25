@@ -33,6 +33,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!dialogueUI.IsOpen){
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                if(Interactable != null)
+                {
+                    Interactable.Interact(PlayerMovement:this);
+                }
+            }
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (pauseMenu.IsOpen) pauseMenu.closePauseMenu();
+                else pauseMenu.openPauseMenu();
+            }
+        }
         //Debug.Log(inCutscene);
         if (inCutscene)
         {
@@ -77,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
+    
     }
 
     void FixedUpdate() 
@@ -96,19 +111,6 @@ public class PlayerMovement : MonoBehaviour
         temp.y= Mathf.RoundToInt( temp.y / 0.0625f) * 0.0625f;
         rb.MovePosition( temp);
         // REMEMBER, MAKE SURE THIS CAN'T BE CHECKED DURING A CUTSCENE 
-        if (!dialogueUI.IsOpen){
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                if(Interactable != null)
-                {
-                    Interactable.Interact(PlayerMovement:this);
-                }
-            }
-            if(Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (pauseMenu.IsOpen) pauseMenu.closePauseMenu();
-                else pauseMenu.openPauseMenu();
-            }
-        }
+        
     }
 }
