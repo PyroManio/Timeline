@@ -11,6 +11,7 @@ public class ConsentCutscene : MonoBehaviour
     [SerializeField] DialogueObject failedAge;
     [SerializeField] DialogueObject goodAge;
     [SerializeField] UnityEvent endingEvents;
+    [SerializeField] LoadBar loadBar;
     public bool failedConsent = false;
     public bool hasEnded = false;
     private string currentState="default";
@@ -30,10 +31,18 @@ public class ConsentCutscene : MonoBehaviour
     }
     void Start()
     {
-        dialogueStuff.GetComponentInChildren<DialogueActivator>().Interact(dialogueUI);
+        loadBar.startBar();
+        currentState="load";
+        
     }
     void Update()
     {
+        if (currentState.Equals("load") && loadBar.isDone)  
+        {
+            dialogueStuff.GetComponentInChildren<DialogueActivator>().Interact(dialogueUI);
+            currentState="default";
+            loadBar.closeBar();
+        }
         if (Input.GetKeyDown(KeyCode.Tab)) hasEnded=true;
         if (currentState.Equals("default") && !dialogueUI.IsOpen)
         {
