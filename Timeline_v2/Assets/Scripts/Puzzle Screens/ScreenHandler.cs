@@ -9,9 +9,11 @@ public class ScreenHandler : MonoBehaviour
     [SerializeField] GameObject[] screens;
     [SerializeField] private TransitionScreen transitionScreen;
     [SerializeField] string[] sceneList;
+    public bool IsOpen { get; private set; }
     void Start()
     {
         //changeScreen(0);
+        //IsOpen=false;
     }
     public void changeScreen(int index){
         for (int i=0; i<screens.Length; i++) screens[i].SetActive(false);
@@ -20,10 +22,12 @@ public class ScreenHandler : MonoBehaviour
         Debug.Log("FF");
         transitionScreen.StopAllCoroutines();
         transitionScreen.halfTransitionItself();
+        IsOpen=false;
     }
     public void transChangeScreen(int index)
     {
         transitionScreen.fullTransitionItself((index));
+        IsOpen=true;
     }
     public void changeScene(int index)
     {
@@ -33,6 +37,7 @@ public class ScreenHandler : MonoBehaviour
     public void transChangeScene(int index)
     {
         transitionScreen.sceneTransition(index);
+        IsOpen=true;
     }
 
 }

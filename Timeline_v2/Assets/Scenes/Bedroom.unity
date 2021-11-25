@@ -1008,6 +1008,7 @@ MonoBehaviour:
   dialogueUI: {fileID: 142594636}
   pauseMenu: {fileID: 142594643}
   passScreen: {fileID: 142594648}
+  screenHandler: {fileID: 478931245}
   moveSpeed: 5
   inCutscene: 0
   direction: Down
@@ -8421,7 +8422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &863335651
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9701,7 +9702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1035124293
 Transform:
   m_ObjectHideFlags: 0

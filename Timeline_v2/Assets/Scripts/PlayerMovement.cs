@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private PauseMenu pauseMenu;
     [SerializeField] private PasswordScreen passScreen;
+    [SerializeField] private ScreenHandler screenHandler;
     public PauseMenu PauseMenu => pauseMenu;
     public float moveSpeed = 5f;
     public bool inCutscene = true;
@@ -33,6 +34,25 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
+        //Debug.Log(inCutscene);
+        if (inCutscene)
+        {
+            movement.x=0;
+            movement.y=0;
+            
+            return;
+        }
+        if (dialogueUI.IsOpen || pauseMenu.IsOpen || passScreen.IsOpen || screenHandler.IsOpen) 
+        {
+            movement.x=0;
+            movement.y=0;
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+            return;
+        }
         if (!dialogueUI.IsOpen){
             if(Input.GetKeyDown(KeyCode.E))
             {
@@ -46,23 +66,6 @@ public class PlayerMovement : MonoBehaviour
                 if (pauseMenu.IsOpen) pauseMenu.closePauseMenu();
                 else pauseMenu.openPauseMenu();
             }
-        }
-        //Debug.Log(inCutscene);
-        if (inCutscene)
-        {
-            movement.x=0;
-            movement.y=0;
-            
-            return;
-        }
-        if (dialogueUI.IsOpen || pauseMenu.IsOpen || passScreen.IsOpen) 
-        {
-            movement.x=0;
-            movement.y=0;
-            animator.SetFloat("Horizontal", movement.x);
-            animator.SetFloat("Vertical", movement.y);
-            animator.SetFloat("Speed", movement.sqrMagnitude);
-            return;
         }
         // Input
         movement.x = (int)(Input.GetAxisRaw("Horizontal")/0.0625)*0.0625f;
