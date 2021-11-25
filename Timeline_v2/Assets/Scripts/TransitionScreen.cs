@@ -22,6 +22,10 @@ public class TransitionScreen : MonoBehaviour
     {
         StartCoroutine(halfTrans());
     }
+    public void sceneTransition(int index)
+    {
+        StartCoroutine(studiperFix(index));
+    }
     public void fullTransitionItself(int index)
     {
         
@@ -44,14 +48,19 @@ public class TransitionScreen : MonoBehaviour
         //yield return (halfTrans());
         //while (halfWay)  yield return null;
     }
-    
+    private IEnumerator studiperFix(int index)
+    {
+        yield return (trans());
+        screenHandler.changeScene(index);
+    }
     void Start()
     {
         itsImage.color = new Color (0f, 0f, 0f, 0f);
-        imageObject.SetActive(false);
+        //imageObject.SetActive(false);
     }
     private IEnumerator trans()
     {
+        
         imageObject.SetActive(true);
         itsImage.color = new Color (0f, 0f, 0f, 0f);
         transparencyLevel=0f;
@@ -84,7 +93,6 @@ public class TransitionScreen : MonoBehaviour
                 transparencyLevel=0f;
                 halfWay = false;
             }
-            Debug.Log(transparencyLevel);
             itsImage.color = new Color (0f, 0f, 0f, transparencyLevel);
             yield return null;
         }

@@ -9,9 +9,10 @@ public class LoadBar : MonoBehaviour
     public bool isDone = false;
     void Start()
     {
-        container.SetActive(true);
+        //container.SetActive(true);
         bar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,0);
-        container.SetActive(false);
+        //container.SetActive(false);
+        
     }
     public void startBar()
     {
@@ -20,6 +21,7 @@ public class LoadBar : MonoBehaviour
     }
     private IEnumerator barMove()
     {
+        //container.SetActive(true);
         for (int i = 0; i<110; i++) yield return null;
         int currentWidth=0;
         while (currentWidth < 232)
@@ -38,13 +40,13 @@ public class LoadBar : MonoBehaviour
             foreach (Image eachOne in container.GetComponentsInChildren<Image>()) 
                 eachOne.color=new Color (eachOne.color.r, eachOne.color.g, eachOne.color.b, currentTrans);
             //container.GetComponentInChildren<Image>().color=new Color32 (0f, 0f, 0f, currentTrans);
-            Debug.Log(currentTrans);
             yield return null;
         }
         isDone = true;
     }
     public void closeBar()
     {
+        //Debug.Log("END");
         container.SetActive(false);
     }
 }

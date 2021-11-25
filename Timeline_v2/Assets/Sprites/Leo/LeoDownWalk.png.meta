@@ -244,8 +244,8 @@ TextureImporter:
       name: LeoFrontWalkFixed 1_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 7
+        x: 30
+        y: 8
         width: 39
         height: 92
       alignment: 9
@@ -265,8 +265,8 @@ TextureImporter:
       name: LeoFrontWalkFixed 1_7
       rect:
         serializedVersion: 2
-        x: 131
-        y: 9
+        x: 130
+        y: 8
         width: 39
         height: 92
       alignment: 9

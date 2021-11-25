@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 5536fd45d607bd74c87ade4978ff5453
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Bedroom.unity
-    guid: 65ab5ad66e41e5b4687a15e972ed36de
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Hallway.unity
+    guid: 1dadf3ba79b1bdf4ba5ee0698056521c
   m_configObjects: {}
