@@ -2463,7 +2463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passScreen: {fileID: 971104900}
-  correctPassword: test
+  correctPassword: SchrodCat
   correctEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3574,7 +3574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &317037752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6720,7 +6720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632202757}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.04, y: 0.34, z: 0}
+  m_LocalPosition: {x: 2.5, y: -0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1721809735}
@@ -6763,7 +6763,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.05, y: 4.34}
+  m_Size: {x: 5.38, y: 3.23}
   m_EdgeRadius: 0
 --- !u!1 &639969971
 GameObject:
@@ -7311,6 +7311,7 @@ GameObject:
   - component: {fileID: 673255068}
   - component: {fileID: 673255070}
   - component: {fileID: 673255069}
+  - component: {fileID: 673255071}
   m_Layer: 0
   m_Name: WindowsDialogue
   m_TagString: Untagged
@@ -7371,6 +7372,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.66, y: 2.6}
   m_EdgeRadius: 0
+--- !u!114 &673255071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673255067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2a3c9cb6e2e9644a39466f39685b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 11400000, guid: bc1af6946f1847d4a9d06f9d3230bbc8, type: 2}
+  events:
+  - name: Examine
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 673255069}
+          m_TargetAssemblyTypeName: DialogueActivator, Assembly-CSharp
+          m_MethodName: UpdateDialogueObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 26662d708ab801246b60028a2a93ecff, type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Story
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Exit
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &673785463
 GameObject:
   m_ObjectHideFlags: 0
@@ -9397,7 +9436,7 @@ MonoBehaviour:
   dialTemplate: {fileID: 1985029694}
   dialContainer: {fileID: 625110739}
   lockerObject: {fileID: 619901475}
-  solution: 1234
+  solution: 5293
   solutionEvent:
     m_PersistentCalls:
       m_Calls:
@@ -9466,7 +9505,7 @@ MonoBehaviour:
   dialTemplate: {fileID: 508150292}
   dialContainer: {fileID: 1403058028}
   lockerObject: {fileID: 36281223}
-  solution: 2345
+  solution: 5317
   solutionEvent:
     m_PersistentCalls:
       m_Calls:
@@ -11400,7 +11439,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 478931245}
         m_TargetAssemblyTypeName: ScreenHandler, Assembly-CSharp
-        m_MethodName: changeScreen
+        m_MethodName: transChangeScreen
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

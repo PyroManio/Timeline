@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: Help_4
+  m_Name: Window_PExamine
   m_EditorClassIdentifier: 
   dialogue:
-  - '%7%The nightstand said to "SEEK HELP" for the password.'
-  - '%0%But I don''t see anything in this room that would "HELP" find the password.'
-  - '%7%But if it''s not in this room, then where the hell is the password?'
-  - '%9%Unless... it''s something only YOU can see? Or access? Where the hell would
-    that be?'
+  - '%8%There''s a series of numbers written on one of the plates here!'
+  - '%8%5293'
+  - "%8%Hopefully that's some sort of code that we need.\r"
   responses: []

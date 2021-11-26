@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Help_7
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Well we unlocked the closet. At least I'll be able to change my clothes
-    now."
+  - '%0%Well we unlocked the closet. At least I''ll be able to change my clothes
+    now.'
   - '%7%But we still need to find a way to unlock the door.'
   - '%7%That box inside the closet is really bugging me.'
-  - "%7%There's got to be a code that unlocks it!"
+  - '%7%There''s got to be a code that unlocks it!'
+  - '%7%Maybe that "LIES" paper has to do with it?'
+  - '%7%But that''s a word, not a code.'
+  - '%7%Unless we''re supposed to look at it in a certain way...'
   responses: []

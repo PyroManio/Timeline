@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: Night_Top_Use_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%Let's see... there's a lot of random junk in here. It's
-    my nightstand after all."
-  - "%0%But looks like there's a piece of paper in here."
-  - "%0%It says, \u201CSEEK HELP FOR THE PASSWORD.\u201D"
+  - '%2%Let''s see... there''s a lot of random junk in here. It''s my nightstand
+    after all.'
+  - '%0%But looks like there''s a piece of paper in here.'
+  - '%0%It says, "SEEK HELP FOR THE PASSWORD."'
   - '%5%What the hell does that mean? Are we supposed to call someone?'
   - '%6%How the hell are we supposed to do that without access to an electronic device,
     genius?'
-  - "%5%Well, at least we unlocked something, but it doesn't look like it did
-    much.\r\n"
-  - "%0%I'll hold on to the paper for now."
+  - '%5%Well, at least we unlocked something, but it doesn''t look like it did much.
+
+'
+  - '%0%I''ll hold on to the paper for now.'
   - '[Strange Note added to inventory]'
   responses: []
