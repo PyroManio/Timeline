@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PauseMenu pauseMenu;
     [SerializeField] private PasswordScreen passScreen;
     [SerializeField] private ScreenHandler screenHandler;
+    [SerializeField] private QuitScreen quitScreen;
     public PauseMenu PauseMenu => pauseMenu;
     public float moveSpeed = 5f;
     public bool inCutscene = true;
@@ -44,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             
             return;
         }
-        if (dialogueUI.IsOpen || pauseMenu.IsOpen || passScreen.IsOpen || screenHandler.IsOpen) 
+        if (dialogueUI.IsOpen || (quitScreen!=null && quitScreen.IsOpen) || passScreen.IsOpen || screenHandler.IsOpen) 
         {
             movement.x=0;
             movement.y=0;
@@ -54,18 +55,27 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         if (!dialogueUI.IsOpen){
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKeyDown(KeyCode.Space))
             {
                 if(Interactable != null)
                 {
                     Interactable.Interact(PlayerMovement:this);
                 }
             }
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if(Input.GetKeyDown(KeyCode.Return))
             {
                 if (pauseMenu.IsOpen) pauseMenu.closePauseMenu();
                 else pauseMenu.openPauseMenu();
             }
+            if(Input.GetKeyDown(KeyCode.Escape))
+                quitScreen.OpenScreen();
+        }
+        if (pauseMenu.IsOpen)
+        {
+            movement.x=0;
+            movement.y=0;
+            
+            return;
         }
         // Input
         movement.x = (int)(Input.GetAxisRaw("Horizontal")/0.0625)*0.0625f;
