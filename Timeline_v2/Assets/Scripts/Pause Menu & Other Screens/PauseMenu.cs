@@ -40,7 +40,8 @@ public class PauseMenu : MonoBehaviour
             optionSlot.GetComponentInChildren<Button>().onClick.AddListener( () => OnPickedResponse(optionSlot.GetComponentInChildren<TMP_Text>().text));
             // Grey-out map/inventory if the player hasn't picked up the map/bag yet
             if ((boxNames[i].Equals("Inventory") && !hasBag) || (boxNames[i].Equals("Map") && !hasMap)){
-                optionSlot.GetComponentInChildren<TMP_Text>().faceColor = new Color32(150,150,150,255);
+                //optionSlot.GetComponentInChildren<TMP_Text>().faceColor = new Color32(150,150,150,255);
+                optionSlot.GetComponentInChildren<TMP_Text>().color = new Color32(150,150,150,255);
             }
             menuOptionList.Add(optionSlot);
             

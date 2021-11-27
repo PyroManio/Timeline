@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameRoom.unity
     guid: 5664f286182b63d48b7629698b58e997
+  - enabled: 1
+    path: Assets/Scenes/DEMOEND.unity
+    guid: 756dbdb66b00242489b4c8ee2885e349
   m_configObjects: {}
