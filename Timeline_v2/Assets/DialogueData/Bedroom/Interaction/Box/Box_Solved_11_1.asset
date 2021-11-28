@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%Inside the container is a key. Let''s hope it lets us get out of here finally. '
-  - '[Freeze Key added to Inventory]'
+  - '[Freeze Key added to Inventory]%SE0% '
   responses: []

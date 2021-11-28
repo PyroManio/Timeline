@@ -133,12 +133,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 438
-        width: 64
-        height: 64
+        x: 3
+        y: 442
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_1
       rect:
         serializedVersion: 2
-        x: 68
-        y: 438
-        width: 64
-        height: 64
+        x: 69
+        y: 442
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 438
-        width: 64
-        height: 64
+        x: 135
+        y: 442
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_3
       rect:
         serializedVersion: 2
-        x: 200
-        y: 438
-        width: 64
-        height: 64
+        x: 201
+        y: 442
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_4
       rect:
         serializedVersion: 2
-        x: 266
-        y: 438
-        width: 64
-        height: 64
+        x: 267
+        y: 442
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_5
       rect:
         serializedVersion: 2
-        x: 2
-        y: 372
-        width: 64
-        height: 64
+        x: 3
+        y: 376
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_6
       rect:
         serializedVersion: 2
-        x: 68
-        y: 372
-        width: 64
-        height: 64
+        x: 69
+        y: 376
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_7
       rect:
         serializedVersion: 2
-        x: 134
-        y: 372
-        width: 64
-        height: 64
+        x: 135
+        y: 376
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_8
       rect:
         serializedVersion: 2
-        x: 200
-        y: 372
-        width: 64
-        height: 64
+        x: 204
+        y: 376
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_9
       rect:
         serializedVersion: 2
-        x: 266
-        y: 372
-        width: 64
-        height: 64
+        x: 267
+        y: 376
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_10
       rect:
         serializedVersion: 2
-        x: 2
-        y: 306
-        width: 64
-        height: 64
+        x: 3
+        y: 310
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,12 +364,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_11
       rect:
         serializedVersion: 2
-        x: 68
-        y: 306
-        width: 64
-        height: 64
+        x: 69
+        y: 310
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,12 +385,12 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_12
       rect:
         serializedVersion: 2
-        x: 134
-        y: 306
-        width: 64
-        height: 64
+        x: 135
+        y: 310
+        width: 60
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

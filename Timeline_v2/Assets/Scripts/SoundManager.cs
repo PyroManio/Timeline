@@ -42,6 +42,19 @@ public class SoundManager : MonoBehaviour
     {
         soundList[index].Play();
     }
+    public void YieldPlaySound(int index)
+    {
+        Debug.Log(soundList[index].isPlaying);
+        if (!soundList[index].isPlaying)
+            soundList[index].Play();
+    }
+    public void StopSounds()
+    {
+        foreach (AudioSource thingy in soundList)
+        {
+            thingy.Stop();
+        }
+    }
     private IEnumerator fadingStop()
     {
         IsFading = true;

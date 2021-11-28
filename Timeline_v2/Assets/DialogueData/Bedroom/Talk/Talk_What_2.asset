@@ -17,5 +17,5 @@ MonoBehaviour:
 
 '
   responses:
-  - responseText: I volunteered to help
+  - responseText: I volunteered
     dialogueObject: {fileID: 11400000, guid: 5f8bc346fe37cb147a10a5d39096490c, type: 2}

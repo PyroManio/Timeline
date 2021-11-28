@@ -36,10 +36,10 @@ public class ResponseHandler : MonoBehaviour
             
             tempResponseButtons.Add(responseButton);
 
-            responseBoxHeight += responseButtonTemplate.sizeDelta.y;
+            responseBoxHeight += responseButtonTemplate.sizeDelta.y+ 10;
         }
         //responseBox.sizeDelta=new Vector2(responseBox.sizeDelta.x+(longestResponseLength*20-100),responseBoxHeight);
-        responseBox.sizeDelta=new Vector2(Mathf.Sqrt(longestResponseLength*4000),responseBoxHeight);
+        responseBox.sizeDelta=new Vector2(Mathf.Sqrt(longestResponseLength * 7000),responseBoxHeight +10);
         responseBox.gameObject.SetActive(true);
     } 
     private void OnPickedResponse(Response response, int responseIndex)

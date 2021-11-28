@@ -16,18 +16,25 @@ public class VideoManager : MonoBehaviour
     public void PlayVideo()
     {
         videoRenderer.SetActive(true);
-        videoStuff.Play();
+        
         StartCoroutine(waitTillEnd());
     }
     private IEnumerator waitTillEnd()
     {
         if (!videoStuff.isPrepared)
             yield return null;
+        videoStuff.Play();
         Debug.Log(videoStuff.isPlaying);
-        while(videoStuff.isPlaying)
+        while(true)
         {
             player.inCutscene = true;
             yield return null;
+            if (!videoStuff.isPlaying)
+            {
+                yield return null;
+                if (!videoStuff.isPlaying) break;
+            }
+
         }
         for (int i = 0; i < 300; i++) yield return null;
         player.inCutscene = false;

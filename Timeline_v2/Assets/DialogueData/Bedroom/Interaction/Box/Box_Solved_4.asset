@@ -15,9 +15,9 @@ MonoBehaviour:
   dialogue:
   - '%6%So this is your idea of a joke, right? Some twisted, demented joke?'
   - "%9%I AM NOT A MONSTER YOU FREAKS! I WON'T LET YOU...\r"
-  - "Worthless..."
-  - "%10%I won't let you hold this against me..."
-  - "You truly are pathetic..."
+  - Worthless...%CT2%
+  - '%10%I won''t let you hold this against me...'
+  - You truly are pathetic...%CT2%
   - "%12%Who said that? I'm not pathetic!\r"
   - '%6%SHUT THE HELL UP!!!'
   - '%6%WHAT THE HELL DO YOU KNOW ANYWAYS?'

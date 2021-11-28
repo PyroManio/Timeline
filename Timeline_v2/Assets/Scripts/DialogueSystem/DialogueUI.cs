@@ -18,6 +18,8 @@ public class DialogueUI : MonoBehaviour
     private bool forceContinue = false;
     private bool forceStay = false;
     [SerializeField] InfoRemember infoGet;
+    [SerializeField] SoundManager soundManager;
+    private int currentTalking; // 0=none, 1=Leo, 2=Despair 
     public void ForceContiue()
     {
         forceContinue = true;
@@ -75,6 +77,8 @@ public class DialogueUI : MonoBehaviour
                 characterDialogueBox.SetActive(true);
                 textLabel = characterDialogueBox.GetComponentInChildren<TMP_Text>();
                 dialogue=dialogue.Substring(i+1);
+                currentTalking=1;
+
                 break;
             }
         }
@@ -106,6 +110,20 @@ public class DialogueUI : MonoBehaviour
         {
             dialogue=dialogue.Substring(0,firstIndex) + infoGet.playerName + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
         }
+        else if (dialogue.Substring(firstIndex+1,2).Equals("SE"))
+        {
+            
+            soundManager.PlaySound(int.Parse(dialogue.Substring(firstIndex + 3, secondIndex-firstIndex-3)));
+            dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex,dialogue.Length-secondIndex);
+            //dialogue=dialogue.Substring(0,firstIndex);
+        }
+        else if (dialogue.Substring(firstIndex+1,2).Equals("CT"))
+        {
+            currentTalking=int.Parse(dialogue.Substring(firstIndex + 3, secondIndex-firstIndex-3));
+            dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
+            //dialogue=dialogue.Substring(0,firstIndex);
+        }
+
         return dialogue;
     }
     public void AddResponseEvents(ResponseEvent[] responseEvents)
@@ -125,6 +143,7 @@ public class DialogueUI : MonoBehaviour
         {
             //assume all dialogue is default dialogue until proven otherwise
             textLabel.text=string.Empty;
+            currentTalking=0;
             if (!specialBox) textLabel = defaultText;
             if (characterDialogueBox!=null)
                 characterDialogueBox.SetActive(false);
@@ -133,8 +152,12 @@ public class DialogueUI : MonoBehaviour
                 //if (System.String.Equals(dialogueObject.Dialogue[i][0],'%'))  dialogue = expressionDialogue(dialogueObject.Dialogue[i]);
             dialogue = checkForInfo(dialogueObject.Dialogue[i]);
             //yield return typewritterEffect.Run(dialogue,textLabel); 
+
+           //if (currentTalking==1) soundManager.PlaySound(1);
+
             yield return RunTypingEffect(dialogue);
             textLabel.text=dialogue;
+            if (currentTalking!=0) soundManager.StopSounds();
             if (i == dialogueObject.Dialogue.Length-1 && dialogueObject.HasResponses) break;
             yield return null;
             if (!forceContinue)
@@ -163,7 +186,7 @@ public class DialogueUI : MonoBehaviour
     }
     private IEnumerator RunTypingEffect(string dialogue)
     {   
-        typewritterEffect.Run(dialogue, textLabel);
+        typewritterEffect.Run(dialogue, textLabel, currentTalking);
         while (typewritterEffect.IsRunning){
             yield return null;
             if (Input.GetKeyDown(KeyCode.Space))

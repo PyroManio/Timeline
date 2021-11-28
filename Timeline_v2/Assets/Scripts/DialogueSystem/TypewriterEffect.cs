@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class TypewriterEffect : MonoBehaviour
 {
     [SerializeField] private float typewriterSpeed =50f;
+    [SerializeField] private UnityEvent[] talkList;
     public bool IsRunning {get; private set;}
     private readonly List<Punctuation> punctuations = new List<Punctuation>()
     {
@@ -13,16 +15,16 @@ public class TypewriterEffect : MonoBehaviour
         new Punctuation(new HashSet<char>(){',',';',':'},0.3f)
     };
     private Coroutine typingCoroutine;
-   public void Run(string textToType, TMP_Text textLabel)
+   public void Run(string textToType, TMP_Text textLabel,int currentTalking)
    {
-       typingCoroutine = StartCoroutine(TypeText(textToType,textLabel));
+       typingCoroutine = StartCoroutine(TypeText(textToType,textLabel,currentTalking));
    }
    public void Stop()
    {
        StopCoroutine(typingCoroutine);
        IsRunning=false;
    }
-   private IEnumerator TypeText(string textToType, TMP_Text textLabel) 
+   private IEnumerator TypeText(string textToType, TMP_Text textLabel,int currentTalking) 
    {
        IsRunning=true;
        textLabel.text=string.Empty;
@@ -38,6 +40,7 @@ public class TypewriterEffect : MonoBehaviour
            {
                 bool isLast = i >= textToType.Length-1;
                 textLabel.text=textToType.Substring(0,i+1);
+                if (currentTalking!=0) talkList[currentTalking]?.Invoke();
                 if (IsPunctuation(textToType[i],out float waitTime) && !isLast && !IsPunctuation(textToType[i+1],out _))
                 {
                     yield return new WaitForSeconds(waitTime);

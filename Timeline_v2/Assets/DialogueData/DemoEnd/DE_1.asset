@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: DE_1
   m_EditorClassIdentifier: 
   dialogue:
-  - My goodness, were you hoping to play a bit more?
-  - "Well that's just too bad, because unfortunately for you...\r"
-  - "THIS WAS JUST THE DEMO FOR THE GAME!\r"
+  - My goodness, were you hoping to play a bit more?%CT2%
+  - "Well that's just too bad, because unfortunately for you...\r%CT2%"
+  - "THIS WAS JUST THE DEMO FOR THE GAME!\r%CT2%"
   - "If you want to find out what happens next, I guess you'll just have to wait
-    for the full release.\r"
-  - "PFF, LIKE THAT WILL HAPPEN ANYTIME SOON! AHAHAHAHAHA!!!!!!!\r"
-  - "This world is as good as mine.\r"
-  - And I doubt you or anyone else will be able to stop me.
+    for the full release.\r%CT2%"
+  - "PFF, LIKE THAT WILL HAPPEN ANYTIME SOON! AHAHAHAHAHA!!!!!!!\r%CT2%"
+  - "This world is as good as mine.\r%CT2%"
+  - And I doubt you or anyone else will be able to stop me.%CT2%
   responses: []
