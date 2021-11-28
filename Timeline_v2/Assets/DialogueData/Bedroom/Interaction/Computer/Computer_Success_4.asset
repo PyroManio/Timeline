@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Computer_Success_4
   m_EditorClassIdentifier: 
   dialogue:
+  - '%0%The superposition only exists in the moment before you open the box.'
+  - '%0%Superposition is often used in Quantum Physics to help describe all sorts
+    of things.'
+  - '%0%It can help you understand the movement of some electrons to gravitational
+    forces.'
+  - "%3%Heh, sorry. I kinda went off on a tangent there, didn\u2019t I?"
   - '%0%Anyway, let''s see what''s on this computer.'
   - '%0%...!'
   - '%2%There''s two text files on here.'

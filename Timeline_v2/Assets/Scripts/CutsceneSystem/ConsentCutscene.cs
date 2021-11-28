@@ -54,9 +54,12 @@ public class ConsentCutscene : MonoBehaviour
                 // Change the dialogue in the activator, wait till the dialogue ends, and start the dialogue again
                 // Its clunky af but it works
                 if (!hasEnded)
+                {
                     dialogueStuff.GetComponentInChildren<DialogueActivator>().Interact(dialogueUI);
-                else{
                     
+                }
+                else{
+                    currentState="done";
                     endingEvents.Invoke();}
             }
         }

@@ -13,14 +13,5 @@ MonoBehaviour:
   m_Name: Box_Solved_8
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%Listen, I..."
-  - "%3%..."
-  - "%3%...I haven't been completely honest with you."
-  - "%3%See, there are... things... that you don't know about me."
-  - "%3%Just... Okay. "
-  - '%3%The question is: When did you find the body?'
-  - '%10%The answer is SECOND.'
-  - "%10%Please... don't make me explain the answer."
-  responses:
-  - responseText: You found a body?
-    dialogueObject: {fileID: 11400000, guid: 5f4ee35c65002a044841a05c1e0bf4d3, type: 2}
+  - '%2%Listen, I...'
+  responses: []
