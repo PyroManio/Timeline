@@ -22,7 +22,8 @@ public class PasswordScreen : MonoBehaviour
         if (passwordSubmit.Equals(correctPassword)) correctEvent.Invoke();
         else 
         {
-            passScreen.GetComponentInChildren<TMP_InputField>().text = "Enter Password...";
+            passScreen.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = "Enter Password...";
+            passScreen.GetComponentInChildren<TMP_InputField>().text = "";
             wrongEvent.Invoke();
         }
         CloseScreen();

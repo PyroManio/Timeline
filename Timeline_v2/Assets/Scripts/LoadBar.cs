@@ -9,6 +9,10 @@ public class LoadBar : MonoBehaviour
     public bool isDone = false;
     void Start()
     {
+        //Random.InitState(6942069);
+        //Random.InitState(5656);
+        //square
+        Random.InitState(1917211185);
         //container.SetActive(true);
         bar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,0);
         //container.SetActive(false);
@@ -24,12 +28,16 @@ public class LoadBar : MonoBehaviour
         //container.SetActive(true);
         for (int i = 0; i<110; i++) yield return null;
         int currentWidth=0;
+        //var temp = Random.state;
+        //Debug.Log(Random.state);
         while (currentWidth < 232)
         {
+            
             currentWidth+=(int)Random.Range(0,2);
             if (currentWidth>232) currentWidth = 232;
             bar.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,currentWidth);
             yield return null;
+            if (currentWidth==0) yield return null;
         }
         for (int i = 0; i<30; i++) yield return null;
 
