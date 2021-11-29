@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private DialogueActivator talkDialogue;
     [SerializeField] private OptionScreen optionScreen;  
     [SerializeField] private MapScreen mapScreen;
+    [SerializeField] private SoundManager soundManager;
     public bool hasMap = false;
     public bool hasBag = false;
     public bool IsOpen { get; private set; }
@@ -64,6 +65,7 @@ public class PauseMenu : MonoBehaviour
                         hidePauseMenu();
                         mapScreen.OpenScreen();
                         // Open Map 
+                        soundManager.PlaySound(7);
                     }
                     break;
 
@@ -74,6 +76,7 @@ public class PauseMenu : MonoBehaviour
                         hidePauseMenu();
                         inventoryUI.openInventory();
                         // Open Inventory
+                        soundManager.PlaySound(7);
                     }
                     break;
 
@@ -82,6 +85,7 @@ public class PauseMenu : MonoBehaviour
                     // I lied, there is no saving
                     talkDialogue.Interact(GetComponentInChildren<DialogueUI>());
                     closePauseMenu();
+                    soundManager.PlaySound(7);
                     break;
                 case "Options":
                 // Open "Do you want to quit" box
@@ -89,6 +93,7 @@ public class PauseMenu : MonoBehaviour
                     currentMenu = "options";
                     optionScreen.openScreen();
                     hidePauseMenu();
+                    soundManager.PlaySound(7);
                     break;
                 default:
                     Debug.Log("WARNING: Invalid Option Selected");
@@ -98,7 +103,9 @@ public class PauseMenu : MonoBehaviour
     public void closePauseMenu()
     {
         hidePauseMenu();
+        if (IsOpen) soundManager.PlaySound(6);
         IsOpen = false;
+        
     }
     private void hidePauseMenu()
     {
@@ -106,17 +113,28 @@ public class PauseMenu : MonoBehaviour
     }
     public void openPauseMenu()
     {
+        if (!IsOpen) soundManager.PlaySound(5);
         currentMenu = "default";
         pauseMenu.SetActive(true);
         IsOpen = true;
+        
     }
     void Update()
     {
         if (currentMenu.Equals("inventory") && !inventoryUI.IsOpen) 
         {
             openPauseMenu();
+            soundManager.PlaySound(8);
         }
-        if (currentMenu.Equals("options") && !optionScreen.IsOpen) openPauseMenu();
-        if (currentMenu.Equals("map") && !mapScreen.IsOpen) openPauseMenu();
+        if (currentMenu.Equals("options") && !optionScreen.IsOpen) 
+        {
+            openPauseMenu();
+            soundManager.PlaySound(8);
+        }
+        if (currentMenu.Equals("map") && !mapScreen.IsOpen) 
+        {
+            openPauseMenu();
+            soundManager.PlaySound(8);
+        }
     }
 }
