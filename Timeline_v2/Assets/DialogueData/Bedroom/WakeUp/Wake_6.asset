@@ -15,5 +15,5 @@ MonoBehaviour:
   dialogue:
   - '%7%What are you even doing here anyways?'
   responses:
-  - responseText: I am here to assist you.
+  - responseText: To assist you.
     dialogueObject: {fileID: 11400000, guid: d74c6fe7794642143bcb0d1783818348, type: 2}
