@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Door_FrozenKey
   m_EditorClassIdentifier: 
   dialogue:
-  - Use the Frozen Key?
+  - Use the Freeze Key?
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 27c78871ead3bb74ba29292ff7e6a1a4, type: 2}

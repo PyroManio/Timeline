@@ -12,6 +12,7 @@ public class ConsentCutscene : MonoBehaviour
     [SerializeField] DialogueObject goodAge;
     [SerializeField] UnityEvent endingEvents;
     [SerializeField] LoadBar loadBar;
+    [SerializeField] GameObject whiteScreen;
     public bool failedConsent = false;
     public bool hasEnded = false;
     private string currentState="default";
@@ -37,6 +38,8 @@ public class ConsentCutscene : MonoBehaviour
     }
     void Update()
     {
+        
+        if (whiteScreen.activeSelf) StartCoroutine(waitOneStep());
         if (currentState.Equals("load") && loadBar.isDone)  
         {
             dialogueStuff.GetComponentInChildren<DialogueActivator>().Interact(dialogueUI);
@@ -64,7 +67,8 @@ public class ConsentCutscene : MonoBehaviour
             }
         }
         if (currentState.Equals("playNext")) {
-            dialogueUI.ShowDialogue(goodAge);
+            if (!failedConsent) dialogueUI.ShowDialogue(goodAge);
+            else dialogueUI.ShowDialogue(failedAge);
             currentState="default";
         }
         if (currentState.Equals("info") && !infoEnter.IsOpen) 
@@ -75,13 +79,19 @@ public class ConsentCutscene : MonoBehaviour
             dialogueUI.ForceContiue();
             if (age < 13) {
                 failedConsent = true;
-                dialogueUI.ShowDialogue(failedAge);
-                return;
+                //dialogueUI.ShowDialogue(failedAge);
+                //return;
             }
             currentState="playNext";
             rememberInfo.playerName=infoEnter.infoStringList[0];
             //dialogueStuff.GetComponentInChildren<DialogueActivator>().UpdateDialogueObject(goodAge);
             //dialogueUI.ShowDialogue(goodAge);
         }
+    }
+    private IEnumerator waitOneStep()
+    {
+        yield return null;
+        yield return null;
+        whiteScreen.SetActive(false);
     }
 }
