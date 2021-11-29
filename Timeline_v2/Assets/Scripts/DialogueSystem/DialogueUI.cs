@@ -114,7 +114,7 @@ public class DialogueUI : MonoBehaviour
         {
             
             soundManager.PlaySound(int.Parse(dialogue.Substring(firstIndex + 3, secondIndex-firstIndex-3)));
-            dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex,dialogue.Length-secondIndex);
+            dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
             //dialogue=dialogue.Substring(0,firstIndex);
         }
         else if (dialogue.Substring(firstIndex+1,2).Equals("CT"))
