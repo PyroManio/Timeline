@@ -255,7 +255,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: af13494836575ae4291de6bc78612ebd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.85
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3047,6 +3047,7 @@ MonoBehaviour:
   talkDialogue: {fileID: 859306334}
   optionScreen: {fileID: 568068440}
   mapScreen: {fileID: 568068442}
+  soundManager: {fileID: 0}
   hasMap: 1
   hasBag: 1
 --- !u!114 &568068445
@@ -6630,7 +6631,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4c76ce34e3724b345929797cad5380e1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.85
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
