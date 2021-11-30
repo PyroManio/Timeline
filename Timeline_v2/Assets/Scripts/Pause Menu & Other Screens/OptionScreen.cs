@@ -16,14 +16,27 @@ public class OptionScreen : MonoBehaviour
         screenObject.SetActive(false);
     }
     public void openScreen(){
+        RefreshScreen();
         IsOpen=true;
         screenObject.SetActive(true);
     }
     void Start()
     {
         //Screen.SetResolution(resolutions[selectedResolution].horizontal,false);
-        fullscreenTog.isOn = Screen.fullScreen;
         closeScreen();
+    }
+    private void RefreshScreen()
+    {
+        for (int i = 0; i < resolutions.Count; i++)
+        {
+            if (Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
+            {
+                selectedResolution = i;
+                UpdateResLabel();
+                break;
+            }
+        }
+        fullscreenTog.isOn = Screen.fullScreen;
     }
     public void ResLeft()
     {
