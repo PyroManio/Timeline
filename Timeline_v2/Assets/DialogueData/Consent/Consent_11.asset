@@ -21,7 +21,8 @@ MonoBehaviour:
     access to a small module that will allow you to interact with Subject 11.
   - This module is called the K-177 capsule. You may input basic commands to move
     the modules as well as give orders to Subject 11. Simply use the WASD keys on
-    your keypad for movement and left click for interaction with objects. Further
+    your keypad for movement and left click for interaction with objects.
+  - You may also acess the menu by hitting the "Enter" button or E key.  Further
     information as well as a list of commands can be found by looking at the Options
     menu.
   - "If you find Subject 11's primary objective unnecessary to complete, you may

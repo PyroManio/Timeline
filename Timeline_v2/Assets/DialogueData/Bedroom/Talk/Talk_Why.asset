@@ -13,28 +13,32 @@ MonoBehaviour:
   m_Name: Talk_Why
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%Well, I kind of volunteered for something called the \u201CChromatic Project\u201D."
+  - '%2%Well, I kind of volunteered for something called the "Chromatic Project".'
   - '%2%The advertisement said it could help with all sorts of things.
 
 '
-  - "%8%\u201CThe Chromatic Project pushes you to your physical, mental, \n"
-  - "%8%and emotional limits!\u201D"
-  - "%8%\u201CJoin today to help yourself achieve enlightenment!\u201D\n"
+  - '%8%"The Chromatic Project pushes you to your physical, mental, and emotional
+    limits!"
+
+'
+  - '%8%"Join today to help yourself achieve enlightenment!"
+
+'
   - '%0%They were looking for test subjects, so I volunteered.'
   - "%3%Only... I don't remember going to Pandora Laboratories today.\r"
   - '%3%The last thing I remember was getting in a fight with my mom over the test.'
   - '%4%The next thing I know I woke up in my room with everything locked down!'
-  - "%2%Weird, right? In fact, I don't think it was even 10 minutes after I
-    sent the e-mail "
-  - "%2%that all this weird stuff started happening!\r"
-  - "%7%How'd they even make me fall asleep, anyways?"
-  - "%7%Maybe I was out for a few hours while they set this up? That'd make
-    sense...\r"
+  - '%2%Weird, right? '
+  - '%2%In fact, I don''t think it was even 10 minutes after I sent the e-mail that
+    all this weird stuff started happening!
+
+
+'
+  - '%7%How''d they even make me fall asleep, anyways?'
+  - "%7%Maybe I was out for a few hours while they set this up? That'd make sense...\r"
   - '%0%Sorry, kind of went on a tangent, there.'
   - '%0%Is there anything else you want to know?
 
 
 '
-  responses:
-  - responseText: Well...
-    dialogueObject: {fileID: 11400000, guid: 0d6715d0c3534a54c8360650e3596312, type: 2}
+  responses: []

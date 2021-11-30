@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogue:
   - '%2%First I heard of it. I just know it as the Chromatic Project.'
   - '%7%Although they did say that it WAS a group test.'
-  - "%7%Maybe it's \u201Cextended\u201D because you're not here?"
+  - '%7%Maybe it''s "extended" because you''re not here?'
   - '%2%Makes sense to me, at least.'
   - '%7%But the way they phrased it, it sounded like there would be a lot of us,
     not just two.'

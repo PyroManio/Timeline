@@ -15,6 +15,4 @@ MonoBehaviour:
   dialogue:
   - '%2%That was kind of a rhetorical question, but whatever.'
   - '%0%Is there something else you want to ask me?'
-  responses:
-  - responseText: Well...
-    dialogueObject: {fileID: 11400000, guid: 0d6715d0c3534a54c8360650e3596312, type: 2}
+  responses: []

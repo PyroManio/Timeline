@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Consent_2
   m_EditorClassIdentifier: 
   dialogue:
-  - Please input the following information.
+  - Please input the following information
   responses: []
