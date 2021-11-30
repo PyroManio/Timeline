@@ -167,7 +167,7 @@ public class DialogueUI : MonoBehaviour
                     yield return new WaitUntil(() => forceContinue);
                     forceStay = false;
                 }
-                else yield return new WaitUntil(() => forceContinue||Input.GetKeyDown(KeyCode.Space));
+                else yield return new WaitUntil(() => forceContinue||Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0));
             }
             forceContinue = false;
         }
@@ -189,7 +189,7 @@ public class DialogueUI : MonoBehaviour
         typewritterEffect.Run(dialogue, textLabel, currentTalking);
         while (typewritterEffect.IsRunning){
             yield return null;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 typewritterEffect.Stop();
             }

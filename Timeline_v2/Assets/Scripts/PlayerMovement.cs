@@ -45,6 +45,13 @@ public class PlayerMovement : MonoBehaviour
             
             return;
         }
+        if (pauseMenu.IsOpen)
+        {
+            movement.x=0;
+            movement.y=0;
+            
+            return;
+        }
         if (dialogueUI.IsOpen || (quitScreen!=null && quitScreen.IsOpen) || passScreen.IsOpen || screenHandler.IsOpen) 
         {
             movement.x=0;
@@ -55,14 +62,14 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         if (!dialogueUI.IsOpen){
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 if(Interactable != null)
                 {
                     Interactable.Interact(PlayerMovement:this);
                 }
             }
-            if(Input.GetKeyDown(KeyCode.Return))
+            if(Input.GetKeyDown(KeyCode.Return)|| Input.GetKeyDown(KeyCode.E))
             {
                 if (pauseMenu.IsOpen) pauseMenu.closePauseMenu();
                 else pauseMenu.openPauseMenu();
@@ -70,13 +77,7 @@ public class PlayerMovement : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Escape))
                 quitScreen.OpenScreen();
         }
-        if (pauseMenu.IsOpen)
-        {
-            movement.x=0;
-            movement.y=0;
-            
-            return;
-        }
+        
         // Input
         movement.x = (int)(Input.GetAxisRaw("Horizontal")/0.0625)*0.0625f;
         movement.y = (int)(Input.GetAxisRaw("Vertical")/0.0625)*0.0625f;
