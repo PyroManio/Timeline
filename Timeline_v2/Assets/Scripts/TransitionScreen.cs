@@ -55,7 +55,7 @@ public class TransitionScreen : MonoBehaviour
     }
     void Start()
     {
-        itsImage.color = new Color (0f, 0f, 0f, 0f);
+        //itsImage.color = new Color (0f, 0f, 0f, 0f);
         //imageObject.SetActive(false);
     }
     private IEnumerator trans()
