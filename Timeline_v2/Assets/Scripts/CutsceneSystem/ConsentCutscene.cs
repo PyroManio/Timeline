@@ -46,7 +46,7 @@ public class ConsentCutscene : MonoBehaviour
             currentState="default";
             loadBar.closeBar();
         }
-        if (Input.GetKeyDown(KeyCode.Tab)) hasEnded=true;
+        //if (Input.GetKeyDown(KeyCode.Tab)) hasEnded=true;
         if (currentState.Equals("default") && !dialogueUI.IsOpen)
         {
             
