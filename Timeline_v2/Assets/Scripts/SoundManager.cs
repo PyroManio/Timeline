@@ -47,6 +47,7 @@ public class SoundManager : MonoBehaviour
         Debug.Log(soundList[index].isPlaying);
         if (!soundList[index].isPlaying)
             soundList[index].Play();
+        Debug.Log(soundList[index].volume);
     }
     public void StopSounds()
     {
