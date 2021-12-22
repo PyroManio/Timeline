@@ -5,8 +5,12 @@ using UnityEngine;
 public class DialogueObject : ScriptableObject
 {
    [SerializeField] [TextArea] private string[] dialogue;
+   [SerializeField] private DialogueTextData[] dialogueData;
    [SerializeField] private Response[] responses;
-
+   [SerializeField] private DialogueObject nextDialogue;
+   [SerializeField] private bool isSpecialDialogue;
+   public bool IsSpecialDialogue => isSpecialDialogue;
+   public DialogueObject NextDialgoue => nextDialogue;
    public string[] Dialogue => dialogue;
 
    public bool HasResponses => Responses != null && Responses.Length > 0;
