@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_11
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%2%So you can hear it too?'
-  - '%3%Let''s... not think about it too much.'
+  dialogue: []
+  dialogueData:
+  - dialogueText: So you can hear it too?
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Let's... not think about it too much.
+    characterSpeaking: 1
+    expression: 3
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -12,9 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_5
   m_EditorClassIdentifier: 
-  dialogue:
-  - "Hehehehe\r%CT2%"
-  - If this is tripping you up, you're in for a hell of a time, kid.%CT2%
-  - '%6%SHUT UP!!!'
-  - '%9%JUST...'
+  dialogue: []
+  dialogueData:
+  - dialogueText: "Hehehehe\r"
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: If this is tripping you up, you're in for a hell of a time, kid.
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: SHUT UP!!!
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: JUST...
+    characterSpeaking: 1
+    expression: 9
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

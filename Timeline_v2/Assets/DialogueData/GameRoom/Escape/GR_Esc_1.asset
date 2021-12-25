@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: GR_Esc_1
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%5%What the hell are you doing? We need to get out of here!'
-  - '%5%Look, I''m flattered you want to explore every inch of my house, but now
-    is really not the- '
+  dialogue: []
+  dialogueData:
+  - dialogueText: What the hell are you doing? We need to get out of here!
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: 'Look, I''m flattered you want to explore every inch of my house,
+      but now is really not the- '
+    characterSpeaking: 1
+    expression: 5
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

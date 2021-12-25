@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_0_1
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%12%...'
-  - '%12%No.'
-  - "%12%Nonononono\r"
+  dialogue: []
+  dialogueData:
+  - dialogueText: ...
+    characterSpeaking: 1
+    expression: 12
+  - dialogueText: No.
+    characterSpeaking: 1
+    expression: 12
+  - dialogueText: "Nonononono\r"
+    characterSpeaking: 1
+    expression: 12
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

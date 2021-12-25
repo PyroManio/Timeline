@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: LeftShelf
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%0%'
-  - '%0%'
+  dialogue: []
   dialogueData:
   - dialogueText: There are some shelves here, but WHO CARES?
     characterSpeaking: 1

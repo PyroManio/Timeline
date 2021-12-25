@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: GR_Esc_0
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%0%Okay, the stairs are past this room.'
-  - '%0%Let''s just make a break for it. '
+  dialogue: []
+  dialogueData:
+  - dialogueText: Okay, the stairs are past this room.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: 'Let''s just make a break for it. '
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

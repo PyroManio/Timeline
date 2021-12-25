@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_0
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%1%HOORAY! I''m so over these puzzles. Let''s see what-'
+  dialogue: []
+  dialogueData:
+  - dialogueText: HOORAY! I'm so over these puzzles. Let's see what-
+    characterSpeaking: 1
+    expression: 1
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

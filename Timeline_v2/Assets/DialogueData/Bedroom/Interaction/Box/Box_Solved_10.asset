@@ -12,28 +12,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_10
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%2%I...'
-  - '%3%I''m sorry, regardless.'
-  - '%2%But... thanks. For not... completely shutting me out.'
-  - '%2%But now you know.'
-  - '%2%That computer, it said I had to confess my sins to get out of here.There
-    were seven words on there.'
-  - '%2%Alone
+  dialogue: []
+  dialogueData:
+  - dialogueText: I...
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: I'm sorry, regardless.
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: But... thanks. For not... completely shutting me out.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: But now you know.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: That computer, it said I had to confess my sins to get out of here.There
+      were seven words on there.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: 'Alone
 
-    Beast
+      Beast
 
-    Car'
-  - '%2%Dance
+      Car'
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: 'Dance
 
-    Exam
+      Exam
 
-    Freeze
-
-    Girlfriend'
-  - '%2%This one was Freeze. I froze in that moment.'
-  - '%2%But there were six more. Six more words that correspond to my darkest memories.'
-  - '%3%And honestly, the other six are far worse than this one. '
-  - '%3%If it comes down to it, if it REALLY comes down to it, I could probably talk
-    about 5 of them.'
+      Freeze'
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Girlfriend
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: This one was Freeze. I froze in that moment.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: But there were six more. Six more words that correspond to my darkest
+      memories.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: 'And honestly, the other six are far worse than this one. '
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: If it comes down to it, if it REALLY comes down to it, I could
+      probably talk about 5 of them.
+    characterSpeaking: 1
+    expression: 3
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

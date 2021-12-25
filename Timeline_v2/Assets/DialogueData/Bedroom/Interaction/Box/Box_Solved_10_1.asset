@@ -12,10 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_10_1
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%10%But there''s one that I''ll NEVER talk about, no matter what. '
-  - '%3%So... let''s hope that we get out of here before we hit that point.'
-  - Well... at least things will be interesting.%CT2%
+  dialogue: []
+  dialogueData:
+  - dialogueText: 'But there''s one that I''ll NEVER talk about, no matter what. '
+    characterSpeaking: 1
+    expression: 10
+  - dialogueText: So... let's hope that we get out of here before we hit that point.
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: Well... at least things will be interesting.
+    characterSpeaking: 2
+    expression: 0
   responses:
   - responseText: Where's that voice?
     dialogueObject: {fileID: 11400000, guid: 812381a640ded824ebad59c696ba64e6, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

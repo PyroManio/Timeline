@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_8_1
   m_EditorClassIdentifier: 
-  dialogue:
-  - "%10%I... yeah. Not a dead one though."
-  - "%3%(Sigh) I'm gonna have to explain it. Just... please, don't think
-    too badly of me."
+  dialogue: []
+  dialogueData:
+  - dialogueText: I... yeah. Not a dead one though.
+    characterSpeaking: 1
+    expression: 10
+  - dialogueText: (Sigh) I'm gonna have to explain it. Just... please, don't think
+      too badly of me.
+    characterSpeaking: 1
+    expression: 3
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

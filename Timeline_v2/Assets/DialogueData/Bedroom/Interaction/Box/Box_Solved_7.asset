@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_7
   m_EditorClassIdentifier: 
-  dialogue:
-  - "%10%..."
-  - "%2%There's a container in here locked by a question. And it's one
-    that only I can answer."
+  dialogue: []
+  dialogueData:
+  - dialogueText: ...
+    characterSpeaking: 1
+    expression: 10
+  - dialogueText: There's a container in here locked by a question. And it's one
+      that only I can answer.
+    characterSpeaking: 1
+    expression: 2
   responses:
   - responseText: Why?
     dialogueObject: {fileID: 11400000, guid: fb734ba9ef96d8044aff2c7b1af2cc0b, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

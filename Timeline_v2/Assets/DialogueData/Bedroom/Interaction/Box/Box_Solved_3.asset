@@ -12,9 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_3
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%6%YOU MONSTERS! WHAT THE HELL IS WRONG WITH YOU!'
-  - '%6%HOW THE HELL DO YOU KNOW THIS ANYWAYS?'
-  - "%6%WELL YOU CAN SHOVE IT! I'M NOT ANSWERING THIS!"
-  - "%9%YOU CAN NEVER, EVER MAKE ME ANSWER THIS!\r"
+  dialogue: []
+  dialogueData:
+  - dialogueText: YOU MONSTERS! WHAT THE HELL IS WRONG WITH YOU!
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: HOW THE HELL DO YOU KNOW THIS ANYWAYS?
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: WELL YOU CAN SHOVE IT! I'M NOT ANSWERING THIS!
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: "YOU CAN NEVER, EVER MAKE ME ANSWER THIS!\r"
+    characterSpeaking: 1
+    expression: 9
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

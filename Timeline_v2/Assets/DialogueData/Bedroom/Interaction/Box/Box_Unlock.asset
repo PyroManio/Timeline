@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Unlock
   m_EditorClassIdentifier: 
-  dialogue:
-  - "%3%I don't think we need this anymore. There's nothing else in this
-    box."
+  dialogue: []
+  dialogueData:
+  - dialogueText: I don't think we need this anymore. There's nothing else in this
+      box.
+    characterSpeaking: 1
+    expression: 3
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_2
   m_EditorClassIdentifier: 
-  dialogue:
-  - "%4%Please, I'm BEGGING YOU! DON'T MAKE ME SAY IT!"
+  dialogue: []
+  dialogueData:
+  - dialogueText: Please, I'm BEGGING YOU! DON'T MAKE ME SAY IT!
+    characterSpeaking: 1
+    expression: 4
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

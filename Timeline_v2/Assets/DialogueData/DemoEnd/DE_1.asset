@@ -12,13 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: DE_1
   m_EditorClassIdentifier: 
-  dialogue:
-  - My goodness, were you hoping to play a bit more?%CT2%
-  - "Well that's just too bad, because unfortunately for you...\r%CT2%"
-  - "THIS WAS JUST THE DEMO FOR THE GAME!\r%CT2%"
-  - "If you want to find out what happens next, I guess you'll just have to wait
-    for the full release.\r%CT2%"
-  - "PFF, LIKE THAT WILL HAPPEN ANYTIME SOON! AHAHAHAHAHA!!!!!!!\r%CT2%"
-  - "This world is as good as mine.\r%CT2%"
-  - And I doubt you or anyone else will be able to stop me.%CT2%
+  dialogue: []
+  dialogueData:
+  - dialogueText: My goodness, were you hoping to play a bit more?
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: Well that's just too bad, because unfortunately for you...
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: THIS WAS JUST THE DEMO FOR THE GAME!
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: "If you want to find out what happens next, I guess you'll just
+      have to wait for the full release.\r"
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: "PFF, LIKE THAT WILL HAPPEN ANYTIME SOON! AHAHAHAHAHA!!!!!!!\r"
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: "This world is as good as mine.\r"
+    characterSpeaking: 2
+    expression: 0
+  - dialogueText: And I doubt you or anyone else will be able to stop me.
+    characterSpeaking: 2
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

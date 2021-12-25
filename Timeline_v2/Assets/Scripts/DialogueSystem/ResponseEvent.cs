@@ -8,5 +8,5 @@ public class ResponseEvent
     [SerializeField] private UnityEvent onPickedResponse;
     public UnityEvent OnPickedResponse => onPickedResponse;
     // Specially made index tag to help give it a unique but recreatable tag
-    public string DTag;
+    [HideInInspector] public string DTag;
 }

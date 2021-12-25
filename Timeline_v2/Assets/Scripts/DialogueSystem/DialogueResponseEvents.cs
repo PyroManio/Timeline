@@ -11,9 +11,10 @@ public class DialogueResponseEvents : MonoBehaviour
     
     public void OnValidate()
    {
+        Debug.Log("E");
         if (dialogueObject == null) return;
         if (dialogueObject.Responses == null) return;
-        if (events != null && events.Length == dialogueObject.Responses.Length) return;
+        //if (events != null && events.Length == dialogueObject.Responses.Length) return;
         if (events == null)
         {
             events = new ResponseEvent[dialogueObject.Responses.Length];
@@ -22,7 +23,7 @@ public class DialogueResponseEvents : MonoBehaviour
         {
             Array.Resize(ref events, dialogueObject.Responses.Length);
         }
-
+        Debug.Log("B");
        for (int i = 0; i < dialogueObject.Responses.Length; i++)
        {
            Response response = dialogueObject.Responses[i];
@@ -33,7 +34,7 @@ public class DialogueResponseEvents : MonoBehaviour
                Debug.Log(events[i].DTag);
                continue;
            }
-           events[i] = new ResponseEvent() {name = response.ResponseText};
+           events[i] = new ResponseEvent() {name = response.ResponseText, DTag = dialogueObject.name};
        }
        
    }

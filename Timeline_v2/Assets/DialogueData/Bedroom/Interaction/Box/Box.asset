@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box
   m_EditorClassIdentifier: 
-  dialogue:
-  - "%2%I don't recognize this box. Looks like we need another code to unlock
-    it."
+  dialogue: []
+  dialogueData:
+  - dialogueText: I don't recognize this box. Looks like we need another code to
+      unlock it.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

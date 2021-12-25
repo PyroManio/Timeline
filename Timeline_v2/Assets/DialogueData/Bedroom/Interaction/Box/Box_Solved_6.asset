@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_6
   m_EditorClassIdentifier: 
-  dialogue:
-  - "%10%... It's the only way out, isn't it?"
+  dialogue: []
+  dialogueData:
+  - dialogueText: ... It's the only way out, isn't it?
+    characterSpeaking: 1
+    expression: 10
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

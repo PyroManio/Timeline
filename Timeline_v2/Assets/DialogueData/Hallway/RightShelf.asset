@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: RightShelf
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%0%'
-  - '%0%'
+  dialogue: []
   dialogueData:
   - dialogueText: Why are you examining these shelves?
     characterSpeaking: 1
@@ -23,5 +21,5 @@ MonoBehaviour:
     characterSpeaking: 1
     expression: 0
   responses: []
-  nextDialogue: {fileID: 11400000, guid: dbd2f76a74bdc4a44a428c21c54aa277, type: 2}
+  nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

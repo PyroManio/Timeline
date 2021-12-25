@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_11_1
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%2%Inside the container is a key. Let''s hope it lets us get out of here finally. '
-  - '[Freeze Key added to Inventory]%SE0% '
+  dialogue: []
+  dialogueData:
+  - dialogueText: 'Inside the container is a key. Let''s hope it lets us get out
+      of here finally. '
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: '[Freeze Key added to Inventory]%SE0% '
+    characterSpeaking: 0
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

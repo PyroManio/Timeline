@@ -12,14 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_8_1 1
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%3%...'
-  - '%3%...I haven''t been completely honest with you.'
-  - '%3%See, there are... things... that you don''t know about me.'
-  - '%3%Just... Okay. '
-  - '%3%The question is: When did you find the body?'
-  - '%10%The answer is SECOND.'
-  - '%10%Please... don''t make me explain the answer.'
+  dialogue: []
+  dialogueData:
+  - dialogueText: ...
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: ...I haven't been completely honest with you.
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: See, there are... things... that you don't know about me.
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: 'Just... Okay. '
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: 'The question is: When did you find the body?'
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: The answer is SECOND.
+    characterSpeaking: 1
+    expression: 10
+  - dialogueText: Please... don't make me explain the answer.
+    characterSpeaking: 1
+    expression: 10
   responses:
   - responseText: You found a body?
     dialogueObject: {fileID: 11400000, guid: 5f4ee35c65002a044841a05c1e0bf4d3, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

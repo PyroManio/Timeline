@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_1
   m_EditorClassIdentifier: 
-  dialogue:
-  - '%6%STAY BACK!'
+  dialogue: []
+  dialogueData:
+  - dialogueText: STAY BACK!
+    characterSpeaking: 1
+    expression: 6
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

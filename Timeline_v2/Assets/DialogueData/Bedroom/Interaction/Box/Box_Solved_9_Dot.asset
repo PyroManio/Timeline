@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
   m_Name: Box_Solved_9_Dot
   m_EditorClassIdentifier: 
-  dialogue:
-  - "%2%... You... aren't going to say it?"
+  dialogue: []
+  dialogueData:
+  - dialogueText: ... You... aren't going to say it?
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0
