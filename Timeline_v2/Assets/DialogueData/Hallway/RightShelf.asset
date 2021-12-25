@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: RightShelf
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%Why are you examining these shelves?'
-  - '%0%Our number one priority is to escape right now! Let''s go!'
+  - '%0%'
+  - '%0%'
+  dialogueData:
+  - dialogueText: Why are you examining these shelves?
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Our number one priority is to escape right now! Let's go!
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

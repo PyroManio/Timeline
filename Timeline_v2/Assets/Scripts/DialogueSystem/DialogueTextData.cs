@@ -11,9 +11,9 @@ public class DialogueTextData
 }
  public enum CharacterTalking
  {
+      None,
       Leo,
-      Despair,
-      None
+      Despair
  }
   public enum Expression
  {

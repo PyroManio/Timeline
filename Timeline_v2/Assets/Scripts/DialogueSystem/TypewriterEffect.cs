@@ -6,8 +6,13 @@ using UnityEngine.Events;
 
 public class TypewriterEffect : MonoBehaviour
 {
+    //private Hashtable talkingVoice = new Hashtable();
+ 
+    [SerializeField] private Dictionary<CharacterTalking, AudioClip> voiceTalk;
     [SerializeField] private float typewriterSpeed =50f;
-    [SerializeField] private UnityEvent[] talkList;
+    //[SerializeField] private UnityEvent[] talkList;
+    [SerializeField] private SoundManager soundManager;
+    
     public bool IsRunning {get; private set;}
     private readonly List<Punctuation> punctuations = new List<Punctuation>()
     {
@@ -15,7 +20,16 @@ public class TypewriterEffect : MonoBehaviour
         new Punctuation(new HashSet<char>(){',',';',':'},0.3f)
     };
     private Coroutine typingCoroutine;
-   public void Run(string textToType, TMP_Text textLabel,int currentTalking)
+    private void Start()
+    {
+        voiceTalk = new Dictionary<CharacterTalking, AudioClip>
+        {
+            { CharacterTalking.None, null },
+            { CharacterTalking.Leo, Resources.Load<AudioClip>("Assets/SoundEffects/Leo_Talk.wav") },
+            { CharacterTalking.Despair, Resources.Load<AudioClip>("Assets/SoundEffects/Despair_Talk.wav") }
+        };
+    }
+   public void Run(string textToType, TMP_Text textLabel,CharacterTalking currentTalking)
    {
        typingCoroutine = StartCoroutine(TypeText(textToType,textLabel,currentTalking));
    }
@@ -24,7 +38,7 @@ public class TypewriterEffect : MonoBehaviour
        StopCoroutine(typingCoroutine);
        IsRunning=false;
    }
-   private IEnumerator TypeText(string textToType, TMP_Text textLabel,int currentTalking) 
+   private IEnumerator TypeText(string textToType, TMP_Text textLabel,CharacterTalking currentTalking) 
    {
        IsRunning=true;
        textLabel.text=string.Empty;
@@ -40,7 +54,8 @@ public class TypewriterEffect : MonoBehaviour
            {
                 bool isLast = i >= textToType.Length-1;
                 textLabel.text=textToType.Substring(0,i+1);
-                if (currentTalking!=0) talkList[currentTalking]?.Invoke();
+                //if (currentTalking!=0) talkList[currentTalking]?.Invoke();
+                soundManager.YieldPlaySound(voiceTalk[currentTalking]);
                 if (IsPunctuation(textToType[i],out float waitTime) && !isLast && !IsPunctuation(textToType[i+1],out _))
                 {
                     yield return new WaitForSeconds(waitTime);

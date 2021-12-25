@@ -4995,7 +4995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &586920667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5683,23 +5683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typewriterSpeed: 25
-  talkList:
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1397411890}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: YieldPlaySound
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  soundManager: {fileID: 1397411890}
 --- !u!114 &611271636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8721,20 +8705,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69c0827369e57a4fa1b9fc0104f195c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expressionSprites:
-  - {fileID: 5075093485593701270, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -2332409906953727961, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -3759081554036744011, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -721837524774244309, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 3187951919010938193, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5932313726982519525, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5323121498647249144, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -5360706785630919548, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -8225271092127502105, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5205719412407821657, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -3493166504592402798, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5838041577322673957, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 1856327905146347400, guid: a0909af457ea48549bf8de923334794e, type: 3}
 --- !u!114 &878128935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12835,20 +12805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69c0827369e57a4fa1b9fc0104f195c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expressionSprites:
-  - {fileID: 5075093485593701270, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -2332409906953727961, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -3759081554036744011, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -721837524774244309, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 3187951919010938193, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5932313726982519525, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5323121498647249144, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -5360706785630919548, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -8225271092127502105, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5205719412407821657, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: -3493166504592402798, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 5838041577322673957, guid: a0909af457ea48549bf8de923334794e, type: 3}
-  - {fileID: 1856327905146347400, guid: a0909af457ea48549bf8de923334794e, type: 3}
 --- !u!114 &1389658069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14219,7 +14175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typewriterSpeed: 25
-  talkList: []
+  soundManager: {fileID: 0}
 --- !u!114 &1466151440
 MonoBehaviour:
   m_ObjectHideFlags: 0

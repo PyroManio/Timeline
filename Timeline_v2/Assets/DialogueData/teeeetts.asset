@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: testertester
+  m_Name: teeeetts
   m_EditorClassIdentifier: 
   dialogue: []
-  dialoguee:
-    dialogueText: 
+  dialogueData:
+  - dialogueText: 
     characterSpeaking: 0
     expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

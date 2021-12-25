@@ -25,6 +25,7 @@ public class SoundManager : MonoBehaviour
         currentPlayingMusicIndex = index;
         musicList[index].Play();
     }
+
     public void StopMusic()
     {
         Debug.Log("stopped"+currentPlayingMusicIndex);
@@ -41,6 +42,24 @@ public class SoundManager : MonoBehaviour
     public void PlaySound(int index)
     {
         soundList[index].Play();
+    }
+    public void PlaySound(AudioClip givenSound){
+        int temp = FindSound(givenSound);
+        if (temp != -1) soundList[temp].Play();
+    }
+    public void YieldPlaySound(AudioClip givenSound){
+        int temp = FindSound(givenSound);
+        if (temp != -1) YieldPlaySound(temp);
+    }
+    private int FindSound(AudioClip givenSound)
+    {
+        //foreach (AudioSource Clip in soundList)'
+        for (int i = 0; i<soundList.Length; i++)
+        {
+            if (soundList[i].clip.Equals(givenSound))  return i;
+        }
+        Debug.Log("Warning, attempted to play audio clip that doesn't exist");
+        return -1;
     }
     public void YieldPlaySound(int index)
     {

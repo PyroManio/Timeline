@@ -19,7 +19,7 @@ public class DialogueUI : MonoBehaviour
     private bool forceStay = false;
     [SerializeField] InfoRemember infoGet;
     [SerializeField] SoundManager soundManager;
-    private int currentTalking; // 0=none, 1=Leo, 2=Despair 
+    private CharacterTalking currentTalking; // 0=none, 1=Leo, 2=Despair 
     public void ForceContiue()
     {
         forceContinue = true;
@@ -63,29 +63,22 @@ public class DialogueUI : MonoBehaviour
         specialBox=true;
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
+    private void SetSpecialDialogue()
+    {
+        specialDialogueBox.SetActive(true);
+        textLabel=specialDialogueBox.GetComponentInChildren<TMP_Text>();
+        specialBox=true;
+    }
 
     //returns edited string without the %. If it turns out this isn't a character dialogue, return the normal dialouge
-    private string expressionDialogue(string dialogue){
-        //first we have to check if this is an actual expression trigger or someone decided to put the first text as a % for some reason
-        for (int i = 1; i < dialogue.Length; i++)
-        {
-            if ( System.String.Equals(dialogue[i],'%'))
-            {
-                //checks to see if it isn't a %% thing or %heh% thing, although I have to question why are you putting this into the dialogue
-                if (i!=1 && int.TryParse(dialogue.Substring(1,i-1),out int number))
-                    characterDialogueBox.GetComponentInChildren<ExpressionDialogueSprite>().changeExpression(int.Parse(dialogue.Substring(1,i-1)));
-                characterDialogueBox.SetActive(true);
-                textLabel = characterDialogueBox.GetComponentInChildren<TMP_Text>();
-                dialogue=dialogue.Substring(i+1);
-                currentTalking=1;
-
-                break;
-            }
-        }
-        return dialogue;
+    private void SetCharacterBox(DialogueTextData givenData){
+        characterDialogueBox.GetComponentInChildren<ExpressionDialogueSprite>().changeExpression(givenData.CharSpeaking, givenData.CharExprssion);
+         characterDialogueBox.SetActive(true);
+         textLabel = characterDialogueBox.GetComponentInChildren<TMP_Text>();
+         currentTalking = givenData.CharSpeaking;
     }
+
     private string checkForInfo(string dialogue){
-        if (System.String.Equals(dialogue[0],'%'))  dialogue = expressionDialogue(dialogue);
         //bool firstFound=false;
         int firstIndex=-1;
         int secondIndex=-1;
@@ -94,14 +87,10 @@ public class DialogueUI : MonoBehaviour
             if (System.String.Equals(dialogue[i],'%'))
             {
                 if (firstIndex!=-1) {
-                    secondIndex=i;
+                    secondIndex = i;
                     break;
                 }
-                else
-                {
-                    //firstFound=true;
-                    firstIndex=i;
-                }
+                else firstIndex = i; 
             }
         }
         if (secondIndex==-1) return dialogue;
@@ -112,14 +101,7 @@ public class DialogueUI : MonoBehaviour
         }
         else if (dialogue.Substring(firstIndex+1,2).Equals("SE"))
         {
-            
             soundManager.PlaySound(int.Parse(dialogue.Substring(firstIndex + 3, secondIndex-firstIndex-3)));
-            dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
-            //dialogue=dialogue.Substring(0,firstIndex);
-        }
-        else if (dialogue.Substring(firstIndex+1,2).Equals("CT"))
-        {
-            currentTalking=int.Parse(dialogue.Substring(firstIndex + 3, secondIndex-firstIndex-3));
             dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
             //dialogue=dialogue.Substring(0,firstIndex);
         }
@@ -139,25 +121,20 @@ public class DialogueUI : MonoBehaviour
     }
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
-        for (int i =0; i<dialogueObject.Dialogue.Length;i++)
+        for (int i =0; i < dialogueObject.DialogueData.Length;i++)
         {
+            DialogueTextData dialogueStuff = dialogueObject.DialogueData[i];
             //assume all dialogue is default dialogue until proven otherwise
-            textLabel.text=string.Empty;
-            currentTalking=0;
-            if (!specialBox) textLabel = defaultText;
-            if (characterDialogueBox!=null)
-                characterDialogueBox.SetActive(false);
-            string dialogue = dialogueObject.Dialogue[i];
-            // if there is a % at the beginning of the dialogue
-                //if (System.String.Equals(dialogueObject.Dialogue[i][0],'%'))  dialogue = expressionDialogue(dialogueObject.Dialogue[i]);
-            dialogue = checkForInfo(dialogueObject.Dialogue[i]);
-            //yield return typewritterEffect.Run(dialogue,textLabel); 
-
-           //if (currentTalking==1) soundManager.PlaySound(1);
-
+            textLabel.text = string.Empty;
+            currentTalking = dialogueStuff.CharSpeaking;
+            if (!dialogueObject.IsSpecialDialogue) textLabel = defaultText;
+            else SetSpecialDialogue();
+            if (characterDialogueBox != null)  characterDialogueBox.SetActive(false);
+            string dialogue = dialogueStuff.DialogueText;
+            if (dialogueStuff.CharSpeaking == CharacterTalking.Leo && !specialBox) SetCharacterBox(dialogueStuff);
             yield return RunTypingEffect(dialogue);
-            textLabel.text=dialogue;
-            if (currentTalking!=0) soundManager.StopSounds();
+            textLabel.text = dialogue;
+            if (!currentTalking.Equals(CharacterTalking.None)) soundManager.StopSounds();
             if (i == dialogueObject.Dialogue.Length-1 && dialogueObject.HasResponses) break;
             yield return null;
             if (!forceContinue)
@@ -181,8 +158,7 @@ public class DialogueUI : MonoBehaviour
         }
         if (specialBox) specialDialogueBox.SetActive(false);
         specialBox = false;
-        
-        
+        if (dialogueObject.HasNextDialogue) ShowDialogue(dialogueObject.NextDialgoue);  
     }
     private IEnumerator RunTypingEffect(string dialogue)
     {   

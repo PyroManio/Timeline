@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: LeftShelf
   m_EditorClassIdentifier: 
   dialogue:
-  - '%0%There are some shelves here, but WHO CARES?'
-  - '%0%Let''s get the hell out of here!'
+  - '%0%'
+  - '%0%'
+  dialogueData:
+  - dialogueText: There are some shelves here, but WHO CARES?
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Let's get the hell out of here!
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0
