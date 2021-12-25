@@ -10,4 +10,5 @@ public class Response
     public DialogueObject DialogueObject => dialogueObject;
     public Item RequiredItem => requireItem;
     public bool NeedsItem => RequiredItem != null;
+    [HideInInspector] public string DTag;
 }

@@ -4,12 +4,9 @@ using TMPro;
 public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
-    
     [SerializeField] private GameObject characterDialogueBox;
-    //[SerializeField] private DialogueObject testDialogue;
     [SerializeField] private TMP_Text defaultText;
     private TMP_Text textLabel;
-    //NEW
     public bool IsOpen { get; private set; }
     [SerializeField] private GameObject specialDialogueBox;
     private ResponseHandler responseHandler;
@@ -19,7 +16,7 @@ public class DialogueUI : MonoBehaviour
     private bool forceStay = false;
     [SerializeField] InfoRemember infoGet;
     [SerializeField] SoundManager soundManager;
-    private CharacterTalking currentTalking; // 0=none, 1=Leo, 2=Despair 
+    private CharacterTalking currentTalking; 
     public void ForceContiue()
     {
         forceContinue = true;
@@ -34,14 +31,12 @@ public class DialogueUI : MonoBehaviour
         typewritterEffect=GetComponent<TypewriterEffect>();
         responseHandler=GetComponent<ResponseHandler>();
         CloseDialogueBox();
-        //ShowDialogue(testDialogue);
     }
     public void nextSpecial(){
         specialBox = true;
     }
     public void ShowDialogue(DialogueObject dialogueObject)
     {
-        //NEW
         if (specialBox) {
             ShowSpecialDialogue(dialogueObject);
             return;
@@ -54,7 +49,6 @@ public class DialogueUI : MonoBehaviour
     }
     public void ShowSpecialDialogue(DialogueObject dialogueObject)
     {
-        //NEW
         IsOpen = true; 
         dialogueBox.SetActive(true);
         textLabel.text=string.Empty;
@@ -66,20 +60,19 @@ public class DialogueUI : MonoBehaviour
     private void SetSpecialDialogue()
     {
         specialDialogueBox.SetActive(true);
-        textLabel=specialDialogueBox.GetComponentInChildren<TMP_Text>();
+        textLabel = specialDialogueBox.GetComponentInChildren<TMP_Text>();
         specialBox=true;
     }
-
-    //returns edited string without the %. If it turns out this isn't a character dialogue, return the normal dialouge
+    // When a dialogue box with a character that has expressions is being shown, it runs this code so the
+    // Specical character dialogue box is shown
     private void SetCharacterBox(DialogueTextData givenData){
         characterDialogueBox.GetComponentInChildren<ExpressionDialogueSprite>().changeExpression(givenData.CharSpeaking, givenData.CharExprssion);
          characterDialogueBox.SetActive(true);
          textLabel = characterDialogueBox.GetComponentInChildren<TMP_Text>();
-         currentTalking = givenData.CharSpeaking;
     }
-
+    // Might remove this code
     private string checkForInfo(string dialogue){
-        //bool firstFound=false;
+        // Checks to find % % 
         int firstIndex=-1;
         int secondIndex=-1;
         for (int i = 0; i < dialogue.Length; i++)
@@ -94,7 +87,7 @@ public class DialogueUI : MonoBehaviour
             }
         }
         if (secondIndex==-1) return dialogue;
-        
+        // Unsure how to make a better way of injecting the players name into the code
         if (dialogue.Substring(firstIndex + 1,secondIndex-firstIndex-1 ).Equals("PlayerName"))
         {
             dialogue=dialogue.Substring(0,firstIndex) + infoGet.playerName + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
@@ -105,12 +98,15 @@ public class DialogueUI : MonoBehaviour
             dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
             //dialogue=dialogue.Substring(0,firstIndex);
         }
-
         return dialogue;
     }
     public void AddResponseEvents(ResponseEvent[] responseEvents)
     {
         responseHandler.AddResponseEvents(responseEvents);
+    }
+    public void AddResponseEvents(ResponseEvent[][] responseEvents)
+    {
+        responseHandler.AddResponseEventsList(responseEvents);
     }
 
     public IEnumerator InTheLoop(DialogueObject dialogueObject)
@@ -125,22 +121,27 @@ public class DialogueUI : MonoBehaviour
         {
             DialogueTextData dialogueStuff = dialogueObject.DialogueData[i];
             //assume all dialogue is default dialogue until proven otherwise
+            // All of this is setting things up to default
             textLabel.text = string.Empty;
             currentTalking = dialogueStuff.CharSpeaking;
-            if (!dialogueObject.IsSpecialDialogue) textLabel = defaultText;
-            else SetSpecialDialogue();
             if (characterDialogueBox != null)  characterDialogueBox.SetActive(false);
+            textLabel = defaultText;
+            if (dialogueObject.IsSpecialDialogue) SetSpecialDialogue();
+            else if (dialogueStuff.CharSpeaking == CharacterTalking.Leo) SetCharacterBox(dialogueStuff);
+
             string dialogue = dialogueStuff.DialogueText;
-            if (dialogueStuff.CharSpeaking == CharacterTalking.Leo && !specialBox) SetCharacterBox(dialogueStuff);
+            // This runs the typing effect on the screen
             yield return RunTypingEffect(dialogue);
             textLabel.text = dialogue;
-            if (!currentTalking.Equals(CharacterTalking.None)) soundManager.StopSounds();
+            //if (!currentTalking.Equals(CharacterTalking.None)) soundManager.StopSounds();
             if (i == dialogueObject.Dialogue.Length-1 && dialogueObject.HasResponses) break;
             yield return null;
+            // Might clean this up
             if (!forceContinue)
             {
                 if (forceStay)
                 {
+                    // If we are forcing the dialogue to stay on screen, we have to wait till forceContinue is set to true
                     yield return new WaitUntil(() => forceContinue);
                     forceStay = false;
                 }
@@ -150,7 +151,8 @@ public class DialogueUI : MonoBehaviour
         }
         if (dialogueObject.HasResponses)
         {
-            responseHandler.ShowResponses(dialogueObject.Responses);
+            //responseHandler.ShowResponses(dialogueObject.Responses);
+            SendResponses(dialogueObject);
         }
         else
         {
@@ -159,6 +161,15 @@ public class DialogueUI : MonoBehaviour
         if (specialBox) specialDialogueBox.SetActive(false);
         specialBox = false;
         if (dialogueObject.HasNextDialogue) ShowDialogue(dialogueObject.NextDialgoue);  
+    }
+    private void SendResponses(DialogueObject dialogueObject){
+//DTag
+        Response[] responses = dialogueObject.Responses;
+        foreach (Response response in responses)
+        {
+            response.DTag = dialogueObject.name;
+        }
+        responseHandler.ShowResponses(responses);
     }
     private IEnumerator RunTypingEffect(string dialogue)
     {   

@@ -57,16 +57,15 @@ public class SoundManager : MonoBehaviour
         for (int i = 0; i<soundList.Length; i++)
         {
             if (soundList[i].clip.Equals(givenSound))  return i;
+            Debug.Log(soundList[i].clip);
         }
         Debug.Log("Warning, attempted to play audio clip that doesn't exist");
         return -1;
     }
     public void YieldPlaySound(int index)
     {
-        Debug.Log(soundList[index].isPlaying);
         if (!soundList[index].isPlaying)
             soundList[index].Play();
-        Debug.Log(soundList[index].volume);
     }
     public void StopSounds()
     {

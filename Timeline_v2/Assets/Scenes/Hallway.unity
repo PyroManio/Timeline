@@ -5667,9 +5667,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18d6fb4f47aee9489a7dd70a09d4307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responseBox: {fileID: 1221864234}
-  responseButtonTemplate: {fileID: 634967083}
-  responseContainer: {fileID: 2087077594}
+  responseBox: {fileID: 2087077594}
+  responseButtonTemplate: {fileID: 835282991}
+  responseContainer: {fileID: 634967083}
 --- !u!114 &611271635
 MonoBehaviour:
   m_ObjectHideFlags: 0

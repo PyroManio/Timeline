@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using UnityEditor;
+using System.Linq;
 
 public class TypewriterEffect : MonoBehaviour
 {
-    //private Hashtable talkingVoice = new Hashtable();
- 
     [SerializeField] private Dictionary<CharacterTalking, AudioClip> voiceTalk;
-    [SerializeField] private float typewriterSpeed =50f;
-    //[SerializeField] private UnityEvent[] talkList;
+    [SerializeField] private float typewriterSpeed = 50f;
     [SerializeField] private SoundManager soundManager;
     
     public bool IsRunning {get; private set;}
@@ -22,11 +21,12 @@ public class TypewriterEffect : MonoBehaviour
     private Coroutine typingCoroutine;
     private void Start()
     {
+        // VoiceTalk will have info regarding which audio to play depending on who is talking.
         voiceTalk = new Dictionary<CharacterTalking, AudioClip>
         {
             { CharacterTalking.None, null },
-            { CharacterTalking.Leo, Resources.Load<AudioClip>("Assets/SoundEffects/Leo_Talk.wav") },
-            { CharacterTalking.Despair, Resources.Load<AudioClip>("Assets/SoundEffects/Despair_Talk.wav") }
+            { CharacterTalking.Leo, AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/SoundEffects/Leo_Talk.wav") },
+            { CharacterTalking.Despair, AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/SoundEffects/Despair_Talk.wav") }
         };
     }
    public void Run(string textToType, TMP_Text textLabel,CharacterTalking currentTalking)
