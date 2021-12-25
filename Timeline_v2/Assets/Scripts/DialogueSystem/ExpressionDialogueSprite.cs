@@ -29,7 +29,7 @@ public class ExpressionDialogueSprite : MonoBehaviour
        { Expression.Thinking, LeoSprites[7] },
        { Expression.Idea, LeoSprites[8] },
        { Expression.Stress, LeoSprites[9] },
-       { Expression.IdkExpressions, LeoSprites[10] },
+       { Expression.Shame, LeoSprites[10] },
        { Expression.Hit, LeoSprites[11] },
        { Expression.Void, LeoSprites[12] }
     };

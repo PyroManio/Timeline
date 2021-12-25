@@ -27,7 +27,7 @@ public class DialogueTextData
       Thinking,
       Idea,
       Stress,
-      IdkExpressions,
+      Shame,
       Hit,
       Void
  }
