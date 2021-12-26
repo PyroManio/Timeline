@@ -20,6 +20,14 @@ MonoBehaviour:
   - dialogueText: Our number one priority is to escape right now! Let's go!
     characterSpeaking: 1
     expression: 0
-  responses: []
+  responses:
+  - responseText: test1
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 11400000, guid: 6f90d85a3eb69454eb527e64f213ec26, type: 2}
+    DTag: RightShelf
+  - responseText: test2
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: RightShelf
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
