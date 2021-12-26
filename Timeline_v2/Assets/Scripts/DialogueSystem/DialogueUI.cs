@@ -96,7 +96,6 @@ public class DialogueUI : MonoBehaviour
         {
             soundManager.PlaySound(int.Parse(dialogue.Substring(firstIndex + 3, secondIndex-firstIndex-3)));
             dialogue=dialogue.Substring(0,firstIndex) + dialogue.Substring(secondIndex+1,dialogue.Length-secondIndex-1);
-            //dialogue=dialogue.Substring(0,firstIndex);
         }
         return dialogue;
     }
@@ -126,14 +125,13 @@ public class DialogueUI : MonoBehaviour
             currentTalking = dialogueStuff.CharSpeaking;
             if (characterDialogueBox != null)  characterDialogueBox.SetActive(false);
             textLabel = defaultText;
-            if (dialogueObject.IsSpecialDialogue) SetSpecialDialogue();
-            else if (dialogueStuff.CharSpeaking == CharacterTalking.Leo) SetCharacterBox(dialogueStuff);
-
+            //if (dialogueObject.IsSpecialDialogue) SetSpecialDialogue();
+            //else if (dialogueStuff.CharSpeaking == CharacterTalking.Leo) SetCharacterBox(dialogueStuff);
+            if (dialogueStuff.CharSpeaking == CharacterTalking.Leo) SetCharacterBox(dialogueStuff);
             string dialogue = dialogueStuff.DialogueText;
             // This runs the typing effect on the screen
             yield return RunTypingEffect(dialogue);
             textLabel.text = dialogue;
-            //if (!currentTalking.Equals(CharacterTalking.None)) soundManager.StopSounds();
             if (i == dialogueObject.Dialogue.Length-1 && dialogueObject.HasResponses) break;
             yield return null;
             // Might clean this up
@@ -151,7 +149,6 @@ public class DialogueUI : MonoBehaviour
         }
         if (dialogueObject.HasResponses)
         {
-            //responseHandler.ShowResponses(dialogueObject.Responses);
             SendResponses(dialogueObject);
         }
         else
@@ -183,14 +180,11 @@ public class DialogueUI : MonoBehaviour
         }
     }
     public void CloseDialogueBox(){
-        //NEW
         IsOpen = false;
-        if (characterDialogueBox!=null)
-            characterDialogueBox.SetActive(false);
+        if (characterDialogueBox!=null)  characterDialogueBox.SetActive(false);
         dialogueBox.SetActive(false);
         defaultText.text=string.Empty;
         textLabel.text=string.Empty;
-        if (characterDialogueBox!=null)
-            characterDialogueBox.GetComponentInChildren<TMP_Text>().text=string.Empty;
+        if (characterDialogueBox!=null)  characterDialogueBox.GetComponentInChildren<TMP_Text>().text=string.Empty;
     }
 }

@@ -12,6 +12,7 @@ public class ResponseHandler : MonoBehaviour
     private ResponseEvent[][] responseEventsList;
     private DialogueObject currentDialogue;
     private List<GameObject> tempResponseButtons = new List<GameObject>();
+    [SerializeField] private Inventory inventory;
     private void Start()
     {
         dialogueUI = GetComponent<DialogueUI>();
@@ -37,6 +38,13 @@ public class ResponseHandler : MonoBehaviour
         for (int i = 0; i < responses.Length; i++)
         {
             Response response = responses[i];
+            // If a response needs an item to show, and that item is NOT in the inventory, don't include this response
+            // I think there might be a problem with this if there's an instance where a dialogue object has
+            // Only one response that requires an item, and that item isn't in the inventory. The response
+            // box will attempt to show, however, there will be no responses. Just try to have at least
+            // one non-item required response for any of the responses with a dialogue object
+            if (response.NeedsItem && !inventory.HasItem(response.RequiredItem)) continue;
+            
             int responseIndex = i;
             if (response.ResponseText.Length > longestResponseLength) longestResponseLength = response.ResponseText.Length;
             GameObject responseButton = Instantiate(responseButtonTemplate.gameObject, responseContainer);

@@ -33,17 +33,19 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     }
     public void Interact(DialogueUI dialogueUI)
     {
+        DialogueItemCheck itemCheck = GetComponent<DialogueItemCheck>();
+        if (itemCheck != null)
+            foreach (DialogueItem itemsToCheck in itemCheck.DialogueItemList)
+            {
+                if (itemCheck.inventory.HasItem(itemsToCheck.RequiredItem)) 
+                    UpdateDialogueObject(itemsToCheck.Dialogue);
+            }
+
         ResponseEvent[][] compResponseEvents = new ResponseEvent[GetComponents<DialogueResponseEvents>().Length][];
-        //List<ResponseEvent[]>
         int tempIndex=0;
         foreach (DialogueResponseEvents responseEvents in GetComponents<DialogueResponseEvents>())
         {
             compResponseEvents[tempIndex] = responseEvents.Events;
-            /*if (responseEvents.DialogueObject == dialogueObject)
-            {
-                dialogueUI.AddResponseEvents(responseEvents.Events);
-                break;
-            }*/
             tempIndex++;
         }
         dialogueUI.AddResponseEvents(compResponseEvents);

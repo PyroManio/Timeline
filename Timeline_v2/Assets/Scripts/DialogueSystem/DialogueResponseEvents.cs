@@ -11,7 +11,6 @@ public class DialogueResponseEvents : MonoBehaviour
     
     public void OnValidate()
    {
-        Debug.Log("E");
         if (dialogueObject == null) return;
         if (dialogueObject.Responses == null) return;
         //if (events != null && events.Length == dialogueObject.Responses.Length) return;

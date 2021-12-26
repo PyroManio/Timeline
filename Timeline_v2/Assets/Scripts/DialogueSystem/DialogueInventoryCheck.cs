@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// MARK FOR DELETION
 public class DialogueInventoryCheck : MonoBehaviour
 {
     [SerializeField] private Inventory inventory;
