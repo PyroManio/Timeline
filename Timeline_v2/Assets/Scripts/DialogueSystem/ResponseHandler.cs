@@ -30,7 +30,20 @@ public class ResponseHandler : MonoBehaviour
     {
         responseEventsList = null;
     }
+    public bool CheckValidResponses(Response[] responses)
+    {
+        // This is to check if its possbile to show at least one response.
+        // We don't want an instance where the dialogueUI tries to have 
+        // the response handler show responses that it can't show.
 
+        foreach (Response response in responses)
+        {
+            // If a response needs an item, but it isn't in the inventory, it doesn't count as a valid response.
+            if (response.NeedsItem && !inventory.HasItem(response.RequiredItem)) continue;
+            return true;
+        }
+        return false;
+    }
     public void ShowResponses(Response[] responses)
     {
         int longestResponseLength=0;
@@ -44,7 +57,7 @@ public class ResponseHandler : MonoBehaviour
             // box will attempt to show, however, there will be no responses. Just try to have at least
             // one non-item required response for any of the responses with a dialogue object
             if (response.NeedsItem && !inventory.HasItem(response.RequiredItem)) continue;
-            
+
             int responseIndex = i;
             if (response.ResponseText.Length > longestResponseLength) longestResponseLength = response.ResponseText.Length;
             GameObject responseButton = Instantiate(responseButtonTemplate.gameObject, responseContainer);

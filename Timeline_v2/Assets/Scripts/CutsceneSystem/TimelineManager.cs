@@ -24,7 +24,7 @@ public class TimelineManager : MonoBehaviour
         isLoop=loop;
 
     }
-    public void PlayTimeline(TimelineAsset givenTimeline, bool loop, int index)
+    public void PlayTimeline(TimelineAsset givenTimeline, bool loop)
     {
         timelineEnd=false;
         isLoop=loop;

@@ -50,3 +50,58 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4628c0825f17b584fbe9381d6f534d2a, type: 2}
   - {fileID: 11400000, guid: d12f8f9a0194dca44a2b735065c64b0c, type: 2}
   - {fileID: 11400000, guid: 43ef92fb623ff8440951bc7ce2e0df32, type: 2}
+  cutsceneData:
+  - type: 1
+    timeline: {fileID: 0}
+    timelineLoop: {fileID: 0}
+    dialogue: {fileID: 11400000, guid: 1486763c4c120014999f1488d36a1573, type: 2}
+    eventObject: 0
+    eventIndex: 0
+    waitTime: 0
+    audioType: 0
+    playClip: {fileID: 0}
+  - type: 4
+    timeline: {fileID: 0}
+    timelineLoop: {fileID: 0}
+    dialogue: {fileID: 11400000, guid: 1486763c4c120014999f1488d36a1573, type: 2}
+    eventObject: 0
+    eventIndex: 0
+    waitTime: 0
+    audioType: 1
+    playClip: {fileID: 0}
+  - type: 1
+    timeline: {fileID: 0}
+    timelineLoop: {fileID: 0}
+    dialogue: {fileID: 11400000, guid: 01e539d5d2e63e84a81dbeaea8769b33, type: 2}
+    eventObject: 0
+    eventIndex: 0
+    waitTime: 0
+    audioType: 0
+    playClip: {fileID: 0}
+  - type: 4
+    timeline: {fileID: 0}
+    timelineLoop: {fileID: 0}
+    dialogue: {fileID: 11400000, guid: 01e539d5d2e63e84a81dbeaea8769b33, type: 2}
+    eventObject: 0
+    eventIndex: 1
+    waitTime: 0
+    audioType: 1
+    playClip: {fileID: 8300000, guid: 27c75763e38e658438c1a0803fa3f8a5, type: 3}
+  - type: 1
+    timeline: {fileID: 0}
+    timelineLoop: {fileID: 0}
+    dialogue: {fileID: 11400000, guid: 52e9920ea50d4ab4aacefd6b7648ae16, type: 2}
+    eventObject: 0
+    eventIndex: 0
+    waitTime: 0
+    audioType: 0
+    playClip: {fileID: 0}
+  - type: 2
+    timeline: {fileID: 0}
+    timelineLoop: {fileID: 0}
+    dialogue: {fileID: 11400000, guid: 52e9920ea50d4ab4aacefd6b7648ae16, type: 2}
+    eventObject: 0
+    eventIndex: 0
+    waitTime: 0
+    audioType: 0
+    playClip: {fileID: 0}

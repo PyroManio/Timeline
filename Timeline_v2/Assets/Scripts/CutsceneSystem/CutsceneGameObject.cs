@@ -8,4 +8,5 @@ public class CutsceneGameObject : MonoBehaviour
     public CutsceneObject CutsceneObject => cutsceneScript;
     [SerializeField] private UnityEvent[] cutsceneEvents;
     public UnityEvent[] CutsceneEvents => cutsceneEvents;
+    
 }

@@ -116,10 +116,10 @@ public class DialogueUI : MonoBehaviour
     }
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
-        for (int i =0; i < dialogueObject.DialogueData.Length;i++)
+        for (int i = 0; i < dialogueObject.DialogueData.Length; i++)
         {
             DialogueTextData dialogueStuff = dialogueObject.DialogueData[i];
-            //assume all dialogue is default dialogue until proven otherwise
+            // Assume all dialogue is default dialogue until proven otherwise
             // All of this is setting things up to default
             textLabel.text = string.Empty;
             currentTalking = dialogueStuff.CharSpeaking;
@@ -132,7 +132,7 @@ public class DialogueUI : MonoBehaviour
             // This runs the typing effect on the screen
             yield return RunTypingEffect(dialogue);
             textLabel.text = dialogue;
-            if (i == dialogueObject.Dialogue.Length-1 && dialogueObject.HasResponses) break;
+            if (i == dialogueObject.Dialogue.Length-1 && (dialogueObject.HasResponses && responseHandler.CheckValidResponses(dialogueObject.Responses))) break;
             yield return null;
             // Might clean this up
             if (!forceContinue)

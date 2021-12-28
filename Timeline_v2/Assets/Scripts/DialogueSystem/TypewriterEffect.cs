@@ -10,8 +10,7 @@ public class TypewriterEffect : MonoBehaviour
 {
     [SerializeField] private Dictionary<CharacterTalking, AudioClip> voiceTalk;
     [SerializeField] private float typewriterSpeed = 50f;
-    [SerializeField] private SoundManager soundManager;
-    
+    [SerializeField] private SoundManager soundManager;   
     public bool IsRunning {get; private set;}
     private readonly List<Punctuation> punctuations = new List<Punctuation>()
     {
@@ -54,15 +53,12 @@ public class TypewriterEffect : MonoBehaviour
            {
                 bool isLast = i >= textToType.Length-1;
                 textLabel.text=textToType.Substring(0,i+1);
-                //if (currentTalking!=0) talkList[currentTalking]?.Invoke();
                 soundManager.YieldPlaySound(voiceTalk[currentTalking]);
                 if (IsPunctuation(textToType[i],out float waitTime) && !isLast && !IsPunctuation(textToType[i+1],out _))
                 {
                     yield return new WaitForSeconds(waitTime);
                 }
            }
-          
-
            yield return null;
        }
        IsRunning=false;
@@ -73,18 +69,17 @@ public class TypewriterEffect : MonoBehaviour
        {
            if (punctuationCategory.Punctuations.Contains(character))
            {
-               waitTime=punctuationCategory.WaitTime;
+               waitTime = punctuationCategory.WaitTime;
                return true;
            }
        }
-       waitTime=default;
+       waitTime = default;
        return false;
    }
    private readonly struct Punctuation
     {
         public readonly HashSet<char> Punctuations;
         public readonly float WaitTime;
-
         public Punctuation(HashSet<char> punctuations, float waitTime)
         {
             Punctuations = punctuations;
