@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: Door_Examine
   m_EditorClassIdentifier: 
   dialogue:
-  - "%6%Uh, hello? It's locked. It's not just gonna magically unlock itself."
-  - "%7%Though, the lock itself used to be broken. And now it's been fixed?"
+  - '%6%Uh, hello? It''s locked. It''s not just gonna magically unlock itself.'
+  - '%7%Though, the lock itself used to be broken. And now it''s been fixed?'
   - '%6%I just want to get out of here already!'
+  dialogueData:
+  - dialogueText: Uh, hello? It's locked. It's not just gonna magically unlock itself.
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: Though, the lock itself used to be broken. And now it's been fixed?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: I just want to get out of here already!
+    characterSpeaking: 1
+    expression: 6
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

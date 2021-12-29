@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: Closet_Examine_Unlock
   m_EditorClassIdentifier: 
   dialogue:
-  - "%1%All my clothes are still here. So that's a relief. "
+  - '%1%All my clothes are still here. So that''s a relief. '
   - "%1%Looks like there's a box here that wasn't there before.\r"
+  dialogueData:
+  - dialogueText: 'All my clothes are still here. So that''s a relief. '
+    characterSpeaking: 1
+    expression: 1
+  - dialogueText: "Looks like there's a box here that wasn't there before.\r"
+    characterSpeaking: 1
+    expression: 1
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

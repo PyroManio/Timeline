@@ -15,4 +15,11 @@ MonoBehaviour:
   dialogue:
   - '%7%We unlocked the laptop now, so we''ve got to be able to do something with
     it.'
+  dialogueData:
+  - dialogueText: We unlocked the laptop now, so we've got to be able to do something
+      with it.
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

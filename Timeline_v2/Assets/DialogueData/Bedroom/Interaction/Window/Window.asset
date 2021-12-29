@@ -14,10 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%All the windows in my room are bolted shut with some kind of metal.'
+  dialogueData:
+  - dialogueText: All the windows in my room are bolted shut with some kind of metal.
+    characterSpeaking: 1
+    expression: 2
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: a8c1dd51d9d9e694e9fd227a0a683e62, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: f735b9e43c1dc7f44a3e30c26e709c40, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

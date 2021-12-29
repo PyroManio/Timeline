@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "%0%It's my trash can. There's nothing else here of interest.\r"
+  dialogueData:
+  - dialogueText: "It's my trash can. There's nothing else here of interest.\r"
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

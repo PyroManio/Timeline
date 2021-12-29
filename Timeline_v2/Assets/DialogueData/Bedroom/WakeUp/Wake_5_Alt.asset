@@ -17,4 +17,19 @@ MonoBehaviour:
   - '%7%Who are you anyways?'
   - '[I am %PlayerName%]'
   - '%7%%PlayerName%, huh?'
+  dialogueData:
+  - dialogueText: Well, it looks like someone's there...
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Who are you anyways?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: '[I am %PlayerName%]'
+    characterSpeaking: 0
+    expression: 0
+  - dialogueText: '%PlayerName%, huh?'
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

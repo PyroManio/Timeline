@@ -16,4 +16,14 @@ MonoBehaviour:
   - '%2%Oh. Well, I guess that makes sense.'
   - '%2%Well, as long as it''s part of the test, I guess. Still, could they make
     it a little less creepy?'
+  dialogueData:
+  - dialogueText: Oh. Well, I guess that makes sense.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Well, as long as it's part of the test, I guess. Still, could they
+      make it a little less creepy?
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

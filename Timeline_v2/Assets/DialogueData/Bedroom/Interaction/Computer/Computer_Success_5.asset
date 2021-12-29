@@ -22,4 +22,30 @@ MonoBehaviour:
     secrets to my grave.'
   - '%5%I''ll play along, but only to the extent that''s necessary.'
   - '%10%Besides... there are some things people are better off not knowing.'
+  dialogueData:
+  - dialogueText: I printed it and it reads... LIES?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: And what the hell does the first file mean?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: It... doesn't mean that literally... does it?
+    characterSpeaking: 1
+    expression: 9
+  - dialogueText: "Look, I get that you're trying to test me, but I'm not sharing
+      the darkest corners of my mind.\r"
+    characterSpeaking: 1
+    expression: 9
+  - dialogueText: I've made promises to people to keep their secrets. And I plan
+      to take those secrets to my grave.
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: I'll play along, but only to the extent that's necessary.
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: Besides... there are some things people are better off not knowing.
+    characterSpeaking: 1
+    expression: 9
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

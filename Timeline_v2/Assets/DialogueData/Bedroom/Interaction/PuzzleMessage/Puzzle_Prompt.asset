@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Take a closer look?
+  dialogueData:
+  - dialogueText: Take a closer look?
+    characterSpeaking: 0
+    expression: 0
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

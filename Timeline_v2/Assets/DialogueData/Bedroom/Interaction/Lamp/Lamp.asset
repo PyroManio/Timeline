@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: Lamp
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%This is my bed lamp. It doesn't seem to be working, though."
+  - '%0%This is my bed lamp. It doesn''t seem to be working, though.'
   - '%7%Upon closer inspection, it looks like the bulb is missing. '
   - '%7%Maybe we need to find the bulb?'
+  dialogueData:
+  - dialogueText: This is my bed lamp. It doesn't seem to be working, though.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: 'Upon closer inspection, it looks like the bulb is missing. '
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Maybe we need to find the bulb?
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

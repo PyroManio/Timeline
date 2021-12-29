@@ -14,5 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%We found my backpack here. '
-  - "%2%Now we're just looking at the corner of my bed."
+  - '%2%Now we''re just looking at the corner of my bed.'
+  dialogueData:
+  - dialogueText: 'We found my backpack here. '
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Now we're just looking at the corner of my bed.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -13,9 +13,23 @@ MonoBehaviour:
   m_Name: Help_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%5%Seriously? It's the first step of the entire escape room and you're
-    already asking for help?"
+  - '%5%Seriously? It''s the first step of the entire escape room and you''re already
+    asking for help?'
   - '%2%Well, whatever.'
   - '%7%Usually in an escape room the first thing to do is explore the room and collect
     items.'
+  dialogueData:
+  - dialogueText: Seriously? It's the first step of the entire escape room and you're
+      already asking for help?
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: Well, whatever.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Usually in an escape room the first thing to do is explore the
+      room and collect items.
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

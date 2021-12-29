@@ -17,4 +17,17 @@ MonoBehaviour:
     up for this stupid thing!'
   - '%5%So, this is their big test? Lock me in here and now I have to escape?'
   - '%5%Jeez, what a pain. Whatever. I guess I''ll play along for now.'
+  dialogueData:
+  - dialogueText: Extended Testing program? What the hell does that even mean? I
+      just signed up for this stupid thing!
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: So, this is their big test? Lock me in here and now I have to escape?
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: Jeez, what a pain. Whatever. I guess I'll play along for now.
+    characterSpeaking: 1
+    expression: 5
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -19,6 +19,27 @@ MonoBehaviour:
   - '%2%Makes sense to me, at least.'
   - '%7%But the way they phrased it, it sounded like there would be a lot of us,
     not just two.'
+  dialogueData:
+  - dialogueText: First I heard of it. I just know it as the Chromatic Project.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Although they did say that it WAS a group test.
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Maybe it's "extended" because you're not here?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Makes sense to me, at least.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: But the way they phrased it, it sounded like there would be a lot
+      of us, not just two.
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: Phrased it?
     dialogueObject: {fileID: 11400000, guid: 476086e8a14ad17499ef7a2f6e182510, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

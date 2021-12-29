@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Wake_5_Y
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Okay, I'll call you [Player Name] then."
+  - '%0%Okay, I''ll call you [Player Name] then.'
+  dialogueData:
+  - dialogueText: Okay, I'll call you [Player Name] then.
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

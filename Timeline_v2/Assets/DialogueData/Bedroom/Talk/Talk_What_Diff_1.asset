@@ -15,4 +15,13 @@ MonoBehaviour:
   dialogue:
   - '%2%That was kind of a rhetorical question, but whatever.'
   - '%0%Is there something else you want to ask me?'
+  dialogueData:
+  - dialogueText: That was kind of a rhetorical question, but whatever.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Is there something else you want to ask me?
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -14,5 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%7%All the drawers are locked, and there are various symbols on each of them.'
-  - "%2%I don't think we have enough information to open these right now."
+  - '%2%I don''t think we have enough information to open these right now.'
+  dialogueData:
+  - dialogueText: All the drawers are locked, and there are various symbols on each
+      of them.
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: I don't think we have enough information to open these right now.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

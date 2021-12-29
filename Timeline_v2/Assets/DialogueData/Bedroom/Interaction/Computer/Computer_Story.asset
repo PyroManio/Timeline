@@ -14,16 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "%0%I used to write a lot when I was a kid. And I mean a LOT.\r"
-  - "%1%So far, I've written over 500 pages of short stories, novels, and various
-    works of fiction."
+  - '%1%So far, I''ve written over 500 pages of short stories, novels, and various
+    works of fiction.'
   - '%1%Single-spaced, 12-point font Times New Roman. None of that double-spacing
     bs.'
   - '%0%Whenever I had free time in high school, you could usually find me working
     on some story.'
   - '%1%I always stored them on my laptop. And I kept a few of them backed up on
     flash drives.'
-  - "%4%...God I hope that they're all still on there and that they weren't
-    erased."
-  - "%4%I couldn't imagine what I'd do if all of my work just up and disappeared.
-    I'd be crushed."
+  - '%4%...God I hope that they''re all still on there and that they weren''t erased.'
+  - '%4%I couldn''t imagine what I''d do if all of my work just up and disappeared.
+    I''d be crushed.'
+  dialogueData:
+  - dialogueText: "I used to write a lot when I was a kid. And I mean a LOT.\r"
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: So far, I've written over 500 pages of short stories, novels, and
+      various works of fiction.
+    characterSpeaking: 1
+    expression: 1
+  - dialogueText: Single-spaced, 12-point font Times New Roman. None of that double-spacing
+      bs.
+    characterSpeaking: 1
+    expression: 1
+  - dialogueText: Whenever I had free time in high school, you could usually find
+      me working on some story.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: I always stored them on my laptop. And I kept a few of them backed
+      up on flash drives.
+    characterSpeaking: 1
+    expression: 1
+  - dialogueText: ...God I hope that they're all still on there and that they weren't
+      erased.
+    characterSpeaking: 1
+    expression: 4
+  - dialogueText: I couldn't imagine what I'd do if all of my work just up and disappeared.
+      I'd be crushed.
+    characterSpeaking: 1
+    expression: 4
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

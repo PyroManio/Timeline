@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Wake_8
   m_EditorClassIdentifier: 
   dialogue:
-  - "%5%Well that's encouraging... I'm just gonna leave now."
+  - '%5%Well that''s encouraging... I''m just gonna leave now.'
+  dialogueData:
+  - dialogueText: Well that's encouraging... I'm just gonna leave now.
+    characterSpeaking: 1
+    expression: 5
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

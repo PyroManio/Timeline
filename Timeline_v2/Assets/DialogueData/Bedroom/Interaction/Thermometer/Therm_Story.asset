@@ -17,6 +17,19 @@ MonoBehaviour:
     award.'
   - "%1%I really loved math and science as a kid. I even took the ASI in middle school.
     \r\n"
+  dialogueData:
+  - dialogueText: I won the thermometer as a prize in middle school as some sort
+      of academic award.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: "I really loved math and science as a kid. I even took the ASI
+      in middle school. \r\n"
+    characterSpeaking: 1
+    expression: 1
   responses:
   - responseText: ASI?
     dialogueObject: {fileID: 11400000, guid: a629a5e183d68824ba5ffe8d871c71ce, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

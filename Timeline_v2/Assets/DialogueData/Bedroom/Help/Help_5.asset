@@ -14,5 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%7%That combination lock on the closet is really starting to bug me too.'
-  - "%9%There's has to be something to unlock it. Are we sure we checked EVERYTHING?"
+  - '%9%There''s has to be something to unlock it. Are we sure we checked EVERYTHING?'
+  dialogueData:
+  - dialogueText: That combination lock on the closet is really starting to bug me
+      too.
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: There's has to be something to unlock it. Are we sure we checked
+      EVERYTHING?
+    characterSpeaking: 1
+    expression: 10
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

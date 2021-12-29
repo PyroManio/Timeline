@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%5%Huh? How can this door be locked?'
+  dialogueData:
+  - dialogueText: Huh? How can this door be locked?
+    characterSpeaking: 1
+    expression: 5
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

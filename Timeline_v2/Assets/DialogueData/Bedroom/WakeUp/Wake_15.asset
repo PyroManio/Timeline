@@ -16,8 +16,22 @@ MonoBehaviour:
   - '%0%Well, I kind of need your help. I just tried solving the puzzles here, but
     I can''t figure out any of them.'
   - '%0%I don''t suppose you have any ideas, do you?'
+  dialogueData:
+  - dialogueText: Well, I kind of need your help. I just tried solving the puzzles
+      here, but I can't figure out any of them.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: I don't suppose you have any ideas, do you?
+    characterSpeaking: 1
+    expression: 0
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 85559562bc9c4f642a6c6039e543c14f, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 11400000, guid: c30d279214e8d244f86f2f1270e73d1a, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

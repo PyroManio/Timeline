@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%4%Wha? Where am I? Wait, this is-'
+  dialogueData:
+  - dialogueText: Wha? Where am I? Wait, this is-
+    characterSpeaking: 1
+    expression: 4
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

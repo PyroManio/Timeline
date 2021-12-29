@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Use the Freeze Key?
+  dialogueData:
+  - dialogueText: Use the Freeze Key?
+    characterSpeaking: 0
+    expression: 0
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 27c78871ead3bb74ba29292ff7e6a1a4, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

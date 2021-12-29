@@ -16,4 +16,14 @@ MonoBehaviour:
   - '%5%Just like everything else here, the closet is locked. And with a combination
     lock, I guess?'
   - '%2%Looks like I need a 4-digit combination to unlock it.'
+  dialogueData:
+  - dialogueText: Just like everything else here, the closet is locked. And with
+      a combination lock, I guess?
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: Looks like I need a 4-digit combination to unlock it.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

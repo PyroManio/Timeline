@@ -18,11 +18,46 @@ MonoBehaviour:
     of things.'
   - '%0%It can help you understand the movement of some electrons to gravitational
     forces.'
-  - "%3%Heh, sorry. I kinda went off on a tangent there, didn't I?"
+  - '%3%Heh, sorry. I kinda went off on a tangent there, didn''t I?'
   - '%0%Anyway, let''s see what''s on this computer.'
   - '%0%...!'
   - '%2%There''s two text files on here.'
   - '%4%One says, "To survive you must confess your sins. Reveal thy secrets, prisoner."'
   - '%7%I can''t open the other one. But it looks like I can connect to the printer
     and print it out.'
+  dialogueData:
+  - dialogueText: The superposition only exists in the moment before you open the
+      box.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Superposition is often used in Quantum Physics to help describe
+      all sorts of things.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: It can help you understand the movement of some electrons to gravitational
+      forces.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Heh, sorry. I kinda went off on a tangent there, didn't I?
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: Anyway, let's see what's on this computer.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: ...!
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: There's two text files on here.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: One says, "To survive you must confess your sins. Reveal thy secrets,
+      prisoner."
+    characterSpeaking: 1
+    expression: 4
+  - dialogueText: I can't open the other one. But it looks like I can connect to
+      the printer and print it out.
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

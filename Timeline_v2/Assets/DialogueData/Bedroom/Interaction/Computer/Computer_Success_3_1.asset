@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%7%But... it''s got me thinking. Do you know about Schrodinger''s Cat?'
+  dialogueData:
+  - dialogueText: But... it's got me thinking. Do you know about Schrodinger's Cat?
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 0ddf4b9b6cb95ba45a0a7a0975a5e317, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 11400000, guid: 6384ef27600c86a45bd3a3aaed2d31b4, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -14,5 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%7%I think I saw something useful over by the trash can.'
-  - "%7%Maybe we should investigate it and see if there's anything useful there?"
+  - '%7%Maybe we should investigate it and see if there''s anything useful there?'
+  dialogueData:
+  - dialogueText: '%7%I think I saw something useful over by the trash can.'
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: '%7%Maybe we should investigate it and see if there''s anything
+      useful there?'
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

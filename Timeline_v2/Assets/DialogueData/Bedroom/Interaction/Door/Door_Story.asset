@@ -14,7 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - "%2%Don't get too excited, it's literally just the door to my room.\r"
-  - "%3%Normally, it's not supposed to lock although there were definitely times
-    when I wish it did."
-  - "%10%Let's not talk about that, though. Moving on."
+  - '%3%Normally, it''s not supposed to lock although there were definitely times
+    when I wish it did.'
+  - '%10%Let''s not talk about that, though. Moving on.'
+  dialogueData:
+  - dialogueText: "Don't get too excited, it's literally just the door to my room.\r"
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Normally, it's not supposed to lock although there were definitely
+      times when I wish it did.
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: Let's not talk about that, though. Moving on.
+    characterSpeaking: 1
+    expression: 9
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -15,4 +15,11 @@ MonoBehaviour:
   dialogue:
   - '%5%Well, they did say they left me someone to help. I guess I don''t have a
     choice.'
+  dialogueData:
+  - dialogueText: Well, they did say they left me someone to help. I guess I don't
+      have a choice.
+    characterSpeaking: 1
+    expression: 5
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

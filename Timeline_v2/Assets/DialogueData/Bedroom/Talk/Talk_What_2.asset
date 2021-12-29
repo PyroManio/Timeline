@@ -16,6 +16,16 @@ MonoBehaviour:
   - '%7%Well then what are you even doing here?
 
 '
+  dialogueData:
+  - dialogueText: 'Well then what are you even doing here?
+
+'
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: I volunteered
     dialogueObject: {fileID: 11400000, guid: 5f8bc346fe37cb147a10a5d39096490c, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

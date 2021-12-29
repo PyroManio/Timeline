@@ -14,5 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%Unsurprisingly, the chest is locked. With a pretty heavy padlock too.'
-  - "%2%I don't think this thing is opening any time soon."
+  - '%2%I don''t think this thing is opening any time soon.'
+  dialogueData:
+  - dialogueText: Unsurprisingly, the chest is locked. With a pretty heavy padlock
+      too.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: I don't think this thing is opening any time soon.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

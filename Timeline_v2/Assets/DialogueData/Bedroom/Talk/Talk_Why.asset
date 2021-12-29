@@ -41,4 +41,67 @@ MonoBehaviour:
 
 
 '
+  dialogueData:
+  - dialogueText: Well, I kind of volunteered for something called the "Chromatic
+      Project".
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: 'The advertisement said it could help with all sorts of things.
+
+'
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: '%8%"The Chromatic Project pushes you to your physical, mental,
+      and emotional limits!"
+
+'
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: '"Join today to help yourself achieve enlightenment!"
+
+'
+    characterSpeaking: 1
+    expression: 8
+  - dialogueText: They were looking for test subjects, so I volunteered.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: "Only... I don't remember going to Pandora Laboratories today.\r"
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: The last thing I remember was getting in a fight with my mom over
+      the test.
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: The next thing I know I woke up in my room with everything locked
+      down!
+    characterSpeaking: 1
+    expression: 4
+  - dialogueText: 'Weird, right? '
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: 'In fact, I don''t think it was even 10 minutes after I sent the
+      e-mail that all this weird stuff started happening!
+
+
+'
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: How'd they even make me fall asleep, anyways?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: "Maybe I was out for a few hours while they set this up? That'd
+      make sense...\r"
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Sorry, kind of went on a tangent, there.
+    characterSpeaking: 0
+    expression: 0
+  - dialogueText: 'Is there anything else you want to know?
+
+
+'
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

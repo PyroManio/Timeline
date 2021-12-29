@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Talk_What_3
   m_EditorClassIdentifier: 
   dialogue:
-  - "%7%A volunteer huh? Weird, but I'll go with it."
+  - '%7%A volunteer huh? Weird, but I''ll go with it.'
+  dialogueData:
+  - dialogueText: A volunteer huh? Weird, but I'll go with it.
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: What is this place?
     dialogueObject: {fileID: 11400000, guid: ddedabacc7ee01b448576a5bee7abecb, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0
