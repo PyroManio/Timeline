@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: Wake_2
   m_EditorClassIdentifier: 
   dialogue:
-  - "%7%Is this... a camera?"
+  - '%7%Is this... a camera?'
   - '%7%Am I being watched?'
+  dialogueData:
+  - dialogueText: Is this... a camera?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Am I being watched?
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

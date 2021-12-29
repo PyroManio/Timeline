@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%I really hope that that''s just sarcasm.'
+  dialogueData:
+  - dialogueText: I really hope that that's just sarcasm.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

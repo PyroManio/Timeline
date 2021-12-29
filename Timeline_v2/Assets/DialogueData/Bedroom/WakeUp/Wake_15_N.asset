@@ -16,8 +16,22 @@ MonoBehaviour:
   - '%3%Come on, you really can''t at least try to help me out? You don''t even have
     one idea?'
   - '%0%I don''t suppose you have any ideas, do you?'
+  dialogueData:
+  - dialogueText: Come on, you really can't at least try to help me out? You don't
+      even have one idea?
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: I don't suppose you have any ideas, do you?
+    characterSpeaking: 1
+    expression: 0
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 85559562bc9c4f642a6c6039e543c14f, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 11400000}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

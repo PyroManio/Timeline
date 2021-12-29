@@ -13,9 +13,27 @@ MonoBehaviour:
   m_Name: Talk_What_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%5%Huh? You don't know? "
+  - '%5%Huh? You don''t know? '
   - '%5%I thought they would have told you something as basic as that!'
-  - "%6%I mean, you ARE one of Pandora's employees, right?\r\n"
+  - '%6%I mean, you ARE one of Pandora''s employees, right?
+
+'
+  dialogueData:
+  - dialogueText: 'Huh? You don''t know? '
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: I thought they would have told you something as basic as that!
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: 'I mean, you ARE one of Pandora''s employees, right?
+
+'
+    characterSpeaking: 1
+    expression: 6
   responses:
   - responseText: No
     dialogueObject: {fileID: 11400000, guid: ce0bf9f2272f6be49ba4e036392847ed, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

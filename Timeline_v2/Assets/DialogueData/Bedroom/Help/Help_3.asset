@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%7%Well we did just find a screwdriver.'
-  - "%7%Maybe we can use it to unlock something in the room? Or... unscrew? I
-    guess?"
+  - '%7%Maybe we can use it to unlock something in the room? Or... unscrew? I guess?'
+  dialogueData:
+  - dialogueText: Well we did just find a screwdriver.
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Maybe we can use it to unlock something in the room? Or... unscrew?
+      I guess?
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

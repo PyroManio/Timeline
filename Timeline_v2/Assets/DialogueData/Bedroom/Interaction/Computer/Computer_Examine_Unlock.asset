@@ -13,13 +13,32 @@ MonoBehaviour:
   m_Name: Computer_Examine_Unlock
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%The computer's unlocked now. The only things on there are two text files."
+  - '%0%The computer''s unlocked now. The only things on there are two text files.'
   - '%0%At least I can store other things on it from now on.'
-  - "%3%...Kinda wish I had MY laptop though. "
+  - '%3%...Kinda wish I had MY laptop though. '
+  dialogueData:
+  - dialogueText: The computer's unlocked now. The only things on there are two text
+      files.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: At least I can store other things on it from now on.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: '...Kinda wish I had MY laptop though. '
+    characterSpeaking: 1
+    expression: 3
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: 4e35cc5e3b76eba4fa3c08380d6273f5, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: 055ccece13655244aa2792c086e51e01, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

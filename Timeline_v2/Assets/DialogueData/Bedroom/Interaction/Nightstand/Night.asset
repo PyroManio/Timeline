@@ -13,12 +13,29 @@ MonoBehaviour:
   m_Name: Night
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%Yeah, it's my nightstand. I usually charge my phone here. "
-  - "%2%There's some stuff in the drawers too."
+  - '%2%Yeah, it''s my nightstand. I usually charge my phone here. '
+  - '%2%There''s some stuff in the drawers too.'
   - '%6%Looks like they took my phone. Gah! I could have called for help if I had
     it.'
+  dialogueData:
+  - dialogueText: 'Yeah, it''s my nightstand. I usually charge my phone here. '
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: There's some stuff in the drawers too.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Looks like they took my phone. Gah! I could have called for help
+      if I had it.
+    characterSpeaking: 1
+    expression: 6
   responses:
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: 32eb9760f3b2d634bacbbd42779864ff, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

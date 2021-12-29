@@ -16,4 +16,16 @@ MonoBehaviour:
   - '%5%Dang it, it doesn''t fit.'
   - '%2%Guess it makes sense, it wouldn''t have been THAT easy, would it?'
   - '%7%Gah, lets keep looking around. Maybe there''s another key somewhere.'
+  dialogueData:
+  - dialogueText: Dang it, it doesn't fit.
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: Guess it makes sense, it wouldn't have been THAT easy, would it?
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Gah, lets keep looking around. Maybe there's another key somewhere.
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

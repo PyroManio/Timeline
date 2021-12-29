@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Talk_Backpack_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%12%... Never mind. Let's start looking for clues."
+  - '%12%... Never mind. Let''s start looking for clues.'
+  dialogueData:
+  - dialogueText: ... Never mind. Let's start looking for clues.
+    characterSpeaking: 1
+    expression: 12
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

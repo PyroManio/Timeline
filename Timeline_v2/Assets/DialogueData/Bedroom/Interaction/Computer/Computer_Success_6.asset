@@ -14,4 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%3%Sorry, that got kind of dark there, huh? Let''s just move on from this.'
+  dialogueData:
+  - dialogueText: Sorry, that got kind of dark there, huh? Let's just move on from
+      this.
+    characterSpeaking: 1
+    expression: 3
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%Well, that''s a relief at least.'
+  dialogueData:
+  - dialogueText: Well, that's a relief at least.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

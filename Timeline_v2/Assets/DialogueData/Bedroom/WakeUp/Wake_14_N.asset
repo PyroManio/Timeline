@@ -16,8 +16,22 @@ MonoBehaviour:
   - '%5%Wait, but didn''t you just say you would help me? Don''t lie! Please help
     me out!'
   - '%7%You''re supposed to help me, right?'
+  dialogueData:
+  - dialogueText: Wait, but didn't you just say you would help me? Don't lie! Please
+      help me out!
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: You're supposed to help me, right?
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 22392b5d4208a34468fd340bbbb62c68, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 11400000}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

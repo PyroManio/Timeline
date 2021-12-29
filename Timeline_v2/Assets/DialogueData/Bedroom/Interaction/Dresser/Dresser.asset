@@ -13,11 +13,23 @@ MonoBehaviour:
   m_Name: Dresser
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%It's my dresser. I keep the rest of my clothes in here."
+  - '%0%It''s my dresser. I keep the rest of my clothes in here.'
+  dialogueData:
+  - dialogueText: It's my dresser. I keep the rest of my clothes in here.
+    characterSpeaking: 1
+    expression: 0
   responses:
   - responseText: Drawers
     dialogueObject: {fileID: 11400000, guid: ea87d891b9fa94846905c8b9bc1166d8, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: bdcd7584ef29f6b488f19ded6fa31159, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

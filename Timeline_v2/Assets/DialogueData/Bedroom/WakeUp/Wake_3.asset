@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%Uh, hello? Is someone there?'
+  dialogueData:
+  - dialogueText: Uh, hello? Is someone there?
+    characterSpeaking: 1
+    expression: 2
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: c03b56be909d13646a7ead165b4880ae, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 11400000, guid: c03b56be909d13646a7ead165b4880ae, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

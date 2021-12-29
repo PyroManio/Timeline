@@ -13,9 +13,24 @@ MonoBehaviour:
   m_Name: Talk_Necklace_1_UNUSED
   m_EditorClassIdentifier: 
   dialogue:
-  - "Huh, that's weird. I don't recognize this. Looks like the Yin part
-    of the Yin Yang symbol."
-  - "Or, is it the Yang part? The white part, whatever it's called. I get them
-    mixed up sometimes."
+  - Huh, that's weird. I don't recognize this. Looks like the Yin part of the Yin
+    Yang symbol.
+  - Or, is it the Yang part? The white part, whatever it's called. I get them mixed
+    up sometimes.
   - Maybe it has something to do with the test? Like a clue or something? I dunno.
+  dialogueData:
+  - dialogueText: Huh, that's weird. I don't recognize this. Looks like the Yin part
+      of the Yin Yang symbol.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Or, is it the Yang part? The white part, whatever it's called.
+      I get them mixed up sometimes.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Maybe it has something to do with the test? Like a clue or something?
+      I dunno.
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

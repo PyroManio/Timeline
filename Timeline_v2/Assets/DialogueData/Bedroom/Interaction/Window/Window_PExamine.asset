@@ -16,4 +16,16 @@ MonoBehaviour:
   - '%8%There''s a series of numbers written on one of the plates here!'
   - '%8%5293'
   - "%8%Hopefully that's some sort of code that we need.\r"
+  dialogueData:
+  - dialogueText: There's a series of numbers written on one of the plates here!
+    characterSpeaking: 1
+    expression: 8
+  - dialogueText: 5293
+    characterSpeaking: 1
+    expression: 8
+  - dialogueText: "Hopefully that's some sort of code that we need.\r"
+    characterSpeaking: 1
+    expression: 8
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

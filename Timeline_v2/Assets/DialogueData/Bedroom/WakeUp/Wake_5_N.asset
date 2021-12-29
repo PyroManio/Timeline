@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%7%Then what are you called? '
+  dialogueData:
+  - dialogueText: 'Then what are you called? '
+    characterSpeaking: 1
+    expression: 7
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

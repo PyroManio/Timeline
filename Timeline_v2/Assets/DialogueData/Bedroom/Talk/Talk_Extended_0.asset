@@ -15,6 +15,17 @@ MonoBehaviour:
   dialogue:
   - '%7%Huh? Extended?'
   - '%7%Are you talking about the Chromatic Project?'
+  dialogueData:
+  - dialogueText: Huh? Extended?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Are you talking about the Chromatic Project?
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: The Chromatic Project Extended Testing Program
     dialogueObject: {fileID: 11400000, guid: 72e3a40db79d1ff41bd0640dab23d8ae, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

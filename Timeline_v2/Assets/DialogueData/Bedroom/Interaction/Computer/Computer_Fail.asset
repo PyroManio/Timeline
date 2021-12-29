@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Computer_Fail
   m_EditorClassIdentifier: 
   dialogue:
-  - "%0%Nope, that didn't work. Maybe we should try something else?"
+  - '%0%Nope, that didn''t work. Maybe we should try something else?'
+  dialogueData:
+  - dialogueText: Nope, that didn't work. Maybe we should try something else?
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

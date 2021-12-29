@@ -19,6 +19,25 @@ MonoBehaviour:
     downstairs.'
   - '%2%And then there was a wicker one, but that thing was so old and gross it was
     fraying everywhere.'
-  - "%2%This one's on its way out too. The joints holding one end together are
-    starting to come apart."
+  - '%2%This one''s on its way out too. The joints holding one end together are starting
+    to come apart.'
+  dialogueData:
+  - dialogueText: "I have had a lot of trash cans here. The first one I had got moved
+      to my bathroom.\r"
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: The second one was a flimsy plastic one that cracked when it hit
+      the marble downstairs.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: And then there was a wicker one, but that thing was so old and
+      gross it was fraying everywhere.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: This one's on its way out too. The joints holding one end together
+      are starting to come apart.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

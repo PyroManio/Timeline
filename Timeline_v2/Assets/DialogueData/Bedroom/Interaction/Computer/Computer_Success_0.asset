@@ -13,8 +13,21 @@ MonoBehaviour:
   m_Name: Computer_Success_0
   m_EditorClassIdentifier: 
   dialogue:
-  - "%2%...Uh... that's an... interesting guess. Heh, heh. You sure
-    you're not just guessing randomly?"
-  - "%7%And Schrodinger's Cat? Why make that your password?"
-  - "%2%Well, whatever. I'll try it."
+  - '%2%...Uh... that''s an... interesting guess. Heh, heh. You sure you''re not
+    just guessing randomly?'
+  - '%7%And Schrodinger''s Cat? Why make that your password?'
+  - '%2%Well, whatever. I''ll try it.'
+  dialogueData:
+  - dialogueText: ...Uh... that's an... interesting guess. Heh, heh. You sure you're
+      not just guessing randomly?
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: And Schrodinger's Cat? Why make that your password?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Well, whatever. I'll try it.
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

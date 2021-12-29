@@ -13,14 +13,28 @@ MonoBehaviour:
   m_Name: Door_BedKey
   m_EditorClassIdentifier: 
   dialogue:
-  - "%5%Yeah, the door's locked, genius. It was literally the first thing I
-    tried."
+  - '%5%Yeah, the door''s locked, genius. It was literally the first thing I tried.'
+  dialogueData:
+  - dialogueText: Yeah, the door's locked, genius. It was literally the first thing
+      I tried.
+    characterSpeaking: 1
+    expression: 5
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: 9f9dae81ac77e0b45916f518569936c3, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: e6c4827dd4c109547a01c94bfd2c6cbb, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Use Bed Key
     dialogueObject: {fileID: 11400000, guid: 2a5a4df1164d7d24d925b3b2ec723a83, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

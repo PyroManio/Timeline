@@ -15,4 +15,11 @@ MonoBehaviour:
   dialogue:
   - '%6%What the hell? Why can''t I open any of these things? Some stupid test this
     is!'
+  dialogueData:
+  - dialogueText: What the hell? Why can't I open any of these things? Some stupid
+      test this is!
+    characterSpeaking: 1
+    expression: 6
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

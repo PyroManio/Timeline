@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Computer_Success_2
   m_EditorClassIdentifier: 
   dialogue:
-  - "%7%Your... help screen? So, wait... are you... looking at this through
-    a computer screen or something?"
+  - '%7%Your... help screen? So, wait... are you... looking at this through a computer
+    screen or something?'
+  dialogueData:
+  - dialogueText: Your... help screen? So, wait... are you... looking at this through
+      a computer screen or something?
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: 1b6f3d16174585b48a5c96f15a925d5e, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

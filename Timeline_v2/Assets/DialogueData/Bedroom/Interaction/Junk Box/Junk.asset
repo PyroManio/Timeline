@@ -21,4 +21,27 @@ MonoBehaviour:
     head, by the way.'
   - '[Screwdriver added to inventory]%SE0%'
   - '%0%The rest of the stuff here is junk. Nothing of interest.'
+  dialogueData:
+  - dialogueText: The junk box is just where I throw random stuff in my pockets.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Some of it eventually makes its way into the trash can in the corner.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: Well, if I was gonna hide something useful in this room, it'd probably
+      be in here.
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Hey, looks like you were right! There's a screwdriver in here!
+      Phillips head, by the way.
+    characterSpeaking: 1
+    expression: 8
+  - dialogueText: '[Screwdriver added to inventory]%SE0%'
+    characterSpeaking: 0
+    expression: 0
+  - dialogueText: The rest of the stuff here is junk. Nothing of interest.
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

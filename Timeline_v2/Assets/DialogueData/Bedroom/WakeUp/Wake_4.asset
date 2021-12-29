@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%4%AH! It talked!'
+  dialogueData:
+  - dialogueText: AH! It talked!
+    characterSpeaking: 1
+    expression: 4
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

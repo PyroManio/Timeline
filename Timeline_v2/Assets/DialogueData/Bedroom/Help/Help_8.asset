@@ -14,6 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%5%Why are you still asking me for help?'
-  - "%6%WE HAVE A KEY! LET'S TRY USING IT ON THE DOOR!"
+  - '%6%WE HAVE A KEY! LET''S TRY USING IT ON THE DOOR!'
   - '%0%Maybe it will finally let us out of here!'
+  dialogueData:
+  - dialogueText: Why are you still asking me for help?
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: WE HAVE A KEY! LET'S TRY USING IT ON THE DOOR!
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: Maybe it will finally let us out of here!
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

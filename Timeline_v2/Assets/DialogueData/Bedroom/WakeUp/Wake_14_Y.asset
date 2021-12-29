@@ -17,8 +17,28 @@ MonoBehaviour:
   - '%3%Uh, I guess I should start somewhere. You can call me... uh... Leo.'
   - '[Database Updated]'
   - '%7%Uh, what? You ARE living, right?'
+  dialogueData:
+  - dialogueText: Good, that's a start then.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: Uh, I guess I should start somewhere. You can call me... uh...
+      Leo.
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: '[Database Updated]'
+    characterSpeaking: 0
+    expression: 0
+  - dialogueText: Uh, what? You ARE living, right?
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: Yes
     dialogueObject: {fileID: 11400000, guid: add060832a5b925498f369b764615def, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: No
     dialogueObject: {fileID: 11400000, guid: d1ab67a9e39ab64498dcc2caf8f587bb, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

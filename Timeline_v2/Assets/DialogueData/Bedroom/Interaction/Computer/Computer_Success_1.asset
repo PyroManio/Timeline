@@ -15,6 +15,18 @@ MonoBehaviour:
   dialogue:
   - '%4%That WORKED? HOW?'
   - '%4%That info definitely wasn''t anywhere in this room! How did you know that?'
+  dialogueData:
+  - dialogueText: That WORKED? HOW?
+    characterSpeaking: 1
+    expression: 4
+  - dialogueText: That info definitely wasn't anywhere in this room! How did you
+      know that?
+    characterSpeaking: 1
+    expression: 4
   responses:
   - responseText: It's on my help screen
     dialogueObject: {fileID: 11400000, guid: 9494842c5ddd50d418d64c35656c3ba8, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

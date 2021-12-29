@@ -23,4 +23,23 @@ MonoBehaviour:
 
 '
   - "Freeze (Sloth)\r\nGirlfriend (Lust)\r\r\n"
+  dialogueData:
+  - dialogueText: "To survive you must confess your sins. Reveal thy secrets, prisoner.\nAlone
+      (Greed)\r\nBeast (Pride)\r"
+    characterSpeaking: 0
+    expression: 0
+  - dialogueText: 'Car (Wrath)
+
+      Dance (Gluttony)
+
+      Exam (Envy)
+
+'
+    characterSpeaking: 0
+    expression: 0
+  - dialogueText: "Freeze (Sloth)\r\nGirlfriend (Lust)\r\r\n"
+    characterSpeaking: 0
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

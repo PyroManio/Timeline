@@ -15,7 +15,11 @@ MonoBehaviour:
   dialogue:
   - '%0%Ah, this is my bed. It''s also where I woke up when I started this whole
     thing.'
-  dialogueData: []
+  dialogueData:
+  - dialogueText: Ah, this is my bed. It's also where I woke up when I started this
+      whole thing.
+    characterSpeaking: 1
+    expression: 0
   responses:
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: 566eb44746be08e4889b35e13f56e1c0, type: 2}

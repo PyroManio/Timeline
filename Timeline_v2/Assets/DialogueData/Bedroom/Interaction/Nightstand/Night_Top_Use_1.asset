@@ -25,4 +25,36 @@ MonoBehaviour:
 '
   - '%0%I''ll hold on to the paper for now.'
   - '[Strange Note added to inventory]%SE0%'
+  dialogueData:
+  - dialogueText: Let's see... there's a lot of random junk in here. It's my nightstand
+      after all.
+    characterSpeaking: 1
+    expression: 2
+  - dialogueText: But looks like there's a piece of paper in here.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: It says, "SEEK HELP FOR THE PASSWORD."
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: What the hell does that mean? Are we supposed to call someone?
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: How the hell are we supposed to do that without access to an electronic
+      device, genius?
+    characterSpeaking: 1
+    expression: 6
+  - dialogueText: 'Well, at least we unlocked something, but it doesn''t look like
+      it did much.
+
+'
+    characterSpeaking: 1
+    expression: 5
+  - dialogueText: '%0%I''ll hold on to the paper for now.'
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: '[Strange Note added to inventory]%SE0%'
+    characterSpeaking: 0
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -14,4 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%2%Looks like the computer printed out something. Looks like a code. LIES'
+  dialogueData:
+  - dialogueText: Looks like the computer printed out something. Looks like a code.
+      LIES
+    characterSpeaking: 1
+    expression: 2
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

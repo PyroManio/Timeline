@@ -18,4 +18,21 @@ MonoBehaviour:
   - '%7%But if it''s not in this room, then where the hell is the password?'
   - '%9%Unless... it''s something only YOU can see? Or access? Where the hell would
     that be?'
+  dialogueData:
+  - dialogueText: The nightstand said to "SEEK HELP" for the password.
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: But I don't see anything in this room that would "HELP" find the
+      password.
+    characterSpeaking: 0
+    expression: 0
+  - dialogueText: But if it's not in this room, then where the hell is the password?
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: Unless... it's something only YOU can see? Or access? Where the
+      hell would that be?
+    characterSpeaking: 1
+    expression: 10
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

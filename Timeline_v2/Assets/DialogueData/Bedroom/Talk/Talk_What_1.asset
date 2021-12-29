@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Talk_What_1
   m_EditorClassIdentifier: 
   dialogue:
-  - "%7%You're not? So then, you're a test subject?"
+  - '%7%You''re not? So then, you''re a test subject?'
+  dialogueData:
+  - dialogueText: You're not? So then, you're a test subject?
+    characterSpeaking: 1
+    expression: 7
   responses:
   - responseText: No
     dialogueObject: {fileID: 11400000, guid: 19e9cf1c6ec453344b865981c3db4fc3, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

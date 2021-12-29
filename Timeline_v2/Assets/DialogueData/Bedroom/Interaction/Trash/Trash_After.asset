@@ -13,12 +13,25 @@ MonoBehaviour:
   m_Name: Trash_After
   m_EditorClassIdentifier: 
   dialogue:
-  - "%3%It's my trash can. I usually use it for stuff I leave in my pockets.
-    It's empty now but..."
+  - '%3%It''s my trash can. I usually use it for stuff I leave in my pockets. It''s
+    empty now but...'
+  dialogueData:
+  - dialogueText: It's my trash can. I usually use it for stuff I leave in my pockets.
+      It's empty now but...
+    characterSpeaking: 1
+    expression: 3
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: 73733cd3e232adc44942f4ddc20796eb, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: 1d84b09e132deae48a96ea05eb31f9cb, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

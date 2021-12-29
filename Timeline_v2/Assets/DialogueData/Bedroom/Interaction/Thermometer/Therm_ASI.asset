@@ -14,12 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%0%Oh, it stands for Academic Science Intelligence test.'
-  - "%7%I think that's what the award was for."
-  - "%3%I always did well in school, getting A's and stuff, but..."
+  - '%7%I think that''s what the award was for.'
+  - '%3%I always did well in school, getting A''s and stuff, but...'
   - '%3%I was always the kid that daydreamed in class. '
   - '%3%I almost never took notes or paid attention.
 
 '
-  - "%0%But as long as I brought home A's my parents really didn't worry
-    about it.\r\n"
+  - '%0%But as long as I brought home A''s my parents really didn''t worry about
+    it.
+
+'
+  dialogueData:
+  - dialogueText: Oh, it stands for Academic Science Intelligence test.
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: I think that's what the award was for.
+    characterSpeaking: 1
+    expression: 7
+  - dialogueText: I always did well in school, getting A's and stuff, but...
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: 'I was always the kid that daydreamed in class. '
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: 'I almost never took notes or paid attention.
+
+'
+    characterSpeaking: 1
+    expression: 3
+  - dialogueText: 'But as long as I brought home A''s my parents really didn''t worry
+      about it.
+
+'
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0

@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - '%0%Okay, let me know if you need anything.'
+  dialogueData:
+  - dialogueText: Okay, let me know if you need anything.
+    characterSpeaking: 1
+    expression: 0
   responses: []
+  nextDialogue: {fileID: 0}
+  isSpecialDialogue: 0
