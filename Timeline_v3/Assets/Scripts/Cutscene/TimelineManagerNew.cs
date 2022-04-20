@@ -5,12 +5,18 @@ using UnityEngine.Timeline;
 using UnityEngine.Playables;
 using UnityEngine.Events;
 
+[System.Serializable]
+class CustomEvent : UnityEvent<int>
+{
+
+}
+
 public class TimelineManagerNew : MonoBehaviour
 {
     private PlayableDirector pd;
     private double duration, currentState;
 
-    [SerializeField] private UnityEvent[] callbacks;
+    [SerializeField] private CustomEvent[] callbacks;
 
     // Start is called before the first frame update
     void Start()
@@ -51,9 +57,9 @@ public class TimelineManagerNew : MonoBehaviour
     {
         try
         {
-            callbacks[index]?.Invoke();
+            callbacks[index]?.Invoke(0);
         }
-        catch(System.Exception e)
+        catch (System.Exception e)
         {
             Debug.LogError("Callback function does not exist. Check the callback index");
         }
@@ -63,5 +69,4 @@ public class TimelineManagerNew : MonoBehaviour
     {
         pd.initialTime = 0;
     }
-
 }
