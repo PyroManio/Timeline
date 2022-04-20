@@ -44,7 +44,6 @@ public class DialogueActivator : MonoBehaviour, IInteractable
         ResponseEvent[][] temp = CompileResponseEvents();
         //mainUI.AddResponseEvents(compResponseEvents);
         mainUI.CallShowDialogue(dialogueObject, temp);
-        Debug.Log("beep");
     }
     private void CheckforItem()
     {

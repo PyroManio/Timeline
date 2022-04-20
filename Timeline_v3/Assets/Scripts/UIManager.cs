@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private UDictionary<UIName, GameObject> UIList = new UDictionary<UIName, GameObject>();
    private void Awake(){
        UICaller.ShowDialogue += ShowDialogue;
+       RoomSceneManager.ShowDialogue += ShowDialogue;
        UICaller.OpenUIMenu += OpenUI;
        UICaller.CloseUIMenu += CloseUI;
        UICaller.InventoryMainToUI += RecieveInventory;

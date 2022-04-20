@@ -6,34 +6,52 @@ using UnityEngine.SceneManagement;
 using System;
 public class MultiSceneLoader : MonoBehaviour
 {
-    int[] mainFlags;
-    public static event Action<int[]> LoadFlags;
+    //int[] mainFlags;
+    public static event Action<SceneName> LoadFlags;
+    public static event Action<SceneName> CloseScene;
     private Dictionary<SceneName,string> nameToScene = new Dictionary<SceneName, string>
     {
         { SceneName.Bedroom, "Bedroom" },
         {SceneName.Hallway, "Hallway"}
     };
-
+void Awake()
+{
+foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene);
+}
  void Start()
     {
-        foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene);
+        //
+        //UnloadScene(SceneName.Hallway);
         //SceneManager.LoadScene("UI", LoadSceneMode.Additive);
+        Debug.Log("Here it comes");
         LoadScene(SceneName.Bedroom);
     }
 
     public void LoadScene(SceneName sceneName){
         Debug.Log("Call to Load Scene");
-        
+        //foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene);
+        foreach (SceneName scenes in nameToScene.Keys) UnloadScene(scenes);
+
         if (!SceneManager.GetSceneByName(nameToScene[sceneName]).isLoaded)
         {
             Debug.Log("Attempting to load scene: " + sceneName);
             SceneManager.LoadScene(nameToScene[sceneName], LoadSceneMode.Additive);
-            LoadFlags?.Invoke(mainFlags);
+            LoadFlags?.Invoke(sceneName);
         }   
     } 
+    public void UnloadScene(SceneName sceneName)
+    {
+        if (SceneManager.GetSceneByName(nameToScene[sceneName]).isLoaded)
+        {
+            Debug.Log("Attempting to unload scene: " + sceneName);
+            CloseScene?.Invoke(sceneName);
+            SceneManager.UnloadSceneAsync(nameToScene[sceneName]);
+        }
+    }
 }
 public enum SceneName{
     Bedroom,
     UI,
-    Hallway
+    Hallway,
+    None
     }

@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        if (mainUI.areUIOpen) {    
+        if (mainUI.areUIOpen || mainUI.IsInspectonScreensOpen) {    
             movement.x = 0; movement.y = 0; 
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);

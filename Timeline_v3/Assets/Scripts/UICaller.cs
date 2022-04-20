@@ -9,6 +9,7 @@ public class UICaller : MonoBehaviour
     // This calls out to the object handling all of the UI's in the other scene.
     public bool areUIOpen {get; private set;}
     public UIName CurrentUIOpened;
+    public bool IsInspectonScreensOpen = false;
     public static event Action<DialogueObject, ResponseEvent[][]> ShowDialogue;
     public static event Action<UIName> OpenUIMenu;
     public static event Action<UIName> CloseUIMenu;
@@ -29,6 +30,7 @@ public class UICaller : MonoBehaviour
     private void Awake(){
         UIManager.AreUIOpen += Update_AreUIOpen;
         UIManager.GetInventory += SendInventoryToUIScene;
+        InspecScreenHandler.UpdateScreenStatus += Update_IsInspectonScreensOpen;
     }
     // Sends over the inventory to the UIManager, also passes over the name of the ui that requested it back to it
     public void SendInventoryToUIScene(UIName requestedUI)
@@ -39,5 +41,9 @@ public class UICaller : MonoBehaviour
     public void Update_AreUIOpen(bool givenBool, UIName openedUI){
         areUIOpen = givenBool;
         CurrentUIOpened = openedUI;
+    }
+    public void Update_IsInspectonScreensOpen(bool status)
+    {
+        IsInspectonScreensOpen = status;
     }
 }
