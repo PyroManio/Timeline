@@ -16109,7 +16109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8582e6aaf1d816f41b75e303d002b17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shouldPlayerMove: 0
   UIList:
     keys: 000000000100000005000000040000000200000003000000
     values:
