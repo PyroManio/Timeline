@@ -18,6 +18,22 @@ MonoBehaviour:
       screams, \u201CSomething important is inside me!\u201D"
     characterSpeaking: 1
     expression: 0
-  responses: []
+  responses:
+  - responseText: Examine
+    dialogueObject: {fileID: 11400000, guid: 02641e69751aeb3418c77e5a2a9bc0ed, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: f5e1d547082f83c408f7928fb20d0254, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Solve
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

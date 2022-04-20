@@ -18,6 +18,14 @@ MonoBehaviour:
       shower."
     characterSpeaking: 1
     expression: 0
-  responses: []
+  responses:
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: ee8ee83c730854d468cf43e01824bd71, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

@@ -18,6 +18,18 @@ MonoBehaviour:
       in the bedroom."
     characterSpeaking: 1
     expression: 0
-  responses: []
+  responses:
+  - responseText: Examine
+    dialogueObject: {fileID: 11400000, guid: 5cf7da82041fba7449b9aef6b9956de7, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Solve
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

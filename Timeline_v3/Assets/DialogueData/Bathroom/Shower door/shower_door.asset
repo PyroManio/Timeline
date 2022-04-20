@@ -18,6 +18,22 @@ MonoBehaviour:
       lock. That seems safe."
     characterSpeaking: 1
     expression: 0
-  responses: []
+  responses:
+  - responseText: Examine
+    dialogueObject: {fileID: 11400000, guid: fa81846a1f681d741a9798086ca3d8e2, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: 28ee6412af3cbee4baab65808e8f93c2, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Solve
+    dialogueObject: {fileID: 11400000, guid: 0f61c80a267945e4d866daaaba900f7f, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

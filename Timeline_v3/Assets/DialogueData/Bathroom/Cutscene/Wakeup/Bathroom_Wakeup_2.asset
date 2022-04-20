@@ -25,7 +25,7 @@ MonoBehaviour:
     expression: 1
   responses:
   - responseText: Some man in all white and a mask.
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: d0f5c698a47a7ad41893bbb256d671e7, type: 2}
     requireItem: {fileID: 0}
     DTag: 
   nextDialogue: {fileID: 0}

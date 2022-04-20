@@ -23,5 +23,13 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: 9ce9148272a49344589c7a4ab701a5f2, type: 2}
     requireItem: {fileID: 0}
     DTag: 
+  - responseText: Story
+    dialogueObject: {fileID: 11400000, guid: b795a956e95fd3843816dd23af16c866, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

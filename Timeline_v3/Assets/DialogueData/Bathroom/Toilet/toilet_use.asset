@@ -22,8 +22,12 @@ MonoBehaviour:
     characterSpeaking: 1
     expression: 0
   responses:
-  - responseText: Use soapy towel on toilet
+  - responseText: Use soapy towel
     dialogueObject: {fileID: 11400000, guid: 2c23c9f8486ccab408fbeee8ae28d046, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
     requireItem: {fileID: 0}
     DTag: 
   nextDialogue: {fileID: 0}
