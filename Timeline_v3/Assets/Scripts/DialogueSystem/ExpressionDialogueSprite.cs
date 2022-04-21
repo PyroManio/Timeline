@@ -31,7 +31,9 @@ public class ExpressionDialogueSprite : MonoBehaviour
        { Expression.Stress, LeoSprites[9] },
        { Expression.Shame, LeoSprites[10] },
        { Expression.Hit, LeoSprites[11] },
-       { Expression.Void, LeoSprites[12] }
+       { Expression.Void, LeoSprites[12] },
+       { Expression.Sigh, LeoSprites[13]},
+       { Expression.Confused, LeoSprites[14] }
     };
   }
   public void changeExpression(CharacterTalking charSpeaking, Expression givenExpression)

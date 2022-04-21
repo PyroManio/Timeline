@@ -31,6 +31,7 @@ public class UICaller : MonoBehaviour
         UIManager.AreUIOpen += Update_AreUIOpen;
         UIManager.GetInventory += SendInventoryToUIScene;
         InspecScreenHandler.UpdateScreenStatus += Update_IsInspectonScreensOpen;
+        RoomSceneManager.AddItemToInventory += SendAddItem;
     }
     // Sends over the inventory to the UIManager, also passes over the name of the ui that requested it back to it
     public void SendInventoryToUIScene(UIName requestedUI)
@@ -45,5 +46,9 @@ public class UICaller : MonoBehaviour
     public void Update_IsInspectonScreensOpen(bool status)
     {
         IsInspectonScreensOpen = status;
+    }
+    public void SendAddItem(Item givenItem)
+    {
+        GetComponent<Inventory>().AddItem(givenItem);
     }
 }

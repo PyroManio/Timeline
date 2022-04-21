@@ -29,9 +29,13 @@ MonoBehaviour:
     characterSpeaking: 1
     expression: 0
   responses:
-  - responseText: Top Drawer (Use Screwdriver)
-    dialogueObject: {fileID: 11400000, guid: d16760b76b55dd342a3f15c519de78c3, type: 2}
+  - responseText: Top Drawer
+    dialogueObject: {fileID: 0}
     requireItem: {fileID: 0}
+    DTag: 
+  - responseText: Use Screwdriver
+    dialogueObject: {fileID: 11400000, guid: d16760b76b55dd342a3f15c519de78c3, type: 2}
+    requireItem: {fileID: 11400000, guid: 6f90d85a3eb69454eb527e64f213ec26, type: 2}
     DTag: 
   - responseText: Middle Drawer
     dialogueObject: {fileID: 11400000, guid: 72013f625cfc552409ab56fc083feaeb, type: 2}

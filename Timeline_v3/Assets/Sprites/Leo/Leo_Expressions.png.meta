@@ -41,6 +41,12 @@ TextureImporter:
   - first:
       213: 1856327905146347400
     second: Leo HUD Sprite Sheet 1_12
+  - first:
+      213: -6771594862569643755
+    second: Leo HUD Sprite Sheet 1_13
+  - first:
+      213: -3966074877478943281
+    second: Leo HUD Sprite Sheet 1_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -398,6 +404,48 @@ TextureImporter:
       bones: []
       spriteID: 88f94ecf46003c910800000000000000
       internalID: 1856327905146347400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leo HUD Sprite Sheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 310
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5112da599567602a0800000000000000
+      internalID: -6771594862569643755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leo HUD Sprite Sheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 310
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5444f79eba5f8c0800000000000000
+      internalID: -3966074877478943281
       vertices: []
       indices: 
       edges: []

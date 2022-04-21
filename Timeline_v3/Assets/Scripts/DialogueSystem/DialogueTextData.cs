@@ -29,5 +29,7 @@ public class DialogueTextData
       Stress,
       Shame,
       Hit,
-      Void
+      Void,
+      Sigh,
+      Confused
  }

@@ -24,6 +24,14 @@ MonoBehaviour:
       a Phillips head screwdriver.
     characterSpeaking: 1
     expression: 7
-  responses: []
+  responses:
+  - responseText: Use Screwdriver
+    dialogueObject: {fileID: 11400000, guid: d16760b76b55dd342a3f15c519de78c3, type: 2}
+    requireItem: {fileID: 11400000, guid: 6f90d85a3eb69454eb527e64f213ec26, type: 2}
+    DTag: 
+  - responseText: Exit
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
