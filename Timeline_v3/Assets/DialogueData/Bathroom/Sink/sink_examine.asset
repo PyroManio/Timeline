@@ -17,15 +17,15 @@ MonoBehaviour:
   - dialogueText: "It looks like the sink isn\u2019t working, which is just wonderful.
       Could REALLY use some water right now."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "When I move the handles, sometimes I can feel a slight click,
       like something\u2019s unlocking."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "But I don\u2019t think I have enough information to solve this
       right now. We\u2019ll have to come back for this."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

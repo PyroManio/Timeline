@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "It\u2019s locked and needs a five-digit code. Got any ideas?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

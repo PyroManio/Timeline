@@ -17,11 +17,11 @@ MonoBehaviour:
   - dialogueText: "I see where you\u2019re going with this, but all it\u2019s doing
       is smearing it around."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: I need something to break up the dirt, like soap, and something
       to soften it up, like water.
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

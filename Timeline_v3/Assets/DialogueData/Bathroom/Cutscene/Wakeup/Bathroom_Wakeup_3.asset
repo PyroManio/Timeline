@@ -17,20 +17,20 @@ MonoBehaviour:
   - dialogueText: "White coat? That\u2019s\u2026 not what I remember. I remember
       black shoes and then\u2026"
     characterSpeaking: 1
-    expression: 1
+    expression: 2
   - dialogueText: Well, I woke up here.
     characterSpeaking: 1
-    expression: 1
+    expression: 13
   - dialogueText: Probably not remembering things right.
     characterSpeaking: 1
-    expression: 1
+    expression: 2
   - dialogueText: "Guess it was probably too optimistic to assume they\u2019d let
       me get out of here THAT easy."
     characterSpeaking: 1
-    expression: 1
+    expression: 3
   - dialogueText: "(Sigh) Okay\u2026 let\u2019s solve this thing."
     characterSpeaking: 1
-    expression: 1
+    expression: 13
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

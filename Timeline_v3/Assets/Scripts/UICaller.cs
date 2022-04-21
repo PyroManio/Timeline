@@ -15,6 +15,7 @@ public class UICaller : MonoBehaviour
     public static event Action<UIName> CloseUIMenu;
     public static event Action<UIName,Inventory> InventoryMainToUI;
     // This calls out to the UIManager and passes over dialogue data to it
+
     public void CallShowDialogue(DialogueObject givenDialogue,ResponseEvent[][] givenResponseEvents)
     {
         ShowDialogue?.Invoke(givenDialogue,givenResponseEvents);
@@ -32,6 +33,9 @@ public class UICaller : MonoBehaviour
         UIManager.GetInventory += SendInventoryToUIScene;
         InspecScreenHandler.UpdateScreenStatus += Update_IsInspectonScreensOpen;
         RoomSceneManager.AddItemToInventory += SendAddItem;
+
+        //Added for global reference
+        GlobalReferences.UIcaller = this;
     }
     // Sends over the inventory to the UIManager, also passes over the name of the ui that requested it back to it
     public void SendInventoryToUIScene(UIName requestedUI)

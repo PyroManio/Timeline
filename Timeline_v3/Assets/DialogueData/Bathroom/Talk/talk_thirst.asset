@@ -20,23 +20,27 @@ MonoBehaviour:
   - dialogueText: "Doesn\u2019t look like anything in here has running water. Well,
       except the toilet."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "AND I\u2019M NOT DRINKING TOILET WATER! THAT\u2019S DISGUSTING!"
     characterSpeaking: 1
-    expression: 0
+    expression: 6
   - dialogueText: "\u2026At least I\u2019m not desperate enough yet to do it."
     characterSpeaking: 1
-    expression: 0
+    expression: 3
   - dialogueText: "They wouldn\u2019t let me die of dehydration though\u2026 right?"
     characterSpeaking: 1
-    expression: 0
+    expression: 3
+  - dialogueText: "Judging by everything else that\u2019s happened up until this
+      point, my best guess is\u2026 "
+    characterSpeaking: 1
+    expression: 7
   - dialogueText: "I\u2019ll probably have to solve something in order to get the
       water working again."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: Great. I have to solve a puzzle to fulfill my basic human needs.
     characterSpeaking: 1
-    expression: 0
+    expression: 13
   - dialogueText: "At least I don\u2019t have to pee yet. I\u2019m not contaminating
       my only current source of water."
     characterSpeaking: 1
@@ -44,10 +48,10 @@ MonoBehaviour:
   - dialogueText: "Also, never drink your own pee in survival situations. It\u2019s
       just an urban legend that it helps."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "In reality, it\u2019s worse than drinking salt water. Literally."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

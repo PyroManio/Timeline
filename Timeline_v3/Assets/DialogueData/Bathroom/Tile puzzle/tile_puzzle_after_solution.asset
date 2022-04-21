@@ -21,11 +21,11 @@ MonoBehaviour:
   - dialogueText: "I mean, maybe if you got rid of the solution, you\u2019d eventually
       forget it\u2026"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "But that just seems like a huge waste of time. We\u2019ve got
       better things to do!"
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

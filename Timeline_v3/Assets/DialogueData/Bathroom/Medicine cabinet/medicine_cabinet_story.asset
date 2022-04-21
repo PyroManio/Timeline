@@ -29,14 +29,14 @@ MonoBehaviour:
   - dialogueText: Eventually it just becomes a long black corridor that you can see
       down with all of your reflections.
     characterSpeaking: 1
-    expression: 0
+    expression: 8
   - dialogueText: I also liked to try and get it at an angle where each reflection
       would uniquely point at a different one.
     characterSpeaking: 1
-    expression: 0
+    expression: 1
   - dialogueText: Usually I can get it with  5 and 6, but there should be other combinations.
     characterSpeaking: 1
-    expression: 0
+    expression: 1
   - dialogueText: "\u2026I\u2019m such a nerd. But it\u2019s cool! I swear! Find
       two mirrors and start angling them together."
     characterSpeaking: 1

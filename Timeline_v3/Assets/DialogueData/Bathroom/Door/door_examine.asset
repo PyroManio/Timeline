@@ -17,7 +17,7 @@ MonoBehaviour:
   - dialogueText: Looks like it needs a key. It also seems to be the only thing in
       here that needs a key.
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: At least if we find one we know where to try it.
     characterSpeaking: 1
     expression: 0

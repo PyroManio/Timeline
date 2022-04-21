@@ -17,10 +17,10 @@ MonoBehaviour:
   - dialogueText: "Okay, it\u2019s done. And now my hands are sticky and covered
       in soap. Looks like\u2026 a moon?"
     characterSpeaking: 1
-    expression: 0
+    expression: 8
   - dialogueText: Or maybe a crescent?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "Either way, that\u2019s about the extent of help I\u2019m gonna
       be until I get out of here."
     characterSpeaking: 1

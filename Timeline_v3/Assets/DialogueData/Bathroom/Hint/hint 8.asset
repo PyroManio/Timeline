@@ -16,17 +16,17 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: Oh great. MATH. That was what was under the dirt.
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: Well, I always liked math and science better than history anyways.
     characterSpeaking: 1
     expression: 0
   - dialogueText: "Don\u2019t forget to use PEMDAS! Parentheses, exponents, multiplication,
       division, addition, subtraction."
     characterSpeaking: 1
-    expression: 0
+    expression: 8
   - dialogueText: "At least I hope they used PEMDAS\u2026"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

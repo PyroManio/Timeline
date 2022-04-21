@@ -11,7 +11,7 @@ public class PauseForInputClip : PlayableAsset
     [SerializeField]
     private PauseForInputBehaviour template = new PauseForInputBehaviour();
 
-    public double start, end;
+    [NonSerialized] public double start, end;
 
     public ClipCaps clipCaps
     {

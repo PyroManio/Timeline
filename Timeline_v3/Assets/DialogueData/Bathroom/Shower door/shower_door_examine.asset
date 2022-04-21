@@ -20,11 +20,11 @@ MonoBehaviour:
   - dialogueText: How is this safe? What if I turn on the water and short this thing
       out?
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   - dialogueText: "Maybe it\u2019ll just deactivate itself permanently after I\u2019ve
       solved it? Or maybe that\u2019s wishful thinking."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

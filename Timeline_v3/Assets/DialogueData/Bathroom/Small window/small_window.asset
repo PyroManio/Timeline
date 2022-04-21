@@ -17,14 +17,14 @@ MonoBehaviour:
   - dialogueText: "Man, they even closed off the shower window? I mean I guess I
       don\u2019t need it open to take a shower."
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   - dialogueText: "But still, there\u2019s no way I can get out of that, it\u2019s
       too small! And we\u2019re on the second floor!\r\n"
     characterSpeaking: 1
-    expression: 0
+    expression: 6
   - dialogueText: Just let me see outside!
     characterSpeaking: 1
-    expression: 0
+    expression: 6
   responses:
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: c63e934e4b9900d468ca6669c0fba8eb, type: 2}

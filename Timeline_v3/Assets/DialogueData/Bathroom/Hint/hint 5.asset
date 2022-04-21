@@ -20,7 +20,7 @@ MonoBehaviour:
     expression: 0
   - dialogueText: "There was a towel on the towel rack. Maybe it would come in handy?\r"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

@@ -8,8 +8,11 @@ using UnityEngine.Events;
 [Serializable]
 public class PauseForInputBehaviour : PlayableBehaviour
 {
+    [SerializeField] private bool invokeCallback = false;
     [SerializeField] private int callbackIndex;
-    public double start, end;
+    [SerializeField] private bool triggerDialogue = false;
+    [SerializeField] private int dialogueIndex;
+    [NonSerialized] public double start, end;
 
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
     {
@@ -21,7 +24,10 @@ public class PauseForInputBehaviour : PlayableBehaviour
         
         TimelineManagerNew timeline = timelineManager.GetComponent<TimelineManagerNew>();
 
-        timeline.InvokeCallback(callbackIndex);
+        if(invokeCallback)
+            timeline.InvokeCallback(callbackIndex);
+        if(triggerDialogue)
+            timeline.TriggerDialogue(dialogueIndex, new DialogueObject());
         timeline.PauseCutscene(end - start);
     }
 }

@@ -16,13 +16,13 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: Well, I ended up in my bathroom.
     characterSpeaking: 1
-    expression: 1
+    expression: 3
   - dialogueText: "Could be worse. Could be in the back of some guy\u2019s van."
     characterSpeaking: 1
-    expression: 1
+    expression: 3
   - dialogueText: Who the hell hit me in the back of the head?
     characterSpeaking: 1
-    expression: 1
+    expression: 14
   responses:
   - responseText: Some man in all white and a mask.
     dialogueObject: {fileID: 11400000, guid: d0f5c698a47a7ad41893bbb256d671e7, type: 2}

@@ -17,14 +17,14 @@ MonoBehaviour:
   - dialogueText: "Looks like there\u2019s a bunch of dirt on the left side of this
       thing."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "It\u2019s not coming off. I need something to loosen the dirt.
       Like\u2026 water."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "How am I in a bathroom and don\u2019t have access to water?"
     characterSpeaking: 1
-    expression: 0
+    expression: 6
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

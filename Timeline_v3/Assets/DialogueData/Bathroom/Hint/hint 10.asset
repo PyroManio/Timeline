@@ -17,16 +17,16 @@ MonoBehaviour:
   - dialogueText: "We got the key, all that\u2019s left to do is unlock the door
       and get out of here!"
     characterSpeaking: 1
-    expression: 0
+    expression: 1
   - dialogueText: "Unless\u2026 wait, are you waiting for ME to do it on my own?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: I was waiting for you! I got the key and then you wanted to talk.
     characterSpeaking: 1
-    expression: 0
+    expression: 4
   - dialogueText: I mean I guess I should just unlock the door then. Heck, why not?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

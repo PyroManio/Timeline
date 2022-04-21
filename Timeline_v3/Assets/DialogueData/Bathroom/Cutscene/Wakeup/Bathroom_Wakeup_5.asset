@@ -16,10 +16,10 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "WELL GREAT! I\u2019ve been knocked unconscious AND locked up!"
     characterSpeaking: 1
-    expression: 1
+    expression: 5
   - dialogueText: MOST PEOPLE WOULD DEFINE THIS AS KIDNAPPING!
     characterSpeaking: 1
-    expression: 1
+    expression: 6
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

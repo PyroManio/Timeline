@@ -20,7 +20,7 @@ MonoBehaviour:
     expression: 0
   - dialogueText: Have we seen anything locked here that requires 6 digits?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

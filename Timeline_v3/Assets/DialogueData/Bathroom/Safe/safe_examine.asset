@@ -20,7 +20,7 @@ MonoBehaviour:
     expression: 0
   - dialogueText: "Don\u2019t suppose we\u2019ve come across anything like that?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

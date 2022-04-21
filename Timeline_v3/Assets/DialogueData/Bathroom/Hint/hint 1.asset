@@ -16,15 +16,15 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: Well, the first thing we need to do is GET ME OUT OF HERE!
     characterSpeaking: 1
-    expression: 0
+    expression: 6
   - dialogueText: "Last time I checked you don\u2019t have arms to pick things up
       with, so we\u2019ll have to just look around for clues."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: Is there anything out there that looks like it could help with
       unlocking this door?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
