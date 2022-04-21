@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using System;
+
 public class DialogueUI : UITemplate
 {
     [SerializeField] private GameObject dialogueBox;
@@ -20,6 +22,12 @@ public class DialogueUI : UITemplate
     //[SerializeField] SoundManager soundManager;
     private CharacterTalking currentTalking; 
     private UITemplate uIT;
+
+    //Added for cutscene use
+    private bool firstRun = true;
+    private bool hasNextDialogue = false;
+    public event Action OnDialogueEnd;
+
     public void ForceContiue()
     {
         forceContinue = true;
@@ -32,6 +40,14 @@ public class DialogueUI : UITemplate
     {
         Debug.Log("Don't open DialogueUI like this >:( Use ShowDialogue!"); return;
     }
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        GlobalReferences.Dialogueui = this;
+    }
+
     private void Start()
     {
         textLabel=defaultText;
@@ -161,6 +177,9 @@ public class DialogueUI : UITemplate
         }
         else
         {
+            //Added for cutscene use
+            hasNextDialogue = dialogueObject.HasNextDialogue;
+
             CloseUI();
         }
         if (specialBox) specialDialogueBox.SetActive(false);
@@ -194,5 +213,14 @@ public class DialogueUI : UITemplate
         defaultText.text=string.Empty;
         textLabel.text=string.Empty;
         if (characterDialogueBox!=null)  characterDialogueBox.GetComponentInChildren<TMP_Text>().text=string.Empty;
+
+        //Added for cutscene use
+        if (firstRun)
+            firstRun = false;
+        else
+        {
+            if(!hasNextDialogue)
+                OnDialogueEnd?.Invoke();
+        }
     }
 }

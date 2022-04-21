@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Events;
 
+[System.Serializable]
+public class DialogueEvent: UnityEvent<DialogueObject>
+{
+
+}
+
 
 public class TimelineManagerNew : MonoBehaviour
 {
@@ -11,6 +17,12 @@ public class TimelineManagerNew : MonoBehaviour
     private double duration, currentState;
 
     [SerializeField] private UnityEvent[] callbacks;
+    [SerializeField] private DialogueEvent[] dialogues;
+
+    private void Awake()
+    {
+        GlobalReferences.TimelineManager = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +68,18 @@ public class TimelineManagerNew : MonoBehaviour
         catch (System.Exception e)
         {
             Debug.LogError("Callback function does not exist. Check the callback index");
+        }
+    }
+
+    public void TriggerDialogue(int index, DialogueObject dialogueObject)
+    {
+        try
+        {
+            dialogues[index]?.Invoke(dialogueObject);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Dialogue function does not exist. Check the dialogue index");
         }
     }
 

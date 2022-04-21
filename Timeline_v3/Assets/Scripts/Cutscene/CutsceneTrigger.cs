@@ -8,13 +8,22 @@ public class CutsceneTrigger : MonoBehaviour
     [SerializeField] private PlayableAsset playableAsset;
     private TimelineManagerNew timelineManager;
 
-    private void Awake()
+    private void Start()
     {
-        timelineManager = FindObjectOfType<TimelineManagerNew>();
+        timelineManager = GlobalReferences.TimelineManager;
     }
 
     public void StartCutscene()
     {
+        if (!playableAsset)
+            return;
 
+        timelineManager.SetPlayableAsset(playableAsset);
+        timelineManager.PlayCutscene();
+    }
+
+    public void Continue()
+    {
+        timelineManager.ResumeCutscene();
     }
 }
