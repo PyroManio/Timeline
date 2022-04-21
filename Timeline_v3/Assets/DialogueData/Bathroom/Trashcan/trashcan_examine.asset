@@ -21,10 +21,10 @@ MonoBehaviour:
   - dialogueText: "Maybe that\u2019s for the best. Don\u2019t need any more blood
       freak-outs today."
     characterSpeaking: 1
-    expression: 0
+    expression: 4
   - dialogueText: Also what is your fascination with trash cans?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

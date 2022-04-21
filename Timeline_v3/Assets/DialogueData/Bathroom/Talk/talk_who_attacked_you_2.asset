@@ -16,10 +16,10 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "Lab coat, huh? That probably means they\u2019re working for Pandora."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: Anything else strange about them?
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   responses:
   - responseText: They wore a strange mask.
     dialogueObject: {fileID: 11400000, guid: 5f87f6e0575a7ef42a5a0a9b683a13e7, type: 2}

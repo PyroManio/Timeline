@@ -23,11 +23,11 @@ MonoBehaviour:
     expression: 0
   - dialogueText: Maybe we need to combine those two things together somehow.
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "Like\u2026 do they overlap in some way? Maybe that gives us the
       code?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

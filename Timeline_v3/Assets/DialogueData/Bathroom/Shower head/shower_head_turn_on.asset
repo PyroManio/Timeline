@@ -20,7 +20,7 @@ MonoBehaviour:
     expression: 0
   - dialogueText: "Still really thirsty though\u2026"
     characterSpeaking: 1
-    expression: 0
+    expression: 3
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

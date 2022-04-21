@@ -24,11 +24,11 @@ MonoBehaviour:
   - dialogueText: "Never liked that it was glass. It always made me paranoid that
       I\u2019d fall and break it."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "And before you ask, no. I\u2019m not breaking this door. I like
       my body without glass shards and cuts."
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

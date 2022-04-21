@@ -17,13 +17,13 @@ MonoBehaviour:
   - dialogueText: "Hey! It actually worked! Take that, game! We don\u2019t need to
       be spoon-fed answers!"
     characterSpeaking: 1
-    expression: 0
+    expression: 1
   - dialogueText: Actually, could you maybe do that more so I can get out of here?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "I just jinxed it, didn\u2019t I?"
     characterSpeaking: 1
-    expression: 0
+    expression: 13
   - dialogueText: "Anyways, let\u2019s see what we have inside."
     characterSpeaking: 1
     expression: 0

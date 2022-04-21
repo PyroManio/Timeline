@@ -17,7 +17,7 @@ MonoBehaviour:
   - dialogueText: "It\u2019s the door to my shower. Now fitted with an electronic
       lock. That seems safe."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: fa81846a1f681d741a9798086ca3d8e2, type: 2}

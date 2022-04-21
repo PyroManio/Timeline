@@ -27,7 +27,7 @@ MonoBehaviour:
     expression: 0
   - dialogueText: Last time I EVER make that mistake.
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

@@ -16,15 +16,15 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "A mask too, huh? So they\u2019re hiding their identity?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "But if they\u2019re working for Pandora, then why the heck would
       they need to hide their face?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "Unless they\u2019re not actually part of Pandora Labs at all\u2026
       you don\u2019t think that\u2019s possible, do you?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses:
   - responseText: I don't know.
     dialogueObject: {fileID: 11400000, guid: 645b62c15fe6987478c4e9b4994652d0, type: 2}

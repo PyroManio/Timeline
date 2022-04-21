@@ -16,13 +16,13 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: I have no idea! All I saw of the guy was his shoes for a second!
     characterSpeaking: 1
-    expression: 0
+    expression: 4
   - dialogueText: Well, I think it was a guy, anyways.
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: Did you see anything weird about them?
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   responses:
   - responseText: They wore a white lab coat with a symbol on it.
     dialogueObject: {fileID: 11400000, guid: fcf9ac2342d41a04ba99fde638c5eac8, type: 2}

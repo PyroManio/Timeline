@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "WHAT THE HELL? I\u2019m locked up in here now?"
     characterSpeaking: 1
-    expression: 1
+    expression: 4
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

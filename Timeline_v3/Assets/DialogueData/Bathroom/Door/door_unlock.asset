@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "Oh thank god the key fits! Now let\u2019s get out of here!"
     characterSpeaking: 1
-    expression: 0
+    expression: 1
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

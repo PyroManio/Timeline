@@ -17,18 +17,18 @@ MonoBehaviour:
   - dialogueText: "Ugh\u2026 when was the last time I ate? How long have I been in
       here?"
     characterSpeaking: 1
-    expression: 1
+    expression: 4
   - dialogueText: "Now that I think about it, I haven\u2019t had any water either!"
     characterSpeaking: 1
-    expression: 1
+    expression: 7
   - dialogueText: "That\u2019s kind of a bigger problem, actually. Most humans can\u2019t
       last more than 3 days without water."
     characterSpeaking: 1
-    expression: 1
+    expression: 2
   - dialogueText: "Well, I mean it\u2019s unconventional, but at least I have a faucet
       here I can use."
     characterSpeaking: 1
-    expression: 1
+    expression: 2
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

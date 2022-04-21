@@ -21,7 +21,7 @@ MonoBehaviour:
   - dialogueText: "But now it\u2019s basically a little over waist height. It feels
       so WEIRD thinking back to that time."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "Like, I wouldn\u2019t be able to reach the top shelf of the medicine
       cabinet back then."
     characterSpeaking: 1
@@ -29,7 +29,7 @@ MonoBehaviour:
   - dialogueText: There are other things that feel like that too. I guess looking
       back at childhood memories does that.
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

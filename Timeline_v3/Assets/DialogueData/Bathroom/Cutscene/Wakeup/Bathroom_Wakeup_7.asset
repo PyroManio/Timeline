@@ -17,17 +17,17 @@ MonoBehaviour:
   - dialogueText: "Yeah I guess I should have seen that coming. Well let\u2019s try
       to get out of here. Huh?"
     characterSpeaking: 1
-    expression: 1
+    expression: 3
   - dialogueText: "The necklace I was wearing\u2026 it\u2019s changed."
     characterSpeaking: 1
-    expression: 1
+    expression: 3
   - dialogueText: "Now it\u2019s the other half of the yin-yang symbol. The black
       half."
     characterSpeaking: 1
-    expression: 1
+    expression: 3
   - dialogueText: Did that guy that attacked me do this?
     characterSpeaking: 1
-    expression: 1
+    expression: 7
   - dialogueText: "Well, guess that\u2019s not important right now. Right now I need
       to get out of here."
     characterSpeaking: 1

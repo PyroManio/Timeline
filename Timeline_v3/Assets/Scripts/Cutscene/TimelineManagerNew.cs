@@ -1,22 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Timeline;
 using UnityEngine.Playables;
 using UnityEngine.Events;
 
-[System.Serializable]
-class CustomEvent : UnityEvent<int>
-{
-
-}
 
 public class TimelineManagerNew : MonoBehaviour
 {
     private PlayableDirector pd;
     private double duration, currentState;
 
-    [SerializeField] private CustomEvent[] callbacks;
+    [SerializeField] private UnityEvent[] callbacks;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +51,7 @@ public class TimelineManagerNew : MonoBehaviour
     {
         try
         {
-            callbacks[index]?.Invoke(0);
+            callbacks[index]?.Invoke();
         }
         catch (System.Exception e)
         {

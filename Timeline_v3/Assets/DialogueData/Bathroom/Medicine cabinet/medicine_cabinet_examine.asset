@@ -16,10 +16,10 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: Just like everything else, this thing is locked up tight.
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "We need 6 digits for this one. THAT\u2019S A LOT. Got any ideas?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

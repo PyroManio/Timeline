@@ -24,7 +24,7 @@ MonoBehaviour:
   - dialogueText: "That was not a fun day. Or the month after where I couldn\u2019t
       use my shower."
     characterSpeaking: 1
-    expression: 0
+    expression: 13
   - dialogueText: Moving on.
     characterSpeaking: 1
     expression: 0

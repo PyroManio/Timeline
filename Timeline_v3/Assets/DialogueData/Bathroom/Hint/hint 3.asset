@@ -19,7 +19,7 @@ MonoBehaviour:
     expression: 0
   - dialogueText: "Still thirsty though\u2026"
     characterSpeaking: 1
-    expression: 0
+    expression: 3
   - dialogueText: Well, at least we can investigate the rest of the room now.
     characterSpeaking: 1
     expression: 0
@@ -28,10 +28,10 @@ MonoBehaviour:
     expression: 0
   - dialogueText: Is there any way that we can read that text?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: I once read something about a Ceasar Cypher.
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "Basically, you\u2019d substitute each letter for another one in
       a specific way."
     characterSpeaking: 1
@@ -43,10 +43,10 @@ MonoBehaviour:
   - dialogueText: "Only there\u2019s 24 other combinations. Do we really have to
       try them all?"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "Or maybe there\u2019s a faster way to crack this\u2026 hmmm\u2026"
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

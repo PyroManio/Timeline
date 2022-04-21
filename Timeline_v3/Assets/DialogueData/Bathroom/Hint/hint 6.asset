@@ -21,7 +21,7 @@ MonoBehaviour:
   - dialogueText: If we could somehow combine it with some soap and water, we might
       be able to clean the mirror.
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "That dirt just screams to me that it\u2019s hiding something important."
     characterSpeaking: 1
     expression: 0

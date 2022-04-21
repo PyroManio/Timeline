@@ -16,16 +16,16 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: We got soap on the towel, but now we need water!
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   - dialogueText: "And if we had water, I wouldn\u2019t be thirsty!"
     characterSpeaking: 1
-    expression: 0
+    expression: 6
   - dialogueText: Come on, there HAS to be water in this bathroom SOMEWHERE!
     characterSpeaking: 1
-    expression: 0
+    expression: 9
   - dialogueText: Are we sure we checked everything?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

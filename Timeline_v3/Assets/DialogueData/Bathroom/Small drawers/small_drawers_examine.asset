@@ -16,21 +16,21 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "OH WOW LOOK, IT DOESN\u2019T OPEN! WHAT A SURPRISE!"
     characterSpeaking: 1
-    expression: 0
+    expression: 6
   - dialogueText: Not.
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   - dialogueText: "Looks like there\u2019s a pipe coming out the back that connects
       it to the sink. "
     characterSpeaking: 1
     expression: 0
   - dialogueText: Jeez, just how much of my stuff did they ransack?
     characterSpeaking: 1
-    expression: 0
+    expression: 9
   - dialogueText: Maybe I should file a lawsuit for damages to my home after I get
       out of here.
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

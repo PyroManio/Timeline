@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "You\u2019re kidding, right? No."
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

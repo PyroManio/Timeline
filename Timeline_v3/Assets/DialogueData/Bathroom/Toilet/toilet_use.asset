@@ -17,10 +17,10 @@ MonoBehaviour:
   - dialogueText: "Okay, I\u2019m going to give you the benefit of the doubt here
       and say this isn\u2019t something gross."
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   - dialogueText: What exactly do you mean?
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   responses:
   - responseText: Use soapy towel
     dialogueObject: {fileID: 11400000, guid: 2c23c9f8486ccab408fbeee8ae28d046, type: 2}

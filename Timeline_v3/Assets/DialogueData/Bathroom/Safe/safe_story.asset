@@ -24,7 +24,7 @@ MonoBehaviour:
     expression: 0
   - dialogueText: Though I guess I do have a story about a safe.
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: One time we were in a hotel room and they had this safe to keep
       your valuables in.
     characterSpeaking: 1

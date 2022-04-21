@@ -17,18 +17,18 @@ MonoBehaviour:
   - dialogueText: Right, not going to get anywhere just sitting around waiting to
       be rescued. Time to solve this!
     characterSpeaking: 1
-    expression: 0
+    expression: 1
   - dialogueText: "\u2026"
     characterSpeaking: 1
-    expression: 0
+    expression: 14
   - dialogueText: "Uh\u2026 how do I mark these tiles? I don\u2019t have a pen or
       marker."
     characterSpeaking: 1
-    expression: 0
+    expression: 14
   - dialogueText: "Hmm\u2026 I guess I could use these soap bottles. It\u2019s the
       only other thing in here, after all."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

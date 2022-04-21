@@ -20,21 +20,21 @@ MonoBehaviour:
     expression: 0
   - dialogueText: "It seems to be working, that\u2019s good."
     characterSpeaking: 1
-    expression: 0
+    expression: 13
   - dialogueText: "Done! And it\u2019s\u2026 an equation?"
     characterSpeaking: 1
-    expression: 0
+    expression: 14
   - dialogueText: I was expecting something a little more like a code.
     characterSpeaking: 1
-    expression: 0
+    expression: 8
   - dialogueText: "Oh, I get it. They\u2019re increasing the difficulty. Before they
       just GAVE us the code."
     characterSpeaking: 1
-    expression: 0
+    expression: 3
   - dialogueText: "Now we have to figure it out ourselves. Right, let\u2019s try
       figuring this out!"
     characterSpeaking: 1
-    expression: 0
+    expression: 8
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

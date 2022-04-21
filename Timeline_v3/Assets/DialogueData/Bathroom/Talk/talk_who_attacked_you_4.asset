@@ -17,7 +17,7 @@ MonoBehaviour:
   - dialogueText: Gee, thanks for the words of comfort. Probably being watched by
       a freaking psychopath right now.
     characterSpeaking: 1
-    expression: 0
+    expression: 5
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

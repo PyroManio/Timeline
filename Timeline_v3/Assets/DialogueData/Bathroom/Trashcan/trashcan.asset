@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueData:
   - dialogueText: "It\u2019s the trash can that I use for\u2026 used bathroom utilities."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   responses:
   - responseText: Examine
     dialogueObject: {fileID: 11400000, guid: ad74e87a2d63dd64d9d17d19ce43f479, type: 2}

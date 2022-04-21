@@ -10,22 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ed0eb1059650b148a5e2bfa7ecc1042, type: 3}
-  m_Name: mirror_pre_shower_escape
+  m_Name: bathroom_escape 1
   m_EditorClassIdentifier: 
   dialogue: []
   dialogueData:
-  - dialogueText: Looks like that dirt is covering something up.
+  - dialogueText: "Right, let\u2019s not just rush out the door this time."
     characterSpeaking: 1
-    expression: 0
-  - dialogueText: 'The grid, though, looks like it has something written under it. '
+    expression: 2
+  - dialogueText: "I\u2019d rather not get knocked unconscious twice if I don\u2019t
+      have to. "
     characterSpeaking: 1
-    expression: 0
-  - dialogueText: Mirror + Shower
-    characterSpeaking: 1
-    expression: 0
-  - dialogueText: "I guess there\u2019s two clues that are linked together somehow? "
-    characterSpeaking: 1
-    expression: 0
+    expression: 3
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

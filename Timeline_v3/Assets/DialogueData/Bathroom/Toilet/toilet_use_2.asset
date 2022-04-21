@@ -19,14 +19,14 @@ MonoBehaviour:
     expression: 0
   - dialogueText: "And extremely gross\u2026 ugh, swallow your pride, Leo."
     characterSpeaking: 1
-    expression: 0
+    expression: 13
   - dialogueText: "Ughh, I can\u2019t believe I\u2019m doing this. At least it\u2019s
       clean."
     characterSpeaking: 1
-    expression: 0
+    expression: 12
   - dialogueText: "There, water on towel. Let\u2019s never speak of this again."
     characterSpeaking: 1
-    expression: 0
+    expression: 12
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

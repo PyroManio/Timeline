@@ -17,20 +17,20 @@ MonoBehaviour:
   - dialogueText: "Yeah there\u2019s no way I could mistake that electronic voice
       for that. It sounded human."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "But where were they? There didn\u2019t seem to be any speakers
       or anything in the room."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "Wait\u2026 you don\u2019t think that it was\u2026"
     characterSpeaking: 1
-    expression: 0
+    expression: 4
   - dialogueText: "Gah! Don\u2019t be stupid! Ghosts don\u2019t exist!"
     characterSpeaking: 1
-    expression: 0
+    expression: 9
   - dialogueText: "\u2026Right?"
     characterSpeaking: 1
-    expression: 0
+    expression: 4
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

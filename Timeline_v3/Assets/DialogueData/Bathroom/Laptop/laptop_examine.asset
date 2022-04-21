@@ -17,20 +17,20 @@ MonoBehaviour:
   - dialogueText: "It\u2019s locked with some sort of passcode. Again. But this time
       I can\u2019t make heads or tails of it."
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: "The letters don\u2019t make any sense."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "But\u2026 it feels like these letters are in some sort of pattern.
       Like it\u2019s a code."
     characterSpeaking: 1
-    expression: 0
+    expression: 2
   - dialogueText: "Or maybe\u2026 it\u2019s encrypted? "
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   - dialogueText: Got any ideas?
     characterSpeaking: 1
-    expression: 0
+    expression: 7
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
