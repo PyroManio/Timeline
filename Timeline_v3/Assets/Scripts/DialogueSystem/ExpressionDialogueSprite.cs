@@ -8,7 +8,10 @@ using UnityEditor;
 public class ExpressionDialogueSprite : MonoBehaviour
 {
   static Sprite[] LeoSprites;
-  private Dictionary<Expression,Sprite> expressionSprite;
+  private Dictionary<Expression,Sprite> LeoExpressionSprite;
+  private Dictionary<Expression,Sprite> DespairExpressionSprite;
+  private Dictionary<Expression,Sprite> AmyExpressionSprite;
+  private Dictionary<Expression,Sprite> IndigoExpressionSprite;
   // Gotta do this in awake cause start doesn't work since DialogueUI immedietely turns this thing off
   // And also cause Untiy doesn't like it when we try to call resources during the initalizer 
   private void Awake(){
@@ -17,7 +20,7 @@ public class ExpressionDialogueSprite : MonoBehaviour
     // In the future, we would probably make this dictionary take into account of which character is talking
     // Cause I'm sure not every character would have all the expressions here
     // Or might have specific emotions that Leo doesn't have
-    expressionSprite = new Dictionary<Expression, Sprite>()
+    LeoExpressionSprite = new Dictionary<Expression, Sprite>()
     {
        { Expression.Neutral, LeoSprites[0] },
        { Expression.Happy, LeoSprites[1] },
@@ -35,11 +38,30 @@ public class ExpressionDialogueSprite : MonoBehaviour
        { Expression.Sigh, LeoSprites[13]},
        { Expression.Confused, LeoSprites[14] }
     };
+    DespairExpressionSprite = new Dictionary<Expression, Sprite>()
+    {
+      { Expression.Neutral, LeoSprites[15] }
+    };
+    AmyExpressionSprite = new Dictionary<Expression, Sprite>()
+    {
+      { Expression.Neutral, LeoSprites[16] }
+    };
+    IndigoExpressionSprite = new Dictionary<Expression, Sprite>()
+    {
+      { Expression.Neutral, LeoSprites[17] }
+    };
   }
   public void changeExpression(CharacterTalking charSpeaking, Expression givenExpression)
   {
     // It's probably simplier to have a variable that directly holds the image component, but since this thing
     // Won't be called on every frame, screw it.
-    GetComponent<Image>().sprite = expressionSprite[givenExpression];
+    if (charSpeaking.Equals(CharacterTalking.Leo))
+      {GetComponent<Image>().sprite = LeoExpressionSprite[givenExpression];}
+    if (charSpeaking.Equals(CharacterTalking.Despair))
+      {GetComponent<Image>().sprite = DespairExpressionSprite[ Expression.Neutral];}
+    if (charSpeaking.Equals(CharacterTalking.Amy))
+      {GetComponent<Image>().sprite = AmyExpressionSprite[ Expression.Neutral];}
+     if (charSpeaking.Equals(CharacterTalking.Indigo))
+      {GetComponent<Image>().sprite = IndigoExpressionSprite[ Expression.Neutral];}
   }
 }

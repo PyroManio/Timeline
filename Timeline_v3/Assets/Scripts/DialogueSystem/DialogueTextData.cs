@@ -13,7 +13,9 @@ public class DialogueTextData
  {
       None,
       Leo,
-      Despair
+      Despair,
+      Amy,
+      Indigo
  }
   public enum Expression
  {

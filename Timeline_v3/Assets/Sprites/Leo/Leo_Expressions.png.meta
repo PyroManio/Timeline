@@ -47,6 +47,15 @@ TextureImporter:
   - first:
       213: -3966074877478943281
     second: Leo HUD Sprite Sheet 1_14
+  - first:
+      213: -8369336979213465744
+    second: Leo_Expressions_2
+  - first:
+      213: -6179728936430517890
+    second: Leo_Expressions_3
+  - first:
+      213: 7317166842525512477
+    second: Leo_Expressions_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -412,7 +421,7 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_13
       rect:
         serializedVersion: 2
-        x: 200
+        x: 201
         y: 310
         width: 60
         height: 60
@@ -433,8 +442,8 @@ TextureImporter:
       name: Leo HUD Sprite Sheet 1_14
       rect:
         serializedVersion: 2
-        x: 266
-        y: 310
+        x: 267
+        y: 311
         width: 60
         height: 60
       alignment: 0
@@ -446,6 +455,69 @@ TextureImporter:
       bones: []
       spriteID: fc5444f79eba5f8c0800000000000000
       internalID: -3966074877478943281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leo_Expressions_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 244
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077c07c2c542adb80800000000000000
+      internalID: -8369336979213465744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leo_Expressions_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 177
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e714bdf16413d3aa0800000000000000
+      internalID: -6179728936430517890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leo_Expressions_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 110
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13fffaa97ccb8560800000000000000
+      internalID: 7317166842525512477
       vertices: []
       indices: 
       edges: []
