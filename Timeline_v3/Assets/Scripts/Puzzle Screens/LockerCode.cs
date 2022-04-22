@@ -4,17 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
-public class LockerCode : MonoBehaviour
+public class LockerCode : PuzzleScreenTemplate
 {
     [SerializeField] private GameObject dialTemplate;
     [SerializeField] private GameObject dialContainer;
-    [SerializeField] private GameObject lockerObject;
     [SerializeField] private string solution;
     [SerializeField] private UnityEvent solutionEvent;
     private GameObject[] dialList=new GameObject[4];
-    public bool isOpen;
-    public bool isSolved=false;
-    //private List<GameObject> dialList = new List<GameObject>();
     private int[] dialNumber = new int[4];
     void Start()
     {
@@ -33,21 +29,9 @@ public class LockerCode : MonoBehaviour
             dialList[i] = dial;
             dialNumber[i] = 0;
         }
-        closeLocker();
+        ClosePuzzle();
     }
-    public void openLocker()
-    {
-        if (isSolved) return;
-        GetComponent<ClickableObjectHandler>().imOutOfVariableNames = false;
-        isOpen=true;
-        lockerObject.SetActive(true);
-    }
-    public void closeLocker()
-    {
-        GetComponent<ClickableObjectHandler>().imOutOfVariableNames = true;
-        isOpen=false;
-        lockerObject.SetActive(false);
-    }
+
     private void OnPickedResponse(int index, string buttonType)
     {
         if (GetComponent<ClickableObjectHandler>().dialogueOpen) return;
@@ -71,9 +55,9 @@ public class LockerCode : MonoBehaviour
                 break;
 
         }
-        checkSolved();
+        CheckSolved();
     }
-    private void checkSolved()
+    protected override void CheckSolved()
     {
         string temp="";
         for (int i = 0; i < 4; i++)
@@ -81,11 +65,5 @@ public class LockerCode : MonoBehaviour
             temp+=dialList[i].GetComponentInChildren<TMP_Text>().text;
         }
         if (solution.Equals(temp)) Solved();
-    }
-    private void Solved()
-    {
-        isSolved=true;
-        solutionEvent.Invoke();
-        closeLocker();
     }
 }
