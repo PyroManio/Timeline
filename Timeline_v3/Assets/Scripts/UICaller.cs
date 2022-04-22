@@ -8,6 +8,7 @@ public class UICaller : MonoBehaviour
     // This helps bridge between the regular scene and the UI scene 
     // This calls out to the object handling all of the UI's in the other scene.
     public bool areUIOpen {get; private set;}
+    public bool isCutsceneActive {get; private set;}
     public UIName CurrentUIOpened;
     public bool IsInspectonScreensOpen = false;
     public static event Action<DialogueObject, ResponseEvent[][]> ShowDialogue;
@@ -33,7 +34,8 @@ public class UICaller : MonoBehaviour
         UIManager.GetInventory += SendInventoryToUIScene;
         InspecScreenHandler.UpdateScreenStatus += Update_IsInspectonScreensOpen;
         RoomSceneManager.AddItemToInventory += SendAddItem;
-
+        //[Insertnameofscript].UpdateCutsceneStatus += RecieveCutsceneStatus;
+        
         //Added for global reference
         GlobalReferences.UIcaller = this;
     }
@@ -55,4 +57,9 @@ public class UICaller : MonoBehaviour
     {
         GetComponent<Inventory>().AddItem(givenItem);
     }
+    public void RecieveCutsceneStatus(bool givenStatus)
+    {
+        isCutsceneActive = givenStatus;
+    }
+
 }

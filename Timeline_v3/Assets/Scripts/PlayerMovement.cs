@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
     // Instead of multiple UI's, playmovement only looks at one object for the status of all UI's
     [SerializeField] public UICaller mainUI;
     public float moveSpeed = 5f;
-    public bool inCutscene = true;  
     // this variable might end up never being used, but it might be helpful
     public string direction = "Down";
     public IInteractable Interactable { get; set; }
@@ -24,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
             return;  
             }
 
-        if (inCutscene) {
+        if (mainUI.isCutsceneActive) {
             movement.x = 0;
             movement.y = 0;
             return;
@@ -71,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate() 
     {
         // This is the actual movement of the character
-        if(inCutscene) {
+        if(mainUI.isCutsceneActive) {
             Vector2 temp1;
             temp1=rb.position;
             temp1.x= Mathf.RoundToInt( temp1.x / 0.0625f) * 0.0625f;
