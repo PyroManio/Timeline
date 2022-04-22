@@ -12,7 +12,13 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
-    
+
+    //Added for cutscene use
+    private void Awake()
+    {
+        GlobalReferences.Player = this;
+    }
+
     void Update()
     {
         if (mainUI.areUIOpen || mainUI.IsInspectonScreensOpen) {    

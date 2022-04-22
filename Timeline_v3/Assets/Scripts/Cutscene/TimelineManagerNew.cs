@@ -78,14 +78,20 @@ public class TimelineManagerNew : MonoBehaviour
 
     public void TriggerDialogue(int index, DialogueObject dialogueObject)
     {
-        try
-        {
-            dialogues[index]?.Invoke(dialogueObject);
-        }
-        catch (System.Exception e)
-        {
-            Debug.LogError("Dialogue function does not exist. Check the dialogue index");
-        }
+        dialogues[index]?.Invoke(dialogueObject);
+
+        //try
+        //{
+        //    Debug.Log("dialogues: " + dialogues.Length);
+        //    Debug.Log("index: " + index);
+        //    Debug.Log(dialogueObject == null);
+
+        //    dialogues[index]?.Invoke(dialogueObject);
+        //}
+        //catch (System.Exception e)
+        //{
+        //    Debug.LogError("Dialogue function does not exist. Check the dialogue index");
+        //}
     }
 
     public void ResetInitialState()

@@ -27,7 +27,10 @@ public class PauseForInputBehaviour : PlayableBehaviour
         if(invokeCallback)
             timeline.InvokeCallback(callbackIndex);
         if(triggerDialogue)
-            timeline.TriggerDialogue(dialogueIndex, new DialogueObject());
+        {
+            DialogueObject dialogueObject = ScriptableObject.CreateInstance("DialogueObject") as DialogueObject;
+            timeline.TriggerDialogue(dialogueIndex, dialogueObject);
+        }
         timeline.PauseCutscene(end - start);
     }
 }

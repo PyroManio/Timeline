@@ -8,6 +8,9 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private int cameraTolerance;
     [SerializeField] private Transform playerTransform;
 
+    //Added for camera shake
+    private bool canFollow = true;
+
     void Start() {
         //playerTransform = GameObject.FindGameObjectWithTag("Player").transform;  
     }
@@ -23,23 +26,33 @@ public class CameraFollow : MonoBehaviour
         //temp.y = (int)(playerTransform.position.y/0.0625)*0.0625f;
         //float tempX = (int)(playerTransform.position.x/0.0625)*0.0625f - transform.position.x;
         //float tempY = (int)(playerTransform.position.y/0.0625)*0.0625f - transform.position.y;
-        float tempX = playerTransform.position.x - transform.position.x;
-        float tempY = playerTransform.position.y - transform.position.y;
-        if (Mathf.Abs(tempX) > cameraTolerance) 
-            transform.position=new Vector3(transform.position.x + Mathf.Sign(tempX)*(Mathf.Abs(tempX)-cameraTolerance), transform.position.y, transform.position.z);
-        if (Mathf.Abs(tempY) > cameraTolerance) 
-            transform.position=new Vector3(transform.position.x ,transform.position.y+ Mathf.Sign(tempY)*(Mathf.Abs(tempY)-cameraTolerance), transform.position.z);
+
+        if(canFollow)
+        {
+            float tempX = playerTransform.position.x - transform.position.x;
+            float tempY = playerTransform.position.y - transform.position.y;
+            if (Mathf.Abs(tempX) > cameraTolerance)
+                transform.position = new Vector3(transform.position.x + Mathf.Sign(tempX) * (Mathf.Abs(tempX) - cameraTolerance), transform.position.y, transform.position.z);
+            if (Mathf.Abs(tempY) > cameraTolerance)
+                transform.position = new Vector3(transform.position.x, transform.position.y + Mathf.Sign(tempY) * (Mathf.Abs(tempY) - cameraTolerance), transform.position.z);
+        }
+
         //if (Mathf.Abs(temp.x - transform.position.x) > cameraTolerance || Mathf.Abs(temp.y - transform.position.y) > cameraTolerance) 
-            //{
-                //if (Mathf.Abs(temp.x - transform.position.x) > cameraTolerance)
-                //    temp.x= temp.x + Mathf.Sign(temp.x - transform.position.x)*(Mathf.Abs(temp.x - transform.position.x)-cameraTolerance);
-                
-                //transform.position = temp;
-            //}
+        //{
+        //if (Mathf.Abs(temp.x - transform.position.x) > cameraTolerance)
+        //    temp.x= temp.x + Mathf.Sign(temp.x - transform.position.x)*(Mathf.Abs(temp.x - transform.position.x)-cameraTolerance);
+
+        //transform.position = temp;
+        //}
         //temp.x = playerTransform.position.x;
         //temp.y = playerTransform.position.y;
         // set back camera's temp position to camera's curr postion
-        
+
+    }
+
+    public void SetCanFollow(bool follow)
+    {
+        canFollow = follow;
     }
 } // class
 
