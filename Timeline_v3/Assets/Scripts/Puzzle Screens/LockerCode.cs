@@ -34,7 +34,7 @@ public class LockerCode : PuzzleScreenTemplate
 
     private void OnPickedResponse(int index, string buttonType)
     {
-        if (GetComponent<ClickableObjectHandler>().dialogueOpen) return;
+        //if (GetComponent<ClickableObjectHandler>().dialogueOpen) return;
         switch (buttonType)
         {
             // Add 1

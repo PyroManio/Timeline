@@ -5,17 +5,24 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 public class ClickableObjectHandler : MonoBehaviour
 {
-    [SerializeField] private DialogueUI dialogueUI;
+    //[SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private GameObject[] clickableObjects;
-    [SerializeField] private UnityEvent[] objectEvents;
+    //[SerializeField] private UnityEvent[] objectEvents;
     [SerializeField] private GameObject backButton;
+    //[SerializeField] private puzzleScreens;
+    private bool puzzleStatus;
+    private bool UIStatus;
     // Ignore this comment below, but I find it too funny to get rid of v
 
     // Yes, I'm too lazy to figure out how to find and call an event through these scripts. Bite me.
     //[SerializeField] private UnityEvent backButtonPress;
     public bool imOutOfVariableNames = true;
-    public bool dialogueOpen => dialogueUI.IsOpen;
+    public bool buttonStatus;
+    //public bool dialogueOpen => dialogueUI.IsOpen;
     // Start is called before the first frame update
+    private void Awake(){
+        UIManager.AreUIOpen += UpdateButtonUI;
+    }
     private void Start()
     {
         
@@ -27,15 +34,36 @@ public class ClickableObjectHandler : MonoBehaviour
         //backButton.GetComponentInChildren<Button>().onClick.AddListener( () => OnPickedBack());
     }
     private void LateUpdate(){
-        backButton.SetActive(!dialogueOpen && imOutOfVariableNames);
+        //backButton.SetActive(!dialogueOpen && imOutOfVariableNames);
     }
     private void OnPickedResponse(int index){
         if (!imOutOfVariableNames) return;
-        if (dialogueOpen) return;
-        if (index >= objectEvents.Length) return;
+        //if (dialogueOpen) return;
+        //if (index >= objectEvents.Length) return;
         //Debug.Log();
         //if (!dialogueUI.IsOpen && index < objectEvents.Length) objectEvents[index].Invoke();
-        objectEvents[index].Invoke();
+        //objectEvents[index].Invoke();
+    }
+    private void UpdateButtonUI(bool givenStatus, UIName temp)
+    {
+        UIStatus = givenStatus;
+        UpdateButtonActive();
+    }
+    private void UpdateButtonActive()
+    {
+        // if buttonstatus is active but uiStatus and puzzle status are both false
+        //if (buttonStatus && !(UIStatus || puzzleStatus)) return;
+        buttonStatus = !(UIStatus || puzzleStatus);
+        foreach (GameObject button in clickableObjects)
+        {
+            //button.SetActive(buttonStatus);
+            if (!button.Equals(null)) button.GetComponent<Button>().interactable=buttonStatus;
+        }
+    }
+    public void UpdateButtonPuzzle(bool status)
+    {
+        puzzleStatus = status;
+        UpdateButtonActive();
     }
 
 }

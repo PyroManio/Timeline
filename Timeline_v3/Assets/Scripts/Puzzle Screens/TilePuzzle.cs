@@ -9,7 +9,7 @@ public class TilePuzzle : PuzzleScreenTemplate
     [SerializeField] private GameObject spotContainer;
     [HideInInspector] private GameObject[,] spotList; 
     // true = filled, false=blank
-    [HideInInspector] private bool[][] boardInfo;
+    [HideInInspector] private bool[,] boardInfo;
     [SerializeField] private Array2DBool solution;
     //Look at Locker Code for reference
     // Commands to use-  OpenPuzzle();  ClosePuzzle();  Solved();
@@ -18,29 +18,33 @@ public class TilePuzzle : PuzzleScreenTemplate
     void Start()
     {
         spotTemplate.SetActive(false);
+        boardInfo = new bool[solution.GridSize.y, solution.GridSize.x];     
         spotList=new GameObject[ solution.GridSize.y, solution.GridSize.x ];
-        for (int i = 0; i < solution.GridSize.y; i++)
+        for (int i = 0; i <= solution.GridSize.y-1; i++)
         {
-            for (int j = 0; j < solution.GridSize.x; j++)
+            for (int j = 0; j <= solution.GridSize.x-1; j++)
             {
+                int y=i;
+                int x=j;
                 GameObject spot = Instantiate(spotTemplate.gameObject, spotContainer.transform);
                 spot.gameObject.SetActive(true);
-                spot.GetComponent<Button>().onClick.AddListener( () => OnPickedResponse(i, j));
+                spot.GetComponent<Button>().onClick.AddListener( () => OnPickedResponse(y, x));
                 spot.GetComponent<Image>().color=new Color(1f,1f,1f,1f);
-                spotList[i,j] = spot;
+                spotList[y,x] = spot;
             }
         }
     ClosePuzzle();
     }
     private void OnPickedResponse(int y, int x)
     {
+        
         // If true
-        if (boardInfo[y][x]) {
-            boardInfo[y][x] = false;
+        if (boardInfo[y,x]) {
+            boardInfo[y,x] = false;
             spotList[y,x].GetComponent<Image>().color = new Color(1f,1f,1f,1f);
         }
         else{
-            boardInfo[y][x] = true;
+            boardInfo[y,x] = true;
             spotList[y,x].GetComponent<Image>().color = new Color(0f,0f,0f,1f);
         }
     }
