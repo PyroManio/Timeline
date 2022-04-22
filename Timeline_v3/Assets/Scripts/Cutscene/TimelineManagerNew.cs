@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Events;
+using System;
 
 [System.Serializable]
 public class DialogueEvent: UnityEvent<DialogueObject>
@@ -18,6 +19,8 @@ public class TimelineManagerNew : MonoBehaviour
 
     [SerializeField] private UnityEvent[] callbacks;
     [SerializeField] private DialogueEvent[] dialogues;
+
+    public static event Action<bool> UpdateCutsceneStatus;
 
     private void Awake()
     {
@@ -39,6 +42,8 @@ public class TimelineManagerNew : MonoBehaviour
     public void PlayCutscene()
     {
         pd.Play();
+
+        UpdateCutsceneStatus?.Invoke(true);
     }
 
     public void StopCutscene()
@@ -86,5 +91,10 @@ public class TimelineManagerNew : MonoBehaviour
     public void ResetInitialState()
     {
         pd.initialTime = 0;
+    }
+
+    public void OnCutsceneEnd()
+    {
+        UpdateCutsceneStatus?.Invoke(false);
     }
 }

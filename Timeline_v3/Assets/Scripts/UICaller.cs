@@ -34,7 +34,7 @@ public class UICaller : MonoBehaviour
         UIManager.GetInventory += SendInventoryToUIScene;
         InspecScreenHandler.UpdateScreenStatus += Update_IsInspectonScreensOpen;
         RoomSceneManager.AddItemToInventory += SendAddItem;
-        //[Insertnameofscript].UpdateCutsceneStatus += RecieveCutsceneStatus;
+        TimelineManagerNew.UpdateCutsceneStatus += RecieveCutsceneStatus;
         
         //Added for global reference
         GlobalReferences.UIcaller = this;

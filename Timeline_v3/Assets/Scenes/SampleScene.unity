@@ -263,7 +263,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainUI: {fileID: 519420033}
   moveSpeed: 5
-  inCutscene: 0
   direction: Down
   rb: {fileID: 499001854}
   animator: {fileID: 499001857}
@@ -995,6 +994,7 @@ GameObject:
   - component: {fileID: 1662168251}
   - component: {fileID: 1662168250}
   - component: {fileID: 1662168252}
+  - component: {fileID: 1662168253}
   m_Layer: 0
   m_Name: Timeline Manager
   m_TagString: Untagged
@@ -1121,5 +1121,37 @@ PlayableDirector:
     value: {fileID: 1662168249}
   - key: {fileID: -2626195357440459028, guid: e4a1ab79b5e564840b23784869b4cd7e, type: 2}
     value: {fileID: 499001857}
+  - key: {fileID: -4207460863684609315, guid: e4a1ab79b5e564840b23784869b4cd7e, type: 2}
+    value: {fileID: 1662168253}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &1662168253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662168249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 967662e477a4fb242a77032b3cc4f1b4, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662168250}
+          m_TargetAssemblyTypeName: TimelineManagerNew, Assembly-CSharp
+          m_MethodName: OnCutsceneEnd
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
