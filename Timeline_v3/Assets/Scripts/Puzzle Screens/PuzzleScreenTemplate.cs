@@ -11,13 +11,13 @@ public abstract class PuzzleScreenTemplate : MonoBehaviour
     public bool IsOpen { get ; protected set; } 
     public void OpenPuzzle(){
         if (isSolved) return;
-        GetComponent<ClickableObjectHandler>().imOutOfVariableNames = false;
+        //GetComponent<ClickableObjectHandler>().imOutOfVariableNames = false;
         IsOpen=true;
         puzzleContainer.SetActive(true);
     }
     public void ClosePuzzle()
     {
-        GetComponent<ClickableObjectHandler>().imOutOfVariableNames = true;
+        //GetComponent<ClickableObjectHandler>().imOutOfVariableNames = true;
         IsOpen = false;
         puzzleContainer.SetActive(false);
     }
