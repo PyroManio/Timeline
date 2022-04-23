@@ -233,10 +233,12 @@ MonoBehaviour:
   m_Name: PauseForInputClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
-    invokeCallback: 0
-    callbackIndex: 0
+    invokeCallback: 1
+    callbackIndex: 1
     triggerDialogue: 1
     dialogueIndex: 3
+    triggerNpcAnimation: 0
+    animationIndex: 0
 --- !u!114 &-2626195357440459028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -769,6 +771,8 @@ MonoBehaviour:
     callbackIndex: 0
     triggerDialogue: 1
     dialogueIndex: 0
+    triggerNpcAnimation: 0
+    animationIndex: 0
 --- !u!114 &-1620045045022404055
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -786,6 +790,8 @@ MonoBehaviour:
     callbackIndex: 0
     triggerDialogue: 1
     dialogueIndex: 4
+    triggerNpcAnimation: 0
+    animationIndex: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,6 +1117,8 @@ MonoBehaviour:
     callbackIndex: 0
     triggerDialogue: 1
     dialogueIndex: 2
+    triggerNpcAnimation: 0
+    animationIndex: 0
 --- !u!114 &7153248177031334066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1529,10 +1537,12 @@ MonoBehaviour:
   m_Name: PauseForInputClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
-    invokeCallback: 0
-    callbackIndex: 0
+    invokeCallback: 1
+    callbackIndex: 4
     triggerDialogue: 1
     dialogueIndex: 1
+    triggerNpcAnimation: 0
+    animationIndex: 0
 --- !u!114 &8839611991113473473
 MonoBehaviour:
   m_ObjectHideFlags: 1

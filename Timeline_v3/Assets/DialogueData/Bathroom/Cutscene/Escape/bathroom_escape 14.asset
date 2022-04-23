@@ -40,7 +40,7 @@ MonoBehaviour:
       like that?"
     characterSpeaking: 0
     expression: 14
-  - dialogueText: ": I mean, they said that they\u2019d look- "
+  - dialogueText: "I mean, they said that they\u2019d look- "
     characterSpeaking: 1
     expression: 13
   - dialogueText: "I mean\u2026 I just thought\u2026 "
@@ -81,26 +81,26 @@ MonoBehaviour:
     expression: 3
   - dialogueText: "Listen, kid. When that woman shows up again, say that you want
       to speak to whoever\u2019s in charge. "
-    characterSpeaking: 0
-    expression: 3
+    characterSpeaking: 3
+    expression: 0
   - dialogueText: "Tell them that you\u2019re 100% going to be in this test."
-    characterSpeaking: 0
-    expression: 3
+    characterSpeaking: 3
+    expression: 0
   - dialogueText: 'But they said- '
     characterSpeaking: 1
     expression: 4
   - dialogueText: "Look, if you just follow the rules, you\u2019re not going to get
       anywhere. "
-    characterSpeaking: 1
-    expression: 4
+    characterSpeaking: 3
+    expression: 0
   - dialogueText: "If a loser like you wants to get into this program, it\u2019s
       pretty much your only shot. "
-    characterSpeaking: 1
-    expression: 4
+    characterSpeaking: 3
+    expression: 0
   - dialogueText: "So what\u2019ll it be, kid? Door\u2019s right there if you can\u2019t
       handle a conversation. "
-    characterSpeaking: 1
-    expression: 4
+    characterSpeaking: 3
+    expression: 0
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

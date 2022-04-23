@@ -19,8 +19,8 @@ MonoBehaviour:
     characterSpeaking: 0
     expression: 3
   - dialogueText: 'Told you so. '
-    characterSpeaking: 0
-    expression: 3
+    characterSpeaking: 3
+    expression: 0
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

@@ -18,8 +18,8 @@ MonoBehaviour:
       years ago? "
     characterSpeaking: 1
     expression: 14
-  - dialogueText: "Right\u2026 so this is an extension of a program from over 40
-      years ago? "
+  - dialogueText: "Seems a bit far-fetched, but I don\u2019t have a better explanation
+      right now. "
     characterSpeaking: 1
     expression: 14
   - dialogueText: I think we may need more information before we come to any conclusions.

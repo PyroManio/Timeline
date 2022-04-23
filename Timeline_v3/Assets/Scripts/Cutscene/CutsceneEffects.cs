@@ -74,6 +74,61 @@ public class CutsceneEffects : MonoBehaviour
         GlobalReferences.Despair.GetComponent<Animator>().Play(animation);
     }
 
+    public void SetAmyAnimation(string animation)
+    {
+        GlobalReferences.Amy.GetComponent<Animator>().Play(animation);
+    }
+
+
+    public void SetAmyActive(bool active)
+    {
+        GlobalReferences.Amy.SetSpriteActive(active);
+    }
+
+    public void SetNpcAnimationUp(Animator animator)
+    {
+        animator.StopPlayback();
+        animator.Play("NPC_Idle_Up");
+    }
+
+    public void SetNpcAnimationDown(Animator animator)
+    {
+        animator.StopPlayback();
+        animator.Play("NPC_Idle_Down");
+    }
+
+    public void SetNpcAnimationLeft(Animator animator)
+    {
+        animator.StopPlayback();
+        animator.Play("NPC_Idle_Left");
+    }
+
+    public void SetNpcAnimationRight(Animator animator)
+    {
+        animator.StopPlayback();
+        animator.Play("NPC_Idle_Right");
+    }
+
+    public void SetIndigoAnimation(string animation)
+    {
+        GlobalReferences.Indigo.GetComponent<Animator>().Play(animation);
+    }
+
+    public void LoadHallWay()
+    {
+        GlobalReferences.MultiSceneLoader.LoadScene(1);
+    }
+
+    public void GameRoomFadeOut()
+    {
+        GlobalReferences.GameRoom.FadeOut();
+    }
+
+    public void GameRoomFadeIn()
+    {
+        GlobalReferences.GameRoom.FadeIn();
+    }
+
     private void ResumeCutsceneAfterFadeIn()
     {
         GlobalReferences.TimelineManager.ResumeCutscene();

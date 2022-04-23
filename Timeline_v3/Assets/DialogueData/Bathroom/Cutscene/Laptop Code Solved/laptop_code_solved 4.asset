@@ -74,72 +74,72 @@ MonoBehaviour:
     characterSpeaking: 1
     expression: 14
   - dialogueText: 'Well, what the hell kind of name is Leo? THINK ABOUT THAT? '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: "I really don\u2019t like you."
     characterSpeaking: 1
     expression: 5
   - dialogueText: 'Oh, trust me. The feeling is VERY. MUTUAL. '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: 'Were you the one that attacked me? '
     characterSpeaking: 1
     expression: 6
   - dialogueText: "Oh, him. Right. Really? That\u2019s the level of information you\u2019re
       at? "
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: 'I know they said ignorance is bliss, but this is ridiculous. '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: "I\u2019m getting tired of this. Just answer the question! "
     characterSpeaking: 1
     expression: 6
   - dialogueText: "Oh, we\u2019ve got a backbone again, have we? Well, we\u2019ll
       have to deal with THAT eventually. "
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: 'Put the puzzle pieces together, kid. '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: "\u2026 No. You didn\u2019t attack me. You would have fessed up
       by now. "
     characterSpeaking: 1
     expression: 5
   - dialogueText: 'Ah, finally willing to use your brain, are we? '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: Good. Now maybe we can actually have a conversation without you
       being a blithering idiot.
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: 'Where the hell are we? '
     characterSpeaking: 1
     expression: 2
   - dialogueText: 'Well, I can say with certainly that you are currently standing
       in your bathroom. '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: 'With God knows what the hell that thing following you is. '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: "Though it seems\u2026 they are privy to this conversation, aren\u2019t
       you? "
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: 'What do you want anyways? '
     characterSpeaking: 1
     expression: 4
   - dialogueText: "What do I want? Why that\u2019s a very stupid question. Isn\u2019t
       it? "
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   - dialogueText: 'What are you talking about? '
-    characterSpeaking: 0
+    characterSpeaking: 1
     expression: 14
   - dialogueText: 'The answer is simple. '
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

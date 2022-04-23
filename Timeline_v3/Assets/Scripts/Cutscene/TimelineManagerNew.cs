@@ -5,12 +5,18 @@ using UnityEngine.Playables;
 using UnityEngine.Events;
 using System;
 
+
 [System.Serializable]
 public class DialogueEvent: UnityEvent<DialogueObject>
 {
 
 }
 
+[System.Serializable]
+public class NpcAnimationEvent: UnityEvent<Animator>
+{
+
+}
 
 public class TimelineManagerNew : MonoBehaviour
 {
@@ -19,6 +25,7 @@ public class TimelineManagerNew : MonoBehaviour
 
     [SerializeField] private UnityEvent[] callbacks;
     [SerializeField] private DialogueEvent[] dialogues;
+    [SerializeField] private NpcAnimationEvent[] npcAnimations;
 
     public static event Action<bool> UpdateCutsceneStatus;
 
@@ -78,20 +85,26 @@ public class TimelineManagerNew : MonoBehaviour
 
     public void TriggerDialogue(int index, DialogueObject dialogueObject)
     {
-        dialogues[index]?.Invoke(dialogueObject);
+        try
+        {
+            dialogues[index]?.Invoke(dialogueObject);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Dialogue function does not exist. Check the dialogue index");
+        }
+    }
 
-        //try
-        //{
-        //    Debug.Log("dialogues: " + dialogues.Length);
-        //    Debug.Log("index: " + index);
-        //    Debug.Log(dialogueObject == null);
-
-        //    dialogues[index]?.Invoke(dialogueObject);
-        //}
-        //catch (System.Exception e)
-        //{
-        //    Debug.LogError("Dialogue function does not exist. Check the dialogue index");
-        //}
+    public void TriggerNpcAnimation(int index, Animator animator)
+    {
+        try
+        {
+            npcAnimations[index]?.Invoke(animator);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("npc animation function does not exist. Check the npc animation index");
+        }
     }
 
     public void ResetInitialState()

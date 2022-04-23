@@ -7562,7 +7562,7 @@ GameObject:
   - component: {fileID: 842407100}
   - component: {fileID: 842407099}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Test Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7600,7 +7600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16b9f2e0e569bd4ba5ba7d1fc10bda3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playableAsset: {fileID: 11400000, guid: 867c7ea3d956c2e4f8f3ea06bc8a0447, type: 2}
+  playableAsset: {fileID: 11400000, guid: ddcdff1415229a340a62a53b00a7136d, type: 2}
 --- !u!114 &842407100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12583,7 +12583,7 @@ GameObject:
   - component: {fileID: 1504940916}
   - component: {fileID: 1504940920}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Test Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12668,7 +12668,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1504940920}
         m_TargetAssemblyTypeName: CutsceneDialogueTrigger, Assembly-CSharp
-        m_MethodName: TestAnimation
+        m_MethodName: TestLoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

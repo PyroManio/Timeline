@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogue: []
   dialogueData:
   - dialogueText: "Well, guess you\u2019re not completely spineless. "
-    characterSpeaking: 0
-    expression: 3
+    characterSpeaking: 3
+    expression: 0
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

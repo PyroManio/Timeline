@@ -9,9 +9,12 @@ public static class GlobalReferences
     private static DialogueUI dialogueui;
     private static Fader fader;
     private static CameraShake cameraShake;
+    private static IndigoGameObject indigo;
     private static DespairGameObject despair;
     private static AmyGameObject amy;
     private static PlayerMovement player;
+    private static GameRoomGameObject gameRoom;
+    private static MultiSceneLoader multiSceneLoader;
 
     public static TimelineManagerNew TimelineManager
     {
@@ -109,6 +112,22 @@ public static class GlobalReferences
         }
     }
 
+    public static IndigoGameObject Indigo
+    {
+        get
+        {
+            if (indigo)
+                return indigo;
+
+            return null;
+        }
+
+        set
+        {
+            indigo = value;
+        }
+    }
+
     public static AmyGameObject Amy
     {
         get
@@ -138,6 +157,38 @@ public static class GlobalReferences
         set
         {
             player = value;
+        }
+    }
+
+    public static GameRoomGameObject GameRoom
+    {
+        get
+        {
+            if (gameRoom)
+                return gameRoom;
+
+            return null;
+        }
+
+        set
+        {
+            gameRoom = value;
+        }
+    }
+
+    public static MultiSceneLoader MultiSceneLoader
+    {
+        get
+        {
+            if (multiSceneLoader)
+                return multiSceneLoader;
+
+            return null;
+        }
+
+        set
+        {
+            multiSceneLoader = value;
         }
     }
 }

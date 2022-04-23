@@ -71,4 +71,9 @@ public class CutsceneDialogueTrigger : MonoBehaviour
     {
         GlobalReferences.Player.GetComponent<Animator>().SetFloat("LastHorizontal", 1f);
     }
+
+    public void TestLoadScene()
+    {
+        GlobalReferences.MultiSceneLoader.LoadScene(1);
+    }
 }

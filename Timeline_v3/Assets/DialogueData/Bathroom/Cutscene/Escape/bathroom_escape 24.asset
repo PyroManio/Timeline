@@ -18,8 +18,8 @@ MonoBehaviour:
     characterSpeaking: 1
     expression: 11
   - dialogueText: To bring you back down to Earth.
-    characterSpeaking: 0
-    expression: 3
+    characterSpeaking: 3
+    expression: 0
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
