@@ -69,5 +69,6 @@ public enum SceneName{
     Bedroom,
     UI,
     Hallway,
+    Bathroom,
     None
     }

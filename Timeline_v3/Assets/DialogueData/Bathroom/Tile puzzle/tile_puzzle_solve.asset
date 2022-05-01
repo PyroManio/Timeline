@@ -29,6 +29,10 @@ MonoBehaviour:
       only other thing in here, after all."
     characterSpeaking: 1
     expression: 7
-  responses: []
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: 0cce2d812fec69246ae255bbc2382553, type: 2}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
