@@ -5,6 +5,7 @@ using UnityEngine;
 public static class GlobalReferences
 {
     private static TimelineManagerNew timelineManager;
+    private static SoundManager soundManager;
     private static UICaller uicaller;
     private static DialogueUI dialogueui;
     private static Fader fader;
@@ -29,6 +30,22 @@ public static class GlobalReferences
         set
         {
             timelineManager = value;
+        }
+    }
+
+    public static SoundManager SoundManager
+    {
+        get
+        {
+            if (soundManager)
+                return soundManager;
+
+            return null;
+        }
+
+        set
+        {
+            soundManager = value;
         }
     }
 

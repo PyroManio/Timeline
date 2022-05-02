@@ -1354,7 +1354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1385569809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1603,6 +1603,20 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
         m_MethodName: SetPlayerIdleAnimation
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: left
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: SetPlayerAnimationDefault
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2251,6 +2265,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: SetAmyAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Amy_idle_right
+          m_BoolArgument: 0
+        m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1662168254}
@@ -2289,6 +2315,60 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: SetPlayerAnimationLifted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Amy_idle_right
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: SetDespairAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Despair_lift_leo_end_frame
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: SetAmyAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Amy_sit_down
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: SetAmyAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Amy_idle_down
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!4 &1662168251
@@ -2387,8 +2467,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: db31d719049afac43bf47ef8cff4a364, type: 2}
     - {fileID: 11400000, guid: e319ae06e003ba24b9eb65f1f20f6d05, type: 2}
     - {fileID: 11400000, guid: 8a9067072541be94d91f69e181e1239a, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 2c09ca9e075e6c9438dd92fb295b6901, type: 2}
+    - {fileID: 11400000, guid: e83f7400a13ec3e42a6bd1df52d02346, type: 2}
     - {fileID: 11400000, guid: 7ed386cffb986cf469f141292064cca9, type: 2}
     - {fileID: 11400000, guid: b423ad19bea90374d8d4b6931766e6b3, type: 2}
     - {fileID: 11400000, guid: 1faf9e47f760c8743ace6f5c140705f1, type: 2}
@@ -2510,8 +2590,8 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1662168254}
           m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
-          m_MethodName: SetPlayerIdleAnimation
-          m_Mode: 5
+          m_MethodName: SetPlayerTransform
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

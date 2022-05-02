@@ -35,7 +35,6 @@ public class PauseForInputBehaviour : PlayableBehaviour
         }
         if (triggerNpcAnimation)
         {
-            Debug.Log("trigger animation");
             timeline.TriggerNpcAnimation(animationIndex, new Animator());
         }
 

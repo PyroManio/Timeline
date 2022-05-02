@@ -695,11 +695,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5552483bb7c0742bd2ecb952970ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 0}
   clickableObjects: []
-  objectEvents: []
   backButton: {fileID: 0}
   imOutOfVariableNames: 1
+  buttonStatus: 0
 --- !u!224 &433733500
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1539,15 +1538,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5552483bb7c0742bd2ecb952970ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 0}
   clickableObjects:
   - {fileID: 1732445719}
   - {fileID: 1057120551}
   - {fileID: 1343260408}
   - {fileID: 715652581}
-  objectEvents: []
   backButton: {fileID: 0}
   imOutOfVariableNames: 1
+  buttonStatus: 0
 --- !u!224 &885004439
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1623,11 +1621,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a5552483bb7c0742bd2ecb952970ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 0}
   clickableObjects: []
-  objectEvents: []
   backButton: {fileID: 0}
   imOutOfVariableNames: 1
+  buttonStatus: 0
 --- !u!1 &1031500609
 GameObject:
   m_ObjectHideFlags: 0
