@@ -6,6 +6,7 @@ public static class GlobalReferences
 {
     private static TimelineManagerNew timelineManager;
     private static SoundManager soundManager;
+    private static VolumeControl volumeControl;
     private static UICaller uicaller;
     private static DialogueUI dialogueui;
     private static Fader fader;
@@ -46,6 +47,22 @@ public static class GlobalReferences
         set
         {
             soundManager = value;
+        }
+    }
+
+    public static VolumeControl VolumeControl
+    {
+        get
+        {
+            if (volumeControl)
+                return volumeControl;
+
+            return null;
+        }
+
+        set
+        {
+            volumeControl = value;
         }
     }
 

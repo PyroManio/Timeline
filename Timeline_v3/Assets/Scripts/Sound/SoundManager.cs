@@ -22,6 +22,7 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         audioListnerTrans = GlobalReferences.CameraShake.transform;
+        GlobalReferences.VolumeControl.SetVolume();
     }
 
     private void LoadClips()
