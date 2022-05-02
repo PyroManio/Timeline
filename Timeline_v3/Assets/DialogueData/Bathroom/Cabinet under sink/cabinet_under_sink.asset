@@ -27,7 +27,7 @@ MonoBehaviour:
     requireItem: {fileID: 0}
     DTag: 
   - responseText: Solve
-    dialogueObject: {fileID: 11400000, guid: 812b1c73753768a4f918a2dc714f5ac1, type: 2}
+    dialogueObject: {fileID: 0}
     requireItem: {fileID: 0}
     DTag: 
   - responseText: Exit

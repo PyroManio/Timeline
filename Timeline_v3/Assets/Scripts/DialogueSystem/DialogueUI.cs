@@ -151,7 +151,7 @@ public class DialogueUI : UITemplate
             textLabel = defaultText;
             //if (dialogueObject.IsSpecialDialogue) SetSpecialDialogue();
             //else if (dialogueStuff.CharSpeaking == CharacterTalking.Leo) SetCharacterBox(dialogueStuff);
-            if (dialogueStuff.CharSpeaking == CharacterTalking.Leo) SetCharacterBox(dialogueStuff);
+            if (!dialogueStuff.CharSpeaking.Equals(CharacterTalking.None)) SetCharacterBox(dialogueStuff);
             string dialogue = dialogueStuff.DialogueText;
             // This runs the typing effect on the screen
             yield return RunTypingEffect(dialogue);

@@ -47,4 +47,33 @@ public class CutsceneDialogueTrigger : MonoBehaviour
         }
         return compResponseEvents;
     }
+
+    /// <summary>
+    /// Debugging
+    /// </summary>
+
+    public void TestFadeIn()
+    {
+        GlobalReferences.Fader.FadeIn();
+    }
+
+    public void TestFadeOut()
+    {
+        GlobalReferences.Fader.FadeOut();
+    }
+
+    public void TestCameraShake()
+    {
+        StartCoroutine(GlobalReferences.CameraShake.Shake(1f, 0.8f));
+    }
+
+    public void TestAnimation()
+    {
+        GlobalReferences.Player.GetComponent<Animator>().SetFloat("LastHorizontal", 1f);
+    }
+
+    public void TestLoadScene()
+    {
+        GlobalReferences.MultiSceneLoader.LoadScene(1);
+    }
 }

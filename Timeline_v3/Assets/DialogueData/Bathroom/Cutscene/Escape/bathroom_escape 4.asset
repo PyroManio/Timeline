@@ -21,7 +21,7 @@ MonoBehaviour:
   - dialogueText: "And then be delightfully surprised whenever it isn\u2019t. "
     characterSpeaking: 1
     expression: 2
-  - dialogueText: "And then be delightfully surprised whenever it isn\u2019t. "
+  - dialogueText: "Which currently hasn\u2019t happened. "
     characterSpeaking: 1
     expression: 3
   responses: []

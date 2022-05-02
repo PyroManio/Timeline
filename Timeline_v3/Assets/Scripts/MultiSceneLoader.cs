@@ -14,11 +14,16 @@ public class MultiSceneLoader : MonoBehaviour
         { SceneName.Bedroom, "Bedroom" },
         {SceneName.Hallway, "Hallway"}
     };
-void Awake()
-{
-foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene);
-}
- void Start()
+
+    private void Awake()
+    {
+        //Added for cutscene use
+        GlobalReferences.MultiSceneLoader = this;
+
+        foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene);
+    }
+
+    void Start()
     {
         //
         //UnloadScene(SceneName.Hallway);
@@ -48,10 +53,22 @@ foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene
             SceneManager.UnloadSceneAsync(nameToScene[sceneName]);
         }
     }
+
+    public void LoadScene(int givenScene)
+    {
+        Debug.Log("index: " + givenScene);
+
+        List<SceneName> keyList = new List<SceneName>(nameToScene.Keys);
+
+        Debug.Log(keyList[givenScene]);
+
+        LoadScene(keyList[givenScene]);
+    }
 }
 public enum SceneName{
     Bedroom,
     UI,
     Hallway,
+    Bathroom,
     None
     }

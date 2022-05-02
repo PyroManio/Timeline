@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogue: []
   dialogueData:
   - dialogueText: ' I   W A N T   Y O U'
-    characterSpeaking: 0
-    expression: 4
+    characterSpeaking: 2
+    expression: 0
   responses: []
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

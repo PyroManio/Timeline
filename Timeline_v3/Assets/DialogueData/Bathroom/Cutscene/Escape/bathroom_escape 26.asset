@@ -19,7 +19,7 @@ MonoBehaviour:
     characterSpeaking: 1
     expression: 0
   - dialogueText: "Maybe we\u2019ll finally get to leave if we manage to crack this
-      one open. [0]"
+      one open."
     characterSpeaking: 1
     expression: 0
   responses: []

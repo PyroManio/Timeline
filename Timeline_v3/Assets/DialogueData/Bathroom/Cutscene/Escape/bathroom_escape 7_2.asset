@@ -18,8 +18,8 @@ MonoBehaviour:
       see\u2026 "
     characterSpeaking: 1
     expression: 4
-  - dialogueText: "Hold on, I\u2019ll tell you the rest of the details. Let\u2019s
-      see\u2026 "
+  - dialogueText: "Looks like next to my name is something that says, \u201CMoved
+      to Isolation 2\u201D "
     characterSpeaking: 1
     expression: 7
   - dialogueText: 'But not everyone has that note by them. '

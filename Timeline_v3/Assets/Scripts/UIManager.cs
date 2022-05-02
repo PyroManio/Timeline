@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public static event Action<ResponseEvent> SendResponsEventsToScene;
     public static event Action<UIName> GetInventory;
     [SerializeField] private UDictionary<UIName, GameObject> UIList = new UDictionary<UIName, GameObject>();
+
    private void Awake(){
        UICaller.ShowDialogue += ShowDialogue;
        RoomSceneManager.ShowDialogue += ShowDialogue;
@@ -20,7 +21,7 @@ public class UIManager : MonoBehaviour
     {
         UIList[UIName.Dialogue].GetComponent<DialogueUI>().ShowDialogue(givenDialogue);
         UIList[UIName.Dialogue].GetComponent<DialogueUI>().AddResponseEvents(givenResponseEvents);
-        Refresh_UI_Open_State ();
+        Refresh_UI_Open_State();
     }
     // Calls to UICaller and requests for the Inventory object
     public void CallInventory(UIName requestedUI)

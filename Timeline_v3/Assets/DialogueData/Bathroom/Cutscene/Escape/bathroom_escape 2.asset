@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: []
   dialogueData:
-  - dialogueText: "Okay, I don\u2019t hear anything outside. I think it\u2019s probably
-      safe to at least investigate the hallway. "
+  - dialogueText: "Okay, I don\u2019t hear anything outside. "
+    characterSpeaking: 1
+    expression: 0
+  - dialogueText: "I think it\u2019s probably safe to at least investigate the hallway. "
     characterSpeaking: 1
     expression: 0
   - dialogueText: "Okay, let\u2019s try this again. "

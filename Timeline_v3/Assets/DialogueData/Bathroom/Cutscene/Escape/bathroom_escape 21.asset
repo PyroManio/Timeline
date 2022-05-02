@@ -23,7 +23,7 @@ MonoBehaviour:
     characterSpeaking: 0
     expression: 10
   - dialogueText: "Wait, really? That\u2019s great news! "
-    characterSpeaking: 0
+    characterSpeaking: 1
     expression: 14
   - dialogueText: "It\u2019s more of an\u2026 exception to the rule, however. You\u2019ll
       be undergoing a very different treatment."
