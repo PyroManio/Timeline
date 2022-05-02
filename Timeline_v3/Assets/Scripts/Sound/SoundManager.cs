@@ -72,7 +72,8 @@ public class SoundManager : MonoBehaviour
         if (!SetClip(name))
             return;
 
-        AudioSource.PlayClipAtPoint(clip, audioListnerTrans.position);
+        audioSource.loop = false;
+        audioSource.PlayOneShot(clip);
     }
 
     public void SetVolume(float volume)

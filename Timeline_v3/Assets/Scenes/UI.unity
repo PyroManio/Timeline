@@ -12923,9 +12923,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504940916}
-        m_TargetAssemblyTypeName: CutsceneTrigger, Assembly-CSharp
-        m_MethodName: StopCutscene
+      - m_Target: {fileID: 1504940920}
+        m_TargetAssemblyTypeName: CutsceneDialogueTrigger, Assembly-CSharp
+        m_MethodName: TestSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

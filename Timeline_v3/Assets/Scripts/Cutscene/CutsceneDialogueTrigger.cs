@@ -77,8 +77,13 @@ public class CutsceneDialogueTrigger : MonoBehaviour
         GlobalReferences.MultiSceneLoader.LoadScene(1);
     }
 
-    public void TestSound()
+    public void TestMusic()
     {
         GlobalReferences.SoundManager.PlayMusic("tense_moment");
+    }
+
+    public void TestSFX()
+    {
+        GlobalReferences.SoundManager.PlayClip("SFX Menu 1");
     }
 }
