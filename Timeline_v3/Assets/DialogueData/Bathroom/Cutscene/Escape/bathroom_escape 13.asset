@@ -26,7 +26,7 @@ MonoBehaviour:
   - dialogueText: Not interested. Go away.
     characterSpeaking: 0
     expression: 3
-  - dialogueText: "Oh\u2026 sorry I offended you. I\u2019ll just leave\u2026 ["
+  - dialogueText: "Oh\u2026 sorry I offended you. I\u2019ll just leave\u2026 "
     characterSpeaking: 1
     expression: 3
   responses: []

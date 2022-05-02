@@ -92,4 +92,9 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition( temp);
         // REMEMBER, MAKE SURE THIS CAN'T BE CHECKED DURING A CUTSCENE    
     }
+
+    public void TestLog()
+    {
+        Debug.Log(transform.localScale.ToString());
+    }
 }

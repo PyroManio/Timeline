@@ -40,11 +40,10 @@ public class CutsceneEffects : MonoBehaviour
     public void SetPlayerIdleAnimation(string direction)
     {
         direction = direction.ToLower();
+        SetPlayerAnimationDefault();
 
         GlobalReferences.Player.GetComponent<Animator>().SetFloat("LastVertical", 0);
         GlobalReferences.Player.GetComponent<Animator>().SetFloat("LastHorizontal", 0);
-
-        GlobalReferences.Player.transform.localScale = new Vector2(1f, 1f);
 
         switch (direction)
         {
@@ -55,7 +54,6 @@ public class CutsceneEffects : MonoBehaviour
                 }
             case "down":
                 {
-                    GlobalReferences.Player.GetComponent<Animator>().Play("Leo_Idle");
                     GlobalReferences.Player.GetComponent<Animator>().SetFloat("LastVertical", -1f);
                     break;
                 }
@@ -70,11 +68,6 @@ public class CutsceneEffects : MonoBehaviour
                     break;
                 }
         }
-    }
-
-    public void SetPlayerTransform()
-    {
-        GlobalReferences.Player.transform.localScale = new Vector2(1f, 1f);
     }
 
     public void SetPlayerAnimationDefault()

@@ -55,6 +55,7 @@ public class TimelineManagerNew : MonoBehaviour
 
     public void StopCutscene()
     {
+        OnCutsceneEnd();
         pd.Stop();
     }
 

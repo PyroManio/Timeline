@@ -22,6 +22,11 @@ public class CutsceneTrigger : MonoBehaviour
         timelineManager.PlayCutscene();
     }
 
+    public void StopCutscene()
+    {
+        timelineManager.StopCutscene();
+    }
+
     public void Continue()
     {
         timelineManager.ResumeCutscene();
