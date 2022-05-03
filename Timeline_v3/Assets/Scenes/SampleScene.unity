@@ -2158,6 +2158,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 693221011}
+        m_TargetAssemblyTypeName: CutsceneDialogueTrigger, Assembly-CSharp
+        m_MethodName: StartDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7315ce7bf26b1164cb581b6100f46f23, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   npcAnimations:
   - m_PersistentCalls:
       m_Calls:
@@ -2371,6 +2385,91 @@ MonoBehaviour:
           m_StringArgument: Amy_idle_down
           m_BoolArgument: 0
         m_CallState: 2
+  soundEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: StopMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Timeline Thinking
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Timeline Thinking
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Despair theme
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Timeline Transition 2
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: pandoraTheme
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1662168254}
+        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: timeline_serenity
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1662168251
 Transform:
   m_ObjectHideFlags: 0
@@ -2394,7 +2493,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1662168249}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 867c7ea3d956c2e4f8f3ea06bc8a0447, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: ddcdff1415229a340a62a53b00a7136d, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -2473,6 +2572,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b423ad19bea90374d8d4b6931766e6b3, type: 2}
     - {fileID: 11400000, guid: 1faf9e47f760c8743ace6f5c140705f1, type: 2}
     - {fileID: 11400000, guid: 14853684d1b6e9a468efab3edc8ce5ff, type: 2}
+    - {fileID: 11400000, guid: 06afec6c282daf441a785c25b4e7637b, type: 2}
+    - {fileID: 11400000, guid: b7b6e751ed39063438c4c2559c5b487a, type: 2}
+    - {fileID: 11400000, guid: e6103310b9ed126449c0dff4c81df625, type: 2}
+    - {fileID: 11400000, guid: b903b82cea0bf4d4dae2a4a6225142dd, type: 2}
+    - {fileID: 11400000, guid: 99bda673019f57948bf9e4ba884f246d, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -2655,6 +2759,76 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662168254}
+          m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Timeline Stomach Growl
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662168254}
+          m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Timeline Faucet Sounds
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662168254}
+          m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+          m_MethodName: StopMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662168254}
+          m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+          m_MethodName: PlayMusic
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Timeline Bathroom Escape DRAFT
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662168254}
+          m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Timeline Amy Punch
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1662168254
 MonoBehaviour:

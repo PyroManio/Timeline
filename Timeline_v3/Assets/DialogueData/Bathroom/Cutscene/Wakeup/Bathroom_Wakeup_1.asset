@@ -21,5 +21,5 @@ MonoBehaviour:
     characterSpeaking: 1
     expression: 14
   responses: []
-  nextDialogue: {fileID: 11400000, guid: 7315ce7bf26b1164cb581b6100f46f23, type: 2}
+  nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
