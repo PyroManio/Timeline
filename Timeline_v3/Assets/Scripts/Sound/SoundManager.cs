@@ -72,7 +72,6 @@ public class SoundManager : MonoBehaviour
         if (!SetClip(name))
             return;
 
-        audioSource.loop = false;
         audioSource.PlayOneShot(clip);
     }
 
