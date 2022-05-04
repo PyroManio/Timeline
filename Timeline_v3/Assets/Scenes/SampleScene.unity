@@ -2591,6 +2591,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: e6103310b9ed126449c0dff4c81df625, type: 2}
     - {fileID: 11400000, guid: b903b82cea0bf4d4dae2a4a6225142dd, type: 2}
     - {fileID: 11400000, guid: 99bda673019f57948bf9e4ba884f246d, type: 2}
+    - {fileID: 11400000, guid: acff45324f5a40b459385ea865365ced, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -2842,6 +2843,20 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Timeline Amy Punch
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1662168254}
+          m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Timeline Door Locked
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1662168254
