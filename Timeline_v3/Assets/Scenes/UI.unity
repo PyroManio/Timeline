@@ -1358,9 +1358,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 161181559}
-        m_TargetAssemblyTypeName: CutsceneEffects, Assembly-CSharp
-        m_MethodName: SetPlayerAnimationDefault
+      - m_Target: {fileID: 161181554}
+        m_TargetAssemblyTypeName: CutsceneDialogueTrigger, Assembly-CSharp
+        m_MethodName: TestSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12927,7 +12927,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1504940920}
         m_TargetAssemblyTypeName: CutsceneDialogueTrigger, Assembly-CSharp
-        m_MethodName: TestSFX
+        m_MethodName: TestMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

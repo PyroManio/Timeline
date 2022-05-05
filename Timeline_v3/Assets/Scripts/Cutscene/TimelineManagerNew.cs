@@ -26,6 +26,7 @@ public class TimelineManagerNew : MonoBehaviour
     [SerializeField] private UnityEvent[] callbacks;
     [SerializeField] private DialogueEvent[] dialogues;
     [SerializeField] private NpcAnimationEvent[] npcAnimations;
+    [SerializeField] private UnityEvent[] soundEvents;
 
     public static event Action<bool> UpdateCutsceneStatus;
 
@@ -34,7 +35,6 @@ public class TimelineManagerNew : MonoBehaviour
         GlobalReferences.TimelineManager = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         pd = GetComponent<PlayableDirector>();
@@ -105,6 +105,18 @@ public class TimelineManagerNew : MonoBehaviour
         catch (System.Exception e)
         {
             Debug.LogError("npc animation function does not exist. Check the npc animation index");
+        }
+    }
+
+    public void TriggerSoundEvent(int index)
+    {
+        try
+        {
+            soundEvents[index]?.Invoke();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("sound event function does not exist. Check the npc sound event index");
         }
     }
 

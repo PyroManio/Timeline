@@ -14,6 +14,8 @@ public class PauseForInputBehaviour : PlayableBehaviour
     [SerializeField] private int dialogueIndex;
     [SerializeField] private bool triggerNpcAnimation = false;
     [SerializeField] private int animationIndex;
+    [SerializeField] private bool triggerSoundEvent = false;
+    [SerializeField] private int soundEventIndex;
     [NonSerialized] public double start, end;
 
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
@@ -28,14 +30,21 @@ public class PauseForInputBehaviour : PlayableBehaviour
 
         if(invokeCallback)
             timeline.InvokeCallback(callbackIndex);
+
         if(triggerDialogue)
         {
             DialogueObject dialogueObject = ScriptableObject.CreateInstance("DialogueObject") as DialogueObject;
             timeline.TriggerDialogue(dialogueIndex, dialogueObject);
         }
+
         if (triggerNpcAnimation)
         {
             timeline.TriggerNpcAnimation(animationIndex, new Animator());
+        }
+
+        if(triggerSoundEvent)
+        {
+            timeline.TriggerSoundEvent(soundEventIndex);
         }
 
         timeline.PauseCutscene(end - start);

@@ -140,6 +140,21 @@ public class CutsceneEffects : MonoBehaviour
         GlobalReferences.GameRoom.FadeIn();
     }
 
+    public void StopMusic()
+    {
+        GlobalReferences.SoundManager.Stop();
+    }
+
+    public void PlayMusic(string name)
+    {
+        GlobalReferences.SoundManager.PlayMusic(name);
+    }
+
+    public void PlaySFX(string name)
+    {
+        GlobalReferences.SoundManager.PlayClip(name);
+    }
+
     private void ResumeCutsceneAfterFadeIn()
     {
         GlobalReferences.TimelineManager.ResumeCutscene();
@@ -152,5 +167,5 @@ public class CutsceneEffects : MonoBehaviour
         GlobalReferences.Fader.OnFadeOutComplete -= ResumeCutsceneAfterFadeOut;
     }
 
-
+    
 }
