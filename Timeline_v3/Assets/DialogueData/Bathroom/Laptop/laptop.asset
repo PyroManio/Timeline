@@ -27,10 +27,6 @@ MonoBehaviour:
     dialogueObject: {fileID: 0}
     requireItem: {fileID: 0}
     DTag: 
-  - responseText: Message
-    dialogueObject: {fileID: 11400000, guid: 139bfe68505b53949b86f44d9e4328e7, type: 2}
-    requireItem: {fileID: 0}
-    DTag: 
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: 7d55db1c12a3b864db283ef2010c768d, type: 2}
     requireItem: {fileID: 0}

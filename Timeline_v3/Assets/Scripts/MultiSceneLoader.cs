@@ -12,7 +12,8 @@ public class MultiSceneLoader : MonoBehaviour
     private Dictionary<SceneName,string> nameToScene = new Dictionary<SceneName, string>
     {
         { SceneName.Bedroom, "Bedroom" },
-        {SceneName.Hallway, "Hallway"}
+        {SceneName.Hallway, "Hallway"},
+        {SceneName.Bathroom, "Bathroom"}
     };
 
     private void Awake()
@@ -29,7 +30,7 @@ public class MultiSceneLoader : MonoBehaviour
         //UnloadScene(SceneName.Hallway);
         //SceneManager.LoadScene("UI", LoadSceneMode.Additive);
         Debug.Log("Here it comes");
-        LoadScene(SceneName.Bedroom);
+        LoadScene(SceneName.Bathroom);
     }
 
     public void LoadScene(SceneName sceneName){

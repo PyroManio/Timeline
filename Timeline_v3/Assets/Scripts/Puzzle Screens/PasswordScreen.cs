@@ -8,12 +8,15 @@ public class PasswordScreen : MonoBehaviour
 {
     //[SerializeField] private InputField passwordField;
     [SerializeField] private GameObject passScreen;
+    
     [SerializeField] private string correctPassword;
     [SerializeField] private UnityEvent correctEvent;
     [SerializeField] private UnityEvent wrongEvent;
     private string passwordSubmit;
+    [SerializeField] private string promptText =  "Enter Password...";
     public bool IsOpen { get; private set; }
     void Start(){
+        passScreen.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = promptText;
         CloseScreen();
     }
     public void OnSubmit()
@@ -22,7 +25,7 @@ public class PasswordScreen : MonoBehaviour
         if (passwordSubmit.Equals(correctPassword)) correctEvent.Invoke();
         else 
         {
-            passScreen.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = "Enter Password...";
+            passScreen.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = promptText;
             passScreen.GetComponentInChildren<TMP_InputField>().text = "";
             wrongEvent.Invoke();
         }

@@ -59,6 +59,9 @@ public class ClickableObjectHandler : MonoBehaviour
             //button.SetActive(buttonStatus);
             if (!button.Equals(null)) button.GetComponent<Button>().interactable=buttonStatus;
         }
+        if (backButton.Equals(null)) return;
+        backButton.SetActive(buttonStatus);
+        //Debug.Log(buttonStatus);
     }
     public void UpdateButtonPuzzle(bool status)
     {

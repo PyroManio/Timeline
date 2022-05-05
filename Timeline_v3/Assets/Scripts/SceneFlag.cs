@@ -25,5 +25,7 @@ public enum FlagNames{
     BED_NS_DrawerStatus, // 0 = screws on, 1 = screws removed, 2 = opened
     BED_DRAW_Screwdriver, //0 = not picked up/visible, 1 = picked up / not visible
     BATH_SHOWER_BGState, //0= UNSOLVED, 1 = SOLVED, 2=Leo gone
-    BATH_SINK_BGState //0=dirty,1=clean,2=opencabinet
+    BATH_SINK_BGState, //0=dirty,1=clean,2=opencabinet
+    BATH_CABNET_BGState,
+    BATH_LAPTOP_SOLVED //0 = false,  1= true
 }

@@ -40,7 +40,10 @@ public class RoomSceneFlags : MonoBehaviour
 
     public void RefreshAllFlags()
     {
-        for (int i = 0; i < FlagEventsList.Length; i++)  FlagEventsList[i].ActivateFlagEvent( FlagListInt[i] );
+        Debug.Log(FlagEventsList.Length);
+        Debug.Log(FlagListInt.Length);
+        for (int i = 0; i < FlagEventsList.Length; i++)  {
+            FlagEventsList[i].ActivateFlagEvent( FlagListInt[i] );}
     }
     
     public void ChangeFlag(FlagNames givenFlag, int newFlag)
@@ -56,8 +59,10 @@ public class RoomSceneFlags : MonoBehaviour
         }
         Debug.Log("Warning, a flag was called that doesn't exist. Flag called: " + givenFlag);
     }
-    public void ReceiveFlags(int[] givenFlags)
+    public void ReceiveFlags(int[] givenFlags,SceneName givenScene)
     {
+        Debug.Log(givenScene);
+        if (!givenScene.Equals(sceneItsIn)) return;
         FlagListInt = givenFlags;
         RefreshAllFlags();
     }

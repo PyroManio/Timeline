@@ -35,6 +35,7 @@ public class UICaller : MonoBehaviour
         InspecScreenHandler.UpdateScreenStatus += Update_IsInspectonScreensOpen;
         RoomSceneManager.AddItemToInventory += SendAddItem;
         TimelineManagerNew.UpdateCutsceneStatus += RecieveCutsceneStatus;
+        RoomSceneManager.RemoveItemToInventory += SendRemoveItem;
         
         //Added for global reference
         GlobalReferences.UIcaller = this;
@@ -60,6 +61,10 @@ public class UICaller : MonoBehaviour
     public void RecieveCutsceneStatus(bool givenStatus)
     {
         isCutsceneActive = givenStatus;
+    }
+    public void SendRemoveItem(Item givenItem)
+    {
+        GetComponent<Inventory>().RemoveItem(givenItem.ItemType);
     }
 
 }
