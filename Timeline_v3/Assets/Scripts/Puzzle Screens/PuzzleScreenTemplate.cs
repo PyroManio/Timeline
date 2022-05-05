@@ -6,7 +6,7 @@ public abstract class PuzzleScreenTemplate : MonoBehaviour
 {
     //Event that executes when the puzzle is solved
     [SerializeField] private UnityEvent solutionEvent;
-    [SerializeField] private GameObject puzzleContainer;
+    [SerializeField] protected GameObject puzzleContainer;
     [HideInInspector] public bool isSolved = false;
     public bool IsOpen { get ; protected set; } 
     public void OpenPuzzle(){

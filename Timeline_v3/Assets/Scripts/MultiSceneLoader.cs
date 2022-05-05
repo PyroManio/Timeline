@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+//using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 using System;
 public class MultiSceneLoader : MonoBehaviour
@@ -20,8 +20,15 @@ public class MultiSceneLoader : MonoBehaviour
     {
         //Added for cutscene use
         GlobalReferences.MultiSceneLoader = this;
-
-        foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene);
+        
+        foreach (string scene in nameToScene.Values) {
+            try
+        {
+            SceneManager.UnloadSceneAsync(scene);
+        }
+        catch{}
+        }
+        SceneManager.LoadScene("UI", LoadSceneMode.Additive);
     }
 
     void Start()

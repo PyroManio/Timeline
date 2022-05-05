@@ -24,8 +24,9 @@ public class TypewriterEffect : MonoBehaviour
         voiceTalk = new Dictionary<CharacterTalking, AudioClip>
         {
             { CharacterTalking.None, null },
-            { CharacterTalking.Leo, AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/SoundEffects/Leo_Talk.wav") },
-            { CharacterTalking.Despair, AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/SoundEffects/Despair_Talk.wav") }
+            //{ CharacterTalking.Leo, AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/SoundEffects/Leo_Talk.wav") },
+            { CharacterTalking.Leo, Resources.Load<AudioClip>("Assets/SoundEffects/Leo_Talk.wav") },
+            { CharacterTalking.Despair,Resources.Load<AudioClip>("Assets/SoundEffects/Despair_Talk.wav") }
         };
     }
    public void Run(string textToType, TMP_Text textLabel,CharacterTalking currentTalking)

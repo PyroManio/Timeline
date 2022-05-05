@@ -7750,7 +7750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &842407098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10972,14 +10972,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6415d2a71c2917041b14f004223e7a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passScreen: {fileID: 0}
-  correctPassword: 
-  correctEvent:
+  solutionEvent:
     m_PersistentCalls:
       m_Calls: []
+  puzzleContainer: {fileID: 0}
+  isSolved: 0
+  correctPassword: 
   wrongEvent:
     m_PersistentCalls:
       m_Calls: []
+  promptText: Enter Password...
 --- !u!114 &1348198061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12845,7 +12847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1504940915
 RectTransform:
   m_ObjectHideFlags: 0

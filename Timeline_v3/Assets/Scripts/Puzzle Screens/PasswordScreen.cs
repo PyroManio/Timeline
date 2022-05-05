@@ -4,39 +4,38 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
-public class PasswordScreen : MonoBehaviour
+public class PasswordScreen : PuzzleScreenTemplate
 {
     //[SerializeField] private InputField passwordField;
-    [SerializeField] private GameObject passScreen;
     
     [SerializeField] private string correctPassword;
-    [SerializeField] private UnityEvent correctEvent;
+    //[SerializeField] private UnityEvent correctEvent;
     [SerializeField] private UnityEvent wrongEvent;
     private string passwordSubmit;
     [SerializeField] private string promptText =  "Enter Password...";
-    public bool IsOpen { get; private set; }
     void Start(){
-        passScreen.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = promptText;
+        puzzleContainer.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = promptText;
         CloseScreen();
     }
     public void OnSubmit()
     {
-        passwordSubmit=passScreen.GetComponentInChildren<TMP_InputField>().text;
-        if (passwordSubmit.Equals(correctPassword)) correctEvent.Invoke();
-        else 
+        passwordSubmit=puzzleContainer.GetComponentInChildren<TMP_InputField>().text;
+        if (passwordSubmit.Equals(correctPassword)) Solved();
         {
-            passScreen.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = promptText;
-            passScreen.GetComponentInChildren<TMP_InputField>().text = "";
+            puzzleContainer.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = promptText;
+            puzzleContainer.GetComponentInChildren<TMP_InputField>().text = "";
             wrongEvent.Invoke();
         }
         CloseScreen();
     }
+    protected override void CheckSolved()
+    {
+
+    }
     public void OpenScreen(){
-        IsOpen=true;
-        passScreen.SetActive(true);
+        OpenPuzzle();
     }
     public void CloseScreen(){
-        IsOpen=false;
-        passScreen.SetActive(false);
+        ClosePuzzle();
     }
 }

@@ -1596,9 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6415d2a71c2917041b14f004223e7a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passScreen: {fileID: 1291002685}
-  correctPassword: HUMAN
-  correctEvent:
+  solutionEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1678634434}
@@ -1637,6 +1635,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  puzzleContainer: {fileID: 1291002685}
+  isSolved: 0
+  correctPassword: HUMAN
   wrongEvent:
     m_PersistentCalls:
       m_Calls:
@@ -6262,35 +6263,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6415d2a71c2917041b14f004223e7a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passScreen: {fileID: 1463313536}
-  correctPassword: 600427
-  correctEvent:
+  solutionEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1678634434}
-        m_TargetAssemblyTypeName: RoomSceneFlags, Assembly-CSharp
-        m_MethodName: ChangeFlagName
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1274900196}
-          m_ObjectArgumentAssemblyTypeName: FlagNamesForStupidEvents, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1678634433}
-        m_TargetAssemblyTypeName: RoomSceneManager, Assembly-CSharp
-        m_MethodName: CallShowDialogue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 21c2e5b3609b41648b6f63d00209eca6, type: 2}
-          m_ObjectArgumentAssemblyTypeName: DialogueObject, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  puzzleContainer: {fileID: 0}
+  isSolved: 0
+  correctPassword: 600427
   wrongEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -6877,9 +6855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6415d2a71c2917041b14f004223e7a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passScreen: {fileID: 115293504}
-  correctPassword: 17 31 45 19
-  correctEvent:
+  solutionEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1678634434}
@@ -6918,6 +6894,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  puzzleContainer: {fileID: 115293504}
+  isSolved: 0
+  correctPassword: 17 31 45 19
   wrongEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -10405,9 +10384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6415d2a71c2917041b14f004223e7a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passScreen: {fileID: 306236265}
-  correctPassword: 12623
-  correctEvent:
+  solutionEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1678634434}
@@ -10422,6 +10399,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  puzzleContainer: {fileID: 306236265}
+  isSolved: 0
+  correctPassword: 12623
   wrongEvent:
     m_PersistentCalls:
       m_Calls: []

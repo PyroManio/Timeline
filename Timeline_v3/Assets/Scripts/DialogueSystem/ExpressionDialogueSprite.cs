@@ -15,7 +15,8 @@ public class ExpressionDialogueSprite : MonoBehaviour
   // Gotta do this in awake cause start doesn't work since DialogueUI immedietely turns this thing off
   // And also cause Untiy doesn't like it when we try to call resources during the initalizer 
   private void Awake(){
-    LeoSprites = AssetDatabase.LoadAllAssetRepresentationsAtPath("Assets/Sprites/Leo/Leo_Expressions.png").OfType<Sprite>().ToArray();
+    //LeoSprites = AssetDatabase.LoadAllAssetRepresentationsAtPath("Assets/Sprites/Leo/Leo_Expressions.png").OfType<Sprite>().ToArray();
+    LeoSprites = Resources.LoadAll("Assets/Sprites/Leo/Leo_Expressions.png").OfType<Sprite>().ToArray();
     // This is essentially letting us know what sprite goes to which expression
     // In the future, we would probably make this dictionary take into account of which character is talking
     // Cause I'm sure not every character would have all the expressions here

@@ -11,7 +11,7 @@ public class VolumeControl : MonoBehaviour
     private const float MAX_VOLUME = 1f;
 
     private Slider slider;
-
+    // Be careful with the orders of Awakes and Starts
     private void Awake()
     {
         slider = GetComponent<Slider>();

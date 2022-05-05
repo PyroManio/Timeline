@@ -9,7 +9,7 @@ public class LockerCode : PuzzleScreenTemplate
     [SerializeField] private GameObject dialTemplate;
     [SerializeField] private GameObject dialContainer;
     [SerializeField] private string solution;
-    [SerializeField] private UnityEvent solutionEvent;
+    //[SerializeField] private UnityEvent solutionEvent;
     private GameObject[] dialList=new GameObject[4];
     private int[] dialNumber = new int[4];
     void Start()
