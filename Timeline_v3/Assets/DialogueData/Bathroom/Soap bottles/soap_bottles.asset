@@ -23,6 +23,10 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: ee8ee83c730854d468cf43e01824bd71, type: 2}
     requireItem: {fileID: 0}
     DTag: 
+  - responseText: Use towel
+    dialogueObject: {fileID: 11400000, guid: dd11036b6f1f5fe4abccc5ae1a50c892, type: 2}
+    requireItem: {fileID: 11400000, guid: 11d0426e2c9bb1c438048f78921e0ae5, type: 2}
+    DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}
     requireItem: {fileID: 0}

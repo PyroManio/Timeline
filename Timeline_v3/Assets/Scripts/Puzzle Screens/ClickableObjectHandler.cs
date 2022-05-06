@@ -32,6 +32,7 @@ public class ClickableObjectHandler : MonoBehaviour
             clickableObjects[i].GetComponentInChildren<Button>().onClick.AddListener( () => OnPickedResponse(num));
         }
         //backButton.GetComponentInChildren<Button>().onClick.AddListener( () => OnPickedBack());
+        
     }
     private void LateUpdate(){
         //backButton.SetActive(!dialogueOpen && imOutOfVariableNames);
@@ -43,6 +44,12 @@ public class ClickableObjectHandler : MonoBehaviour
         //Debug.Log();
         //if (!dialogueUI.IsOpen && index < objectEvents.Length) objectEvents[index].Invoke();
         //objectEvents[index].Invoke();
+    }
+    public void clearButtonStatus()
+    {
+        puzzleStatus=false;
+        UIStatus=false;
+        UpdateButtonActive();
     }
     private void UpdateButtonUI(bool givenStatus, UIName temp)
     {

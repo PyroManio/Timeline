@@ -20,17 +20,13 @@ MonoBehaviour:
   - dialogueText: What? What do you mean there's nothing in there?
     characterSpeaking: 1
     expression: 7
-  - dialogueText: There's clearly some cleaning soap and a note in there.
+  - dialogueText: There's clearly a note in there.
     characterSpeaking: 1
     expression: 2
   - dialogueText: Are you sure you're not seeing things?
     characterSpeaking: 1
     expression: 14
   responses:
-  - responseText: Use Soap on Towel
-    dialogueObject: {fileID: 11400000, guid: dd11036b6f1f5fe4abccc5ae1a50c892, type: 2}
-    requireItem: {fileID: 11400000, guid: 11d0426e2c9bb1c438048f78921e0ae5, type: 2}
-    DTag: med_opened
   - responseText: Note
     dialogueObject: {fileID: 11400000, guid: 9374431686a77a543bc6edf3a954bb0a, type: 2}
     requireItem: {fileID: 0}

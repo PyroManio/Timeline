@@ -29,6 +29,7 @@ public class InspecScreenHandler : MonoBehaviour
         transitionScreen.StopAllCoroutines();
         transitionScreen.halfTransitionItself();
         IsOpen=false;
+        screens[index].GetComponent<ClickableObjectHandler>().clearButtonStatus();
     }
     public void exitScreen()
     {

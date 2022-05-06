@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour
     {
         audioListnerTrans = GlobalReferences.CameraShake.transform;
         GlobalReferences.VolumeControl.SetVolume();
+        PlayMusic("Timeline Bathroom Escape DRAFT");
     }
 
     private void LoadClips()
