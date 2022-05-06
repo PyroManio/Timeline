@@ -37,7 +37,9 @@ public class RoomSceneFlags : MonoBehaviour
         MasterFlagManager.AskForFlagLength += SendFlagLength;
         MultiSceneLoader.CloseScene += SendFlagList;
      }
-
+    private void Start(){
+        RefreshAllFlags();
+    }
     public void RefreshAllFlags()
     {
         Debug.Log(FlagEventsList.Length);

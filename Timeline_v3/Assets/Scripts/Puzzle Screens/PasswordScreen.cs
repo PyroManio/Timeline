@@ -20,7 +20,7 @@ public class PasswordScreen : PuzzleScreenTemplate
     public void OnSubmit()
     {
         passwordSubmit=puzzleContainer.GetComponentInChildren<TMP_InputField>().text;
-        if (passwordSubmit.Equals(correctPassword)) Solved();
+        if (passwordSubmit.Equals(correctPassword)) {Solved(); return;}
         {
             puzzleContainer.GetComponentInChildren<TMP_InputField>().placeholder.GetComponentInChildren<TMP_Text>().text = promptText;
             puzzleContainer.GetComponentInChildren<TMP_InputField>().text = "";

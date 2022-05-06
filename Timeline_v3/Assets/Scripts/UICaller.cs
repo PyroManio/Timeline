@@ -15,6 +15,7 @@ public class UICaller : MonoBehaviour
     public static event Action<UIName> OpenUIMenu;
     public static event Action<UIName> CloseUIMenu;
     public static event Action<UIName,Inventory> InventoryMainToUI;
+    [SerializeField] GameObject k177;
     // This calls out to the UIManager and passes over dialogue data to it
 
     public void CallShowDialogue(DialogueObject givenDialogue,ResponseEvent[][] givenResponseEvents)
@@ -36,7 +37,7 @@ public class UICaller : MonoBehaviour
         RoomSceneManager.AddItemToInventory += SendAddItem;
         TimelineManagerNew.UpdateCutsceneStatus += RecieveCutsceneStatus;
         RoomSceneManager.RemoveItemToInventory += SendRemoveItem;
-        
+        RoomSceneManager.ChangePlaytoK177 += ChangePlayer ;
         //Added for global reference
         GlobalReferences.UIcaller = this;
     }
@@ -44,6 +45,12 @@ public class UICaller : MonoBehaviour
     public void SendInventoryToUIScene(UIName requestedUI)
     {
         InventoryMainToUI?.Invoke(requestedUI,GetComponent<Inventory>());
+    }
+    public void ChangePlayer(bool givenBool)
+    {
+        FindObjectOfType<PlayerMovement>().isK177 = givenBool;
+        k177.SetActive(!givenBool);
+        Debug.Log(givenBool);
     }
     // Gets updated for the current status of UI's 
     public void Update_AreUIOpen(bool givenBool, UIName openedUI){

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pyro - Lead Programmer
+  m_text: Pyro - Programmer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ef1ac450846ebf45879f705bdb80e6d, type: 2}
   m_sharedMaterial: {fileID: 7212939390384018514, guid: 6ef1ac450846ebf45879f705bdb80e6d, type: 2}
@@ -1733,7 +1733,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168.9, y: 96}
+  m_AnchoredPosition: {x: -129.1, y: 88}
   m_SizeDelta: {x: 4, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &937770226

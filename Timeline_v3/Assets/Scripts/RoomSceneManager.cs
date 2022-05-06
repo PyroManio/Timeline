@@ -8,6 +8,7 @@ public class RoomSceneManager : MonoBehaviour
     public static event Action<DialogueObject, ResponseEvent[][]> ShowDialogue;
     public static event Action<Item> AddItemToInventory;
     public static event Action<Item> RemoveItemToInventory;
+    public static event Action<bool> ChangePlaytoK177;
     public void CallShowDialogue(DialogueObject givenDialogue,ResponseEvent[][] givenResponseEvents)
     {
         ShowDialogue?.Invoke(givenDialogue,givenResponseEvents);
@@ -23,6 +24,11 @@ public class RoomSceneManager : MonoBehaviour
     public void CallRemoveItem(Item givenItem)
     {
         RemoveItemToInventory?.Invoke(givenItem);
+    }
+    public void CallChangePlayer(bool givenBool)
+    {
+        ChangePlaytoK177?.Invoke(givenBool);
+        Debug.Log("AGGA");
     }
     
 }

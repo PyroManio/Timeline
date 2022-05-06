@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
+    public bool isK177;
 
     //Added for cutscene use
     private void Awake()
@@ -71,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);  
+        animator.SetBool("isK177", isK177);
     }
 
     void FixedUpdate() 

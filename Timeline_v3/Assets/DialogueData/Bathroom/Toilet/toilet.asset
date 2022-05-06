@@ -28,7 +28,7 @@ MonoBehaviour:
     DTag: 
   - responseText: Use
     dialogueObject: {fileID: 11400000, guid: 8ed3ea2bc80ddaa4aaaad24e363c187a, type: 2}
-    requireItem: {fileID: 0}
+    requireItem: {fileID: 11400000, guid: 1316b7b81f3d5e84894f6186713643c8, type: 2}
     DTag: 
   - responseText: Exit
     dialogueObject: {fileID: 0}

@@ -5760,7 +5760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenHandler: {fileID: 1748118109}
-  transSpeed: 0.005
+  transSpeed: 0.05
   imageObject: {fileID: 1791927416}
   itsImage: {fileID: 1791927417}
 --- !u!4 &1748118111

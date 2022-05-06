@@ -7,7 +7,12 @@ public class DialogueActivatorClickable : MonoBehaviour, IInteractable
     [SerializeField] private DialogueObject dialogueObject;
     
     void Start(){
-        GetComponent<Image>().color=new Color(1f,1f,1f,0f);
+        //GetComponent<Image>().color=new Color(1f,1f,1f,0f);
+        foreach (Image temp in GetComponentsInChildren<Image>())
+        {
+         temp.color=new Color(1f,1f,1f,0f);   
+        }
+        
     }
     public void UpdateDialogueObject(DialogueObject dialogueObject)
     {

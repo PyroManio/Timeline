@@ -17,6 +17,10 @@ MonoBehaviour:
   - dialogueText: "Oh thank god the key fits! Now let\u2019s get out of here!"
     characterSpeaking: 1
     expression: 1
-  responses: []
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 0}
+    requireItem: {fileID: 0}
+    DTag: 
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0

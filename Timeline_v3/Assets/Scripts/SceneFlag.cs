@@ -27,5 +27,7 @@ public enum FlagNames{
     BATH_SHOWER_BGState, //0= UNSOLVED, 1 = SOLVED, 2=Leo gone
     BATH_SINK_BGState, //0=dirty,1=clean,2=opencabinet
     BATH_CABNET_BGState,
-    BATH_LAPTOP_SOLVED //0 = false,  1= true
+    BATH_LAPTOP_SOLVED, //0 = false,  1= true
+    BATH_LEO_FREE, //0 = false,  1=true
+    BATH_Towel // 0 = there, 1=taken
 }

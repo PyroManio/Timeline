@@ -32,14 +32,14 @@ MonoBehaviour:
   - responseText: Story
     dialogueObject: {fileID: 11400000, guid: fcbcc412dc5d52546969fe3e59e23786, type: 2}
     requireItem: {fileID: 0}
-    DTag: 
+    DTag: tile_puzzle
   - responseText: Solve
-    dialogueObject: {fileID: 11400000, guid: 0cce2d812fec69246ae255bbc2382553, type: 2}
+    dialogueObject: {fileID: 11400000, guid: c74aff927b07ce141bfcae44947a5791, type: 2}
     requireItem: {fileID: 0}
-    DTag: 
+    DTag: tile_puzzle
   - responseText: Exit
     dialogueObject: {fileID: 0}
     requireItem: {fileID: 0}
-    DTag: 
+    DTag: tile_puzzle
   nextDialogue: {fileID: 0}
   isSpecialDialogue: 0
