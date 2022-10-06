@@ -21,6 +21,7 @@ public class MultiSceneLoader : MonoBehaviour
         //Added for cutscene use
         GlobalReferences.MultiSceneLoader = this;
         
+        // Unloads all room scenes first
         foreach (string scene in nameToScene.Values) {
             try
         {
@@ -28,21 +29,20 @@ public class MultiSceneLoader : MonoBehaviour
         }
         catch{}
         }
+        // Loads in the Ui scene
         SceneManager.LoadScene("UI", LoadSceneMode.Additive);
     }
 
     void Start()
     {
-        //
-        //UnloadScene(SceneName.Hallway);
-        //SceneManager.LoadScene("UI", LoadSceneMode.Additive);
+        //Change this to the room you want to work with
         Debug.Log("Here it comes");
         LoadScene(SceneName.Bathroom);
     }
 
     public void LoadScene(SceneName sceneName){
         Debug.Log("Call to Load Scene");
-        //foreach (string scene in nameToScene.Values) SceneManager.UnloadSceneAsync(scene);
+        // Unloads all room scenes
         foreach (SceneName scenes in nameToScene.Keys) UnloadScene(scenes);
 
         if (!SceneManager.GetSceneByName(nameToScene[sceneName]).isLoaded)
